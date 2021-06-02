@@ -284,7 +284,7 @@ const Calculator = () => {
                 ref={summaryRef}
               >
                 <h4 className="h4">Summery</h4>
-                <div className="calculator-item-content">
+                <div className="calculator-item-table-content">
                   <div className="left">
                     <p>
                       Curabitur tortor. Pellentesque nibh. Aenean quam. In

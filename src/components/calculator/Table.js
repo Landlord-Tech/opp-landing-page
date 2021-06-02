@@ -7,9 +7,9 @@ const Table = () => {
         <thead>
             <tr>
               <th/>
-              <th>Without OurPetPolicy</th>
-              <th>With OurPetPolicy</th>
-              <th>Difference</th>
+              <th><strong>WITHOUT</strong> OurPetPolicy</th>
+              <th><strong>WITH</strong> OurPetPolicy</th>
+              <th><strong>Difference</strong></th>
             </tr>
         </thead>
         <tbody>
@@ -25,9 +25,15 @@ const Table = () => {
              <td>$2,205</td>
              <td>$2,205</td>
            </tr>
+           <tr>
+             <td>Total costs</td>
+             <td>$94,325</td>
+             <td>$2,205</td>
+             <td>$2,205</td>
+           </tr>
         </tbody>
       </table>
-      <div>
+      <div className='calculator-table-total'>
         <h4 className='h4'>Total savings</h4>
         <h3 className='h3'>$93,100</h3>
       </div>

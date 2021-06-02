@@ -29,8 +29,7 @@
 .calculator-list {
   height: 100%;
   overflow-y: auto;
-  padding-left: 12px;
-  padding-top: 56px;
+  padding: 56px 12px 0;
 }
 .calculator-list-item {
   &:not(:last-child) {
@@ -52,7 +51,10 @@
   display: flex;
   column-gap: 36px;
 
-  >* {
+  >.left, >.right {
     width: 50%;
   }
+}
+.calculator-item-table-content {
+  width: 80%;
 }

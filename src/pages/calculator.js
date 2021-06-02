@@ -365,6 +365,8 @@ const Calculator = () => {
                     <p>(Typically 50-70% of ESA letters are fraudulent and will be exposed with OurPetPolicy)</p>
                     <RangeInput
                       inputValue={petReductionRate}
+                      min={0}
+                      max={100}
                       changeValue={number =>
                         dispatch({
                           type: "SET_PET_REDUCTION_RATE",
@@ -425,6 +427,8 @@ const Calculator = () => {
                     <p>(What percentage of tenants do you collect unauthorized pet fees from?)</p>
                     <RangeInput
                       inputValue={unAuthPetFeeRate}
+                      min={0}
+                      max={100}
                       changeValue={number =>
                         dispatch({
                           type: "SET_UN_AUTH_PET_FEE_RATE",
@@ -436,6 +440,8 @@ const Calculator = () => {
                     <p>(what percentage of tenants that get an animal actually get it before they have gotten it approved)</p>
                     <RangeInput
                       inputValue={petApprovalRate}
+                      min={0}
+                      max={100}
                       changeValue={number =>
                         dispatch({
                           type: "SET_PET_APPROVAL_RATE",

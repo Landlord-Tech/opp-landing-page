@@ -20,7 +20,7 @@ const RangeInput = ({ inputValue, changeValue, min, max }) => {
   return (
     <div className="rangeInput-wrapper">
       <div className="rangeInput-top">
-        <span className="rangeInput-number">0</span>
+        <span className="rangeInput-number">{min}</span>
         <input
           max={max}
           type="number"

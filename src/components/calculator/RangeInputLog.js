@@ -2,17 +2,19 @@ import React from "react"
 import Slider, { Handle, SliderTooltip } from "rc-slider"
 import Log from "./log"
 
-const logSlider = new Log({
-  minpos: 0,
-  maxpos: 100,
-  minval: 0,
-  maxval: 100000,
-})
+
 
 const RangeInput = ({ inputValue, changeValue, max }) => {
   const handle = ({ value, dragging, index, ...restProps }) => (
     <Handle value={inputValue} {...restProps} />
   )
+
+  const logSlider = new Log({
+    minpos: 0,
+    maxpos: 100,
+    minval: 0,
+    maxval: max,
+  })
 
   function handleChange(e) {
     const { value } = e.target
@@ -32,6 +34,12 @@ const RangeInput = ({ inputValue, changeValue, max }) => {
     return Math.round(val)
   }
 
+  const marks = {
+    12: '5',
+    25: '100',
+    37: '250',
+    50: '1000',
+  }
   return (
     <div className="rangeInput-wrapper">
       <div className="rangeInput-top">
@@ -46,6 +54,7 @@ const RangeInput = ({ inputValue, changeValue, max }) => {
       <Slider
         className="range-input"
         min={0}
+        // marks={marks}
         max={100}
         value={sliderValue()}
         handle={handle}

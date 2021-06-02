@@ -1,8 +1,6 @@
-export const calculateROINoPets = ({
-                              unitCount,
-                              avgRent,
-                              avgTenantLife,
-                              unitPerPetRate,
+const calculateROIWithNoPets = ({
+                       unitCount,
+                       avgRent,
 
                               petDamagePerTenant: petDamagePerTenant,
                               unAuthPetFee,

@@ -1,4 +1,4 @@
-const calculateROINoPets = ({
+const calculateROIWithNoPets = ({
                        unitCount,
                        avgRent,
                        avgTenantLife,
@@ -61,4 +61,4 @@ const calculateROINoPets = ({
 }
 
 
-module.exports = calculateROINoPets;
+module.exports = calculateROIWithNoPets;

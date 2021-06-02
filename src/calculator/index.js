@@ -1,5 +1,7 @@
-import calculateROINoPets from "./calculator";
+import calculateROIWithNoPets from "./roiWithNoPets";
+import calculateROIWithPets from "./roiWithPets";
 
 module.exports =  {
-    calculateROINoPets
+    calculateROIWithNoPets,
+    calculateROIWithPets
 };

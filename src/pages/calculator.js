@@ -6,7 +6,7 @@ import RangeInput from "../components/calculator/RangeInput"
 import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
-import { calculateROINoPets } from "../calculator/calculator"
+import { calculateROIWithNoPets } from "../calculator"
 
 const initialState = {
   unitCount: 350,
@@ -171,7 +171,7 @@ const Calculator = () => {
     damageDealTimeInHours
   } = state
 
-  const ROINoPetsResults = calculateROINoPets({
+  const ROINoPetsResults = calculateROIWithNoPets({
     ...state,
     unitPerPetRate: unitPerPetRate / 100,
     petReductionRate: petReductionRate / 100,

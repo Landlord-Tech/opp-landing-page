@@ -1,23 +1,24 @@
 const calculateROIWithNoPets = ({
-                       unitCount,
-                       avgRent,
+                                  unitCount,
+                                  avgRent,
+                                  avgTenantLife,
+                                  unitPerPetRate,
+                                  petDamagePerTenant: petDamagePerTenant,
+                                  unAuthPetFee,
+                                  petDeposit,
+                                  petRentPerMonth,
 
-                              petDamagePerTenant: petDamagePerTenant,
-                              unAuthPetFee,
-                              petDeposit,
-                              petRentPerMonth,
+                                  additionalTurnAroundTime,
+                                  propManagementWagePerHour,
+                                  petReductionRate,
+                                  petApprovalRate,
 
-                              additionalTurnAroundTime,
-                              propManagementWagePerHour,
-                              petReductionRate,
-                              petApprovalRate,
-
-                              unAuthPetFeeRate,
-                              petDamageRate,
-                              petDealTimeInHours,
-                              damageDealTimeInHours
-                            }) => {
-  const yearlyDamageWithoutOPP = Math.round(unitCount * unitPerPetRate * petDamagePerTenant  * petDamageRate * (12 / avgTenantLife))
+                                  unAuthPetFeeRate,
+                                  petDamageRate,
+                                  petDealTimeInHours,
+                                  damageDealTimeInHours
+                                }) => {
+  const yearlyDamageWithoutOPP = Math.round(unitCount * unitPerPetRate * petDamagePerTenant * petDamageRate * (12 / avgTenantLife))
   const yearlyDamageWithOPP = Math.round(yearlyDamageWithoutOPP * petReductionRate)
 
   const yearlyLostRentPerYearWithoutOPP = Math.round(avgRent * (additionalTurnAroundTime / 4) * unitCount * unitPerPetRate * petDamageRate * (12 / avgTenantLife))
@@ -37,7 +38,7 @@ const calculateROIWithNoPets = ({
     unAuthPetFeeWithOPP - unAuthPetFeeWithoutOPP +
     propManageTimeWithoutOPP - propManageTimeWithOPP
   const totalCostForOPP = unitCount * 5 * 12
-  const roi = Math.round((totalSavings - totalCostForOPP) / totalCostForOPP  * 100) / 100
+  const roi = Math.round((totalSavings - totalCostForOPP) / totalCostForOPP * 100) / 100
 
   return {
     withoutOPP: {
@@ -61,4 +62,4 @@ const calculateROIWithNoPets = ({
 }
 
 
-// module.exports = calculateROINoPets;
+module.exports = calculateROIWithNoPets

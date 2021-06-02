@@ -531,8 +531,8 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={summaryRef}
               >
-                <h4 className="h4">Summery</h4>
-                <p>Our goal is to save you way more money </p>
+                <h4 className="h4">Summary</h4>
+                {/*<p>Our goal is to save you way more money </p>*/}
                 <div className="calculator-item-table-content">
                   <div className="left">
                     <p>

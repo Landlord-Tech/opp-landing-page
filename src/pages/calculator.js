@@ -5,6 +5,7 @@ import CalculatorSidebar from "../components/calculator/CalculatorSidebar"
 import RangeInput from "../components/calculator/RangeInput"
 import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
+import Table from "../components/calculator/Table"
 
 const initialState = {
   unitNumber: 0,
@@ -227,22 +228,11 @@ const Calculator = () => {
                 <h4 className="h4">Summery</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>How many Units</h5>
-                    <p>(How many residential rental units do you have?)</p>
-                  </div>
-                  <div className="right">
-                    <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
-                    </p>
+                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+                    <Table />
                   </div>
                 </div>
+
               </li>
             </ul>
           </div>

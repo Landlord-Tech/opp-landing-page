@@ -4,7 +4,7 @@ const calculateROINoPets = ({
                        avgTenantLife,
                        unitPerPetRate,
 
-                       petDamagePerTenantRate: petDamagePerTenantRate,
+                       petDamagePerTenantRate,
                        unAuthPetFee,
                        petDeposit,
                        petRentPerMonth,
@@ -34,7 +34,7 @@ const calculateROINoPets = ({
                                   (0.5 * propManagementWagePerHour * unitCount * unitPerPetRate * petDealTimeInHours))
 
 
-    const totalSavings = yearlyDamageWithoutOPP - yearlyDamageWithOPP +
+    const totalSavings =        - yearlyDamageWithOPP +
                         yearlyLostRentPerYearWithoutOPP - yearlyLostRentPerYearWithOPP +
                         unAuthPetFeeWithOPP - unAuthPetFeeWithoutOPP +
                         propManageTimeWithoutOPP - propManageTimeWithOPP

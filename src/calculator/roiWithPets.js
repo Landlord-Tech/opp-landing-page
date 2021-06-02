@@ -43,16 +43,18 @@ const calculateROIWithPets = ({
 
     return {
         withoutOPP: {
-            yearlyDamage: yearlyDamageWithoutOPP,
+            petRate: yearlyDamageWithoutOPP,
             petDeposit: petDepositWithoutOPP,
             unAuthPetFee: unAuthPetFeeWithoutOPP,
             propManageTime:propManageTimeWithoutOPP,
+            totalCost: yearlyDamageWithoutOPP + petDepositWithoutOPP - unAuthPetFeeWithoutOPP + propManageTimeWithoutOPP
         },
         withOPP: {
-            yearlyDamage: yearlyDamageWithOPP,
+            petRate: yearlyDamageWithOPP,
             petDeposit: petDepositWithOPP,
             unAuthPetFee: unAuthPetFeeWithOPP,
-            propManageTime: propManageTimeWithOPP
+            propManageTime: propManageTimeWithOPP,
+            totalCost: yearlyDamageWithOPP + petDepositWithOPP - unAuthPetFeeWithOPP + propManageTimeWithOPP
         },
         totalSavings,
         totalCostForOPP,

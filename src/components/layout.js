@@ -13,7 +13,7 @@ const Layout = ({ children, className }) => {
       <Header />
       <main className={className}>{children}</main>
       {
-        pathname !== '/calculator/' && <Footer />
+        !pathname.includes('/calculator') && <Footer />
       }
 
     </>

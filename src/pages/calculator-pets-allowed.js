@@ -6,23 +6,22 @@ import RangeInput from "../components/calculator/RangeInput"
 import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
-import { calculateROIWithNoPets } from "../calculator"
+import { calculateROIWithPets } from "../calculator"
+import AllowedTable from "../components/calculator/AllowedTable"
 
 const initialState = {
-  unitCount: 350,
-  avgRent: 1540,
-  avgTenantLife: 18,
-  unitPerPetRate: 70,
-  petDamagePerTenant: 760,
+  unitCount: 1000,
+  unitPerPetRate: 75,
   unAuthPetFee: 300,
-  additionalTurnAroundTime: 2,
+  petDeposit: 600,
+  petRentPerMonth: 30,
   propManagementWagePerHour: 50,
-  petReductionRate: 50,
+  fraudulentESAtoPetConversion: 70,
   petApprovalRate: 40,
   unAuthPetFeeRate: 3,
-  petDamageRate: 75,
+  petPerRental: 1.5,
   petDealTimeInHours: 0.5,
-  damageDealTimeInHours: 2,
+  ESABeforeOPPRate: 50,
 }
 
 const reducer = (state, action) => {
@@ -31,12 +30,6 @@ const reducer = (state, action) => {
       return {
         ...state,
         unitCount: action.payload,
-      }
-    }
-    case "SET_AVG_RENT": {
-      return {
-        ...state,
-        avgRent: action.payload,
       }
     }
     case "SET_AVG_TENANT_LIFE": {
@@ -49,6 +42,36 @@ const reducer = (state, action) => {
       return {
         ...state,
         unitPerPetRate: action.payload,
+      }
+    }
+    case "SET_PET_DEPOSIT": {
+      return {
+        ...state,
+        petDeposit: action.payload,
+      }
+    }
+    case "SET_PET_RENT_PER_MONTH": {
+      return {
+        ...state,
+        petRentPerMonth: action.payload,
+      }
+    }
+    case "SET_FRAUDULENT_ESA_TO_PET_CONVERSION": {
+      return {
+        ...state,
+        fraudulentESAtoPetConversion: action.payload,
+      }
+    }
+    case "SET_PET_PER_RENTAL": {
+      return {
+        ...state,
+        petPerRental: action.payload,
+      }
+    }
+    case "SET_ESA_BEFORE_OPP_RATE": {
+      return {
+        ...state,
+        ESABeforeOPPRate: action.payload,
       }
     }
     case "SET_PET_DAMAGE_PER_TENANT": {
@@ -124,16 +147,16 @@ const Calculator = () => {
   const [scrollTo, setScrollTo] = useState(null)
   const [state, dispatch] = useReducer(reducer, initialState)
   const introductionRef = React.useRef(null)
-  const damageRef = React.useRef(null)
-  const lostRef = React.useRef(null)
+  const petRentRef = React.useRef(null)
+  const petDepositRef = React.useRef(null)
   const feesRef = React.useRef(null)
   const timeRef = React.useRef(null)
   const summaryRef = React.useRef(null)
 
   const refMapping = {
     "Calculator introduction": introductionRef,
-    "Cost of pet damage": damageRef,
-    "Lost rent": lostRef,
+    "Pet rent": petRentRef,
+    "Pet deposits": petDepositRef,
     "Fees and fines": feesRef,
     "Time savings": timeRef,
     Summary: summaryRef,
@@ -156,31 +179,31 @@ const Calculator = () => {
 
   const {
     unitCount,
-    avgRent,
-    avgTenantLife,
     unitPerPetRate,
-    petDamagePerTenant,
+
     unAuthPetFee,
-    additionalTurnAroundTime,
+    petDeposit,
+    petRentPerMonth,
     propManagementWagePerHour,
-    petReductionRate,
+    fraudulentESAtoPetConversion,
     petApprovalRate,
+
     unAuthPetFeeRate,
-    petDamageRate,
+    petPerRental,
     petDealTimeInHours,
-    damageDealTimeInHours
+    ESABeforeOPPRate
   } = state
 
-  const ROINoPetsResults = calculateROIWithNoPets({
+  const ROIPetsResults = calculateROIWithPets({
     ...state,
     unitPerPetRate: unitPerPetRate / 100,
-    petReductionRate: petReductionRate / 100,
     petApprovalRate: petApprovalRate / 100,
     unAuthPetFeeRate: unAuthPetFeeRate / 100,
-    petDamageRate: petDamageRate / 100,
+    fraudulentESAtoPetConversion: fraudulentESAtoPetConversion / 100,
+    ESABeforeOPPRate: ESABeforeOPPRate / 100,
   })
 
-  const {totalSavings, totalCostForOPP, roi } = ROINoPetsResults
+  const {totalSavings, totalCostForOPP, roi } = ROIPetsResults
 
   useEffect(() => {
     const listItems = document.querySelectorAll(".calculator-list-item")
@@ -211,6 +234,7 @@ const Calculator = () => {
             search={search}
             activeItem={activeItem}
             handleLinkClick={handleLinkClick}
+            active={'allowed'}
           />
 
 
@@ -241,7 +265,7 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>What is your Average Monthly Rent</h5>
+                    {/*<h5>What is your Average Monthly Rent</h5>
                     <p>(Out of all of your rentals, what is the average of the monthly rent)</p>
                     <RangeInput
                       inputValue={avgRent}
@@ -253,7 +277,7 @@ const Calculator = () => {
                           payload: number,
                         })
                       }
-                    />
+                    />*/}
                   </div>
                   <div className="right">
                     <p>
@@ -272,32 +296,26 @@ const Calculator = () => {
               <li
                 id="cost-pet-damage"
                 className="calculator-list-item"
-                ref={damageRef}
+                ref={petRentRef}
               >
-                <h4 className="h4"> Cost of pet damage</h4>
+                <h4 className="h4">Pet Rent</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Estimated percentage of units with Pets (%)</h5>
-                    <p>
-                      (What percentage of units would you estimate have animals
-                      in them?)
-                    </p>
+                    <h5>Pet rent per month</h5>
+                    <p>(How much do you charge per pet per month?)</p>
                     <RangeInput
-                      inputValue={unitPerPetRate}
+                      inputValue={petRentPerMonth}
                       min={0}
-                      max={100}
+                      max={125}
                       changeValue={number =>
                         dispatch({
-                          type: "SET_UNIT_PER_PET_RATE",
+                          type: "SET_PET_RENT_PER_MONTH",
                           payload: number,
                         })
                       }
                     />
-                    <h5>Percentage of animals that cause damage (%)</h5>
-                    <p>
-                      (For every unit with an animal, what percentage of them
-                      will have damage from the animal at the end of the lease)
-                    </p>
+                    {/*<h5>Percentage of tenants with an animal</h5>
+                    <p>(What percentage of your tenants have pets, ESA’s, or service animals?)</p>
                     <RangeInput
                       inputValue={petDamageRate}
                       min={0}
@@ -308,19 +326,29 @@ const Calculator = () => {
                           payload: number,
                         })
                       }
-                    />
-                    <h5>Typical cost to fix damage from an animal</h5>
-                    <p>
-                      (how much does it cost to fix damage from an animal when
-                      there is damage after a tenant leaves?)
-                    </p>
+                    />*/}
+                    <h5>ESA’s percentage before OurPetPolicy</h5>
+                    <p>(how much does it cost to fix damage from an animal when there is damage after a tenant leaves?)</p>
                     <RangeInput
-                      inputValue={petDamagePerTenant}
+                      inputValue={ESABeforeOPPRate}
                       min={0}
-                      max={2000}
+                      max={100}
                       changeValue={number =>
                         dispatch({
-                          type: "SET_PET_DAMAGE_PER_TENANT",
+                          type: "SET_ESA_BEFORE_OPP_RATE",
+                          payload: number,
+                        })
+                      }
+                    />
+                    <h5>Fraudulent ESA to Pet percentage</h5>
+                    <p>(The percentage of ESA’s that are fraudulent and get turned into paying pet rent, typically 50-70%)</p>
+                    <RangeInput
+                      inputValue={fraudulentESAtoPetConversion}
+                      min={0}
+                      max={100}
+                      changeValue={number =>
+                        dispatch({
+                          type: "SET_FRAUDULENT_ESA_TO_PET_CONVERSION",
                           payload: number,
                         })
                       }
@@ -343,46 +371,33 @@ const Calculator = () => {
               <li
                 id="lost-rent"
                 className="calculator-list-item"
-                ref={lostRef}
+                ref={petDepositRef}
               >
-                <h4 className="h4">Lost Rent</h4>
+                <h4 className="h4">Pet Deposits</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Additional turn-around time (weeks)</h5>
-                    <p>(For an apartment that has pet damage, how much longer does it take to fix it up to be ready to rent again)</p>
+                    <h5>Pet Deposit</h5>
+                    <p>(How much do you charge for each pet deposit?)</p>
                     <RangeInput
-                      inputValue={additionalTurnAroundTime}
+                      inputValue={petDeposit}
                       min={0}
-                      max={8}
+                      max={1200}
                       changeValue={number =>
                         dispatch({
-                          type: "SET_ADDITIONAL_TURN_AROUND_TIME",
+                          type: "SET_PET_DEPOSIT",
                           payload: number,
                         })
                       }
                     />
-                    <h5>Animal reduction percentage from using OurPetPolicy</h5>
-                    <p>(Typically 50-70% of ESA letters are fraudulent and will be exposed with OurPetPolicy)</p>
+                    <h5>Average Pets per Rental</h5>
+                    <p>For every unit that has an animal, what is the average number of animals in that unit?</p>
                     <RangeInput
-                      inputValue={petReductionRate}
+                      inputValue={petPerRental}
                       min={0}
-                      max={100}
+                      max={6}
                       changeValue={number =>
                         dispatch({
-                          type: "SET_PET_REDUCTION_RATE",
-                          payload: number,
-                        })
-                      }
-                    />
-                    <h5>Average Tenant Life in Months</h5>
-                    <p>(On average, how many months do your tenants stay before moving)</p>
-                    <RangeInput
-                      inputValue={avgTenantLife}
-                      min={0}
-                      max={48}
-                      changeValue={number =>
-                        dispatch({
-                          type: "SET_AVG_TENANT_LIFE",
+                          type: "SET_PET_PER_RENTAL",
                           payload: number,
                         })
                       }
@@ -485,19 +500,6 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Time to deal with animal damage</h5>
-                    <p>(How much time does it take on average to line up contractors etc to fix the animal damage and get ready to rent again?)</p>
-                    <RangeInput
-                      inputValue={damageDealTimeInHours}
-                      min={0}
-                      max={10}
-                      changeValue={number =>
-                        dispatch({
-                          type: "SET_DAMAGE_DEAL_TIME_IN_HOURS",
-                          payload: number,
-                        })
-                      }
-                    />
                     <h5>Property Management wage (per hour)</h5>
                     <p>(what percentage of tenants that get an animal actually get it before they have gotten it approved)</p>
                     <RangeInput
@@ -540,7 +542,7 @@ const Calculator = () => {
                       scelerisque sem at dolor. Maecenas mattis. Sed convallis
                       tristique sem. Proin ut ligula vel nunc egestas porttitor.
                     </p>
-                    <NoAllowedTable data={ROINoPetsResults} />
+                    <AllowedTable data={ROIPetsResults} />
                   </div>
                 </div>
               </li>

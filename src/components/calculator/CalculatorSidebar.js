@@ -5,29 +5,42 @@ import { noPatsList, patsList } from "./config"
 import { useLocation } from "@reach/router"
 import { hashToId } from "../utils"
 
-const CalculatorSidebar = ({ search, activeItem, handleLinkClick }) => {
+const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active }) => {
   const { hash } = useLocation()
 
-  const tabContentList = search === "?pets-allowed" ? patsList : noPatsList
+  // const tabContentList = search === "?pets-allowed" ? patsList : noPatsList
+  const tabContentList = active ? patsList : noPatsList
 
   return (
     <aside className="calculator-sidebar">
       <div className="sidebar-tab">
         <ul className="sidebar-tab-header">
           <li>
-            <AnchorLink
+            {/*<AnchorLink
               to={"?no-pets-allowed"}
               title="No Pets Allowed"
-              className={search === "?no-pets-allowed" ? "active" : ""}
-            />
+              className={search === "?no-pets-allowed" || search === "" ? "active" : ""}
+            />*/}
+            <Link
+              to={'/calculator/'}
+              className={!active ? "active" : ""}
+            >
+              No Pets Allowed
+            </Link>
           </li>
 
           <li>
-            <AnchorLink
+            {/*<AnchorLink
               to={"?pets-allowed"}
               title="Pets Allowed"
               className={search === "?pets-allowed" ? "active" : ""}
-            />
+            />*/}
+            <Link
+              to={'/calculator-pets-allowed/'}
+              className={active ? "active" : ""}
+            >
+              Pets Allowed
+            </Link>
           </li>
         </ul>
         <ul className="sidebar-tab-content">

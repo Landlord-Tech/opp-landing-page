@@ -35,7 +35,7 @@ export const patsList = [
     to: '#pet-rent'
   },
   {
-    title: 'pet-deposits',
+    title: 'Pet deposits',
     to: '#pet-deposits'
   },
   {

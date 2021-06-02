@@ -6,10 +6,15 @@ const Header = ({ siteTitle }) => (
   <header>
     <div className='container'>
       <div className="header-content">
-        <Link to={'/'} className='logo'>
+        <a href={'https://www.ourpetpolicy.com/'} className='logo'>
           <img src={Logo} alt="OurPetPolicy" />
-        </Link>
-        <nav className='header-nav'>
+        </a>
+
+        {/*for later use*/}
+        {/*<Link to={'/'} className='logo'>
+          <img src={Logo} alt="OurPetPolicy" />
+        </Link>*/}
+        {/*<nav className='header-nav'>
           <ul className='header-nav-list'>
             <li className='with-dropdown'>
               <Link activeClassName={"active-link"} to='/landlord-portal'>Landlord portal</Link>
@@ -34,7 +39,7 @@ const Header = ({ siteTitle }) => (
               <button className='btn btn-md primary'>Get started</button>
             </li>
           </ul>
-        </nav>
+        </nav>*/}
       </div>
     </div>
   </header>

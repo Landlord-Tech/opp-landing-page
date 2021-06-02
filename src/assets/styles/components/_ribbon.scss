@@ -1,0 +1,10 @@
+.fixed-ribbon {
+  background-color: $color-primary;
+  padding: 11px 64px;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}

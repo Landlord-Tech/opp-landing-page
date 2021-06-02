@@ -1,42 +1,43 @@
-import * as React from "react"
-import PropTypes from "prop-types"
+import React from "react"
 import { Link } from "gatsby"
+import Logo from "../images/logo.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+  <header>
+    <div className='container'>
+      <div className="header-content">
+        <Link to={'/'} className='logo'>
+          <img src={Logo} alt="OurPetPolicy" />
         </Link>
-      </h1>
+        <nav className='header-nav'>
+          <ul className='header-nav-list'>
+            <li className='with-dropdown'>
+              <Link activeClassName={"active-link"} to='/landlord-portal'>Landlord portal</Link>
+              <ul className='dropdown'>
+                <li><Link activeClassName={"active-link"} to='/calculator/'>Calculator</Link></li>
+                <li><Link activeClassName={"active-link"} to='/'>Advanced Calculator</Link></li>
+              </ul>
+            </li>
+            <li>
+              <Link activeClassName={"active-link"} to='/tenant-portal'>Tenant portal</Link>
+            </li>
+            <li>
+              <Link activeClassName={"active-link"} to='/pricing'>Pricing</Link>
+            </li>
+            <li>
+              <Link activeClassName={"active-link"} to='/FAQ'>FAQ</Link>
+            </li>
+            <li>
+              <Link activeClassName={"active-link"} to='/contact-us'>Contact us</Link>
+            </li>
+            <li>
+              <button className='btn btn-md primary'>Get started</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

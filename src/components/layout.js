@@ -7,7 +7,6 @@ import { useLocation } from "@reach/router"
 const Layout = ({ children, className }) => {
 
   const { pathname } = useLocation()
-  console.log(pathname)
 
   return (
     <>

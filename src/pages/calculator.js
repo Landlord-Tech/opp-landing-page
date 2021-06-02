@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import CalculatorSidebar from "../components/calculator/CalculatorSidebar"
 import { hashToId } from "../components/utils"
 import RangeInput from "../components/calculator/RangeInput"
+import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
 
 const initialState = {
@@ -18,27 +19,25 @@ const reducer = (state, action) => {
       return {
         ...state,
         monthlyRent: action.payload,
-      };
+      }
     }
     case "SET_ESTIMATED_PERCENT": {
       return {
         ...state,
         estimatedPercent: action.payload,
-      };
+      }
     }
     default:
-      return state;
+      return state
   }
-};
+}
 
 const Calculator = () => {
   const { search, hash } = useLocation()
   const [activeItem, setActiveItem] = useState(null)
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState)
 
-  const {unitNumber, monthlyRent, estimatedPercent} = state;
-
-  console.log({state})
+  const { unitNumber, monthlyRent, estimatedPercent } = state
 
   function scrollToId(id) {
     // const element = document.getElementById(id)
@@ -50,10 +49,10 @@ const Calculator = () => {
   useEffect(() => {
     const listItems = document.querySelectorAll(".calculator-list-item")
     const options = {
-      threshold: 0.3
+      threshold: 0.3,
     }
     let observer = new IntersectionObserver(handleObserve, options)
-    listItems.forEach((item) => {
+    listItems.forEach(item => {
       observer.observe(item)
     })
   }, [])
@@ -79,7 +78,9 @@ const Calculator = () => {
         <div className="calculator-content">
           <CalculatorSidebar search={search} activeItem={activeItem} />
           <div className="calculator-main">
-            <h2 className="h3 calculator-main-title">Return on Investment with OurPetPolicy</h2>
+            <h2 className="h3 calculator-main-title">
+              Return on Investment with OurPetPolicy
+            </h2>
 
             <ul className="calculator-list">
               <li id="calculator-introduction" className="calculator-list-item">
@@ -88,18 +89,27 @@ const Calculator = () => {
                   <div className="left">
                     <h5>How many Units</h5>
                     <p>(How many residential rental units do you have?)</p>
-                    <RangeInput inputValue={monthlyRent} max={100000} logarithmic changeValue={(number)=> dispatch({
-                      type: 'SET_MONTHLY_RENT',
-                      payload: number,
-                    })}/>
+                    <RangeInputLog
+                      inputValue={monthlyRent}
+                      changeValue={number =>
+                        dispatch({
+                          type: "SET_MONTHLY_RENT",
+                          payload: number,
+                        })
+                      }
+                    />
                   </div>
                   <div className="right">
-                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-                      Sed
-                      convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-                      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                      Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-                      velit.</p>
+                    <p>
+                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
+                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
+                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
+                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
+                      tincidunt sed, euismod in, nibh. Quisque volutpat
+                      condimentum velit.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -108,31 +118,59 @@ const Calculator = () => {
                 <div className="calculator-item-content">
                   <div className="left">
                     <h5>Estimated percentage of units with Pets</h5>
-                    <p>(What percentage of units would you estimate have animals in them?)</p>
-                    <RangeInput inputValue={estimatedPercent} changeValue={(number)=> dispatch({
-                      type: 'SET_ESTIMATED_PERCENT',
-                      payload: number,
-                    })}/>
+                    <p>
+                      (What percentage of units would you estimate have animals
+                      in them?)
+                    </p>
+                    <RangeInput
+                      inputValue={estimatedPercent}
+                      changeValue={number =>
+                        dispatch({
+                          type: "SET_ESTIMATED_PERCENT",
+                          payload: number,
+                        })
+                      }
+                    />
                     <h5>Percentage of animals that cause damage (%)</h5>
-                    <p>(For every unit with an animal, what percentage of them will have damage from the animal at the end of the lease)</p>
-                    <RangeInput inputValue={monthlyRent} changeValue={(number)=> dispatch({
-                      type: 'SET_MONTHLY_RENT',
-                      payload: number,
-                    })}/>
+                    <p>
+                      (For every unit with an animal, what percentage of them
+                      will have damage from the animal at the end of the lease)
+                    </p>
+                    <RangeInput
+                      inputValue={monthlyRent}
+                      changeValue={number =>
+                        dispatch({
+                          type: "SET_MONTHLY_RENT",
+                          payload: number,
+                        })
+                      }
+                    />
                     <h5>Typical cost to fix damage from an animal</h5>
-                    <p>(how much does it cost to fix damage from an animal when there is damage after a tenant leaves?)</p>
-                    <RangeInput inputValue={monthlyRent} changeValue={(number)=> dispatch({
-                      type: 'SET_MONTHLY_RENT',
-                      payload: number,
-                    })}/>
+                    <p>
+                      (how much does it cost to fix damage from an animal when
+                      there is damage after a tenant leaves?)
+                    </p>
+                    <RangeInput
+                      inputValue={monthlyRent}
+                      changeValue={number =>
+                        dispatch({
+                          type: "SET_MONTHLY_RENT",
+                          payload: number,
+                        })
+                      }
+                    />
                   </div>
                   <div className="right">
-                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-                      Sed
-                      convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-                      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                      Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-                      velit.</p>
+                    <p>
+                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
+                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
+                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
+                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
+                      tincidunt sed, euismod in, nibh. Quisque volutpat
+                      condimentum velit.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -144,12 +182,16 @@ const Calculator = () => {
                     <p>(How many residential rental units do you have?)</p>
                   </div>
                   <div className="right">
-                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-                      Sed
-                      convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-                      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                      Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-                      velit.</p>
+                    <p>
+                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
+                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
+                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
+                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
+                      tincidunt sed, euismod in, nibh. Quisque volutpat
+                      condimentum velit.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -161,12 +203,16 @@ const Calculator = () => {
                     <p>(How many residential rental units do you have?)</p>
                   </div>
                   <div className="right">
-                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-                      Sed
-                      convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-                      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                      Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-                      velit.</p>
+                    <p>
+                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
+                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
+                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
+                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
+                      tincidunt sed, euismod in, nibh. Quisque volutpat
+                      condimentum velit.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -178,12 +224,16 @@ const Calculator = () => {
                     <p>(How many residential rental units do you have?)</p>
                   </div>
                   <div className="right">
-                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-                      Sed
-                      convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-                      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                      Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-                      velit.</p>
+                    <p>
+                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
+                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
+                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
+                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
+                      tincidunt sed, euismod in, nibh. Quisque volutpat
+                      condimentum velit.
+                    </p>
                   </div>
                 </div>
               </li>
@@ -195,12 +245,16 @@ const Calculator = () => {
                     <p>(How many residential rental units do you have?)</p>
                   </div>
                   <div className="right">
-                    <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.
-                      Sed
-                      convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis
-                      vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum.
-                      Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum
-                      velit.</p>
+                    <p>
+                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
+                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
+                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
+                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
+                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
+                      tincidunt sed, euismod in, nibh. Quisque volutpat
+                      condimentum velit.
+                    </p>
                   </div>
                 </div>
               </li>

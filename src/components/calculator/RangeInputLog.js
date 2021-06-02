@@ -1,20 +1,35 @@
 import React from "react"
 import Slider, { Handle, SliderTooltip } from "rc-slider"
+import Log from "./log"
 
-const RangeInput = ({ inputValue, changeValue, min, max }) => {
+const logSlider = new Log({
+  minpos: 0,
+  maxpos: 100,
+  minval: 0,
+  maxval: 100000,
+})
+
+const RangeInput = ({ inputValue, changeValue, max }) => {
   const handle = ({ value, dragging, index, ...restProps }) => (
     <Handle value={inputValue} {...restProps} />
   )
 
   function handleChange(e) {
     const { value } = e.target
-    if (+value <= max && +value >= min) {
-      changeValue(+value)
-    }
+    changeValue(+value)
   }
 
   function handleSliderChange(number) {
-    changeValue(number)
+    const val = logSlider.value(number)
+    changeValue(Math.round(val))
+  }
+
+  function sliderValue() {
+    if (inputValue === 0) return 0
+    const val = logSlider.position(inputValue)
+    if (val > 1000) return Math.round(val / 100) * 100
+    if (val > 500) return Math.round(val / 10) * 10
+    return Math.round(val)
   }
 
   return (
@@ -31,8 +46,8 @@ const RangeInput = ({ inputValue, changeValue, min, max }) => {
       <Slider
         className="range-input"
         min={0}
-        max={max}
-        value={inputValue}
+        max={100}
+        value={sliderValue()}
         handle={handle}
         onChange={e => handleSliderChange(e)}
       />

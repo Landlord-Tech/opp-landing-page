@@ -19,8 +19,8 @@ const calculateROIWithPets = ({
                                 petDealTimeInHours,
                                 ESABeforeOPPRate
                             }) => {
-    const yearlyDamageWithoutOPP = Math.round(((unitCount * unitPerPetRate) - (ESABeforeOPPRate  * unitCount)) * petRentPerMonth * 12 * petPerRental)
-    const yearlyDamageWithOPP = Math.round(yearlyDamageWithoutOPP + ((unitCount * unitPerPetRate * ESABeforeOPPRate * fraudulentESAtoPetConversion) * petRentPerMonth * 12))
+    const petWithoutOPP = Math.round(((unitCount * unitPerPetRate) - (ESABeforeOPPRate  * unitCount)) * petRentPerMonth * 12 * petPerRental)
+    const petWithOPP = Math.round(petWithoutOPP + ((unitCount * unitPerPetRate * ESABeforeOPPRate * fraudulentESAtoPetConversion) * petRentPerMonth * 12))
 
     const petDepositWithoutOPP = Math.round(((unitCount * unitPerPetRate) - (ESABeforeOPPRate * unitCount)) * petDeposit)
     const petDepositWithOPP = Math.round(petDepositWithoutOPP + (unitCount * unitPerPetRate * ESABeforeOPPRate * fraudulentESAtoPetConversion) * petDeposit)
@@ -34,7 +34,7 @@ const calculateROIWithPets = ({
         (0.5 * propManagementWagePerHour * unitCount * unitPerPetRate * petDealTimeInHours))
 
 
-    const totalSavings = yearlyDamageWithOPP - yearlyDamageWithoutOPP +
+    const totalSavings = petWithOPP - petWithoutOPP +
         petDepositWithOPP - petDepositWithoutOPP +
         unAuthPetFeeWithOPP - unAuthPetFeeWithoutOPP +
         propManageTimeWithoutOPP - propManageTimeWithOPP
@@ -43,18 +43,18 @@ const calculateROIWithPets = ({
 
     return {
         withoutOPP: {
-            petRate: yearlyDamageWithoutOPP,
+            petRate: petWithoutOPP,
             petDeposit: petDepositWithoutOPP,
             unAuthPetFee: unAuthPetFeeWithoutOPP,
-            propManageTime:propManageTimeWithoutOPP,
-            totalCost: yearlyDamageWithoutOPP + petDepositWithoutOPP - unAuthPetFeeWithoutOPP + propManageTimeWithoutOPP
+            propManageTime: - propManageTimeWithoutOPP,
+            totalCost: petWithoutOPP + petDepositWithoutOPP + unAuthPetFeeWithoutOPP - propManageTimeWithoutOPP
         },
         withOPP: {
-            petRate: yearlyDamageWithOPP,
+            petRate: petWithOPP,
             petDeposit: petDepositWithOPP,
             unAuthPetFee: unAuthPetFeeWithOPP,
-            propManageTime: propManageTimeWithOPP,
-            totalCost: yearlyDamageWithOPP + petDepositWithOPP - unAuthPetFeeWithOPP + propManageTimeWithOPP
+            propManageTime: - propManageTimeWithOPP,
+            totalCost: petWithOPP + petDepositWithOPP + unAuthPetFeeWithOPP - propManageTimeWithOPP
         },
         totalSavings,
         totalCostForOPP,

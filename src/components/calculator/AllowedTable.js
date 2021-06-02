@@ -20,31 +20,31 @@ const AllowedTable = ({ data }) => {
           <td>Pet Rent</td>
           <td>${withoutOPP?.petRate}</td>
           <td>${withOPP?.petRate}</td>
-          <td>${withoutOPP?.petRate - withOPP?.petRate}</td>
+          <td>${withOPP?.petRate - withoutOPP?.petRate}</td>
         </tr>
         <tr>
           <td>Pet Deposits</td>
           <td>${withoutOPP?.petDeposit}</td>
           <td>${withOPP?.petDeposit}</td>
-          <td>${withoutOPP?.petDeposit - withOPP?.petDeposit}</td>
+          <td>${withOPP?.petDeposit - withoutOPP?.petDeposit}</td>
         </tr>
         <tr>
           <td>Fines and Fees</td>
           <td>${withoutOPP?.unAuthPetFee}</td>
           <td>${withOPP?.unAuthPetFee}</td>
-          <td>${withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee}</td>
+          <td>${withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee}</td>
         </tr>
         <tr>
           <td>Time</td>
           <td>${withoutOPP?.propManageTime}</td>
           <td>${withOPP?.propManageTime}</td>
-          <td>${withoutOPP?.propManageTime - withOPP?.propManageTime}</td>
+          <td>${withOPP?.propManageTime - withoutOPP?.propManageTime}</td>
         </tr>
         <tr>
           <td>Total costs</td>
           <td>${withoutOPP?.totalCost}</td>
           <td>${withOPP?.totalCost}</td>
-          <td>${withoutOPP?.totalCost - withOPP?.totalCost}</td>
+          <td>${withOPP?.totalCost - withoutOPP?.totalCost}</td>
         </tr>
         </tbody>
       </table>

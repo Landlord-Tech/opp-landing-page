@@ -42,18 +42,18 @@ const calculateROIWithNoPets = ({
 
   return {
     withoutOPP: {
-      yearlyDamage: yearlyDamageWithoutOPP,
-      yearlyLostRent: yearlyLostRentPerYearWithoutOPP,
+      yearlyDamage: - yearlyDamageWithoutOPP,
+      yearlyLostRent: - yearlyLostRentPerYearWithoutOPP,
       unAuthPetFee: unAuthPetFeeWithoutOPP,
-      propManageTime: propManageTimeWithoutOPP,
-      totalCost: yearlyDamageWithoutOPP + yearlyLostRentPerYearWithoutOPP - unAuthPetFeeWithoutOPP + propManageTimeWithoutOPP
+      propManageTime: - propManageTimeWithoutOPP,
+      totalCost:  - yearlyDamageWithoutOPP - yearlyLostRentPerYearWithoutOPP + unAuthPetFeeWithoutOPP - propManageTimeWithoutOPP
     },
     withOPP: {
-      yearlyDamage: yearlyDamageWithOPP,
-      yearlyLostRent: yearlyLostRentPerYearWithOPP,
+      yearlyDamage: - yearlyDamageWithOPP,
+      yearlyLostRent: - yearlyLostRentPerYearWithOPP,
       unAuthPetFee: unAuthPetFeeWithOPP,
-      propManageTime: propManageTimeWithOPP,
-      totalCost: yearlyDamageWithOPP + yearlyLostRentPerYearWithOPP - unAuthPetFeeWithOPP + propManageTimeWithOPP
+      propManageTime: - propManageTimeWithOPP,
+      totalCost: - yearlyDamageWithOPP - yearlyLostRentPerYearWithOPP + unAuthPetFeeWithOPP - propManageTimeWithOPP
     },
     totalSavings,
     totalCostForOPP,

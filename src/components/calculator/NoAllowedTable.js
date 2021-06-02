@@ -19,31 +19,31 @@ const NoAllowedTable = ({ data }) => {
              <td>Pet Damage</td>
              <td>${withoutOPP?.yearlyDamage}</td>
              <td>${withOPP?.yearlyDamage}</td>
-             <td>${withoutOPP?.yearlyDamage - withOPP?.yearlyDamage}</td>
+             <td>${withOPP?.yearlyDamage - withoutOPP?.yearlyDamage}</td>
            </tr>
            <tr>
              <td>Loss of Rent</td>
              <td>${withoutOPP?.yearlyLostRent}</td>
              <td>${withOPP?.yearlyLostRent}</td>
-             <td>${withoutOPP?.yearlyLostRent - withOPP?.yearlyLostRent}</td>
+             <td>${withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent}</td>
            </tr>
            <tr>
              <td>Fines and Fees</td>
              <td>${withoutOPP?.unAuthPetFee}</td>
              <td>${withOPP?.unAuthPetFee}</td>
-             <td>${withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee}</td>
+             <td>${withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee}</td>
            </tr>
            <tr>
              <td>Time</td>
              <td>${withoutOPP?.propManageTime}</td>
              <td>${withOPP?.propManageTime}</td>
-             <td>${withoutOPP?.propManageTime - withOPP?.propManageTime}</td>
+             <td>${withOPP?.propManageTime - withoutOPP?.propManageTime}</td>
            </tr>
            <tr>
              <td>Total costs</td>
              <td>${withoutOPP?.totalCost}</td>
              <td>${withOPP?.totalCost}</td>
-             <td>${withoutOPP?.totalCost - withOPP?.totalCost}</td>
+             <td>${withOPP?.totalCost - withoutOPP?.totalCost}</td>
            </tr>
         </tbody>
       </table>

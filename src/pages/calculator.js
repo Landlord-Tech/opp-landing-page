@@ -2,7 +2,6 @@ import React, { useEffect, useReducer, useState } from "react"
 import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import CalculatorSidebar from "../components/calculator/CalculatorSidebar"
-import { hashToId } from "../components/utils"
 import RangeInput from "../components/calculator/RangeInput"
 import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
@@ -39,13 +38,6 @@ const Calculator = () => {
 
   const { unitNumber, monthlyRent, estimatedPercent } = state
 
-  function scrollToId(id) {
-    // const element = document.getElementById(id)
-    // const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
-    // window.scrollTo({top: y, behavior: 'smooth'});
-  }
-
   useEffect(() => {
     const listItems = document.querySelectorAll(".calculator-list-item")
     const options = {
@@ -64,12 +56,6 @@ const Calculator = () => {
       setActiveItem(id)
     }
   }
-
-  /*useEffect(() => {
-    if (hash) {
-      scrollToId(hashToId(hash))
-    }
-  }, [hash])*/
 
   return (
     <Layout className="calculator-page">

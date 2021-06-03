@@ -1,20 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 import Logo from "../images/logo.svg"
+import LogoWhite from "../images/logo-white.svg"
 
-const Header = ({ siteTitle }) => (
-  <header>
+const Header = ({ siteTitle, dark }) => (
+  <header className={dark ? 'dark-header' : ''}>
     <div className='container'>
       <div className="header-content">
-        <a href={'https://www.ourpetpolicy.com/'} className='logo'>
+        {/*<a href={'https://www.ourpetpolicy.com/'} className='logo'>
           <img src={Logo} alt="OurPetPolicy" />
-        </a>
+        </a>*/}
 
         {/*for later use*/}
-        {/*<Link to={'/'} className='logo'>
-          <img src={Logo} alt="OurPetPolicy" />
-        </Link>*/}
-        {/*<nav className='header-nav'>
+        <Link to={'/'} className='logo'>
+          <img src={dark ? LogoWhite : Logo} alt="OurPetPolicy" />
+        </Link>
+        <nav className='header-nav'>
           <ul className='header-nav-list'>
             <li className='with-dropdown'>
               <Link activeClassName={"active-link"} to='/landlord-portal'>Landlord portal</Link>
@@ -38,8 +39,11 @@ const Header = ({ siteTitle }) => (
             <li>
               <button className='btn btn-md primary'>Get started</button>
             </li>
+            <li>
+              <button className='btn btn-md secondary'>Login</button>
+            </li>
           </ul>
-        </nav>*/}
+        </nav>
       </div>
     </div>
   </header>

@@ -68,3 +68,16 @@
     }
   }
 }
+
+.dark-header {
+  background-color: $color-black;
+
+  ul {
+    color: $color-white;
+  }
+  .with-dropdown {
+    ul {
+      color: $color-text;
+    }
+  }
+}

@@ -491,7 +491,7 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={timeRef}
               >
-                <h4 className="h4">Time Saving</h4>
+                <h4 className="h4">Time Savings</h4>
                 <div className="calculator-item-content">
                   <div className="left">
                     <h5>Time spent dealing with animals (in hours)</h5>

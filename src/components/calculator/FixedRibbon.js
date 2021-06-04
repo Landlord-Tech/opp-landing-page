@@ -12,8 +12,8 @@ const FixedRibbon = ({ saving = 93100, OPP = 5000, ROI = 450 }) => {
         <h3 className="h3 bold">${OPP || 0}</h3>
       </div>
       <div>
-        <strong>Return on Investment</strong>
-        <h3 className="h3 bold">{Math.round(ROI * 100) || 0} %</h3>
+        <strong>Total ROI</strong>
+        <h3 className='h3 bold'>{Math.round(ROI * 100) || 0} %</h3>
       </div>
     </div>
   )

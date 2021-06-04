@@ -60,6 +60,7 @@ const RangeInput = ({ inputValue, changeValue, max }) => {
         handle={handle}
         onChange={e => handleSliderChange(e)}
       />
+      
     </div>
   )
 }

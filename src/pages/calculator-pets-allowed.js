@@ -135,7 +135,6 @@ const reducer = (state, action) => {
       }
     }
 
-
     default:
       return state
   }
@@ -191,7 +190,7 @@ const Calculator = () => {
     unAuthPetFeeRate,
     petPerRental,
     petDealTimeInHours,
-    ESABeforeOPPRate
+    ESABeforeOPPRate,
   } = state
 
   const ROIPetsResults = calculateROIWithPets({
@@ -203,7 +202,7 @@ const Calculator = () => {
     ESABeforeOPPRate: ESABeforeOPPRate / 100,
   })
 
-  const {totalSavings, totalCostForOPP, roi } = ROIPetsResults
+  const { totalSavings, totalCostForOPP, roi } = ROIPetsResults
 
   useEffect(() => {
     const listItems = document.querySelectorAll(".calculator-list-item")
@@ -229,14 +228,12 @@ const Calculator = () => {
       <div className="container">
         <h1 className="h2">Advanced ROI Calculator</h1>
         <div className="calculator-content">
-
           <CalculatorSidebar
             search={search}
             activeItem={activeItem}
             handleLinkClick={handleLinkClick}
-            active={'allowed'}
+            active={"allowed"}
           />
-
 
           <div className="calculator-main">
             <h2 className="h3 calculator-main-title">
@@ -302,7 +299,9 @@ const Calculator = () => {
                 <div className="calculator-item-content">
                   <div className="left">
                     <h5>Pet rent per month</h5>
-                    <p>(How much do you charge per pet per month?)</p>
+                    <p>
+                      (How much do you charge, on average, per pet per month?)
+                    </p>
                     <RangeInput
                       inputValue={petRentPerMonth}
                       min={0}
@@ -328,7 +327,10 @@ const Calculator = () => {
                       }
                     />*/}
                     <h5>ESA’s percentage before OurPetPolicy</h5>
-                    <p>(how much does it cost to fix damage from an animal when there is damage after a tenant leaves?)</p>
+                    <p>
+                      (How much does it cost to fix damage from an animal, when
+                      there is damage after a tenant leaves?)
+                    </p>
                     <RangeInput
                       inputValue={ESABeforeOPPRate}
                       min={0}
@@ -341,7 +343,10 @@ const Calculator = () => {
                       }
                     />
                     <h5>Fraudulent ESA to Pet percentage</h5>
-                    <p>(The percentage of ESA’s that are fraudulent and get turned into paying pet rent, typically 50-70%)</p>
+                    <p>
+                      (The percentage of ESA’s that are fraudulent and get
+                      turned into paying pet rent, typically 50-70%)
+                    </p>
                     <RangeInput
                       inputValue={fraudulentESAtoPetConversion}
                       min={0}
@@ -390,7 +395,10 @@ const Calculator = () => {
                       }
                     />
                     <h5>Average Pets per Rental</h5>
-                    <p>For every unit that has an animal, what is the average number of animals in that unit?</p>
+                    <p>
+                      (For every unit that has a pet, what is the average number
+                      of pets per unit?)
+                    </p>
                     <RangeInput
                       inputValue={petPerRental}
                       min={0}
@@ -426,7 +434,10 @@ const Calculator = () => {
                 <div className="calculator-item-content">
                   <div className="left">
                     <h5>Unauthorized Pet Fee</h5>
-                    <p>(How much will you charge when catching a tenant with an unauthorized pet?)</p>
+                    <p>
+                      (How much would you like to charge tenants for an
+                      unauthorized pet?)
+                    </p>
                     <RangeInput
                       inputValue={unAuthPetFee}
                       min={0}
@@ -439,7 +450,10 @@ const Calculator = () => {
                       }
                     />
                     <h5>Percentage of unauthorized pet fees</h5>
-                    <p>(What percentage of tenants do you collect unauthorized pet fees from?)</p>
+                    <p>
+                      (What percentage of tenants do you collect unauthorized
+                      pet fees from?)
+                    </p>
                     <RangeInput
                       inputValue={unAuthPetFeeRate}
                       min={0}
@@ -451,8 +465,13 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Percentage of tenants that get an animal before approved</h5>
-                    <p>(what percentage of tenants that get an animal actually get it before they have gotten it approved)</p>
+                    <h5>
+                      Percentage of tenants that get an animal prior to approval
+                    </h5>
+                    <p>
+                      (What percentage of tenants that get an animal, get one
+                      before it has been approved?)
+                    </p>
                     <RangeInput
                       inputValue={petApprovalRate}
                       min={0}
@@ -487,8 +506,12 @@ const Calculator = () => {
                 <h4 className="h4">Time Saving</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Time to deal with animal (hours)</h5>
-                    <p>(How much time on average per tenant that gets an animal does property management spend giving instructions, answering questions, etc)</p>
+                    <h5>Time spent dealing with animals (in hours)</h5>
+                    <p>
+                      (How much time on average, per tenant that has an animal,
+                      does property management spend giving instructions,
+                      answering questions, etc.?)
+                    </p>
                     <RangeInput
                       inputValue={petDealTimeInHours}
                       min={0}
@@ -501,7 +524,11 @@ const Calculator = () => {
                       }
                     />
                     <h5>Property Management wage (per hour)</h5>
-                    <p>(what percentage of tenants that get an animal actually get it before they have gotten it approved)</p>
+                    <p>
+                      (How much time, in dollars per hour, is the property
+                      manager’s time spent dealing with pet questions and pet
+                      damage?)
+                    </p>
                     <RangeInput
                       inputValue={propManagementWagePerHour}
                       min={0}
@@ -549,11 +576,7 @@ const Calculator = () => {
             </ul>
           </div>
 
-          <FixedRibbon
-            saving={totalSavings}
-            ROI={roi}
-            OPP={totalCostForOPP}
-          />
+          <FixedRibbon saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
     </Layout>

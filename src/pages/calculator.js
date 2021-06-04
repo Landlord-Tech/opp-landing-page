@@ -257,14 +257,9 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      With this calculator you can input your specific data and
+                      see how much value OurPetPolicy could add to your
+                      residential rental portfoli
                     </p>
                   </div>
                 </div>
@@ -328,14 +323,14 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      Did you know that recent studies show that 72%-90% of
+                      tenants have an animal? (see links below)
+                      <a href="https://shorturl.at/iorAE" target="_blank">
+                        shorturl.at/iorAE
+                      </a>
+                      <a href="https://shorturl.at/fltK1" target="_blank">
+                        shorturl.at/fltK1
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -395,14 +390,15 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      With new websites popping up daily selling fraudulent ESA
+                      letters for as low as $39, this loophole is being abused
+                      nationwide. We have a validation process and typically
+                      find that 50%-70% of ESA letters are fraudulent. By
+                      catching these up front we can greatly reduce the number
+                      of animals in your rentals which greatly reduces the
+                      damage and with less damage you will have a shorter
+                      turnaround time to be renting your property to the next
+                      tenant.
                     </p>
                   </div>
                 </div>
@@ -468,14 +464,13 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      We have found most Landlords have an unauthorized pet fee
+                      but do not have the proper documentation to actually
+                      charge the fee and tenants will use and abuse it to their
+                      advantage. We have also found that tenants will get an
+                      animal on a whim and then plan on purchasing a fraudulent
+                      ESA letter after bringing the animal home. Our contract
+                      and application process nips this in the bud.
                     </p>
                   </div>
                 </div>
@@ -542,14 +537,13 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      Time is money! Tenants asking questions about how to go
+                      about getting an animal, waste management issues, etc that
+                      we have clearly outlined so all you have to do if they ask
+                      is send them to ourpetpolicy.com and we’ll take it from
+                      there. When a tenant leaves and there is pet damage, it
+                      takes a lot of time assessing, lining up contractors, etc.
+                      Let us help you maximize your time!
                     </p>
                   </div>
                 </div>
@@ -564,9 +558,10 @@ const Calculator = () => {
                 <div className="calculator-item-table-content">
                   <div className="left">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Our goal is to save you money and give you the biggest
+                      Return on Investment as possible. Check out your total
+                      savings to see how much you could increase your yearly
+                      return by using OurPetPolicy
                     </p>
                     <NoAllowedTable data={ROINoPetsResults} />
                   </div>

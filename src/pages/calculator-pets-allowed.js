@@ -278,14 +278,9 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      With this calculator you can input your specific data and
+                      see how much value OurPetPolicy could add to your
+                      residential rental portfolio.
                     </p>
                   </div>
                 </div>
@@ -361,14 +356,9 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      Having Pets in a rental definitely increases the wear and
+                      tear. By charging a pet rent you are helping to offset the
+                      costs of this every month.
                     </p>
                   </div>
                 </div>
@@ -413,14 +403,13 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      When a tenant leaves and the damage is assessed and is
+                      several hundred dollars more than their security deposit,
+                      most landlords know its not worth it to take them to court
+                      over it where they very well may spend more money than
+                      they will ever recoup from the tenant. By collecting pet
+                      deposits you have that much more money to help cover the
+                      damage left by their animals.
                     </p>
                   </div>
                 </div>
@@ -486,14 +475,13 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      We have found most Landlords have an unauthorized pet fee
+                      but do not have the proper documentation to actually
+                      charge the fee and tenants will use and abuse it to their
+                      advantage. We have also found that tenants will get an
+                      animal on a whim and then plan on purchasing a fraudulent
+                      ESA letter after bringing the animal home. Our contract
+                      and application process nips this in the bud.
                     </p>
                   </div>
                 </div>
@@ -543,14 +531,13 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      Time is money! Tenants asking questions about how to go
+                      about getting an animal, waste management issues, etc that
+                      we have clearly outlined so all you have to do if they ask
+                      is send them to ourpetpolicy.com and we’ll take it from
+                      there. When a tenant leaves and there is pet damage, it
+                      takes a lot of time assessing, lining up contractors, etc.
+                      Let us help you maximize your time!
                     </p>
                   </div>
                 </div>
@@ -565,9 +552,10 @@ const Calculator = () => {
                 <div className="calculator-item-table-content">
                   <div className="left">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Our goal is to save you money and give you the biggest
+                      Return on Investment as possible. Check out your total
+                      savings to see how much you could increase your yearly
+                      return by using OurPetPolicy
                     </p>
                     <AllowedTable data={ROIPetsResults} />
                   </div>

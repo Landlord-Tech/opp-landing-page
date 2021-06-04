@@ -51,8 +51,13 @@
   display: flex;
   column-gap: 36px;
 
-  >.left, >.right {
+  > .left,
+  > .right {
     width: 50%;
+    a {
+      text-decoration: underline;
+      display: block;
+    }
   }
 }
 .calculator-item-table-content {

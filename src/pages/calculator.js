@@ -307,7 +307,7 @@ const Calculator = () => {
                     <h5>Typical cost to fix damage from an animal</h5>
                     <p>
                       (How much does it cost to fix damage from an animal, when
-                      there is damage after a tenant leaves?)
+                      there is damage, after a tenant leaves?)
                     </p>
                     <RangeInput
                       inputValue={petDamagePerTenant}

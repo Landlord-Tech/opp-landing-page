@@ -259,7 +259,7 @@ const Calculator = () => {
                     <p>
                       With this calculator you can input your specific data and
                       see how much value OurPetPolicy could add to your
-                      residential rental portfoli
+                      residential rental portfolio.
                     </p>
                   </div>
                 </div>

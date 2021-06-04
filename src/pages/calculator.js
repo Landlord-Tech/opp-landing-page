@@ -557,12 +557,7 @@ const Calculator = () => {
                 {/*<p>Our goal is to save you way more money </p>*/}
                 <div className="calculator-item-table-content">
                   <div className="left">
-                    <p>
-                      Our goal is to save you money and give you the biggest
-                      Return on Investment as possible. Check out your total
-                      savings to see how much you could increase your yearly
-                      return by using OurPetPolicy
-                    </p>
+                    <p>Our goal is to save you way more money.</p>
                     <NoAllowedTable data={ROINoPetsResults} />
                   </div>
                 </div>

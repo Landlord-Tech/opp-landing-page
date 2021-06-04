@@ -447,8 +447,7 @@ const Calculator = () => {
                       Percentage of tenants that get an animal prior to approval
                     </h5>
                     <p>
-                      (what percentage of tenants that get an animal actually
-                      get it before they have gotten it approved)
+                      (What percentage of tenants that get an animal, get one before it has been approved?)
                     </p>
                     <RangeInput
                       inputValue={petApprovalRate}

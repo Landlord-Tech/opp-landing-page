@@ -175,7 +175,6 @@ const Calculator = () => {
   function handleLinkClick(to) {
     setScrollTo(to)
   }
-
   const {
     unitCount,
     unitPerPetRate,
@@ -222,6 +221,9 @@ const Calculator = () => {
       setActiveItem(id)
     }
   }
+
+  console.log({activeItem})
+
 
   return (
     <Layout className="calculator-page">
@@ -286,7 +288,7 @@ const Calculator = () => {
                 </div>
               </li>
               <li
-                id="cost-pet-damage"
+                id="pet-rent"
                 className="calculator-list-item"
                 ref={petRentRef}
               >
@@ -323,8 +325,7 @@ const Calculator = () => {
                     />*/}
                     <h5>ESA’s percentage before OurPetPolicy</h5>
                     <p>
-                      (How much does it cost to fix damage from an animal, when
-                      there is damage after a tenant leaves?)
+                      (How much does it cost to fix damage from an animal, when there is damage, after a tenant leaves?)
                     </p>
                     <RangeInput
                       inputValue={ESABeforeOPPRate}
@@ -364,7 +365,7 @@ const Calculator = () => {
                 </div>
               </li>
               <li
-                id="lost-rent"
+                id="pet-deposit"
                 className="calculator-list-item"
                 ref={petDepositRef}
               >

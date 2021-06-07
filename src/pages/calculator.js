@@ -325,11 +325,11 @@ const Calculator = () => {
                     <p>
                       Did you know that recent studies show that 72%-90% of
                       tenants have an animal? (see links below)
-                      <a href="https://shorturl.at/iorAE" target="_blank">
-                        shorturl.at/iorAE
+                      <a href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/" target="_blank">
+                        AAOA
                       </a>
-                      <a href="https://shorturl.at/fltK1" target="_blank">
-                        shorturl.at/fltK1
+                      <a href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F" target="_blank">
+                        HSUS
                       </a>
                     </p>
                   </div>

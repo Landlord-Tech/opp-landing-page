@@ -323,14 +323,22 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Did you know that recent studies show that 72%-90% of
-                      tenants have an animal? (see links below)
-                      <a href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/" target="_blank">
-                        AAOA
-                      </a>
-                      <a href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F" target="_blank">
-                        HSUS
-                      </a>
+                      Did you know recent studies show that 72%-90% of tenants
+                      have an animal? (see links below)
+                      <div className="section-links">
+                        <a
+                          href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/"
+                          target="_blank"
+                        >
+                          AAOA
+                        </a>
+                        <a
+                          href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F"
+                          target="_blank"
+                        >
+                          HSUS
+                        </a>
+                      </div>
                     </p>
                   </div>
                 </div>
@@ -394,11 +402,11 @@ const Calculator = () => {
                       letters for as low as $39, this loophole is being abused
                       nationwide. We have a validation process and typically
                       find that 50%-70% of ESA letters are fraudulent. By
-                      catching these up front we can greatly reduce the number
-                      of animals in your rentals which greatly reduces the
-                      damage and with less damage you will have a shorter
-                      turnaround time to be renting your property to the next
-                      tenant.
+                      eliminating this upfront, we can greatly reduce the number
+                      of fraudulent animals in your rentals, which greatly
+                      reduces damages. With less damage, you will have a
+                      shorter, and more cost-effective, turnaround time to rent
+                      your property to the next tenant.
                     </p>
                   </div>
                 </div>
@@ -447,7 +455,8 @@ const Calculator = () => {
                       Percentage of tenants that get an animal prior to approval
                     </h5>
                     <p>
-                      (What percentage of tenants that get an animal, get one before it has been approved?)
+                      (What percentage of tenants that get an animal, get one
+                      before it has been approved?)
                     </p>
                     <RangeInput
                       inputValue={petApprovalRate}
@@ -463,13 +472,14 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      We have found most Landlords have an unauthorized pet fee
-                      but do not have the proper documentation to actually
-                      charge the fee and tenants will use and abuse it to their
-                      advantage. We have also found that tenants will get an
-                      animal on a whim and then plan on purchasing a fraudulent
-                      ESA letter after bringing the animal home. Our contract
-                      and application process nips this in the bud.
+                      We have found that most Landlords have an Unauthorized Pet
+                      Fee but do not have the proper documentation to charge for
+                      the fee, which results in tenants taking advantage of the
+                      situation. We have also found that tenants will get an
+                      animal, bring the animal home, and then purchase a
+                      fraudulent ESA letter after the fact. Our contract and
+                      application process prevent these occurrences so that
+                      Landlords are not losing out on their own policies
                     </p>
                   </div>
                 </div>
@@ -536,13 +546,12 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Time is money! Tenants asking questions about how to go
-                      about getting an animal, waste management issues, etc that
-                      we have clearly outlined so all you have to do if they ask
-                      is send them to ourpetpolicy.com and we’ll take it from
-                      there. When a tenant leaves and there is pet damage, it
-                      takes a lot of time assessing, lining up contractors, etc.
-                      Let us help you maximize your time!
+                      Time is money. Communicating with tenants about waste
+                      management policies, issues, or how to get an animal, etc.
+                      can take a lot of a property manager’s time. OurPetPolicy
+                      clearly outlines these matters so that all you have to do
+                      is send them to ourpetpolicy.com and we will take it from
+                      there. Let us help you maximize your time!
                     </p>
                   </div>
                 </div>
@@ -556,7 +565,10 @@ const Calculator = () => {
                 {/*<p>Our goal is to save you way more money </p>*/}
                 <div className="calculator-item-table-content">
                   <div className="left">
-                    <p>Our goal is to save you way more money.</p>
+                    <p>
+                      Our goal is to put more money in your pocket while
+                      protecting your rentals.
+                    </p>
                     <NoAllowedTable data={ROINoPetsResults} />
                   </div>
                 </div>

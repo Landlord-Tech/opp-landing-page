@@ -222,8 +222,7 @@ const Calculator = () => {
     }
   }
 
-  console.log({activeItem})
-
+  console.log({ activeItem })
 
   return (
     <Layout className="calculator-page">
@@ -325,7 +324,8 @@ const Calculator = () => {
                     />*/}
                     <h5>ESA’s percentage before OurPetPolicy</h5>
                     <p>
-                      (How much does it cost to fix damage from an animal, when there is damage, after a tenant leaves?)
+                      (How much does it cost to fix damage from an animal, when
+                      there is damage, after a tenant leaves?)
                     </p>
                     <RangeInput
                       inputValue={ESABeforeOPPRate}
@@ -357,9 +357,9 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Having Pets in a rental definitely increases the wear and
-                      tear. By charging a pet rent you are helping to offset the
-                      costs of this every month.
+                      Having pets in a rental can dramatically increase the wear
+                      and tear of your property. By charging pet rent, you are
+                      helping to offset the costs of these costs, every month.
                     </p>
                   </div>
                 </div>
@@ -404,13 +404,13 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      When a tenant leaves and the damage is assessed and is
-                      several hundred dollars more than their security deposit,
-                      most landlords know its not worth it to take them to court
-                      over it where they very well may spend more money than
-                      they will ever recoup from the tenant. By collecting pet
-                      deposits you have that much more money to help cover the
-                      damage left by their animals.
+                      When a tenant leaves and the damage from their pet is
+                      assessed to be hundreds of dollars more than their
+                      security deposit, most landlords understand that it is not
+                      worth taking them to court, where they could end up
+                      spending more money than they would recoup. By collecting
+                      pet deposits you have more money to help cover the damage
+                      left by their animals.
                     </p>
                   </div>
                 </div>
@@ -476,13 +476,14 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      We have found most Landlords have an unauthorized pet fee
-                      but do not have the proper documentation to actually
-                      charge the fee and tenants will use and abuse it to their
-                      advantage. We have also found that tenants will get an
-                      animal on a whim and then plan on purchasing a fraudulent
-                      ESA letter after bringing the animal home. Our contract
-                      and application process nips this in the bud.
+                      We have found that most Landlords have an Unauthorized Pet
+                      Fee but do not have the proper documentation to charge for
+                      the fee, which results in tenants taking advantage of the
+                      situation. We have also found that tenants will get an
+                      animal, bring the animal home, and then purchase a
+                      fraudulent ESA letter after the fact. Our contract and
+                      application process prevent these occurrences so that
+                      Landlords are not losing out on their own policies
                     </p>
                   </div>
                 </div>
@@ -532,13 +533,12 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Time is money! Tenants asking questions about how to go
-                      about getting an animal, waste management issues, etc that
-                      we have clearly outlined so all you have to do if they ask
-                      is send them to ourpetpolicy.com and we’ll take it from
-                      there. When a tenant leaves and there is pet damage, it
-                      takes a lot of time assessing, lining up contractors, etc.
-                      Let us help you maximize your time!
+                      Time is money. Communicating with tenants about waste
+                      management policies, issues, or how to get an animal, etc.
+                      can take a lot of a property manager’s time. OurPetPolicy
+                      clearly outlines these matters so that all you have to do
+                      is send them to ourpetpolicy.com and we will take it from
+                      there. Let us help you maximize your time!
                     </p>
                   </div>
                 </div>
@@ -553,10 +553,10 @@ const Calculator = () => {
                 <div className="calculator-item-table-content">
                   <div className="left">
                     <p>
-                      Our goal is to save you money and give you the biggest
-                      Return on Investment as possible. Check out your total
-                      savings to see how much you could increase your yearly
-                      return by using OurPetPolicy
+                      Our goal is to save you money and allow you the biggest
+                      Return on Investment possible. Check out your total
+                      savings to see how much you can increase your yearly
+                      return by using OurPetPolicy.
                     </p>
                     <AllowedTable data={ROIPetsResults} />
                   </div>

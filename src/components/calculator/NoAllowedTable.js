@@ -1,4 +1,5 @@
 import React from "react"
+import { addComma } from "../utils"
 
 const NoAllowedTable = ({ data }) => {
   const { withoutOPP, withOPP, totalSavings } = data
@@ -23,39 +24,47 @@ const NoAllowedTable = ({ data }) => {
         <tbody>
           <tr>
             <td>Pet Damage</td>
-            <td>${withoutOPP?.yearlyDamage}</td>
-            <td>${withOPP?.yearlyDamage}</td>
-            <td>${withOPP?.yearlyDamage - withoutOPP?.yearlyDamage}</td>
+            <td>${addComma(withoutOPP?.yearlyDamage)}</td>
+            <td>${addComma(withOPP?.yearlyDamage)}</td>
+            <td>
+              ${addComma(withOPP?.yearlyDamage - withoutOPP?.yearlyDamage)}
+            </td>
           </tr>
           <tr>
             <td>Loss of Rent</td>
-            <td>${withoutOPP?.yearlyLostRent}</td>
-            <td>${withOPP?.yearlyLostRent}</td>
-            <td>${withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent}</td>
+            <td>${addComma(withoutOPP?.yearlyLostRent)}</td>
+            <td>${addComma(withOPP?.yearlyLostRent)}</td>
+            <td>
+              ${addComma(withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent)}
+            </td>
           </tr>
           <tr>
             <td>Fines and Fees</td>
-            <td>${withoutOPP?.unAuthPetFee}</td>
-            <td>${withOPP?.unAuthPetFee}</td>
-            <td>${withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee}</td>
+            <td>${addComma(withoutOPP?.unAuthPetFee)}</td>
+            <td>${addComma(withOPP?.unAuthPetFee)}</td>
+            <td>
+              ${addComma(withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee)}
+            </td>
           </tr>
           <tr>
             <td>Time</td>
-            <td>${withoutOPP?.propManageTime}</td>
-            <td>${withOPP?.propManageTime}</td>
-            <td>${withOPP?.propManageTime - withoutOPP?.propManageTime}</td>
+            <td>${addComma(withoutOPP?.propManageTime)}</td>
+            <td>${addComma(withOPP?.propManageTime)}</td>
+            <td>
+              ${addComma(withOPP?.propManageTime - withoutOPP?.propManageTime)}
+            </td>
           </tr>
           <tr>
             <td>Totals</td>
-            <td>${withoutOPP?.totalCost}</td>
-            <td>${withOPP?.totalCost}</td>
-            <td>${withOPP?.totalCost - withoutOPP?.totalCost}</td>
+            <td>${addComma(withoutOPP?.totalCost)}</td>
+            <td>${addComma(withOPP?.totalCost)}</td>
+            <td>${addComma(withOPP?.totalCost - withoutOPP?.totalCost)}</td>
           </tr>
         </tbody>
       </table>
       <div className="calculator-table-total">
         <h4 className="h4">Total savings</h4>
-        <h3 className="h3">${totalSavings}</h3>
+        <h3 className="h3">${addComma(totalSavings)}</h3>
       </div>
     </div>
   )

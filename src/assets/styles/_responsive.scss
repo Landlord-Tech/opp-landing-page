@@ -18,7 +18,7 @@
     padding: 40px 0;
   }
   .calculator-content {
-   height: calc(100vh - 272px)
+    height: calc(100vh - 272px);
   }
   .sidebar-tab-content {
     li {
@@ -26,8 +26,11 @@
     }
   }
   .calculator-list-item {
-   &:not(:last-child) {
-     padding-bottom: 60px;
-   }
+    &:not(:last-child) {
+      padding-bottom: 60px;
+    }
+    &:first-child {
+      padding-top: 30px;
+    }
   }
 }

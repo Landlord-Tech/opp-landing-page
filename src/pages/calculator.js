@@ -112,7 +112,6 @@ const reducer = (state, action) => {
       }
     }
 
-
     default:
       return state
   }
@@ -168,7 +167,7 @@ const Calculator = () => {
     unAuthPetFeeRate,
     petDamageRate,
     petDealTimeInHours,
-    damageDealTimeInHours
+    damageDealTimeInHours,
   } = state
 
   const ROINoPetsResults = calculateROIWithNoPets({
@@ -180,7 +179,7 @@ const Calculator = () => {
     petDamageRate: petDamageRate / 100,
   })
 
-  const {totalSavings, totalCostForOPP, roi } = ROINoPetsResults
+  const { totalSavings, totalCostForOPP, roi } = ROINoPetsResults
 
   useEffect(() => {
     const listItems = document.querySelectorAll(".calculator-list-item")
@@ -206,13 +205,11 @@ const Calculator = () => {
       <div className="container">
         <h1 className="h2">Advanced ROI Calculator</h1>
         <div className="calculator-content">
-
           <CalculatorSidebar
             search={search}
             activeItem={activeItem}
             handleLinkClick={handleLinkClick}
           />
-
 
           <div className="calculator-main">
             <h2 className="h3 calculator-main-title">
@@ -242,7 +239,10 @@ const Calculator = () => {
                       }
                     />
                     <h5>What is your Average Monthly Rent</h5>
-                    <p>(Out of all of your rentals, what is the average of the monthly rent)</p>
+                    <p>
+                      (What is the overall average monthly rent of all of your
+                      units?)
+                    </p>
                     <RangeInput
                       inputValue={avgRent}
                       min={0}
@@ -257,14 +257,9 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      With this calculator you can input your specific data and
+                      see how much value OurPetPolicy could add to your
+                      residential rental portfolio.
                     </p>
                   </div>
                 </div>
@@ -279,8 +274,8 @@ const Calculator = () => {
                   <div className="left">
                     <h5>Estimated percentage of units with Pets (%)</h5>
                     <p>
-                      (What percentage of units would you estimate have animals
-                      in them?)
+                      (What percentage of units, would you estimate, have
+                      animals in them?)
                     </p>
                     <RangeInput
                       inputValue={unitPerPetRate}
@@ -296,7 +291,7 @@ const Calculator = () => {
                     <h5>Percentage of animals that cause damage (%)</h5>
                     <p>
                       (For every unit with an animal, what percentage of them
-                      will have damage from the animal at the end of the lease)
+                      have damage from the animal at the end of the lease?)
                     </p>
                     <RangeInput
                       inputValue={petDamageRate}
@@ -311,8 +306,8 @@ const Calculator = () => {
                     />
                     <h5>Typical cost to fix damage from an animal</h5>
                     <p>
-                      (how much does it cost to fix damage from an animal when
-                      there is damage after a tenant leaves?)
+                      (How much does it cost to fix damage from an animal, when
+                      there is damage, after a tenant leaves?)
                     </p>
                     <RangeInput
                       inputValue={petDamagePerTenant}
@@ -328,28 +323,35 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      Did you know recent studies show that 72%-90% of tenants
+                      have an animal? (see links below)
+                      <div className="section-links">
+                        <a
+                          href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/"
+                          target="_blank"
+                        >
+                          AAOA
+                        </a>
+                        <a
+                          href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F"
+                          target="_blank"
+                        >
+                          HSUS
+                        </a>
+                      </div>
                     </p>
                   </div>
                 </div>
               </li>
-              <li
-                id="lost-rent"
-                className="calculator-list-item"
-                ref={lostRef}
-              >
+              <li id="lost-rent" className="calculator-list-item" ref={lostRef}>
                 <h4 className="h4">Lost Rent</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Additional turn-around time (weeks)</h5>
-                    <p>(For an apartment that has pet damage, how much longer does it take to fix it up to be ready to rent again)</p>
+                    <h5>Additional turn-around time (in weeks)</h5>
+                    <p>
+                      (For a rental that has pet damage, how much longer does it
+                      take to fix it up until it is ready to rent again?)
+                    </p>
                     <RangeInput
                       inputValue={additionalTurnAroundTime}
                       min={0}
@@ -362,7 +364,10 @@ const Calculator = () => {
                       }
                     />
                     <h5>Animal reduction percentage from using OurPetPolicy</h5>
-                    <p>(Typically 50-70% of ESA letters are fraudulent and will be exposed with OurPetPolicy)</p>
+                    <p>
+                      (Typically 50-70% of ESA letters are fraudulent and will
+                      be exposed with OurPetPolicy)
+                    </p>
                     <RangeInput
                       inputValue={petReductionRate}
                       min={0}
@@ -374,8 +379,11 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Average Tenant Life in Months</h5>
-                    <p>(On average, how many months do your tenants stay before moving)</p>
+                    <h5>Average length-of-stay in months</h5>
+                    <p>
+                      (On average, how many months do your tenants stay before
+                      moving?)
+                    </p>
                     <RangeInput
                       inputValue={avgTenantLife}
                       min={0}
@@ -390,14 +398,15 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      With new websites popping up daily selling fraudulent ESA
+                      letters for as low as $39, this loophole is being abused
+                      nationwide. We have a validation process and typically
+                      find that 50%-70% of ESA letters are fraudulent. By
+                      eliminating this upfront, we can greatly reduce the number
+                      of fraudulent animals in your rentals, which greatly
+                      reduces damages. With less damage, you will have a
+                      shorter, and more cost-effective, turnaround time to rent
+                      your property to the next tenant.
                     </p>
                   </div>
                 </div>
@@ -411,7 +420,10 @@ const Calculator = () => {
                 <div className="calculator-item-content">
                   <div className="left">
                     <h5>Unauthorized Pet Fee</h5>
-                    <p>(How much will you charge when catching a tenant with an unauthorized pet?)</p>
+                    <p>
+                      (How much would you like to charge tenants for an
+                      unauthorized pet?)
+                    </p>
                     <RangeInput
                       inputValue={unAuthPetFee}
                       min={0}
@@ -423,8 +435,11 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Percentage of unauthorized pet fees</h5>
-                    <p>(What percentage of tenants do you collect unauthorized pet fees from?)</p>
+                    <h5>Percentage of Unauthorized Pet Fees</h5>
+                    <p>
+                      (What percentage of tenants do you collect unauthorized
+                      pet fees from?)
+                    </p>
                     <RangeInput
                       inputValue={unAuthPetFeeRate}
                       min={0}
@@ -436,8 +451,13 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Percentage of tenants that get an animal before approved</h5>
-                    <p>(what percentage of tenants that get an animal actually get it before they have gotten it approved)</p>
+                    <h5>
+                      Percentage of tenants that get an animal prior to approval
+                    </h5>
+                    <p>
+                      (What percentage of tenants that get an animal, get one
+                      before it has been approved?)
+                    </p>
                     <RangeInput
                       inputValue={petApprovalRate}
                       min={0}
@@ -452,14 +472,14 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      We have found that most Landlords have an Unauthorized Pet
+                      Fee but do not have the proper documentation to charge for
+                      the fee, which results in tenants taking advantage of the
+                      situation. We have also found that tenants will get an
+                      animal, bring the animal home, and then purchase a
+                      fraudulent ESA letter after the fact. Our contract and
+                      application process prevent these occurrences so that
+                      Landlords are not losing out on their own policies
                     </p>
                   </div>
                 </div>
@@ -472,8 +492,12 @@ const Calculator = () => {
                 <h4 className="h4">Time Savings</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Time to deal with animal (hours)</h5>
-                    <p>(How much time on average per tenant that gets an animal does property management spend giving instructions, answering questions, etc)</p>
+                    <h5>Time spent dealing with animals (in hours)</h5>
+                    <p>
+                      (How much time on average, per tenant that has an animal,
+                      does property management spend giving instructions,
+                      answering questions, etc.?)
+                    </p>
                     <RangeInput
                       inputValue={petDealTimeInHours}
                       min={0}
@@ -485,8 +509,12 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Time to deal with animal damage</h5>
-                    <p>(How much time does it take on average to line up contractors etc to fix the animal damage and get ready to rent again?)</p>
+                    <h5>Time spent dealing with animal damage</h5>
+                    <p>
+                      (How much time does it take, on average, to line up
+                      contractors, etc. to repair animal damages and get a
+                      rental ready to rent again?)
+                    </p>
                     <RangeInput
                       inputValue={damageDealTimeInHours}
                       min={0}
@@ -499,7 +527,11 @@ const Calculator = () => {
                       }
                     />
                     <h5>Property Management wage (per hour)</h5>
-                    <p>(what percentage of tenants that get an animal actually get it before they have gotten it approved)</p>
+                    <p>
+                      (How much time, in dollars per hour, is the property
+                      manager’s time spent dealing with pet questions and pet
+                      damage?)
+                    </p>
                     <RangeInput
                       inputValue={propManagementWagePerHour}
                       min={0}
@@ -514,14 +546,12 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
-                      Morbi lectus risus, iaculis vel, suscipit quis, luctus
-                      non, massa. Fusce ac turpis quis ligula lacinia aliquet.
-                      Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                      tincidunt sed, euismod in, nibh. Quisque volutpat
-                      condimentum velit.
+                      Time is money. Communicating with tenants about waste
+                      management policies, issues, or how to get an animal, etc.
+                      can take a lot of a property manager’s time. OurPetPolicy
+                      clearly outlines these matters so that all you have to do
+                      is send them to ourpetpolicy.com and we will take it from
+                      there. Let us help you maximize your time!
                     </p>
                   </div>
                 </div>
@@ -536,9 +566,8 @@ const Calculator = () => {
                 <div className="calculator-item-table-content">
                   <div className="left">
                     <p>
-                      Curabitur tortor. Pellentesque nibh. Aenean quam. In
-                      scelerisque sem at dolor. Maecenas mattis. Sed convallis
-                      tristique sem. Proin ut ligula vel nunc egestas porttitor.
+                      Our goal is to put more money in your pocket while
+                      protecting your rentals.
                     </p>
                     <NoAllowedTable data={ROINoPetsResults} />
                   </div>
@@ -547,11 +576,7 @@ const Calculator = () => {
             </ul>
           </div>
 
-          <FixedRibbon
-            saving={totalSavings}
-            ROI={roi}
-            OPP={totalCostForOPP}
-          />
+          <FixedRibbon saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
     </Layout>

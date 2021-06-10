@@ -59,7 +59,7 @@ const NoAllowedTable = ({ data }) => {
       </table>
       <div className="calculator-table-total">
         <h4 className="h4">Total savings</h4>
-        <h3 className="h3 bold">{formatPrice(totalSavings)}</h3>
+        <h3 className="h2 bold">{formatPrice(totalSavings)}</h3>
       </div>
     </div>
   )

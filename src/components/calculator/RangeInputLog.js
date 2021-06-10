@@ -23,6 +23,14 @@ const RangeInput = ({ inputValue, changeValue, max, min }) => {
     }
   }
 
+  function handleBlur(e) {
+    const { value } = e.target
+
+    if (value === "") {
+      changeValue(min)
+    }
+  }
+
   function handleSliderChange(number) {
     const val = logSlider.value(number)
     changeValue(Math.round(val))
@@ -45,11 +53,12 @@ const RangeInput = ({ inputValue, changeValue, max, min }) => {
   return (
     <div className="rangeInput-wrapper">
       <div className="rangeInput-top">
-        <span className="rangeInput-number">1</span>
+        <span className="rangeInput-number">{min}</span>
         <input
           max={max}
           value={inputValue}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
       </div>
       <Slider

@@ -212,7 +212,7 @@ const Calculator = () => {
           />
 
           <div className="calculator-main">
-            <h2 className="h3 calculator-main-title">
+            <h2 className="h2 calculator-main-title">
               Return on Investment with OurPetPolicy
             </h2>
 
@@ -574,10 +574,13 @@ const Calculator = () => {
                   </div>
                 </div>
               </li>
+              <li>
+                <FixedRibbon className='show-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+              </li>
             </ul>
           </div>
 
-          <FixedRibbon saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+          <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
     </Layout>

@@ -145,12 +145,12 @@ const Calculator = () => {
   const [activeItem, setActiveItem] = useState(null)
   const [scrollTo, setScrollTo] = useState(null)
   const [state, dispatch] = useReducer(reducer, initialState)
-  const introductionRef = React.useRef(null)
-  const petRentRef = React.useRef(null)
-  const petDepositRef = React.useRef(null)
-  const feesRef = React.useRef(null)
-  const timeRef = React.useRef(null)
-  const summaryRef = React.useRef(null)
+  const introductionRef = useRef(null)
+  const petRentRef = useRef(null)
+  const petDepositRef = useRef(null)
+  const feesRef = useRef(null)
+  const timeRef = useRef(null)
+  const summaryRef = useRef(null)
 
   const refMapping = {
     "Calculator introduction": introductionRef,
@@ -237,7 +237,7 @@ const Calculator = () => {
           />
 
           <div className="calculator-main">
-            <h2 className="h3 calculator-main-title">
+            <h2 className="h2 calculator-main-title">
               Return on Investment with OurPetPolicy
             </h2>
 
@@ -394,6 +394,7 @@ const Calculator = () => {
                       inputValue={petPerRental}
                       min={0}
                       max={6}
+                      step={0.1}
                       changeValue={number =>
                         dispatch({
                           type: "SET_PET_PER_RENTAL",
@@ -506,6 +507,7 @@ const Calculator = () => {
                       inputValue={petDealTimeInHours}
                       min={0}
                       max={5}
+                      step={0.1}
                       changeValue={number =>
                         dispatch({
                           type: "SET_PET_DEAL_TIME_IN_HOURS",
@@ -562,10 +564,13 @@ const Calculator = () => {
                   </div>
                 </div>
               </li>
+              <li>
+                <FixedRibbon className='show-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+              </li>
             </ul>
           </div>
 
-          <FixedRibbon saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+          <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
     </Layout>

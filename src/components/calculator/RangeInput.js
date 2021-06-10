@@ -13,6 +13,14 @@ const RangeInput = ({ inputValue, changeValue, min, max, step }) => {
     }
   }
 
+  function handleBlur(e) {
+    const { value } = e.target
+
+    if (value === "") {
+      changeValue(min)
+    }
+  }
+
   function handleSliderChange(number) {
     changeValue(number)
   }
@@ -25,9 +33,9 @@ const RangeInput = ({ inputValue, changeValue, min, max, step }) => {
           max={max}
           min={min}
           step={step}
-          type="number"
           value={inputValue}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
       </div>
       <Slider

@@ -2,7 +2,10 @@
   .header-content {
     padding: 12px 0;
   }
-  .h2 {
+  .show-mobile {
+    display: none !important;
+  }
+/*  .h2 {
     font-size: 40px;
   }
   .h3 {
@@ -10,5 +13,17 @@
   }
   .h4 {
     font-size: 20px;
+  }*/
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .show-mobile {
+    display: inherit !important;
+  }
+  .h2 {
+    font-size: 24px;
   }
 }

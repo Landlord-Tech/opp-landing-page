@@ -386,7 +386,7 @@ const Calculator = () => {
                     </p>
                     <RangeInput
                       inputValue={avgTenantLife}
-                      min={0}
+                      min={1}
                       max={48}
                       changeValue={number =>
                         dispatch({
@@ -502,6 +502,7 @@ const Calculator = () => {
                       inputValue={petDealTimeInHours}
                       min={0}
                       max={5}
+                      step={0.1}
                       changeValue={number =>
                         dispatch({
                           type: "SET_PET_DEAL_TIME_IN_HOURS",

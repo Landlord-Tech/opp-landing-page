@@ -1,9 +1,10 @@
 import React from "react"
-import { addComma } from "../utils"
+import { formatPrice } from "../utils"
 
 const NoAllowedTable = ({ data }) => {
   const { withoutOPP, withOPP, totalSavings } = data
 
+  console.log(withoutOPP?.yearlyDamage)
   return (
     <div className="calculator-table-wrapper">
       <table className="calculator-table">
@@ -24,47 +25,41 @@ const NoAllowedTable = ({ data }) => {
         <tbody>
           <tr>
             <td>Pet Damage</td>
-            <td>${addComma(withoutOPP?.yearlyDamage)}</td>
-            <td>${addComma(withOPP?.yearlyDamage)}</td>
-            <td>
-              ${addComma(withOPP?.yearlyDamage - withoutOPP?.yearlyDamage)}
-            </td>
+            <td>{formatPrice(withoutOPP?.yearlyDamage)}</td>
+            <td>{formatPrice(withOPP?.yearlyDamage)}</td>
+            <td>{formatPrice(withOPP?.yearlyDamage - withoutOPP?.yearlyDamage)}</td>
           </tr>
           <tr>
             <td>Loss of Rent</td>
-            <td>${addComma(withoutOPP?.yearlyLostRent)}</td>
-            <td>${addComma(withOPP?.yearlyLostRent)}</td>
-            <td>
-              ${addComma(withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent)}
-            </td>
+            <td>{formatPrice(withoutOPP?.yearlyLostRent)}</td>
+            <td>{formatPrice(withOPP?.yearlyLostRent)}</td>
+            <td>{formatPrice(withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent)}</td>
           </tr>
           <tr>
             <td>Fines and Fees</td>
-            <td>${addComma(withoutOPP?.unAuthPetFee)}</td>
-            <td>${addComma(withOPP?.unAuthPetFee)}</td>
-            <td>
-              ${addComma(withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee)}
-            </td>
+            <td>{formatPrice(withoutOPP?.unAuthPetFee)}</td>
+            <td>{formatPrice(withOPP?.unAuthPetFee)}</td>
+            <td>{formatPrice(withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee)}</td>
           </tr>
           <tr>
             <td>Time</td>
-            <td>${addComma(withoutOPP?.propManageTime)}</td>
-            <td>${addComma(withOPP?.propManageTime)}</td>
+            <td>{formatPrice(withoutOPP?.propManageTime)}</td>
+            <td>{formatPrice(withOPP?.propManageTime)}</td>
             <td>
-              ${addComma(withOPP?.propManageTime - withoutOPP?.propManageTime)}
+              {formatPrice(withOPP?.propManageTime - withoutOPP?.propManageTime)}
             </td>
           </tr>
           <tr>
             <td>Totals</td>
-            <td>${addComma(withoutOPP?.totalCost)}</td>
-            <td>${addComma(withOPP?.totalCost)}</td>
-            <td>${addComma(withOPP?.totalCost - withoutOPP?.totalCost)}</td>
+            <td>{formatPrice(withoutOPP?.totalCost)}</td>
+            <td>{formatPrice(withOPP?.totalCost)}</td>
+            <td>{formatPrice(withOPP?.totalCost - withoutOPP?.totalCost)}</td>
           </tr>
         </tbody>
       </table>
       <div className="calculator-table-total">
         <h4 className="h4">Total savings</h4>
-        <h3 className="h3">${addComma(totalSavings)}</h3>
+        <h3 className="h3 bold">{formatPrice(totalSavings)}</h3>
       </div>
     </div>
   )

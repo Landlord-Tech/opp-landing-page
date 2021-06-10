@@ -31,16 +31,15 @@
         }
       }
     }
+    td {
+      font-weight: 700;
+      font-size: 18px;
+      padding: 10px;
+      vertical-align: middle;
+      font-family: $font-secondary;
+    }
 
     tbody {
-      td {
-        font-weight: 700;
-        font-size: 18px;
-        padding: 10px;
-        vertical-align: middle;
-        font-family: $font-secondary;
-      }
-
       tr {
         &:first-child,
         &:last-child {

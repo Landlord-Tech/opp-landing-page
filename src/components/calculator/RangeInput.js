@@ -1,15 +1,15 @@
 import React from "react"
 import Slider, { Handle, SliderTooltip } from "rc-slider"
 
-const RangeInput = ({ inputValue, changeValue, min, max }) => {
+const RangeInput = ({ inputValue, changeValue, min, max, step }) => {
   const handle = ({ value, dragging, index, ...restProps }) => (
     <Handle value={inputValue} {...restProps} />
   )
 
   function handleChange(e) {
     const { value } = e.target
-    if (+value <= max && +value >= min) {
-      changeValue(+value)
+    if ((+value <= max && +value >= min) || value === "") {
+      changeValue(+value || "")
     }
   }
 
@@ -23,6 +23,8 @@ const RangeInput = ({ inputValue, changeValue, min, max }) => {
         <span className="rangeInput-number">{min}</span>
         <input
           max={max}
+          min={min}
+          step={step}
           type="number"
           value={inputValue}
           onChange={handleChange}
@@ -30,11 +32,12 @@ const RangeInput = ({ inputValue, changeValue, min, max }) => {
       </div>
       <Slider
         className="range-input"
-        min={0}
+        min={min}
         max={max}
         value={inputValue}
         handle={handle}
         onChange={e => handleSliderChange(e)}
+        step={step}
       />
     </div>
   )

@@ -8,6 +8,7 @@ import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithPets } from "../calculator"
 import AllowedTable from "../components/calculator/AllowedTable"
+import RotatedView from "../components/RotatedView"
 
 const initialState = {
   unitCount: 1000,
@@ -323,10 +324,7 @@ const Calculator = () => {
                       }
                     />*/}
                     <h5>ESA’s percentage before OurPetPolicy</h5>
-                    <p>
-                      (How much does it cost to fix damage from an animal, when
-                      there is damage, after a tenant leaves?)
-                    </p>
+                    <p>(What percentage of all animals in your rentals before OurPetPolicy are ESA’s? (Typically 50-80%))</p>
                     <RangeInput
                       inputValue={ESABeforeOPPRate}
                       min={0}
@@ -573,6 +571,7 @@ const Calculator = () => {
           <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
+      <RotatedView />
     </Layout>
   )
 }

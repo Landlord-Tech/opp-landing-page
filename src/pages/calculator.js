@@ -7,6 +7,7 @@ import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
+import RotatedView from "../components/RotatedView"
 
 const initialState = {
   unitCount: 350,
@@ -583,6 +584,7 @@ const Calculator = () => {
           <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
+      <RotatedView />
     </Layout>
   )
 }

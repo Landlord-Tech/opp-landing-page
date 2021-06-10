@@ -1,0 +1,26 @@
+.rotation-note {
+  display: none;
+}
+.rotation-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 85px);
+
+  .inner {
+    width: 380px;
+    text-align: center;
+  }
+}
+
+@media  (max-width:1137px) and (min-aspect-ratio: 16/10)  {
+  .calculator-page {
+    >.container  {
+      display: none !important;
+    }
+  }
+  .rotation-note {
+    display: block;
+  }
+}

@@ -19,8 +19,8 @@ const Header = ({ siteTitle }) => (
             <li className='with-dropdown'>
               <Link activeClassName={"active-link"} to='/landlord-portal'>Landlord portal</Link>
               <ul className='dropdown'>
-                <li><Link activeClassName={"active-link"} to='/calculator/'>Calculator</Link></li>
-                <li><Link activeClassName={"active-link"} to='/'>Advanced Calculator</Link></li>
+                <li><Link activeClassName={"active-link"} to='/calculator/'>CalculatorNoPetsAllowed</Link></li>
+                <li><Link activeClassName={"active-link"} to='/'>Advanced CalculatorNoPetsAllowed</Link></li>
               </ul>
             </li>
             <li>

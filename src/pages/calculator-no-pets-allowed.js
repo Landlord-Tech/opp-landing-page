@@ -118,7 +118,7 @@ const reducer = (state, action) => {
   }
 }
 
-const Calculator = () => {
+const CalculatorNoPetsAllowed = () => {
   const { search, hash } = useLocation()
   const [activeItem, setActiveItem] = useState(null)
   const [scrollTo, setScrollTo] = useState(null)
@@ -589,4 +589,4 @@ const Calculator = () => {
   )
 }
 
-export default Calculator
+export default CalculatorNoPetsAllowed

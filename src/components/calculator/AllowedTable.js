@@ -40,7 +40,7 @@ const AllowedTable = ({ data }) => {
             <td>{formatPrice(withoutOPP?.unAuthPetFee)}</td>
             <td>{formatPrice(withOPP?.unAuthPetFee)}</td>
             <td>
-              {formatPrice(withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee)}
+              {formatPrice(withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee)}
             </td>
           </tr>
           <tr>

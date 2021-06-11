@@ -39,7 +39,7 @@ const NoAllowedTable = ({ data }) => {
             <td>Fines and Fees</td>
             <td>{formatPrice(withoutOPP?.unAuthPetFee)}</td>
             <td>{formatPrice(withOPP?.unAuthPetFee)}</td>
-            <td>{formatPrice(withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee)}</td>
+            <td>{formatPrice(withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee)}</td>
           </tr>
           <tr>
             <td>Time</td>

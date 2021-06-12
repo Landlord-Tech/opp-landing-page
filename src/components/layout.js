@@ -10,7 +10,7 @@ const Layout = ({ children, className }) => {
 
   return (
     <>
-      <Header />
+      <Header dark={pathname === '/'} />
       <main className={className}>{children}</main>
       {
         !pathname.includes('/calculator') && <Footer />

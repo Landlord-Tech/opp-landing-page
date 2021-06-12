@@ -4,7 +4,7 @@ import Log from "./log"
 
 
 
-const RangeInput = ({ inputValue, changeValue, max }) => {
+const RangeInput = ({ inputValue, changeValue, max, min }) => {
   const handle = ({ value, dragging, index, ...restProps }) => (
     <Handle value={inputValue} {...restProps} />
   )
@@ -12,13 +12,23 @@ const RangeInput = ({ inputValue, changeValue, max }) => {
   const logSlider = new Log({
     minpos: 0,
     maxpos: 100,
-    minval: 0,
+    minval: min,
     maxval: max,
   })
 
   function handleChange(e) {
     const { value } = e.target
-    changeValue(+value)
+    if ((+value <= max && +value >= min) || value === "") {
+      changeValue(+value || "")
+    }
+  }
+
+  function handleBlur(e) {
+    const { value } = e.target
+
+    if (value === "") {
+      changeValue(min)
+    }
   }
 
   function handleSliderChange(number) {
@@ -43,19 +53,19 @@ const RangeInput = ({ inputValue, changeValue, max }) => {
   return (
     <div className="rangeInput-wrapper">
       <div className="rangeInput-top">
-        <span className="rangeInput-number">1</span>
+        <span className="rangeInput-number">{min}</span>
         <input
           max={max}
-          type="number"
           value={inputValue}
           onChange={handleChange}
+          onBlur={handleBlur}
         />
       </div>
       <Slider
         className="range-input"
-        min={0}
-        // marks={marks}
+        min={min}
         max={100}
+        // marks={marks}
         value={sliderValue()}
         handle={handle}
         onChange={e => handleSliderChange(e)}

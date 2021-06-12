@@ -36,7 +36,7 @@ export const patsList = [
   },
   {
     title: 'Pet deposits',
-    to: '#pet-deposits'
+    to: '#pet-deposit'
   },
   {
     title: 'Fees and fines',

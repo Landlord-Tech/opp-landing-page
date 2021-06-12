@@ -1,19 +1,20 @@
 import React from "react"
+import { formatPrice } from "../utils"
 
-const FixedRibbon = ({saving= 93100, OPP = 5000, ROI = 450}) => {
+const FixedRibbon = ({ className, saving , OPP, ROI }) => {
   return (
-    <div className='fixed-ribbon'>
+    <div className={`${className} fixed-ribbon`}>
       <div>
         <strong>Total savings</strong>
-        <h3 className='h3 bold'>${saving || 0}</h3>
+        <h3 className="h2 bold">{formatPrice(saving, true)}</h3>
       </div>
       <div>
-        <strong>Cost of OPP</strong>
-        <h3 className='h3 bold'>${OPP || 0}</h3>
+        <strong>Cost of OurPetPolicy</strong>
+        <h3 className="h2 bold">{formatPrice(OPP, true)}</h3>
       </div>
       <div>
         <strong>Total ROI</strong>
-        <h3 className='h3 bold'>{Math.round(ROI * 100) || 0} %</h3>
+        <h3 className="h2 bold">{Math.round(ROI * 100) || 0} %</h3>
       </div>
     </div>
   )

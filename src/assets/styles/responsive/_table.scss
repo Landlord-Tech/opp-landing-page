@@ -4,8 +4,6 @@
   }
   .calculator-table-wrapper {
     .calculator-table {
-      width: auto;
-
       th, td {
         font-size: 16px;
         padding: 8px;
@@ -14,6 +12,15 @@
     }
   }
 }
+
+@media screen and (max-width: 950px) {
+  .calculator-table-wrapper {
+    .calculator-table {
+      width: auto;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .calculator-table-wrapper {
     .calculator-table {

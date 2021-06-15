@@ -3,6 +3,7 @@
   border-radius: 48px;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
 
   &.btn-sm {
     height: 35px;
@@ -17,8 +18,18 @@
     font-size: 16px;
     padding: 0 40px;
   }
+
+  &.btn-lg {
+    height: 61px;
+    line-height: 61px;
+    font-size: 24px;
+    padding: 0 40px;
+  }
   &.primary {
     background-color: $color-primary;
+  }
+  &.secondary {
+    background-color: $color-white;
   }
   &.primary-gradient {
     background-image: $color-gradient;

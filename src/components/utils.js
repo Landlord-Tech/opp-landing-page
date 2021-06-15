@@ -9,7 +9,6 @@ export function formatPrice(x, black) {
   const isPositive = x > 0
   const formattedSigns = "$" + Math.abs(x.toFixed(0))
   const formattedPrice = formattedSigns.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-  console.log(isNegative)
   if (formattedPrice !== "NaN") {
     return (
       <>

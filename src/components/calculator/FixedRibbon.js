@@ -6,15 +6,15 @@ const FixedRibbon = ({ className, saving , OPP, ROI }) => {
     <div className={`${className} fixed-ribbon`}>
       <div>
         <strong>Total savings</strong>
-        <h3 className="h2 bold">{formatPrice(saving, true)}</h3>
+        <h3 className="h3 bold">{formatPrice(saving, true)}</h3>
       </div>
       <div>
         <strong>Cost of OurPetPolicy</strong>
-        <h3 className="h2 bold">{formatPrice(OPP, true)}</h3>
+        <h3 className="h3 bold">{formatPrice(OPP, true)}</h3>
       </div>
       <div>
         <strong>Total ROI</strong>
-        <h3 className="h2 bold">{Math.round(ROI * 100) || 0} %</h3>
+        <h3 className="h3 bold">{Math.round(ROI * 100) || 0} %</h3>
       </div>
     </div>
   )

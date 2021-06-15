@@ -67,12 +67,27 @@
       }
     }
   }
-  .logo {
-    max-width: 232px;
-    width: 100%;
+}
 
-    img {
-      width: 100%;
+.logo {
+  max-width: 232px;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.dark-header {
+  background-color: $color-black;
+
+  ul {
+    color: $color-white;
+  }
+
+  .with-dropdown {
+    ul {
+      color: $color-text;
     }
   }
 }

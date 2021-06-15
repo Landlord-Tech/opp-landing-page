@@ -22,7 +22,7 @@ const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active }) => {
               className={search === "?no-pets-allowed" || search === "" ? "active" : ""}
             />*/}
             <Link
-              to={'/calculator/'}
+              to={'/calculator-no-pets-allowed/'}
               className={!active ? "active" : ""}
             >
               No Pets Allowed

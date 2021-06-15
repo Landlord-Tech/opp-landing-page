@@ -2,6 +2,22 @@
   color: $color-primary;
 }
 
+.fw-bold {
+  font-weight: 700;
+}
+.fw-medium {
+  font-weight: 500;
+}
+
+.align-center {
+  text-align: center;
+}
+
+
+.show-mobile {
+  display: none !important;
+}
+
 @media screen and (min-width: 769px) {
   /*scrollbar*/
   ::-webkit-scrollbar {
@@ -18,7 +34,7 @@
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 8px;
     border-radius: 8px;
-    background: #dcdbdb;
+    background: $color-grey;
   }
 }
 

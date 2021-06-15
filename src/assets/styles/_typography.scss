@@ -5,12 +5,16 @@
   &.bold {
     font-weight: 700;
   }
+
+  &.primary {
+    font-family: $font-primary;
+  }
 }
 .h1 {
-  font-size: 32px;
+  font-size: 72px;
 }
 .h2 {
-  font-size: 32px;
+  font-size: 56px;
 }
 .h3 {
   font-size: 32px;

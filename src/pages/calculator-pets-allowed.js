@@ -228,7 +228,7 @@ const Calculator = () => {
   return (
     <Layout className="calculator-page">
       <div className="container">
-        <h1 className="h2">Advanced ROI Calculator</h1>
+        <h1 className="h3">Advanced ROI Calculator</h1>
         <div className="calculator-content">
           <CalculatorSidebar
             search={search}
@@ -238,7 +238,7 @@ const Calculator = () => {
           />
 
           <div className="calculator-main">
-            <h2 className="h2 calculator-main-title">
+            <h2 className="h3 calculator-main-title">
               Return on Investment with OurPetPolicy
             </h2>
 

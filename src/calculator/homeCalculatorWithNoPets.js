@@ -2,8 +2,12 @@ const calculatorWithNoPets = ({
                                 rentalUnitCount,
                                 unitPetRate
                               }) => {
-  const savingPerYear = rentalUnitCount * 566 * unitPetRate
-  const ROI = (savingPerYear - (rentalUnitCount * 60)) / (rentalUnitCount * 60)
+  console.log({ rentalUnitCount })
+  console.log({ unitPetRate })
+  const savingPerYear = Math.round(rentalUnitCount * 566 * (unitPetRate))
+
+  console.log((savingPerYear - (rentalUnitCount * 60)))
+  const ROI = Math.round((savingPerYear - (rentalUnitCount  * 60)) * 100 / (rentalUnitCount * 60))
   return {
     savingPerYear,
     ROI,

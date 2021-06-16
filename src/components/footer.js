@@ -1,14 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
-import Logo from "../images/logo-white.svg"
 import Icon from "./Icon"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <Link className="logo" to={'/'}>
-          <img src={Logo} alt="OurPetPolicy" />
+          <StaticImage
+            src="../images/logo-white.svg"
+            alt="OurPetPolicy"
+            formats={["AUTO", "WEBP", "AVIF"]}
+            placeholder="transparent"
+          />
         </Link>
         <div className='footer-top'>
           <div className='footer-top-col'>

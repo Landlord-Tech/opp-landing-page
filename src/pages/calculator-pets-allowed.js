@@ -227,7 +227,7 @@ const Calculator = () => {
 
   return (
     <Layout className="calculator-page">
-      <div className="container">
+      <div className="container fluid">
         <h1 className="h3">Advanced ROI Calculator</h1>
         <div className="calculator-content">
           <CalculatorSidebar

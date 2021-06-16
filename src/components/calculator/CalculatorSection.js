@@ -84,7 +84,7 @@ const CalculatorSection = () => {
           }
         />
 
-        <h5>Number of Rental Units</h5>
+        <h5>Units with Pets (or ESA's) (%)</h5>
         <RangeInput
           inputValue={unitPetRate}
           min={0}

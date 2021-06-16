@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Logo from "../images/logo-white.svg"
+import Icon from "./Icon"
 
 const Footer = () => {
   return (
@@ -44,6 +45,13 @@ const Footer = () => {
           </div>
           <div className='footer-top-col'>
             <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Contact us</Link></h4>
+            <Link to={'/'}>
+              <Icon
+                color='#fff'
+                size={40}
+                icon='fb'
+              />
+            </Link>
           </div>
         </div>
         <div className="footer-bottom">

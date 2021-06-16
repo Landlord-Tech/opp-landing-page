@@ -14,13 +14,3 @@
   }
 }
 
-@media  (max-width:1137px) and (min-aspect-ratio: 16/10)  {
-  .calculator-page {
-    >.container  {
-      display: none !important;
-    }
-  }
-  .rotation-note {
-    display: block;
-  }
-}

@@ -31,7 +31,17 @@
   &.secondary {
     background-color: $color-white;
   }
+  &.secondary-dark {
+    background-color: $color-text;
+    color: $color-white;
+  }
   &.primary-gradient {
     background-image: $color-gradient;
   }
+}
+.no-style {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
 }

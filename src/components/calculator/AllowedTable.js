@@ -40,7 +40,7 @@ const AllowedTable = ({ data }) => {
             <td>${addComma(withoutOPP?.unAuthPetFee)}</td>
             <td>${addComma(withOPP?.unAuthPetFee)}</td>
             <td>
-              ${addComma(withoutOPP?.unAuthPetFee - withOPP?.unAuthPetFee)}
+              ${addComma(withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee)}
             </td>
           </tr>
           <tr>

@@ -8,9 +8,9 @@ const Header = ({ pathname }) => {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [locked, setLocked] = useLockedBody()
 
-  const dark = pathname === "/" || pathname === "/landlords/" || pathname === "/tenants/"
-  const landlords = pathname === "/landlords/"
-  const tenants = pathname === "/tenants/"
+  const dark = pathname === "/" || pathname.includes("/landlords") || pathname.includes("/tenants/")
+  const landlords = pathname.includes("/landlords/")
+  const tenants = pathname.includes("/tenants/")
 
 function handleMenuToggle() {
   setOpenedMenu(!openedMenu)
@@ -18,7 +18,7 @@ function handleMenuToggle() {
 }
   return (
     <header className={`header ${ dark ? "dark-header" : "" } ${openedMenu ? 'opened' : ''}`}>
-      <div className="container">
+      <div className="container fluid">
         <div className="header-content">
           {/*<a href={'https://www.ourpetpolicy.com/'} className='logo'>
           <img src={Logo} alt="OurPetPolicy" />
@@ -59,10 +59,10 @@ function handleMenuToggle() {
                 !landlords && !tenants &&
                 <>
                   <li className="with-dropdown">
-                    <Link activeClassName={"active-link"} to="/landlords">Landlord</Link>
+                    <Link activeClassName={"active-link"} to="/landlords/">Landlord</Link>
                   </li>
                   <li>
-                    <Link activeClassName={"active-link"} to="/tenants">Tenant</Link>
+                    <Link activeClassName={"active-link"} to="/tenants/">Tenant</Link>
                   </li>
                 </>
               }

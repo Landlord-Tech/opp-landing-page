@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container">
+      <div className="container fluid">
         <Link className="logo" to={'/'}>
           <StaticImage
             src="../images/logo-white.svg"

@@ -8,9 +8,9 @@ const Header = ({ pathname }) => {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [locked, setLocked] = useLockedBody()
 
-  const dark = pathname === "/" || pathname === "/landlords" || pathname === "/tenants"
-  const landlords = pathname === "/landlords"
-  const tenants = pathname === "/tenants"
+  const dark = pathname === "/" || pathname === "/landlords/" || pathname === "/tenants/"
+  const landlords = pathname === "/landlords/"
+  const tenants = pathname === "/tenants/"
 
 function handleMenuToggle() {
   setOpenedMenu(!openedMenu)
@@ -80,10 +80,10 @@ function handleMenuToggle() {
 
 
               <li>
-                <Link activeClassName={"active-link"} to="/FAQ">FAQ</Link>
+                <Link activeClassName={"active-link"} to="/FAQ/">FAQ</Link>
               </li>
               <li>
-                <Link activeClassName={"active-link"} to="/contact-us">Contact us</Link>
+                <Link activeClassName={"active-link"} to="/contact-us/">Contact us</Link>
               </li>
               <li className='nav-button-group'>
                 <button className="btn btn-md primary get-started-btn">Get started</button>

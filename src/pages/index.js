@@ -40,8 +40,8 @@ const IndexPage = () => {
               <div className="hero-left">
                 <h1 className="h1">Everything you need to succeed with pets in rentals</h1>
                 <div>
-                  <Link to="/landlords" className="btn btn-lg primary-gradient">Landlords</Link>
-                  <Link to="/tenants" className="btn btn-lg secondary">Tenants</Link>
+                  <Link to="/landlords/" className="btn btn-lg primary-gradient">Landlords</Link>
+                  <Link to="/tenants/" className="btn btn-lg secondary">Tenants</Link>
                 </div>
               </div>
             </div>

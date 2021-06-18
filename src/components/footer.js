@@ -15,41 +15,21 @@ const Footer = () => {
             placeholder="transparent"
           />
         </Link>
-        <div className='footer-top'>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Landlord portal</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Tenant portal</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Pricing</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>FAQ</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Contact us</Link></h4>
+        <ul className='footer-top'>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link activeClassName='active-link' to={'/landlords/'}>Landlords</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link activeClassName='active-link' to={'/tenants/'}>Tenants</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link activeClassName='active-link' to={'/pricing/'}>Pricing</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link activeClassName='active-link' to={'/pricing/'}>FAQ</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link activeClassName='active-link' to={'/contact-us/'}>Contact us</Link></h4>
             <Link to={'/'}>
               <Icon
                 color='#fff'
@@ -57,8 +37,8 @@ const Footer = () => {
                 icon='fb'
               />
             </Link>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div className="footer-bottom">
           <ul>
             <li>

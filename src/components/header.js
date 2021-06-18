@@ -1,10 +1,10 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Icon from "./Icon"
 import useLockedBody from "../hooks/useLockedBody"
 
-const Header = ({ pathname }) => {
+const Header = ({ pathname, sticky }) => {
   const [openedMenu, setOpenedMenu] = useState(false)
   const [locked, setLocked] = useLockedBody()
 
@@ -16,8 +16,9 @@ function handleMenuToggle() {
   setOpenedMenu(!openedMenu)
   setLocked(!locked)
 }
+
   return (
-    <header className={`header ${ dark ? "dark-header" : "" } ${openedMenu ? 'opened' : ''}`}>
+    <header className={`header ${ dark ? "dark-header" : "" } ${openedMenu ? 'opened' : ''} ${sticky ? 'sticky' : ''}`}>
       <div className="container fluid">
         <div className="header-content">
           {/*<a href={'https://www.ourpetpolicy.com/'} className='logo'>
@@ -58,7 +59,7 @@ function handleMenuToggle() {
               {
                 !landlords && !tenants &&
                 <>
-                  <li className="with-dropdown">
+                  <li>
                     <Link activeClassName={"active-link"} to="/landlords/">Landlord</Link>
                   </li>
                   <li>
@@ -77,17 +78,12 @@ function handleMenuToggle() {
                   </li>
                 </>
               }
-
-
-              <li>
-                <Link activeClassName={"active-link"} to="/FAQ/">FAQ</Link>
-              </li>
               <li>
                 <Link activeClassName={"active-link"} to="/contact-us/">Contact us</Link>
               </li>
               <li className='nav-button-group'>
-                <button className="btn btn-md primary get-started-btn">Get started</button>
-                <button className={`btn btn-md  login-btn ${dark ? "secondary" : "secondary-dark"}`}>Login</button>
+                <Link to='/' className="btn btn-md primary get-started-btn">Get started</Link>
+                <Link to='/' className={`btn btn-md  login-btn ${dark ? "secondary" : "secondary-dark"}`}>Login</Link>
               </li>
             </ul>
           </nav>

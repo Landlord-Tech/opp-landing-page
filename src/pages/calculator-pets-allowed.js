@@ -8,7 +8,7 @@ import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithPets } from "../calculator"
 import AllowedTable from "../components/calculator/AllowedTable"
-import RotatedView from "../components/RotatedView"
+import RotatedView from "../components/rotatedView"
 
 const initialState = {
   unitCount: 1000,

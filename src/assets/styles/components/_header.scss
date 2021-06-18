@@ -1,3 +1,17 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: $color-white;
+
+  &.sticky {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -17,13 +31,16 @@
     font-size: 20px;
     font-family: $font-secondary;
 
-    a {
-      transition: .3s;
+    &:not(.nav-button-group) {
+      a {
+        transition: .3s;
 
-      &:hover {
-        color: $color-primary;
+        &:hover {
+          color: $color-primary;
+        }
       }
     }
+
 
     &:not(:last-child) {
       padding-right: 40px;
@@ -62,3 +79,8 @@
   display: none;
   cursor: pointer;
 }
+
+.nav-button-group {
+  color: $color-text;
+}
+

@@ -6,8 +6,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
-const IndexPage = () => {
+const Landlords = () => {
 
   const possibilitiesList = [
     'Customizable Contracts & Master Policies',
@@ -54,17 +55,20 @@ const IndexPage = () => {
                   <p className='hero-text'>Are you ready to take the pet frustrations out of your rental portfolio? If you are looking to crack
                     down on unauthorized pets, fraudulent ESA letters, waste management, and the damage and time it takes to
                     deal with, you have come to the right place!</p>
-                  <button className="btn btn-lg primary-gradient">Get started</button>
+                  <button className="btn btn-lg primary">Get started</button>
                 </div>
 
-                <div className="animated-mouse">
+                <button
+                  onClick={() => scrollTo('#scroll-here')}
+                  className="animated-mouse"
+                >
                   <Icon
                     color='#fff'
                     size={60}
                     icon='scroll'
                   />
                   <p>Scroll</p>
-                </div>
+                </button>
               </div>
             </div>
           </div>
@@ -72,9 +76,9 @@ const IndexPage = () => {
       </section>
 
       {/*calculator*/}
-      <section className="home-section">
+      <section className="section" id='scroll-here'>
         <div className="container">
-          <div className="title align-center">
+          <div className="title text-center">
             <h2 className="h2">How much could you save?</h2>
             <p className="title-info">Whether you allow pets or not, we can help you maximize profits by minimizing
               damage, exposing fraudulent ESA's, maximizing deposits and fees, and minimizing the time you spend dealing
@@ -84,7 +88,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="img-text-section home-section">
+      <section className="img-text-section section">
         <div className="container">
           <div className="img-text-content">
             <div className="img">
@@ -109,7 +113,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="no-more-section home-section">
+      <section className="no-more-section section">
         <div className="container">
           <div className="title">
             <h2 className="h2">No more hassle and potential legal disputes</h2>
@@ -148,18 +152,18 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="thin-section home-section">
+      <section className="thin-section section">
         <div className="container">
           <div className="thin-section-content">
             <p>OurPetPolicy makes the process convenient and easy for you. Our process is vetted by lawyers in every
               state
               making sure you are covered under state and federal laws. </p>
-            <button className="btn primary-gradient btn-lg">Get started</button>
+            <button className="btn primary btn-lg">Get started</button>
           </div>
         </div>
       </section>
 
-      <section className="img-text-section home-section">
+      <section className="img-text-section section">
         <div className="container">
           <div className="img-text-content">
             <div className="img">
@@ -181,7 +185,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="list-section home-section">
+      <section className="list-section section">
         <div className="container">
           <div className="list-content">
             <div className="list">
@@ -221,4 +225,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Landlords

@@ -84,7 +84,7 @@ const CalculatorSection = () => {
           }
         />
 
-        <h5>Units with Pets (or ESA's) (%)</h5>
+        <h5>Units with Pets (or ESA's) (%) <span className='color-primary'>National Average 75-90%</span></h5>
         <RangeInput
           inputValue={unitPetRate}
           min={0}

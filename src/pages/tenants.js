@@ -1,13 +1,13 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-import background from "../images/homepage2.jpg"
-
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Layout from "../components/layout"
 import Icon from "../components/Icon"
 
-const IndexPage = () => {
+
+const Tenants = () => {
 
   const possibilitiesList = [
     "Customizable Contracts & Master Policies",
@@ -54,23 +54,26 @@ const IndexPage = () => {
                 <p className="hero-text">OurPetPolicy takes the guesswork out of your contract. You can review it, see
                   all application steps,
                   fees, instructions, and status all in one place.</p>
-                <button className="btn btn-lg primary-gradient">Get started</button>
+                <button className="btn btn-lg primary">Get started</button>
               </div>
 
-              <div className="animated-mouse">
+              <button
+                className="animated-mouse"
+                onClick={() => scrollTo('#scroll-here')}
+              >
                 <Icon
                   color="#fff"
                   size={60}
                   icon="scroll"
                 />
                 <p>Scroll</p>
-              </div>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="img-text-section home-section">
+      <section className="img-text-section section" id='scroll-here'>
         <div className="container">
           <div className="img-text-content">
             <div className="img">
@@ -93,79 +96,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="no-more-section home-section">
-        <div className="container">
-          <div className="title">
-            <h2 className="h2">No more hassle and potential legal disputes</h2>
-          </div>
-          <div className="no-more-content">
-            <div className="no-more-item">
-              <StaticImage
-                src={"../images/hand.svg"}
-                alt="rotate"
-                placeholder="transparent"
-              />
-              <h4 className="h4">Damage Reduction</h4>
-              <p>Our process reduces unauthorized pets, fraudulent ESAs, and educates tenants on the responsibilties
-                required when renting with pets.</p>
-            </div>
-            <div className="no-more-item">
-              <StaticImage
-                src={"../images/file.svg"}
-                alt="rotate"
-                placeholder="transparent"
-              />
-              <h4 className="h4">Federal and State Compliance</h4>
-              <p>Laws are always changing. OurPetPolicy takes care of the legal compliance, so that you don't have to.
-                No loopholes, no worries.2</p>
-            </div>
-            <div className="no-more-item">
-              <StaticImage
-                src={"../images/house.svg"}
-                alt="rotate"
-                placeholder="transparent"
-              />
-              <h4 className="h4">Easy Management</h4>
-              <p>Everything you need to manage your pet policies, signatures, and violations -- all in one place.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="thin-section home-section">
-        <div className="container">
-          <div className="thin-section-content">
-            <p>OurPetPolicy makes the process convenient and easy for you. Our process is vetted by lawyers in every
-              state
-              making sure you are covered under state and federal laws. </p>
-            <button className="btn primary-gradient btn-lg">Get started</button>
-          </div>
-        </div>
-      </section>
-
-      <section className="img-text-section home-section">
-        <div className="container">
-          <div className="img-text-content">
-            <div className="img">
-              <StaticImage
-                src="../images/dog-guilty.png"
-                formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Why Choose OurPetPolicy?"
-                placeholder="transparent"
-              />
-            </div>
-            <div className="text">
-              <h2 className="h2">Why do I need a Pet Policy if I have a "No Pets Policy"?</h2>
-              <p>The Federal Housing Administration allows a person with a disability that can get a letter from a
-                qualified professional to have an animal in almost any rental, regardless of a "No Pets Policy".
-                Millions of ESA (Emotional Support Animal) letters are faked every year. We have a thorough verification
-                process that will expose these fake letters and keep unauthorized animals out of your rental!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="list-section home-section">
+      <section className="list-section section">
         <div className="container">
           <div className="list-content">
             <div className="list">
@@ -205,4 +136,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Tenants

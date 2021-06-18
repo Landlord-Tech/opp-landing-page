@@ -7,7 +7,7 @@ import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
-import RotatedView from "../components/RotatedView"
+import RotatedView from "../components/rotatedView"
 
 const initialState = {
   unitCount: 350,

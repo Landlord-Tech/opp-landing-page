@@ -1,0 +1,15 @@
+.contact-form {
+  padding: 70px 90px 70px 70px;
+  background-color: $color-range;
+  box-shadow: 0 0 11px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  max-width: 720px;
+  width: 100%;
+
+  h2 {
+    padding-bottom: 12px;
+  }
+  p {
+    padding-bottom: 24px;
+  }
+}

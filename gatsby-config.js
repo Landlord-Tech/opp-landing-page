@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `UltraLabs`,
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
@@ -14,6 +14,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/homepage`,
       },
     },
     `gatsby-transformer-remark`,
@@ -42,8 +49,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: 0,
-        duration: 2000
+        offset: -66,
+        duration: 400
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

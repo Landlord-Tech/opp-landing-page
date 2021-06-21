@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
 import scrollTo from 'gatsby-plugin-smoothscroll';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const Landlords = () => {
 
@@ -58,9 +59,10 @@ const Landlords = () => {
                   <button className="btn btn-lg primary">Get started</button>
                 </div>
 
-                <button
-                  onClick={() => scrollTo('#scroll-here')}
+                <AnchorLink
+                  to="/landlords#scroll-here"
                   className="animated-mouse"
+                  stripHash
                 >
                   <Icon
                     color='#fff'
@@ -68,7 +70,14 @@ const Landlords = () => {
                     icon='scroll'
                   />
                   <p>Scroll</p>
-                </button>
+                </AnchorLink>
+                {/*<button
+                  onClick={() => scrollTo('#scroll-here')}
+                  className="animated-mouse"
+                >
+
+
+                </button>*/}
               </div>
             </div>
           </div>

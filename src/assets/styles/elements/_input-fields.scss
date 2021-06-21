@@ -1,0 +1,23 @@
+.input-field {
+  padding-bottom: 24px;
+
+    textarea, input {
+    font-size: 16px;
+    padding: 0 12px;
+    color: $color-text;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  input {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  textarea {
+    line-height: 50px;
+    resize: none;
+    height: 162px;
+  }
+}

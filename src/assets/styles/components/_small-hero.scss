@@ -18,3 +18,10 @@
     padding-bottom: 40px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .small-hero-content {
+    min-height: calc(100vh - 65px);
+  }
+}
+

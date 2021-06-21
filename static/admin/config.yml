@@ -18,8 +18,11 @@ collections:
 
   - name: homepage
     label: homepage
-    folder: homepage
+    folder: landing
+    create: true
     fields:
+      - { name: title, label: Title }
+      - { name: path, label: Path }
       - { name: heading, label: heading }
       - { name: primaryBtn, label: Primary Button }
       - { name: secondaryBtn, label: Secondary Button }

@@ -19,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `landing-pages`,
-        path: `${__dirname}/landing`,
+        name: `homepage`,
+        path: `${__dirname}/homepage`,
       },
     },
     `gatsby-transformer-remark`,

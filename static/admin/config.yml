@@ -18,7 +18,7 @@ collections:
 
   - name: homepage
     label: homepage
-    folder: landing
+    folder: homepage
     create: true
     fields:
       - { name: title, label: Title }

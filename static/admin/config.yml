@@ -52,5 +52,11 @@ collections:
       - { name: sec4Text, label: Section 4 text }
       - { name: sec4Img, label: Section 4 image, widget: image }
       - { name: sec5Title, label: Section 5 title }
-      - { name: sec5List, label: Section 5 List, widget: list }
+      - label: Section 5 List
+        name: sec5List
+        widget: list
+        default: []
+        fields:
+          - { label: List item, name: "" }
+
       - { name: sec5Btn, label: Section 5 Button }

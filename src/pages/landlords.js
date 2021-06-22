@@ -38,7 +38,6 @@ const Landlords = () => {
           sec4Img
           sec4Text
           sec5Btn
-          sec5List
           sec5Title
         }
       }
@@ -69,12 +68,11 @@ const Landlords = () => {
     sec4Img,
     sec4Text,
     sec5Btn,
-    sec5List,
     sec5Title
   } = frontmatter
 
 
-  console.log({ sec5List })
+  // console.log({ sec5List })
 
   const possibilitiesList = [
     'Customizable Contracts & Master Policies',

@@ -26,8 +26,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `landloards`,
-        path: `${__dirname}/landloards`,
+        name: `landlords`,
+        path: `${__dirname}/landlords`,
       },
     },
     `gatsby-transformer-remark`,

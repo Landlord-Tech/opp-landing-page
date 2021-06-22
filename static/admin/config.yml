@@ -52,6 +52,6 @@ collections:
       - { name: sec4Heading, label: Section 4 heading }
       - { name: sec4Text, label: Section 4 text }
       - { name: sec4Img, label: Section 4 image, widget: image }
-      - { name: sec5Title, label: Section 5 title}
-      - { name: sec5List, label: Section 5 List, widget: list}
+      - { name: sec5Title, label: Section 5 title }
+      - { name: sec5List, label: Section 5 List, widget: list }
       - { name: sec5Btn, label: Section 5 Button }

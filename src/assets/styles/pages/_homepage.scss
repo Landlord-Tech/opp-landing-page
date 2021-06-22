@@ -100,10 +100,10 @@
 .img-text-content {
   display: flex;
   align-items: center;
-  column-gap: 48px;
 
   .img {
     width: 50%;
+    margin-right: 48px;
   }
   .text {
     width: 50%;

@@ -19,11 +19,15 @@ const IndexPage = () => {
       }
     }
   `)
-  const heading = data.markdownRemark.frontmatter.heading
-  const primaryBtn = data.markdownRemark.frontmatter.primaryBtn
-  const secondaryBtn = data.markdownRemark.frontmatter.secondaryBtn
-  const hero = data.markdownRemark.frontmatter.hero
-  console.log(data.markdownRemark.frontmatter)
+  const { markdownRemark } = data;
+  const { frontmatter } = markdownRemark;
+  const {
+    heading,
+    primaryBtn,
+    secondaryBtn,
+    hero,
+  } = frontmatter
+
 
   return (
     <Layout className="homepage">

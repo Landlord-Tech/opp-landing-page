@@ -7,8 +7,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
-import scrollTo from 'gatsby-plugin-smoothscroll';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import scrollTo from "gatsby-plugin-smoothscroll"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Landlords = () => {
 
@@ -37,16 +37,18 @@ const Landlords = () => {
           sec3Text
           sec4Img
           sec4Text
+          sec5List {
+            item
+          }
           sec5Btn
           sec5Title
         }
       }
     }
   `)
-  const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
   const {
-    title,
     heroHeading,
     heroText,
     heroImg,
@@ -67,87 +69,66 @@ const Landlords = () => {
     sec4Heading,
     sec4Img,
     sec4Text,
+    sec5List,
     sec5Btn,
     sec5Title
   } = frontmatter
 
-
-  // console.log({ sec5List })
-
-  const possibilitiesList = [
-    'Customizable Contracts & Master Policies',
-    'ESA Verification Process',
-    'Electronic Signatures Service',
-    'Easy-to-use Tenant Portal',
-    'Contract Data Management System',
-    'Violation Notification System',
-    'Violation Notification System',
-    'Application Processes for all Animal Requests',
-    'Irrefutable Unauthorized Animal Policy'
-  ]
   return (
     <Layout className="homepage">
       {/*<Seo title="Home" />*/}
 
       {/*banner*/}
-      <section className="hero" >
-          <GatsbyImage
-            style={{
-              gridArea: "1 / 1",
-            }}
-            layout="fullWidth"
-            // aspectRatio={2}
-            alt=""
-            src={heroImg}
-            image={heroImg}
-            formats={["auto", "webp", "avif"]}
-            objectPosition={'70%'}
-            objectFit='cover'
-            placeholder='blurred'
-          />
-          <div
-            style={{
-              gridArea: "1/1",
-              position: "relative",
-              placeItems: "center",
-              display: "grid",
-            }}
-          >
-            <div className="container">
-              <div className="hero-content">
-                <div className="hero-left">
-                  <h1 className="h1">{heroHeading}</h1>
-                  <p className='hero-text'>{heroText}</p>
-                  <button className="btn btn-lg primary">{heroBtn}</button>
-                </div>
-
-                <AnchorLink
-                  to="/landlords#scroll-here"
-                  className="animated-mouse"
-                  stripHash
-                >
-                  <Icon
-                    color='#fff'
-                    size={60}
-                    icon='scroll'
-                  />
-                  <p>Scroll</p>
-                </AnchorLink>
-                {/*<button
+      <section className="hero">
+        <GatsbyImage
+          style={{
+            gridArea: "1 / 1"
+          }}
+          layout="fullWidth"
+          // aspectRatio={2}
+          alt=""
+          src={heroImg}
+          image={heroImg}
+          formats={["auto", "webp", "avif"]}
+          objectPosition={"70%"}
+          objectFit="cover"
+          placeholder="blurred"
+        />
+        <div
+          style={{
+            gridArea: "1/1",
+            position: "relative",
+            placeItems: "center",
+            display: "grid"
+          }}
+        >
+          <div className="container">
+            <div className="hero-content">
+              <div className="hero-left">
+                <h1 className="h1">{heroHeading}</h1>
+                <p className="hero-text">{heroText}</p>
+                <button className="btn btn-lg primary">{heroBtn}</button>
+              </div>
+              <button
                   onClick={() => scrollTo('#scroll-here')}
                   className="animated-mouse"
                 >
+                <Icon
+                  color="#fff"
+                  size={60}
+                  icon="scroll"
+                />
+                <p id="scroll-here">Scroll</p>
 
-
-                </button>*/}
-              </div>
+                </button>
             </div>
           </div>
+        </div>
 
       </section>
 
       {/*calculator*/}
-      <section className="section" id='scroll-here'>
+      <section className="section" id="scroll-here">
         <div className="container">
           <div className="title text-center">
             <h2 className="h2">{calculatorHeading}</h2>
@@ -165,7 +146,7 @@ const Landlords = () => {
                 src="../images/macbook.png"
                 formats={["AUTO", "WEBP", "AVIF"]}
                 alt="Why Choose OurPetPolicy?"
-                placeholder='transparent'
+                placeholder="transparent"
               />
             </div>
             <div className="text">
@@ -186,7 +167,7 @@ const Landlords = () => {
               <StaticImage
                 src={"../images/hand.svg"}
                 alt="rotate"
-                placeholder='transparent'
+                placeholder="transparent"
               />
               <h4 className="h4">{sec2Card1Heading}</h4>
               <p>{sec2Card1Text}</p>
@@ -195,7 +176,7 @@ const Landlords = () => {
               <StaticImage
                 src={"../images/file.svg"}
                 alt="rotate"
-                placeholder='transparent'
+                placeholder="transparent"
               />
               <h4 className="h4">{sec2Card2Heading}</h4>
               <p>{sec2Card2Text}</p>
@@ -249,7 +230,7 @@ const Landlords = () => {
               <h2 className="h2">{sec5Title}</h2>
               <ul>
                 {
-                  possibilitiesList.map((item, index) => {
+                  sec5List.map((item, index) => {
                     return (
                       <li key={index}>
                         <Icon
@@ -257,13 +238,13 @@ const Landlords = () => {
                           size={24}
                           icon="check"
                         />
-                        {item}
+                        {item.item}
                       </li>
                     )
                   })
                 }
               </ul>
-              <Link to={'/'} className='btn btn-lg secondary'>{sec5Btn}</Link>
+              <Link to={"/"} className="btn btn-lg secondary">{sec5Btn}</Link>
             </div>
             <div className="img">
               <StaticImage

@@ -1,6 +1,7 @@
 backend:
   name: gitlab
   repo: ourpetpolicy/our-pet-policy-landing-page
+  branch: development
 
 media_folder: static/assets
 public_folder: /assets
@@ -52,11 +53,28 @@ collections:
       - { name: sec4Text, label: Section 4 text }
       - { name: sec4Img, label: Section 4 image, widget: image }
       - { name: sec5Title, label: Section 5 title }
+      - { name: sec5Btn, label: Section 5 Button }
       - label: Section 5 List
         name: sec5List
         widget: list
-        default: []
         fields:
           - { label: List item, name: item }
 
-      - { name: sec5Btn, label: Section 5 Button }
+  - name: tenants
+    label: tenants
+    folder: tenants
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: heroHeading, label: Hero heading }
+      - { name: heroText, label: Hero text }
+      - { name: heroBtn, label: Hero button }
+      - { name: heroImg, label: Hero image, widget: image }
+      - { name: sec1Heading, label: Section 1 heading }
+      - { name: sec1Text, label: Section 1 text }
+      - { name: sec2Heading, label: Section 2 heading }
+      - { name: sec2Btn, label: Section 2 Button }
+      - label: Section 2 List
+        name: sec2List
+        widget: list
+        fields:
+          - { label: List item, name: item }

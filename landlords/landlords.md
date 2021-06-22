@@ -43,6 +43,6 @@ sec4Img: /assets/dog-guilty.png
 sec5List:
   - '"Customizable Contracts & Master Policies" "ESA Verification Process"'
 sec3Button: Get started
-sec5Title: Pawsibilities Unleashed . . . s
+sec5Title: Pawsibilities Unleashed . . .
 sec5Btn: Give it a try
 ---

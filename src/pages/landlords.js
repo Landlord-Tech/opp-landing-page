@@ -41,7 +41,7 @@ const Landlords = () => {
             item
           }
           sec5Btn
-          sec5Title
+          sec5Heading
         }
       }
     }
@@ -71,7 +71,7 @@ const Landlords = () => {
     sec4Text,
     sec5List,
     sec5Btn,
-    sec5Title
+    sec5Heading
   } = frontmatter
 
   return (
@@ -227,7 +227,7 @@ const Landlords = () => {
         <div className="container">
           <div className="list-content">
             <div className="list">
-              <h2 className="h2">{sec5Title}</h2>
+              <h2 className="h2">{sec5Heading}</h2>
               <ul>
                 {
                   sec5List.map((item, index) => {

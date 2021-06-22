@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
@@ -8,6 +8,29 @@ import Icon from "../components/Icon"
 
 
 const Tenants = () => {
+
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "landlords"}}) {
+        frontmatter {
+          title
+          heroHeading
+          heroText
+          heroImg
+          heroBtn
+          sec1Heading
+          sec1Text
+          sec2Heading
+          sec2Btn
+          sec2List {
+            item
+          }
+          sec5Btn
+          sec5Title
+        }
+      }
+    }
+  `)
 
   const possibilitiesList = [
     "Customizable Contracts & Master Policies",

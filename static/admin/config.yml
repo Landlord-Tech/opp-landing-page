@@ -1,7 +1,6 @@
 backend:
   name: gitlab
   repo: ourpetpolicy/our-pet-policy-landing-page
-  branch: development
 
 media_folder: static/assets
 public_folder: /assets
@@ -52,7 +51,7 @@ collections:
       - { name: sec4Heading, label: Section 4 heading }
       - { name: sec4Text, label: Section 4 text }
       - { name: sec4Img, label: Section 4 image, widget: image }
-      - { name: sec5Title, label: Section 5 title }
+      - { name: sec5Heading, label: Section 5 heading }
       - { name: sec5Btn, label: Section 5 Button }
       - label: Section 5 List
         name: sec5List

@@ -110,9 +110,9 @@ const Landlords = () => {
                 <button className="btn btn-lg primary">{heroBtn}</button>
               </div>
               <button
-                  onClick={() => scrollTo('#scroll-here')}
-                  className="animated-mouse"
-                >
+                onClick={() => scrollTo("#scroll-here")}
+                className="animated-mouse"
+              >
                 <Icon
                   color="#fff"
                   size={60}
@@ -120,7 +120,7 @@ const Landlords = () => {
                 />
                 <p id="scroll-here">Scroll</p>
 
-                </button>
+              </button>
             </div>
           </div>
         </div>

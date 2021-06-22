@@ -11,7 +11,7 @@ const Tenants = () => {
 
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "landlords"}}) {
+      markdownRemark(frontmatter: {title: {eq: "tenants"}}) {
         frontmatter {
           title
           heroHeading
@@ -25,12 +25,24 @@ const Tenants = () => {
           sec2List {
             item
           }
-          sec5Btn
-          sec5Title
         }
       }
     }
   `)
+
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
+  const {
+    heroHeading,
+    heroText,
+    heroImg,
+    heroBtn,
+    sec1Heading,
+    sec1Text,
+    sec2Heading,
+    sec2Btn,
+    sec2List
+  } = frontmatter
 
   const possibilitiesList = [
     "Customizable Contracts & Master Policies",
@@ -49,14 +61,15 @@ const Tenants = () => {
 
       {/*banner*/}
       <section className="hero">
-        <StaticImage
+        <GatsbyImage
           style={{
             gridArea: "1 / 1"
           }}
           layout="fullWidth"
           // aspectRatio={2}
           alt=""
-          src={"../images/homepage2.jpg"}
+          src={heroImg}
+          image={heroImg}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
@@ -73,30 +86,27 @@ const Tenants = () => {
           <div className="container">
             <div className="hero-content">
               <div className="hero-left">
-                <h1 className="h1">Easy Step-by-Step process for all of your animal's documentation</h1>
-                <p className="hero-text">OurPetPolicy takes the guesswork out of your contract. You can review it, see
-                  all application steps,
-                  fees, instructions, and status all in one place.</p>
-                <button className="btn btn-lg primary">Get started</button>
+                <h1 className="h1">{heroHeading}</h1>
+                <p className="hero-text">{heroText}</p>
+                <button className="btn btn-lg primary">{heroBtn}</button>
               </div>
-
               <button
+                onClick={() => scrollTo("#scroll-here")}
                 className="animated-mouse"
-                onClick={() => scrollTo('#scroll-here')}
               >
                 <Icon
                   color="#fff"
                   size={60}
                   icon="scroll"
                 />
-                <p>Scroll</p>
+                <p id="scroll-here">Scroll</p>
               </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="img-text-section section" id='scroll-here'>
+      <section className="img-text-section section">
         <div className="container">
           <div className="img-text-content">
             <div className="img">

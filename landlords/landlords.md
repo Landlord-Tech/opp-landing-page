@@ -1,6 +1,6 @@
 ---
 title: landlords
-heroHeading: Stop Pet Damage In Its Tracks!
+heroHeading: Stop Pet Damage In Its Tracks!sssssssssssssss
 heroText: Are you ready to take the pet frustrations out of your rental
   portfolio? If you are looking to crack down on unauthorized pets, fraudulent
   ESA letters, waste management,  and the damage and time it takes to deal with,
@@ -42,6 +42,7 @@ sec4Text: 'The Federal Housing Administration allows a person with a disability
   animals out of your rental! '
 sec4Img: /assets/dog-guilty.png
 sec5Title: Pawsibilities Unleashed . . .
+sec5Btn: Give it a try
 sec5List:
   - item: Customizable Contracts & Master Policies
   - item: ESA Verification Process
@@ -52,5 +53,4 @@ sec5List:
   - item: Documentation Storage System
   - item: Application Processes For All Animal Requests
   - item: Irrefutable Unauthorized Animal Policy
-sec5Btn: Give it a try
 ---

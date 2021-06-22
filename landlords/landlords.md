@@ -42,6 +42,9 @@ sec4Text: 'The Federal Housing Administration allows a person with a disability
   animals out of your rental! '
 sec4Img: /assets/dog-guilty.png
 sec5Title: Pawsibilities Unleashed . . .
-sec5List: []
+sec5List:
+  - "": aaaaaadasdasdasd
+  - "": asdasdads
+  - "": qweqweqweqwe
 sec5Btn: Give it a try
 ---

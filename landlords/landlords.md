@@ -43,8 +43,14 @@ sec4Text: 'The Federal Housing Administration allows a person with a disability
 sec4Img: /assets/dog-guilty.png
 sec5Title: Pawsibilities Unleashed . . .
 sec5List:
-  - "": aaaaaadasdasdasd
-  - "": asdasdads
-  - "": qweqweqweqwe
+  - "": Customizable Contracts & Master Policies
+  - "": ESA Verification Process
+  - "": Electronic Signatures Service
+  - "": Easy-To-Use Tenant Portal
+  - "": Contract Data Management System
+  - "": Violation Notification System
+  - "": Documentation Storage System
+  - "": Application Processes For All Animal Requests
+  - "": Irrefutable Unauthorized Animal Policy
 sec5Btn: Give it a try
 ---

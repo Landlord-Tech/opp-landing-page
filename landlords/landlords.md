@@ -41,7 +41,7 @@ sec4Text: The Federal Housing Administration allows a person with a disability
   verification process that will expose these fake letters and keep unauthorized
   animals out of your rental!
 sec4Img: /assets/dog-guilty.png
-sec5Title: Pawsibilities Unleashed . . .
+sec5Heading: Pawsibilities Unleashed . . .
 sec5Btn: Give it a try
 sec5List:
   - item: Customizable Contracts & Master Policies
@@ -53,4 +53,5 @@ sec5List:
   - item: Documentation Storage System
   - item: Application Processes For All Animal Requests
   - item: Irrefutable Unauthorized Animal Policy
+sec5Title: Pawsibilities Unleashed . . .
 ---

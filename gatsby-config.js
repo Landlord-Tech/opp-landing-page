@@ -23,6 +23,13 @@ module.exports = {
         path: `${__dirname}/homepage`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `landloards`,
+        path: `${__dirname}/landloards`,
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -4,7 +4,7 @@ import background from "../images/banner.jpg"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -14,6 +14,7 @@ const IndexPage = () => {
           heading
           primaryBtn
           secondaryBtn
+          hero
         }
       }
     }
@@ -21,7 +22,8 @@ const IndexPage = () => {
   const heading = data.markdownRemark.frontmatter.heading
   const primaryBtn = data.markdownRemark.frontmatter.primaryBtn
   const secondaryBtn = data.markdownRemark.frontmatter.secondaryBtn
-  console.log()
+  const hero = data.markdownRemark.frontmatter.hero
+  console.log(data.markdownRemark.frontmatter)
 
   return (
     <Layout className="homepage">
@@ -29,19 +31,19 @@ const IndexPage = () => {
 
       {/*banner*/}
       <section className="hero hero-page">
-        <StaticImage
+        <GatsbyImage
           style={{
             gridArea: "1 / 1"
           }}
           layout="fullWidth"
+          src={hero}
           // aspectRatio={2}
-          alt=""
-          src={"../images/banner.jpg"}
+          alt={heading}
           formats={["auto", "webp", "avif"]}
           // objectPosition={"70%"}
           objectFit="cover"
           placeholder="blurred"
-        />
+         image={hero}/>
         <div
           style={{
             gridArea: "1/1",

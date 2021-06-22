@@ -19,10 +19,40 @@ collections:
   - name: homepage
     label: homepage
     folder: homepage
-    create: true
+    preview_path: src/pages/index.js
     fields:
       - { name: title, label: Title }
       - { name: heading, label: heading }
       - { name: primaryBtn, label: Primary Button }
       - { name: secondaryBtn, label: Secondary Button }
-      - { name: hero, label: Hero image, widget: image}
+      - { name: hero, label: Hero image, widget: image }
+
+  - name: landlords
+    label: landlords
+    folder: landlords
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: heroHeading, label: Hero heading }
+      - { name: heroText, label: Hero text }
+      - { name: heroBtn, label: Hero button }
+      - { name: heroImg, label: Hero image, widget: image }
+      - { name: calculatorHeading, label: Calculator heading }
+      - { name: calculatorText, label: Calculator text }
+      - { name: sec1Heading, label: Section 1 heading }
+      - { name: sec1Text, label: Section 1 text }
+      - { name: sec2Heading, label: Section 2 heading }
+      - { name: sec2Card1Heading, label: Section 2 - card 1 heading }
+      - { name: sec2Card1Text, label: Section 2 - card 1 text }
+      - { name: sec2Card2Heading, label: Section 2 - card 2 heading }
+      - { name: sec2Card2Text, label: Section 2 - card 2 text }
+      - { name: sec2Card3Heading, label: Section 2 - card 3 heading }
+      - { name: sec2Card3Text, label: Section 2 - card 3 text }
+      - { name: sec3Text, label: Section 3 text }
+      - { name: sec3Button, label: Section 3 button }
+      - { name: sec4Heading, label: Section 4 heading }
+      - { name: sec4Text, label: Section 4 text }
+      - { name: sec4Img, label: Section 4 image, widget: image }
+      - { name: sec5Title, label: Section 5 title}
+      - { name: sec5List, label: Section 5 List, widget: list}
+      - { name: sec5Btn, label: Section 5 Button }

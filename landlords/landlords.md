@@ -32,7 +32,6 @@ sec2Card3Text: Everything you need to manage your pet policies, signatures, and
 sec3Text: "OurPetPolicy makes the process convenient and easy for you. Our
   process is vetted by lawyers in every state making sure you are covered under
   state and federal laws. "
-sec3Button: Get started
 sec4Heading: Why do I need a Pet Policy if I have a "No Pets Policy"?
 sec4Text: 'The Federal Housing Administration allows a person with a disability
   that can get a letter from a qualified professional to have an animal in
@@ -41,8 +40,9 @@ sec4Text: 'The Federal Housing Administration allows a person with a disability
   verification process that will expose these fake letters and keep unauthorized
   animals out of your rental! '
 sec4Img: /assets/dog-guilty.png
-sec5Title: "Pawsibilities Unleashed . . . "
 sec5List:
   - '"Customizable Contracts & Master Policies" "ESA Verification Process"'
+sec3Button: Get started
+sec5Title: Pawsibilities Unleashed . . . s
 sec5Btn: Give it a try
 ---

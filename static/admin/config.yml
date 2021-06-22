@@ -20,7 +20,7 @@ collections:
     label: homepage
     folder: homepage
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heading, label: heading }
       - { name: primaryBtn, label: Primary Button }
       - { name: secondaryBtn, label: Secondary Button }
@@ -29,9 +29,8 @@ collections:
   - name: landlords
     label: landlords
     folder: landlords
-    create: true
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: heroBtn, label: Hero button }

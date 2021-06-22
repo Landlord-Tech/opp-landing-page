@@ -19,7 +19,6 @@ collections:
   - name: homepage
     label: homepage
     folder: homepage
-    preview_path: src/pages/index.js
     fields:
       - { name: title, label: Title }
       - { name: heading, label: heading }

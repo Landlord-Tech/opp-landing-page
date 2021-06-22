@@ -7,6 +7,21 @@ import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "homepage"}}) {
+        frontmatter {
+          heading
+          primaryBtn
+          secondaryBtn
+        }
+      }
+    }
+  `)
+  const heading = data.markdownRemark.frontmatter.heading
+  const primaryBtn = data.markdownRemark.frontmatter.primaryBtn
+  const secondaryBtn = data.markdownRemark.frontmatter.secondaryBtn
+  console.log()
 
   return (
     <Layout className="homepage">
@@ -38,10 +53,10 @@ const IndexPage = () => {
           <div className="container">
             <div className="hero-content">
               <div className="hero-left">
-                <h1 className="h1">Everything you need to succeed with pets in rentals</h1>
+                <h1 className="h1">{heading}</h1>
                 <div>
-                  <Link to="/landlords/" className="btn btn-lg primary">Landlords</Link>
-                  <Link to="/tenants/" className="btn btn-lg secondary">Tenants</Link>
+                  <Link to="/landlords/" className="btn btn-lg primary">{primaryBtn}</Link>
+                  <Link to="/tenants/" className="btn btn-lg secondary">{secondaryBtn}</Link>
                 </div>
               </div>
             </div>

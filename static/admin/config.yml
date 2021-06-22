@@ -77,3 +77,26 @@ collections:
         widget: list
         fields:
           - { label: List item, name: item }
+
+  - name: pricing
+    label: pricing
+    folder: pricing
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: heroHeading, label: Hero heading }
+      - { name: heroText, label: Hero text }
+      -  label: Pricing List
+         name: pricingList
+         widget: list
+         fields:
+           - { label: Pricing plan, name: plan }
+           - { label: Contracts, name: contracts }
+           - { label: Price per month, name: price }
+           - { label: Price Button, name: pricingBtn }
+      - { name: faqHeading, label: FAQ heading }
+      - label: FAQ List
+        name: faqList
+        widget: list
+        fields:
+          - { label: Question, name: question }
+          - { label: Answer, name: answer }

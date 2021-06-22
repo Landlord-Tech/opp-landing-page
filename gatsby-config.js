@@ -37,6 +37,13 @@ module.exports = {
         path: `${__dirname}/tenants`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pricing`,
+        path: `${__dirname}/pricing`,
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

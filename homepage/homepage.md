@@ -1,8 +1,8 @@
 ---
 title: homepage
 path: /home
-heading: new heading
-primaryBtn: primary
-secondaryBtn: secondary
+heading: Everything you need to succeed with animals in rentals
+primaryBtn: Landlords
+secondaryBtn: Tenants
 hero: /assets/banner.jpg
 ---

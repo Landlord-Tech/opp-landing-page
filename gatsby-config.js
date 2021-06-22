@@ -30,6 +30,13 @@ module.exports = {
         path: `${__dirname}/landlords`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `tenants`,
+        path: `${__dirname}/tenants`,
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

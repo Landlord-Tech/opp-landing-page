@@ -57,6 +57,6 @@ collections:
         widget: list
         default: []
         fields:
-          - { label: List item, name: "" }
+          - { label: List item, name: item }
 
       - { name: sec5Btn, label: Section 5 Button }

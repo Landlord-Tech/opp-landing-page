@@ -22,7 +22,7 @@ sec2Desc: >-
   links below)
 
 
-  <a href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/" target="_blank">AAOA</a> <a href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F" target="_blank">HSUS</a>
+  [AAOA](https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/)
 sec3Heading: Lost Rent
 sec3SubHeading1: Additional turn-around time (in weeks)
 sec3Text1: (For a rental that has pet damage, how much longer does it take to

@@ -405,6 +405,7 @@ const CalculatorNoPetsAllowed = () => {
                     />
                   </div>
                   <div className="right">
+                    <HTMLContent content={html}/>
                     <p>
                       {sec2Desc}
                       <div className="section-links">

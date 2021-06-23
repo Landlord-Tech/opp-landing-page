@@ -187,7 +187,8 @@ collections:
       - { name: sec3Text2, label: Lost Rent text 2 }
       - { name: sec3SubHeading3, label: Lost Rent subheading 3 }
       - { name: sec3Text3, label: Lost Rent text 3 }
-      - { name: sec3Desc, label: Lost Rent description }
+#      - { name: sec3Desc, label: Lost Rent description }
+      - { name: body1, label: Lost Rent description, widget: markdown }
       - { name: sec4Heading, label: Fees and Fines heading }
       - { name: sec4SubHeading1, label: Fees and Fines subheading 1 }
       - { name: sec4Text1, label: Fees and Fines text 1 }

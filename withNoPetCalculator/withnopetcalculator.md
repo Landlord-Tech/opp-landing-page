@@ -17,17 +17,6 @@ sec2Text2: (For every unit with an animal, what percentage of them have damage
 sec2SubHeading3: Typical cost to fix damage from an animal
 sec2Text3: (How much does it cost to fix damage from an animal, when there is
   damage, after a tenant leaves?)
-sec2Desc: >-
-  <!--StartFragment-->
-
-
-  Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
-
-
-  <!--EndFragment-->
-
-
-  Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
 sec3Heading: Lost Rent
 sec3SubHeading1: Additional turn-around time (in weeks)
 sec3Text1: (For a rental that has pet damage, how much longer does it take to
@@ -68,6 +57,17 @@ sec5Text2: (How much time does it take, on average, to line up contractors, etc.
 sec5SubHeading3: Property Management wage (per hour)
 sec5Text3: (How much time, in dollars per hour, is the property manager’s time
   spent dealing with pet questions and pet damage?)
+sec2Desc: >-
+  <!--StartFragment-->
+
+
+  Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
+
+
+  <!--EndFragment-->
+
+
+  Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
 sec5Desc: Time is money. Communicating with tenants about waste management
   policies, issues, or how to get an animal, etc. can take a lot of a property
   manager’s time. OurPetPolicy clearly outlines these matters so that all you
@@ -76,3 +76,4 @@ sec5Desc: Time is money. Communicating with tenants about waste management
 sec6Heading: Summary
 sec6Desc: Our goal is to put more money in your pocket while protecting your rentals.
 ---
+**Asssshot**

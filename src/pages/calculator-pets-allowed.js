@@ -164,7 +164,7 @@ const Calculator = () => {
 
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "withPetCalculator"}}) {
+      markdownRemark(frontmatter: {title: {eq: "withpet"}}) {
         frontmatter {
           title
           sec1Heading

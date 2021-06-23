@@ -26,8 +26,8 @@ sec3Text2: (Typically 50-70% of ESA letters are fraudulent and will be exposed
   with OurPetPolicy)
 sec3SubHeading3: Average length-of-stay in months
 sec3Text3: (On average, how many months do your tenants stay before moving?)
-sec3Desc: With new websites popping up daily selling fraudulent ESA letters for
-  as low as $39, this loophole is being abused nationwide. We have a validation
+body1: With new websites popping up daily selling fraudulent ESA letters for as
+  low as $39, this loophole is being abused nationwide. We have a validation
   process and typically find that 50%-70% of ESA letters are fraudulent. By
   eliminating this upfront, we can greatly reduce the number of fraudulent
   animals in your rentals, which greatly reduces damages. With less damage, you
@@ -68,6 +68,13 @@ sec2Desc: >-
 
 
   Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
+sec3Desc: With new websites popping up daily selling fraudulent ESA letters for
+  as low as $39, this loophole is being abused nationwide. We have a validation
+  process and typically find that 50%-70% of ESA letters are fraudulent. By
+  eliminating this upfront, we can greatly reduce the number of fraudulent
+  animals in your rentals, which greatly reduces damages. With less damage, you
+  will have a shorter, and more cost-effective, turnaround time to rent your
+  property to the next tenant.
 sec5Desc: Time is money. Communicating with tenants about waste management
   policies, issues, or how to get an animal, etc. can take a lot of a property
   manager’s time. OurPetPolicy clearly outlines these matters so that all you

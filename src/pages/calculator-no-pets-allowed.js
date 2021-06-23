@@ -9,6 +9,7 @@ import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
 import RotatedView from "../components/rotatedView"
 import { graphql, useStaticQuery } from "gatsby"
+import HTMLContent from "../components/HTMLContent"
 
 const initialState = {
   unitCount: 350,
@@ -142,6 +143,7 @@ const CalculatorNoPetsAllowed = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: {title: {eq: "withNoPetCalculator"}}) {
+        html
         frontmatter {
           title
           heroHeading,
@@ -190,7 +192,7 @@ const CalculatorNoPetsAllowed = () => {
     }
   `)
   const { markdownRemark } = data
-  const { frontmatter } = markdownRemark
+  const { frontmatter, html } = markdownRemark
   const {
     title,
     heroHeading,
@@ -236,7 +238,7 @@ const CalculatorNoPetsAllowed = () => {
     sec6Desc
   } = frontmatter
 
-
+  console.log({ html })
   React.useEffect(() => {
     if (scrollTo) {
       refMapping[scrollTo].current?.scrollIntoView({
@@ -403,7 +405,7 @@ const CalculatorNoPetsAllowed = () => {
                     />
                   </div>
                   <div className="right">
-                    <p>{sec2Desc}</p>
+                    <p>{HTMLContent(html)}</p>
                     <p>
                       Did you know recent studies show that 72%-90% of tenants
                       have an animal? (see links below)

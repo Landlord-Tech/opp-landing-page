@@ -17,6 +17,8 @@ sec2Text2: (For every unit with an animal, what percentage of them have damage
 sec2SubHeading3: Typical cost to fix damage from an animal
 sec2Text3: (How much does it cost to fix damage from an animal, when there is
   damage, after a tenant leaves?)
+sec2Desc: Did you know recent studies show that 72%-90% of tenants have an
+  animal? (see links below)
 sec3Heading: Lost Rent
 sec3SubHeading1: Additional turn-around time (in weeks)
 sec3Text1: (For a rental that has pet damage, how much longer does it take to
@@ -26,8 +28,8 @@ sec3Text2: (Typically 50-70% of ESA letters are fraudulent and will be exposed
   with OurPetPolicy)
 sec3SubHeading3: Average length-of-stay in months
 sec3Text3: (On average, how many months do your tenants stay before moving?)
-body1: With new websites popping up daily selling fraudulent ESA letters for as
-  low as $39, this loophole is being abused nationwide. We have a validation
+sec3Desc: With new websites popping up daily selling fraudulent ESA letters for
+  as low as $39, this loophole is being abused nationwide. We have a validation
   process and typically find that 50%-70% of ESA letters are fraudulent. By
   eliminating this upfront, we can greatly reduce the number of fraudulent
   animals in your rentals, which greatly reduces damages. With less damage, you
@@ -57,19 +59,8 @@ sec5Text2: (How much time does it take, on average, to line up contractors, etc.
 sec5SubHeading3: Property Management wage (per hour)
 sec5Text3: (How much time, in dollars per hour, is the property manager’s time
   spent dealing with pet questions and pet damage?)
-sec2Desc: >-
-  <!--StartFragment-->
-
-
-  Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
-
-
-  <!--EndFragment-->
-
-
-  Did you know recent studies show that 72%-90% of tenants have an animal? (see links below)
-sec3Desc: With new websites popping up daily selling fraudulent ESA letters for
-  as low as $39, this loophole is being abused nationwide. We have a validation
+body1: With new websites popping up daily selling fraudulent ESA letters for as
+  low as $39, this loophole is being abused nationwide. We have a validation
   process and typically find that 50%-70% of ESA letters are fraudulent. By
   eliminating this upfront, we can greatly reduce the number of fraudulent
   animals in your rentals, which greatly reduces damages. With less damage, you

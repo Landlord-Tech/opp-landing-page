@@ -1,5 +1,5 @@
 ---
-title: withpet
+title: withPetCalculator
 heroHeading: Return on Investment with OurPetPolicy
 sec1Heading: Tell us about your Properties
 sec1SubHeading1: How many Units

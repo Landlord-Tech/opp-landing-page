@@ -407,7 +407,7 @@ const CalculatorNoPetsAllowed = () => {
                   <div className="right">
                     {/*<p  dangerouslySetInnerHTML={{__html: html }}>{sec2Desc}</p>*/}
                     {/*<p>{(html, "asdasdasd" )}</p>*/}
-                    <HTMLContent  content={sec2Desc} className="asd"/>
+                    <HTMLContent  content={html} className="asd"/>
 
                     <p>
                       Did you know recent studies show that 72%-90% of tenants

@@ -17,16 +17,12 @@ sec2Text2: (For every unit with an animal, what percentage of them have damage
 sec2SubHeading3: Typical cost to fix damage from an animal
 sec2Text3: (How much does it cost to fix damage from an animal, when there is
   damage, after a tenant leaves?)
-sec2Desc: >
+sec2Desc: >-
   Did you know recent studies show that 72%-90% of tenants have an animal? (see
   links below)
 
 
-  <div class="section-links">
-
-  <a href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/" target="_blank">AAOA</a> <a href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F" target="_blank">HSUS</a>
-
-  </div>
+  [AAOA ](https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/) [HSUS](https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F)
 sec3Heading: Lost Rent
 sec3SubHeading1: Additional turn-around time (in weeks)
 sec3Text1: (For a rental that has pet damage, how much longer does it take to

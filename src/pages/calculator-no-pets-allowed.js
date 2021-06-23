@@ -405,14 +405,9 @@ const CalculatorNoPetsAllowed = () => {
                     />
                   </div>
                   <div className="right">
-                    {/*<p  dangerouslySetInnerHTML={{__html: html }}>{sec2Desc}</p>*/}
-                    {/*<p>{(html, "asdasdasd" )}</p>*/}
-                    <HTMLContent  content={html} className="asd"/>
-
                     <p>
-                      Did you know recent studies show that 72%-90% of tenants
-                      have an animal? (see links below)
-                      {/*<div className="section-links">
+                      {sec2Desc}
+                      <div className="section-links">
                         <a
                           href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/"
                           target="_blank"
@@ -425,7 +420,7 @@ const CalculatorNoPetsAllowed = () => {
                         >
                           HSUS
                         </a>
-                      </div>*/}
+                      </div>
                     </p>
                   </div>
                 </div>

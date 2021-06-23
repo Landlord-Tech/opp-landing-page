@@ -9,6 +9,7 @@ import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithPets } from "../calculator"
 import AllowedTable from "../components/calculator/AllowedTable"
 import RotatedView from "../components/rotatedView"
+import { graphql, useStaticQuery } from "gatsby"
 
 const initialState = {
   unitCount: 1000,
@@ -152,7 +153,6 @@ const Calculator = () => {
   const feesRef = useRef(null)
   const timeRef = useRef(null)
   const summaryRef = useRef(null)
-
   const refMapping = {
     "Calculator introduction": introductionRef,
     "Pet rent": petRentRef,
@@ -162,12 +162,93 @@ const Calculator = () => {
     Summary: summaryRef,
   }
 
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "pricing"}}) {
+        frontmatter {
+          title
+          sec1Heading
+          sec1SubHeading1
+          sec1Text1
+          sec1Desc
+          sec2Heading
+          sec2SubHeading1
+          sec2Text1
+          sec2SubHeading2
+          sec2Text2
+          sec2SubHeading3
+          sec2Text3
+          sec2Desc
+          sec3Heading
+          sec3SubHeading1
+          sec3Text1
+          sec3SubHeading2
+          sec3Text2
+          sec3Desc
+          sec4Heading
+          sec4SubHeading1
+          sec4Text1
+          sec4SubHeading2
+          sec4Text2
+          sec4SubHeading3
+          sec4Text3
+          sec4Desc
+          sec5Heading
+          sec5SubHeading1
+          sec5Text1
+          sec5SubHeading2
+          sec5Text2
+          sec5Desc
+          sec6Heading
+          sec6Desc
+        }
+      }
+    }
+  `)
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
+  const {
+    title,
+    sec1Heading,
+    sec1SubHeading1,
+    sec1Text1,
+    sec1Desc,
+    sec2Heading,
+    sec2SubHeading1,
+    sec2Text1,
+    sec2SubHeading2,
+    sec2Text2,
+    sec2SubHeading3,
+    sec2Text3,
+    sec2Desc,
+    sec3Heading,
+    sec3SubHeading1,
+    sec3Text1,
+    sec3SubHeading2,
+    sec3Text2,
+    sec3Desc,
+    sec4Heading,
+    sec4SubHeading1,
+    sec4Text1,
+    sec4SubHeading2,
+    sec4Text2,
+    sec4SubHeading3,
+    sec4Text3,
+    sec4Desc,
+    sec5Heading,
+    sec5SubHeading1,
+    sec5Text1,
+    sec5SubHeading2,
+    sec5Text2,
+    sec5Desc,
+    sec6Heading,
+    sec6Desc
+  } = frontmatter
+
   React.useEffect(() => {
     if (scrollTo) {
       refMapping[scrollTo].current?.scrollIntoView({
         behavior: "smooth",
-        // block: "nearest",
-        // inline: "start",
       })
       setScrollTo(false)
     }

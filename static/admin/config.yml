@@ -105,7 +105,7 @@ collections:
     label: contact
     folder: contact
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: sec1Heading, label: Contact heading }
@@ -118,3 +118,44 @@ collections:
              name: icon
              widget: select
              options: [ phone, cellphone, email, fax, skype, location ]
+
+  - name: withPetCalculator
+    label: pet allowed calculator
+    folder: withPetCalculator
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: heroHeading, label: Page title }
+      - { name: sec1Heading, label: Calculator intro heading }
+      - { name: sec1SubHeading1, label: Calculator intro subheading 1 }
+      - { name: sec1Text1, label: Calculator intro text 1 }
+      - { name: sec1Desc, label: Calculator intro description, widget: markdown }
+      - { name: sec2Heading, label: Pet Rent heading }
+      - { name: sec2SubHeading1, label: Pet Rent subheading 1 }
+      - { name: sec2Text1, label: Pet Rent text 1 }
+      - { name: sec2SubHeading2, label: Pet Rent subheading 2 }
+      - { name: sec2Text2, label: Pet Rent text 2 }
+      - { name: sec2SubHeading3, label: Pet Rent subheading 3 }
+      - { name: sec2Text3, label: Pet Rent text 3 }
+      - { name: sec2Desc, label: Pet Rent description, widget: markdown }
+      - { name: sec3Heading, label: Pet Deposits heading }
+      - { name: sec3SubHeading1, label: Pet Deposits subheading 1 }
+      - { name: sec3Text1, label: Pet Deposits text 1 }
+      - { name: sec3SubHeading2, label: Pet Deposits subheading 2 }
+      - { name: sec3Text2, label: Pet Deposits text 2 }
+      - { name: sec3Desc, label: Pet Deposits description, widget: markdown }
+      - { name: sec4Heading, label: Fees and Fines heading }
+      - { name: sec4SubHeading1, label: Fees and Fines subheading 1 }
+      - { name: sec4Text1, label: Fees and Fines text 1 }
+      - { name: sec4SubHeading2, label: Fees and Fines subheading 2 }
+      - { name: sec4Text2, label: Fees and Fines text 2 }
+      - { name: sec4SubHeading3, label: Fees and Fines subheading 3 }
+      - { name: sec4Text3, label: Fees and Fines text 3 }
+      - { name: sec4Desc, label: Fees and Fines description, widget: markdown }
+      - { name: sec5Heading, label: Time Saving heading }
+      - { name: sec5SubHeading1, label: Time Saving subheading 1 }
+      - { name: sec5Text1, label: Time Saving text 1 }
+      - { name: sec5SubHeading2, label: Time Saving subheading 2 }
+      - { name: sec5Text2, label: Time Saving text 2 }
+      - { name: sec5Desc, label: Time Saving description, widget: markdown }
+      - { name: sec6Heading, label: Summery heading }
+      - { name: sec6Desc, label: Summery description, widget: markdown }

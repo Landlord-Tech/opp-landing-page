@@ -33,7 +33,6 @@ const ContactUs = () => {
     contactList,
   } = frontmatter
 
-  console.log({ data })
 
   return (
     <Layout>

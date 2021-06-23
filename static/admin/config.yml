@@ -105,7 +105,9 @@ collections:
     label: contact
     folder: contact
     fields:
-      - { name: title, label: Title, widget: hidden }
+      - { name: title, label: Title }
+      - { name: heroHeading, label: Hero heading }
+      - { name: heroText, label: Hero text }
       - { name: sec1Heading, label: Contact heading }
       -  label: Contact List
          name: contactList

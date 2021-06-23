@@ -1,10 +1,37 @@
 import React from "react"
 import Layout from "../components/layout"
-import { func } from "prop-types"
 import ContactForm from "../components/contactForm"
 import Icon from "../components/Icon"
+import { graphql, useStaticQuery } from "gatsby"
 
 const ContactUs = () => {
+
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "contact"}}) {
+        frontmatter {
+          title
+          heroHeading
+          heroText
+          sec1Heading
+          contactList {
+            contactField
+            icon
+          }
+        }
+      }
+    }
+  `)
+
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
+  const {
+    title,
+    heroHeading,
+    heroText,
+    sec1Heading,
+    contactList,
+  } = frontmatter
 
   return (
     <Layout>

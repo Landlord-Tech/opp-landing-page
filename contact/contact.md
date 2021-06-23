@@ -1,5 +1,8 @@
 ---
-title: Contact
+title: contact
+heroHeading: Get in touch!
+heroText: We’d love to hear from you! Please contact us with questions,
+  suggestions, and feedback!
 sec1Heading: Contact Information
 contactList:
   - icon: location

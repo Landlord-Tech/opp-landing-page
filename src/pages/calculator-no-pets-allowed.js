@@ -405,7 +405,10 @@ const CalculatorNoPetsAllowed = () => {
                     />
                   </div>
                   <div className="right">
-                    <p>{HTMLContent(html)}</p>
+                    {/*<p  dangerouslySetInnerHTML={{__html: html }}>{sec2Desc}</p>*/}
+                    {/*<p>{(html, "asdasdasd" )}</p>*/}
+                    <HTMLContent  content={sec2Desc} className="asd"/>
+
                     <p>
                       Did you know recent studies show that 72%-90% of tenants
                       have an animal? (see links below)
@@ -589,13 +592,9 @@ const CalculatorNoPetsAllowed = () => {
                 ref={summaryRef}
               >
                 <h4 className="h4">{sec6Heading}</h4>
-                {/*<p>Our goal is to save you way more money </p>*/}
                 <div className="calculator-item-table-content">
                   <div className="left">
-                    <p>
-                      Our goal is to put more money in your pocket while
-                      protecting your rentals.
-                    </p>
+                    <p>{sec6Desc}</p>
                     <NoAllowedTable data={ROINoPetsResults} />
                   </div>
                 </div>

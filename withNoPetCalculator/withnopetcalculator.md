@@ -71,3 +71,5 @@ sec5Desc: Time is money. Communicating with tenants about waste management
 sec6Heading: Summary
 sec6Desc: Our goal is to put more money in your pocket while protecting your rentals.
 ---
+
+Ashot

@@ -6,9 +6,6 @@ import Icon from "../components/Icon"
 
 const ContactUs = () => {
 
-  function handleSubmit(e) {
-    e.preventDefault()
-  }
   return (
     <Layout>
       <section className="small-hero">

@@ -44,17 +44,6 @@ const Tenants = () => {
     sec2List
   } = frontmatter
 
-  const possibilitiesList = [
-    "Customizable Contracts & Master Policies",
-    "ESA Verification Process",
-    "Electronic Signatures Service",
-    "Easy-to-use Tenant Portal",
-    "Contract Data Management System",
-    "Violation Notification System",
-    "Violation Notification System",
-    "Application Processes for all Animal Requests",
-    "Irrefutable Unauthorized Animal Policy"
-  ]
   return (
     <Layout className="homepage">
       {/*<Seo title="Home" />*/}
@@ -120,10 +109,8 @@ const Tenants = () => {
               />
             </div>
             <div className="text">
-              <h2 className="h2">Win-Win for you and your animal</h2>
-              <p>Life is always better when everyone is on the same page. Through our portal all rules, expectations,
-                and procedures are specifically outlined and follows all State and Federal Laws. This protects both you
-                and your landlord.</p>
+              <h2 className="h2">{sec1Heading}</h2>
+              <p>{sec1Text}</p>
             </div>
           </div>
         </div>
@@ -133,10 +120,10 @@ const Tenants = () => {
         <div className="container">
           <div className="list-content">
             <div className="list">
-              <h2 className="h2">Pawsibilities Unleashed . . . </h2>
+              <h2 className="h2">{sec2Heading}</h2>
               <ul>
                 {
-                  possibilitiesList.map((item, index) => {
+                  sec2List.map((item, index) => {
                     return (
                       <li key={index}>
                         <Icon
@@ -144,13 +131,13 @@ const Tenants = () => {
                           size={24}
                           icon="check"
                         />
-                        {item}
+                        {item.item}
                       </li>
                     )
                   })
                 }
               </ul>
-              <Link to={"/"} className="btn btn-lg secondary">Give it a try</Link>
+              <Link to={"/"} className="btn btn-lg secondary">{sec2Btn}</Link>
             </div>
             <div className="img">
               <StaticImage

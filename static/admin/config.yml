@@ -100,3 +100,19 @@ collections:
         fields:
           - { label: Question, name: question }
           - { label: Answer, name: answer }
+
+  - name: contact
+    label: contact
+    folder: contact
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: sec1Heading, label: Contact heading }
+      -  label: Contact List
+         name: contactList
+         widget: list
+         fields:
+           - { label: Contact field, name: contactField }
+           - label: Contact icon
+             name: icon
+             widget: select
+             options: [ phone, cellphone, email, fax, skype, location ]

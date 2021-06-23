@@ -26,6 +26,18 @@ collections:
       - { name: secondaryBtn, label: Secondary Button }
       - { name: hero, label: Hero image, widget: image }
 
+  - name: notFound
+    label: notFound
+    folder: notFound
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: heroHeading, label: Hero heading }
+      - { name: heroText, label: Hero text }
+      - { name: primaryBtn, label: Primary Button }
+      - { name: secondaryBtn, label: Secondary Button }
+      - { name: heroImg, label: Hero image, widget: image }
+
   - name: landlords
     label: landlords
     folder: landlords
@@ -179,7 +191,7 @@ collections:
       - { name: sec2Text2, label: Cost of pet damage text 2 }
       - { name: sec2SubHeading3, label: Cost of pet damage subheading 3 }
       - { name: sec2Text3, label: Cost of pet damage text 3 }
-      - { name: body, label: Cost of pet damage description, widget: markdown }
+      - { name: sec2Desc, label: Cost of pet damage description, widget: markdown }
       - { name: sec3Heading, label: Lost Rent heading }
       - { name: sec3SubHeading1, label: Lost Rent subheading 1 }
       - { name: sec3Text1, label: Lost Rent text 1 }
@@ -187,8 +199,7 @@ collections:
       - { name: sec3Text2, label: Lost Rent text 2 }
       - { name: sec3SubHeading3, label: Lost Rent subheading 3 }
       - { name: sec3Text3, label: Lost Rent text 3 }
-#      - { name: sec3Desc, label: Lost Rent description }
-      - { name: body1, label: Lost Rent description, widget: markdown }
+      - { name: sec3Desc, label: Lost Rent description }
       - { name: sec4Heading, label: Fees and Fines heading }
       - { name: sec4SubHeading1, label: Fees and Fines subheading 1 }
       - { name: sec4Text1, label: Fees and Fines text 1 }

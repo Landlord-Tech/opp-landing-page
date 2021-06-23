@@ -179,7 +179,7 @@ collections:
       - { name: sec2Text2, label: Cost of pet damage text 2 }
       - { name: sec2SubHeading3, label: Cost of pet damage subheading 3 }
       - { name: sec2Text3, label: Cost of pet damage text 3 }
-      - { name: sec2Desc, label: Cost of pet damage description, widget: markdown }
+      - { name: body, label: Cost of pet damage description, widget: markdown }
       - { name: sec3Heading, label: Lost Rent heading }
       - { name: sec3SubHeading1, label: Lost Rent subheading 1 }
       - { name: sec3Text1, label: Lost Rent text 1 }

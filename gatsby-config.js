@@ -51,6 +51,13 @@ module.exports = {
         path: `${__dirname}/contact`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `withPetCalculator`,
+        path: `${__dirname}/withPetCalculator`,
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,

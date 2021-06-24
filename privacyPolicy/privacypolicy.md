@@ -2,8 +2,6 @@
 title: privacyPolicy
 heroHeading: Privacy Policy
 ---
-<!--StartFragment-->
-
 This Privacy Policy governs the manner in which Ultra Labs collects, uses, maintains and discloses information collected from users (each, a “User”) of any website that links to these Terms (the “Site”).
 
 **Personal identification information**
@@ -110,5 +108,3 @@ ATTN: Data Protection Officer\
 950 W. Bannock St\
 Suite 860\
 Boise, ID 83702
-
-<!--EndFragment-->

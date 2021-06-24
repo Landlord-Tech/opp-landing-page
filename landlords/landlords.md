@@ -6,6 +6,7 @@ heroText: Ready to take the pet frustrations out of your rental portfolio? If
   waste management, and the damage and time it takes to deal with, you have come
   to the right place!
 heroBtn: Get started
+heroBtnUrl: https://app.ourpetpolicy.com/?auth=signup
 heroImg: /assets/homepage.jpg
 calculatorHeading: How much could you save?
 calculatorText: "Whether you allow pets or not, we can help you maximize profits
@@ -33,6 +34,7 @@ sec3Text: OurPetPolicy makes the process convenient and easy for you. Our
   process is vetted by lawyers in every state making sure you are covered under
   state and federal laws.
 sec3Button: Get started
+sec3ButtonUrl: https://app.ourpetpolicy.com/?auth=signup
 sec4Heading: Why do I need a Pet Policy if I have a "No Pets Policy"?
 sec4Text: The Federal Housing Administration allows a person with a disability
   that can get a letter from a qualified professional to have an animal in
@@ -43,6 +45,7 @@ sec4Text: The Federal Housing Administration allows a person with a disability
 sec4Img: /assets/dog-guilty.png
 sec5Heading: Pawsibilities Unleashed . . .
 sec5Btn: Give it a try
+sec5BtnUrl: https://app.ourpetpolicy.com/?auth=signup
 sec5List:
   - item: Customizable Contracts & Master Policies
   - item: ESA Verification Process

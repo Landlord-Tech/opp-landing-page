@@ -5,6 +5,7 @@ heroText: "OurPetPolicy takes the guesswork out of your contract. You can review
   it, see all application steps, fees, instructions, and status all in one
   place.   "
 heroBtn: Get started
+heroBtnUrl: https://app.ourpetpolicy.com/?auth=signup
 heroImg: /assets/homepage2.jpg
 sec1Heading: Win-Win for you and your animal
 sec1Text: "Life is always better when everyone is on the same page. Through our
@@ -13,6 +14,7 @@ sec1Text: "Life is always better when everyone is on the same page. Through our
   landlord.  "
 sec2Heading: "Pawsibilities Unleashed . . . "
 sec2Btn: Give it a try
+sec2BtnUrl: https://app.ourpetpolicy.com/?auth=signup
 sec2List:
   - item: Customizable Contracts & Master Policies
   - item: ESA Verification Process

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Icon from "./Icon"
 import useLockedBody from "../hooks/useLockedBody"
@@ -16,6 +16,30 @@ function handleMenuToggle() {
   setOpenedMenu(!openedMenu)
   setLocked(!locked)
 }
+
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "header"}}) {
+        frontmatter {
+          title
+          primaryBtn
+          primaryBtnUrl
+          secondaryBtn
+          secondaryBtnUrl
+        }
+      }
+    }
+  `)
+
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
+  const {
+    title,
+    primaryBtn,
+    primaryBtnUrl,
+    secondaryBtn,
+    secondaryBtnUrl
+  } = frontmatter
 
   return (
     <header className={`header dark-header ${openedMenu ? 'opened' : ''} ${sticky ? 'sticky' : ''}`}>
@@ -64,8 +88,8 @@ function handleMenuToggle() {
                 <Link activeClassName={"active-link"} to="/contact-us/">Contact us</Link>
               </li>
               <li className='nav-button-group'>
-                <Link to='/' className="btn btn-md primary get-started-btn">Get started</Link>
-                <Link to='/' className='btn btn-md  login-btn secondary'>Login</Link>
+                <Link to={primaryBtnUrl} className="btn btn-md primary get-started-btn">{primaryBtn}</Link>
+                <Link to={secondaryBtnUrl} className='btn btn-md  login-btn secondary'>{secondaryBtn}</Link>
               </li>
             </ul>
           </nav>

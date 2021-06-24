@@ -23,10 +23,12 @@ const Tenants = () => {
           heroText
           heroImg
           heroBtn
+          heroBtnUrl
           sec1Heading
           sec1Text
           sec2Heading
           sec2Btn
+          sec2BtnUrl
           sec2List {
             item
           }
@@ -45,10 +47,12 @@ const Tenants = () => {
     heroText,
     heroImg,
     heroBtn,
+    heroBtnUrl,
     sec1Heading,
     sec1Text,
     sec2Heading,
     sec2Btn,
+    sec2BtnUrl,
     sec2List
   } = frontmatter
 
@@ -82,7 +86,7 @@ const Tenants = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <button className="btn btn-lg primary">{heroBtn}</button>
+                <Link to={heroBtnUrl} target="_blank" className="btn btn-lg primary">{heroBtn}</Link>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
@@ -142,7 +146,7 @@ const Tenants = () => {
                   })
                 }
               </ul>
-              <Link to={"/"} className="btn btn-lg secondary">{sec2Btn}</Link>
+              <Link to={sec2BtnUrl} target="_blank" className="btn btn-lg secondary">{sec2Btn}</Link>
             </div>
             <div className="img">
               <StaticImage

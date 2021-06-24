@@ -236,8 +236,17 @@ collections:
   - name: privacyPolicy
     label: privacy policy
     folder: privacyPolicy
-    create: true
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero title }
       - { name: body, label: Content, widget: markdown }
+
+  - name: header
+    label: header
+    folder: header
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: primaryBtn, label: Primary button }
+      - { name: primaryBtnUrl, label: Primary button url }
+      - { name: secondaryBtn, label: Secondary button }
+      - { name: secondaryBtnUrl, label: Secondary button url }

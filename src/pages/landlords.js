@@ -24,6 +24,7 @@ const Landlords = () => {
           heroText
           heroImg
           heroBtn
+          heroBtnUrl
           calculatorText
           calculatorHeading
           sec1Heading
@@ -36,6 +37,7 @@ const Landlords = () => {
           sec2Card3Text
           sec2Heading
           sec3Button
+          sec3ButtonUrl
           sec4Heading
           sec3Text
           sec4Img
@@ -44,6 +46,7 @@ const Landlords = () => {
             item
           }
           sec5Btn
+          sec5BtnUrl
           sec5Heading
         }
       }
@@ -59,6 +62,7 @@ const Landlords = () => {
     heroText,
     heroImg,
     heroBtn,
+    heroBtnUrl,
     calculatorText,
     calculatorHeading,
     sec1Heading,
@@ -72,11 +76,13 @@ const Landlords = () => {
     sec2Card3Text,
     sec3Text,
     sec3Button,
+    sec3ButtonUrl,
     sec4Heading,
     sec4Img,
     sec4Text,
     sec5List,
     sec5Btn,
+    sec5BtnUrl,
     sec5Heading
   } = frontmatter
 
@@ -110,7 +116,7 @@ const Landlords = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <button className="btn btn-lg primary">{heroBtn}</button>
+                <Link to={heroBtnUrl} target="_blank" className="btn btn-lg primary">{heroBtn}</Link>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
@@ -201,7 +207,7 @@ const Landlords = () => {
         <div className="container">
           <div className="thin-section-content">
             <p>{sec3Text}</p>
-            <button className="btn primary btn-lg">{sec3Button}</button>
+            <Link to={sec3ButtonUrl} target="_blank" className="btn primary btn-lg">{sec3Button}</Link>
           </div>
         </div>
       </section>
@@ -245,7 +251,7 @@ const Landlords = () => {
                   })
                 }
               </ul>
-              <Link to={"/"} className="btn btn-lg secondary">{sec5Btn}</Link>
+              <Link to={sec5BtnUrl} target="_blank" className="btn btn-lg secondary">{sec5Btn}</Link>
             </div>
             <div className="img">
               <StaticImage

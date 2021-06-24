@@ -17,6 +17,7 @@ const Pricing = () => {
             contracts
             price
             pricingBtn
+            pricingBtnUrl
           }
           faqHeading
           faqList {
@@ -55,7 +56,7 @@ const Pricing = () => {
         <div className="container">
           <ul className="pricing-list-content">
             {
-              pricingList.map(({plan, contracts, price, pricingBtn}, index) => {
+              pricingList.map(({plan, contracts, price, pricingBtn, pricingBtnUrl}, index) => {
                 return (
                   <li key={index}>
                     <div>
@@ -64,7 +65,7 @@ const Pricing = () => {
                       <h4 className="h4 fw-medium"><strong className="h2 primary bold color-primary">${price}/</strong>contract</h4>
                       <p>per month</p>
                     </div>
-                    <button className="btn btn-lg primary">{pricingBtn}</button>
+                    <Link to={pricingBtnUrl} target="_blank" className="btn btn-lg primary">{pricingBtn}</Link>
                   </li>
                 )
               })

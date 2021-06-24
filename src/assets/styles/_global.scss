@@ -43,7 +43,9 @@
   }
 
   a {
-    color: $color-primary;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: $color-primary;
   }
 }
 

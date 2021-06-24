@@ -46,6 +46,7 @@ collections:
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: heroBtn, label: Hero button }
+      - { name: heroBtnUrl, label: Hero button url }
       - { name: heroImg, label: Hero image, widget: image }
       - { name: calculatorHeading, label: Calculator heading }
       - { name: calculatorText, label: Calculator text }
@@ -60,11 +61,13 @@ collections:
       - { name: sec2Card3Text, label: Section 2 - card 3 text }
       - { name: sec3Text, label: Section 3 text }
       - { name: sec3Button, label: Section 3 button }
+      - { name: sec3ButtonUrl, label: Section 3 button url }
       - { name: sec4Heading, label: Section 4 heading }
       - { name: sec4Text, label: Section 4 text }
       - { name: sec4Img, label: Section 4 image, widget: image }
       - { name: sec5Heading, label: Section 5 heading }
       - { name: sec5Btn, label: Section 5 Button }
+      - { name: sec5BtnUrl, label: Section 5 button url }
       - label: Section 5 List
         name: sec5List
         widget: list
@@ -79,11 +82,13 @@ collections:
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: heroBtn, label: Hero button }
+      - { name: heroBtnUrl, label: Hero button url }
       - { name: heroImg, label: Hero image, widget: image }
       - { name: sec1Heading, label: Section 1 heading }
       - { name: sec1Text, label: Section 1 text }
       - { name: sec2Heading, label: Section 2 heading }
       - { name: sec2Btn, label: Section 2 Button }
+      - { name: sec2BtnUrl, label: Section 2 Button url }
       - label: Section 2 List
         name: sec2List
         widget: list
@@ -104,7 +109,8 @@ collections:
            - { label: Pricing plan, name: plan }
            - { label: Contracts, name: contracts }
            - { label: Price per month, name: price }
-           - { label: Price Button, name: pricingBtn }
+           - { label: Price button, name: pricingBtn }
+           - { label: Price button url, name: pricingBtnUrl }
       - { name: faqHeading, label: FAQ heading }
       - label: FAQ List
         name: faqList

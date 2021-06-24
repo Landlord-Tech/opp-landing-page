@@ -39,6 +39,10 @@
           color: $color-primary;
         }
       }
+      >a {
+        padding: 11px 0;
+        display: inline-block;
+      }
     }
 
 
@@ -69,8 +73,37 @@
   }
 
   .with-dropdown {
-    ul {
+    position: relative;
+
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: $color-white;
+
       color: $color-text;
+      padding: 16px 24px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.11);
+      border-radius: 8px;
+      visibility: hidden;
+      opacity: 0;
+      transition: .3s;
+
+      li {
+        font-size: 16px;
+        white-space: nowrap;
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    &:hover {
+      .dropdown-content {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }

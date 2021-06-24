@@ -31,9 +31,12 @@
   }
   &.primary {
     background-image: $color-gradient;
+    background-position: 100%;
+    transition: .3s;
+    background-size: 250px;
 
     &:hover {
-      background-image: $color-gradient-hover;
+      background-position: -100%;
     }
   }
   &.secondary {

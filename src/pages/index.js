@@ -36,6 +36,8 @@ const IndexPage = () => {
     hero,
   } = frontmatter
 
+
+
   return (
     <Layout className="homepage">
       <Seo title="Home" />

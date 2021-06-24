@@ -63,12 +63,25 @@
     >li {
       width: 100%;
       text-align: center;
+      font-size: 18px;
 
       &:not(:last-child) {
         padding-right: 0;
         margin-bottom: 40px;
       }
+      &.with-dropdown {
+
+        .dropdown-content {
+          opacity: 1;
+          visibility: visible;
+          position: static;
+          background-color: transparent;
+          color: $color-white;
+        }
+      }
     }
+
+
   }
 
   .burger-menu {

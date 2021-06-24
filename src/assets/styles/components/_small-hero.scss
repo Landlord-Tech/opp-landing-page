@@ -1,5 +1,11 @@
 .small-hero {
   background-color: $color-primary;
+
+  &.xs {
+    .small-hero-content {
+      min-height: 274px;
+    }
+  }
 }
 
 .small-hero-content {

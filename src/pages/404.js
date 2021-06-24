@@ -66,7 +66,7 @@ const NotFoundPage = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <div>
+                <div className='button-group'>
                   <Link to='/' className="btn btn-lg primary">{primaryBtn}</Link>
                   <Link to='/contact-us' className="btn btn-lg secondary">{secondaryBtn}</Link>
                 </div>

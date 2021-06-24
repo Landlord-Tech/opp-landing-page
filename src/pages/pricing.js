@@ -73,7 +73,7 @@ const Pricing = () => {
         </div>
       </section>
 
-      <section className="section faq-section">
+      <section className="section faq-section" id="faq">
         <div className="container">
           <h2 className="h2 text-center">{faqHeading}</h2>
           <FAQ data={faqList} />

@@ -218,3 +218,12 @@ collections:
       - { name: sec5Desc, label: Time Saving description }
       - { name: sec6Heading, label: Summery heading }
       - { name: sec6Desc, label: Summery description }
+
+  - name: termsAndConditions
+    label: terms and conditions
+    folder: termsAndConditions
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: heroHeading, label: Hero title }
+      - { name: body, label: Content, widget: markdown }

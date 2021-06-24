@@ -141,3 +141,16 @@
 
 
 }
+
+@media screen and (max-width: 480px) {
+  .error-page {
+    .button-group {
+
+      .btn {
+        display: block;
+        margin: 12px 0;
+      }
+    }
+  }
+}
+

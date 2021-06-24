@@ -26,6 +26,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `notFound`,
+        path: `${__dirname}/notFound`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `landlords`,
         path: `${__dirname}/landlords`,
       },
@@ -49,6 +56,13 @@ module.exports = {
       options: {
         name: `contact`,
         path: `${__dirname}/contact`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `termsAndConditions`,
+        path: `${__dirname}/termsAndConditions`,
       },
     },
     {

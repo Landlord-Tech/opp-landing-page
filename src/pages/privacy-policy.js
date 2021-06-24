@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import HTMLContent from "../components/HTMLContent"
 
-const Terms = () => {
+const PrivacyPolicy = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "termsAndConditions"}}) {
+      markdownRemark(frontmatter: {title: {eq: "PrivacyPolicy"}}) {
         html
         frontmatter {
           title
@@ -22,6 +22,7 @@ const Terms = () => {
     title,
     heroHeading,
   } = frontmatter
+  console.log(data)
   return (
     <Layout>
       <section className="small-hero xs">
@@ -42,4 +43,4 @@ const Terms = () => {
   )
 }
 
-export default Terms
+export default PrivacyPolicy

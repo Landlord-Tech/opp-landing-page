@@ -3,8 +3,6 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
-import scrollTo from "gatsby-plugin-smoothscroll"
-import Icon from "../components/Icon"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 

@@ -135,7 +135,7 @@ collections:
     label: pet allowed calculator
     folder: withPetCalculator
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Page title }
       - { name: sec1Heading, label: Calculator intro heading }
       - { name: sec1SubHeading1, label: Calculator intro subheading 1 }
@@ -176,7 +176,7 @@ collections:
     label: no pet allowed calculator
     folder: withNoPetCalculator
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Page title }
       - { name: sec1Heading, label: Calculator intro heading }
       - { name: sec1SubHeading1, label: Calculator intro subheading 1 }
@@ -222,6 +222,14 @@ collections:
   - name: termsAndConditions
     label: terms and conditions
     folder: termsAndConditions
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: heroHeading, label: Hero title }
+      - { name: body, label: Content, widget: markdown }
+
+  - name: privacyPolicy
+    label: privacy policy
+    folder: privacyPolicy
     create: true
     fields:
       - { name: title, label: Title }

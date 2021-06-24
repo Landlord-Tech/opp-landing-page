@@ -61,6 +61,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `privacyPolicy`,
+        path: `${__dirname}/privacyPolicy`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `termsAndConditions`,
         path: `${__dirname}/termsAndConditions`,
       },

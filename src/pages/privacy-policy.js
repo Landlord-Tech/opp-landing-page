@@ -6,7 +6,7 @@ import HTMLContent from "../components/HTMLContent"
 const PrivacyPolicy = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "PrivacyPolicy"}}) {
+      markdownRemark(frontmatter: {title: {eq: "privacyPolicy"}}) {
         html
         frontmatter {
           title

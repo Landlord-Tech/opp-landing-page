@@ -2,6 +2,10 @@
   .homepage {
     .hero {
       min-height: calc(100vh - 66px);
+
+      .animated-mouse {
+        bottom: 38px;
+      }
     }
   }
   .hero-page {

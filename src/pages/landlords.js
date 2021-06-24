@@ -2,18 +2,21 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
-import background from "../images/homepage.jpg"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Landlords = () => {
 
   const data = useStaticQuery(graphql`
     {
+      file(relativePath: {eq: "homepage.jpg"}) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       markdownRemark(frontmatter: {title: {eq: "landlords"}}) {
         frontmatter {
           title
@@ -46,8 +49,11 @@ const Landlords = () => {
       }
     }
   `)
-  const { markdownRemark } = data
-  const { frontmatter } = markdownRemark
+  const { markdownRemark, file } = data;
+  const { frontmatter } = markdownRemark;
+  const { childImageSharp} = file;
+  const { gatsbyImageData } = childImageSharp;
+
   const {
     heroHeading,
     heroText,
@@ -84,11 +90,8 @@ const Landlords = () => {
           style={{
             gridArea: "1 / 1"
           }}
-          layout="fullWidth"
-          // aspectRatio={2}
-          alt=""
-          src={heroImg}
-          image={heroImg}
+          alt={heroHeading}
+          image={gatsbyImageData}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
@@ -207,11 +210,9 @@ const Landlords = () => {
         <div className="container">
           <div className="img-text-content">
             <div className="img">
-              <GatsbyImage
-                // src={'../images/phones.png'}
-                // image={"../images/phones.png"}
-                src={sec4Img}
-                image={sec4Img}
+              <StaticImage
+                src={'../images/dog-guilty.png'}
+                placeholder="transparent"
                 alt={sec4Heading}
               />
             </div>

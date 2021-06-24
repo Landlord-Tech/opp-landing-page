@@ -9,6 +9,11 @@ import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
+      file(relativePath: {eq: "banner.jpg"}) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       markdownRemark(frontmatter: {title: {eq: "homepage"}}) {
         frontmatter {
           heading
@@ -19,15 +24,17 @@ const IndexPage = () => {
       }
     }
   `)
-  const { markdownRemark } = data;
+  const { markdownRemark, file } = data;
   const { frontmatter } = markdownRemark;
+  const { childImageSharp} = file;
+  const { gatsbyImageData } = childImageSharp;
+
   const {
     heading,
     primaryBtn,
     secondaryBtn,
     hero,
   } = frontmatter
-
 
   return (
     <Layout className="homepage">
@@ -39,15 +46,12 @@ const IndexPage = () => {
           style={{
             gridArea: "1 / 1"
           }}
-          layout="fullWidth"
-          src={hero}
-          // aspectRatio={2}
           alt={heading}
           formats={["auto", "webp", "avif"]}
-          // objectPosition={"70%"}
           objectFit="cover"
           placeholder="blurred"
-         image={hero}/>
+          image={gatsbyImageData}
+        />
         <div
           style={{
             gridArea: "1/1",

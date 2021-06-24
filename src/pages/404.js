@@ -10,6 +10,11 @@ const NotFoundPage = () => {
 
   const data = useStaticQuery(graphql`
     {
+      file(relativePath: {eq: "not-found.jpg"}) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       markdownRemark(frontmatter: {title: {eq: "notFound"}}) {
         frontmatter {
           title
@@ -23,8 +28,11 @@ const NotFoundPage = () => {
     }
   `)
 
-  const { markdownRemark } = data
-  const { frontmatter } = markdownRemark
+  const { markdownRemark, file } = data;
+  const { frontmatter } = markdownRemark;
+  const { childImageSharp} = file;
+  const { gatsbyImageData } = childImageSharp;
+
   const {
     heroHeading,
     heroText,
@@ -41,13 +49,11 @@ const NotFoundPage = () => {
           style={{
             gridArea: "1 / 1"
           }}
-          layout="fullWidth"
           // aspectRatio={2}
-          alt=""
+          alt={heroHeading}
           src={heroImg}
-          image={heroImg}
+          image={gatsbyImageData}
           formats={["auto", "webp", "avif"]}
-          objectPosition={"70%"}
           objectFit="cover"
           placeholder="blurred"
         />

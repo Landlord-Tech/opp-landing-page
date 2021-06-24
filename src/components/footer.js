@@ -26,7 +26,7 @@ const Footer = () => {
             <h4 className='h4'><Link activeClassName='active-link' to={'/pricing/'}>Pricing</Link></h4>
           </li>
           <li className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' stripHash to={'/pricing/#faq'}>FAQ</Link></h4>
+            <h4 className='h4'><Link activeClassName='active-link' to={'/pricing/#faq'}>FAQ</Link></h4>
           </li>
           <li className='footer-top-col'>
             <h4 className='h4'><Link activeClassName='active-link' to={'/contact-us/'}>Contact us</Link></h4>

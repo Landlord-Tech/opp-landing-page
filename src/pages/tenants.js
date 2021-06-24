@@ -11,6 +11,11 @@ const Tenants = () => {
 
   const data = useStaticQuery(graphql`
     {
+      file(relativePath: {eq: "homepage2.jpg"}) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
       markdownRemark(frontmatter: {title: {eq: "tenants"}}) {
         frontmatter {
           title
@@ -30,8 +35,11 @@ const Tenants = () => {
     }
   `)
 
-  const { markdownRemark } = data
-  const { frontmatter } = markdownRemark
+  const { markdownRemark, file } = data;
+  const { frontmatter } = markdownRemark;
+  const { childImageSharp} = file;
+  const { gatsbyImageData } = childImageSharp;
+
   const {
     heroHeading,
     heroText,
@@ -54,11 +62,8 @@ const Tenants = () => {
           style={{
             gridArea: "1 / 1"
           }}
-          layout="fullWidth"
-          // aspectRatio={2}
-          alt=""
-          src={heroImg}
-          image={heroImg}
+          alt={heroHeading}
+          image={gatsbyImageData}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"

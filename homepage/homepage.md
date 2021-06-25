@@ -4,6 +4,8 @@ path: /home
 heading: Everything you need to succeed with animals in rentals
 primaryBtn: Landlords
 secondaryBtn: Tenants
-hero: /assets/banner.jpg
-image: /assets/banner.jpg
+hero: ""
+image: ""
+imageLust:
+  - image_one: /assets/banner.jpg
 ---

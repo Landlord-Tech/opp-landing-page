@@ -2,19 +2,72 @@
   color: $color-primary;
 }
 
-/*scrollbar*/
-::-webkit-scrollbar {
-  width: 6px;
+.fw-bold {
+  font-weight: 700;
 }
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px #eff3f5;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+.fw-medium {
+  font-weight: 500;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  background: #dcdbdb;
+.text-center {
+  text-align: center;
 }
+
+
+.show-mobile {
+  display: none !important;
+}
+
+/*colors*/
+.color-primary {
+  color: $color-primary;
+}
+.color-text {
+  color: $color-text;
+}
+
+.dynamic-content {
+  padding: 40px 0;
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      list-style-type: disc;
+      margin-bottom: 16px;
+    }
+  }
+
+  a {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: $color-primary;
+  }
+}
+
+
+
+@media screen and (min-width: 769px) {
+  /*scrollbar*/
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #eff3f5;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: $color-grey;
+  }
+}
+

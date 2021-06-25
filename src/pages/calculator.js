@@ -7,6 +7,9 @@ import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
 import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
+import RotatedView from "../components/rotatedView"
+import { graphql, useStaticQuery } from "gatsby"
+import HTMLContent from "../components/HTMLContent"
 
 const initialState = {
   unitCount: 350,
@@ -128,7 +131,6 @@ const Calculator = () => {
   const feesRef = React.useRef(null)
   const timeRef = React.useRef(null)
   const summaryRef = React.useRef(null)
-
   const refMapping = {
     "Calculator introduction": introductionRef,
     "Cost of pet damage": damageRef,
@@ -138,6 +140,105 @@ const Calculator = () => {
     Summary: summaryRef,
   }
 
+  const data = useStaticQuery(graphql`
+    {
+      markdownRemark(frontmatter: {title: {eq: "withNoPetCalculator"}}) {
+        html
+        frontmatter {
+          title
+          heroHeading,
+          sec1Heading
+          sec1SubHeading1
+          sec1Text1
+          sec1SubHeading2
+          sec1Text2
+          sec1Desc
+          sec2Heading
+          sec2SubHeading1
+          sec2Text1
+          sec2SubHeading2
+          sec2Text2
+          sec2SubHeading3
+          sec2Text3
+          sec2Desc
+          sec3Heading
+          sec3SubHeading1
+          sec3Text1
+          sec3SubHeading2
+          sec3Text2
+          sec3SubHeading3
+          sec3Text3
+          sec3Desc
+          sec4Heading
+          sec4SubHeading1
+          sec4Text1
+          sec4SubHeading2
+          sec4Text2
+          sec4SubHeading3
+          sec4Text3
+          sec4Desc
+          sec5Heading
+          sec5SubHeading1
+          sec5Text1
+          sec5SubHeading2
+          sec5Text2
+          sec5SubHeading3
+          sec5Text3
+          sec5Desc
+          sec6Heading
+          sec6Desc
+        }
+      }
+    }
+  `)
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const {
+    title,
+    heroHeading,
+    sec1Heading,
+    sec1SubHeading1,
+    sec1Text1,
+    sec1SubHeading2,
+    sec1Text2,
+    sec1Desc,
+    sec2Heading,
+    sec2SubHeading1,
+    sec2Text1,
+    sec2SubHeading2,
+    sec2Text2,
+    sec2SubHeading3,
+    sec2Text3,
+    sec2Desc,
+    sec3Heading,
+    sec3SubHeading1,
+    sec3Text1,
+    sec3SubHeading2,
+    sec3Text2,
+    sec3SubHeading3,
+    sec3Text3,
+    sec3Desc,
+    sec4Heading,
+    sec4SubHeading1,
+    sec4Text1,
+    sec4SubHeading2,
+    sec4Text2,
+    sec4SubHeading3,
+    sec4Text3,
+    sec4Desc,
+    sec5Heading,
+    sec5SubHeading1,
+    sec5Text1,
+    sec5SubHeading2,
+    sec5Text2,
+    sec5SubHeading3,
+    sec5Text3,
+    sec5Desc,
+    sec6Heading,
+    sec6Desc
+  } = frontmatter
+
+  console.log({ html })
   React.useEffect(() => {
     if (scrollTo) {
       refMapping[scrollTo].current?.scrollIntoView({
@@ -201,20 +302,19 @@ const Calculator = () => {
   }
 
   return (
-    <Layout className="calculator-page">
-      <div className="container">
-        <h1 className="h2">Advanced ROI Calculator</h1>
+    <Layout className="calculator-page" prodHeader>
+      <div className="container fluid">
+        <h1 className="h3">Advanced ROI Calculator</h1>
         <div className="calculator-content">
           <CalculatorSidebar
             search={search}
             activeItem={activeItem}
             handleLinkClick={handleLinkClick}
+            prodSidebar
           />
 
           <div className="calculator-main">
-            <h2 className="h3 calculator-main-title">
-              Return on Investment with OurPetPolicy
-            </h2>
+            <h2 className="h3 calculator-main-title">{heroHeading}</h2>
 
             <ul className="calculator-list">
               <li
@@ -222,11 +322,11 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={introductionRef}
               >
-                <h4 className="h4">Tell us about your Properties</h4>
+                <h4 className="h4">{sec1Heading}</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>How many Units</h5>
-                    <p>(How many residential rental units do you have?)</p>
+                    <h5>{sec1SubHeading1}</h5>
+                    <p>{sec1Text1}</p>
                     <RangeInputLog
                       inputValue={unitCount}
                       min={1}
@@ -238,11 +338,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>What is your Average Monthly Rent</h5>
-                    <p>
-                      (What is the overall average monthly rent of all of your
-                      units?)
-                    </p>
+                    <h5>{sec1SubHeading2}</h5>
+                    <p>{sec1Text2}</p>
                     <RangeInput
                       inputValue={avgRent}
                       min={0}
@@ -256,11 +353,7 @@ const Calculator = () => {
                     />
                   </div>
                   <div className="right">
-                    <p>
-                      With this calculator you can input your specific data and
-                      see how much value OurPetPolicy could add to your
-                      residential rental portfolio.
-                    </p>
+                    <p>{sec1Desc}</p>
                   </div>
                 </div>
               </li>
@@ -269,14 +362,11 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={damageRef}
               >
-                <h4 className="h4"> Cost of pet damage</h4>
+                <h4 className="h4">{sec2Heading}</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Estimated percentage of units with Pets (%)</h5>
-                    <p>
-                      (What percentage of units, would you estimate, have
-                      animals in them?)
-                    </p>
+                    <h5>{sec2SubHeading1}</h5>
+                    <p>{sec2Text1}</p>
                     <RangeInput
                       inputValue={unitPerPetRate}
                       min={0}
@@ -288,11 +378,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Percentage of animals that cause damage (%)</h5>
-                    <p>
-                      (For every unit with an animal, what percentage of them
-                      have damage from the animal at the end of the lease?)
-                    </p>
+                    <h5>{sec2SubHeading2}</h5>
+                    <p>{sec2Text2}</p>
                     <RangeInput
                       inputValue={petDamageRate}
                       min={0}
@@ -304,11 +391,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Typical cost to fix damage from an animal</h5>
-                    <p>
-                      (How much does it cost to fix damage from an animal, when
-                      there is damage, after a tenant leaves?)
-                    </p>
+                    <h5>{sec2SubHeading3}</h5>
+                    <p>{sec2Text3}</p>
                     <RangeInput
                       inputValue={petDamagePerTenant}
                       min={0}
@@ -323,8 +407,7 @@ const Calculator = () => {
                   </div>
                   <div className="right">
                     <p>
-                      Did you know recent studies show that 72%-90% of tenants
-                      have an animal? (see links below)
+                      {sec2Desc}
                       <div className="section-links">
                         <a
                           href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/"
@@ -344,14 +427,11 @@ const Calculator = () => {
                 </div>
               </li>
               <li id="lost-rent" className="calculator-list-item" ref={lostRef}>
-                <h4 className="h4">Lost Rent</h4>
+                <h4 className="h4">{sec3Heading}</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Additional turn-around time (in weeks)</h5>
-                    <p>
-                      (For a rental that has pet damage, how much longer does it
-                      take to fix it up until it is ready to rent again?)
-                    </p>
+                    <h5>{sec3SubHeading1}</h5>
+                    <p>{sec3Text1}</p>
                     <RangeInput
                       inputValue={additionalTurnAroundTime}
                       min={0}
@@ -363,11 +443,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Animal reduction percentage from using OurPetPolicy</h5>
-                    <p>
-                      (Typically 50-70% of ESA letters are fraudulent and will
-                      be exposed with OurPetPolicy)
-                    </p>
+                    <h5>{sec3SubHeading2}</h5>
+                    <p>{sec3Text2}</p>
                     <RangeInput
                       inputValue={petReductionRate}
                       min={0}
@@ -379,14 +456,11 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Average length-of-stay in months</h5>
-                    <p>
-                      (On average, how many months do your tenants stay before
-                      moving?)
-                    </p>
+                    <h5>{sec3SubHeading3}</h5>
+                    <p>{sec3Text3}</p>
                     <RangeInput
                       inputValue={avgTenantLife}
-                      min={0}
+                      min={1}
                       max={48}
                       changeValue={number =>
                         dispatch({
@@ -397,17 +471,7 @@ const Calculator = () => {
                     />
                   </div>
                   <div className="right">
-                    <p>
-                      With new websites popping up daily selling fraudulent ESA
-                      letters for as low as $39, this loophole is being abused
-                      nationwide. We have a validation process and typically
-                      find that 50%-70% of ESA letters are fraudulent. By
-                      eliminating this upfront, we can greatly reduce the number
-                      of fraudulent animals in your rentals, which greatly
-                      reduces damages. With less damage, you will have a
-                      shorter, and more cost-effective, turnaround time to rent
-                      your property to the next tenant.
-                    </p>
+                    <p>{sec3Desc}</p>
                   </div>
                 </div>
               </li>
@@ -416,14 +480,11 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={feesRef}
               >
-                <h4 className="h4">Fees and Fines</h4>
+                <h4 className="h4">{sec4Heading}</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Unauthorized Pet Fee</h5>
-                    <p>
-                      (How much would you like to charge tenants for an
-                      unauthorized pet?)
-                    </p>
+                    <h5>{sec4SubHeading1}</h5>
+                    <p>{sec4Text1}</p>
                     <RangeInput
                       inputValue={unAuthPetFee}
                       min={0}
@@ -435,11 +496,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Percentage of Unauthorized Pet Fees</h5>
-                    <p>
-                      (What percentage of tenants do you collect unauthorized
-                      pet fees from?)
-                    </p>
+                    <h5>{sec4SubHeading2}</h5>
+                    <p>{sec4Text2}</p>
                     <RangeInput
                       inputValue={unAuthPetFeeRate}
                       min={0}
@@ -451,13 +509,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>
-                      Percentage of tenants that get an animal prior to approval
-                    </h5>
-                    <p>
-                      (What percentage of tenants that get an animal, get one
-                      before it has been approved?)
-                    </p>
+                    <h5>{sec4SubHeading3}</h5>
+                    <p>{sec4Text3}</p>
                     <RangeInput
                       inputValue={petApprovalRate}
                       min={0}
@@ -471,16 +524,7 @@ const Calculator = () => {
                     />
                   </div>
                   <div className="right">
-                    <p>
-                      We have found that most Landlords have an Unauthorized Pet
-                      Fee but do not have the proper documentation to charge for
-                      the fee, which results in tenants taking advantage of the
-                      situation. We have also found that tenants will get an
-                      animal, bring the animal home, and then purchase a
-                      fraudulent ESA letter after the fact. Our contract and
-                      application process prevent these occurrences so that
-                      Landlords are not losing out on their own policies
-                    </p>
+                    <p>{sec4Desc}</p>
                   </div>
                 </div>
               </li>
@@ -489,19 +533,16 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={timeRef}
               >
-                <h4 className="h4">Time Savings</h4>
+                <h4 className="h4">{sec5Heading}</h4>
                 <div className="calculator-item-content">
                   <div className="left">
-                    <h5>Time spent dealing with animals (in hours)</h5>
-                    <p>
-                      (How much time on average, per tenant that has an animal,
-                      does property management spend giving instructions,
-                      answering questions, etc.?)
-                    </p>
+                    <h5>{sec5SubHeading1}</h5>
+                    <p>{sec5Text1}</p>
                     <RangeInput
                       inputValue={petDealTimeInHours}
                       min={0}
                       max={5}
+                      step={0.1}
                       changeValue={number =>
                         dispatch({
                           type: "SET_PET_DEAL_TIME_IN_HOURS",
@@ -509,12 +550,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Time spent dealing with animal damage</h5>
-                    <p>
-                      (How much time does it take, on average, to line up
-                      contractors, etc. to repair animal damages and get a
-                      rental ready to rent again?)
-                    </p>
+                    <h5>{sec5SubHeading2}</h5>
+                    <p>{sec5Text2}</p>
                     <RangeInput
                       inputValue={damageDealTimeInHours}
                       min={0}
@@ -526,12 +563,8 @@ const Calculator = () => {
                         })
                       }
                     />
-                    <h5>Property Management wage (per hour)</h5>
-                    <p>
-                      (How much time, in dollars per hour, is the property
-                      manager’s time spent dealing with pet questions and pet
-                      damage?)
-                    </p>
+                    <h5>{sec5SubHeading3}</h5>
+                    <p>{sec5Text3}</p>
                     <RangeInput
                       inputValue={propManagementWagePerHour}
                       min={0}
@@ -545,14 +578,7 @@ const Calculator = () => {
                     />
                   </div>
                   <div className="right">
-                    <p>
-                      Time is money. Communicating with tenants about waste
-                      management policies, issues, or how to get an animal, etc.
-                      can take a lot of a property manager’s time. OurPetPolicy
-                      clearly outlines these matters so that all you have to do
-                      is send them to ourpetpolicy.com and we will take it from
-                      there. Let us help you maximize your time!
-                    </p>
+                    <p>{sec5Desc}</p>
                   </div>
                 </div>
               </li>
@@ -561,24 +587,24 @@ const Calculator = () => {
                 className="calculator-list-item"
                 ref={summaryRef}
               >
-                <h4 className="h4">Summary</h4>
-                {/*<p>Our goal is to save you way more money </p>*/}
+                <h4 className="h4">{sec6Heading}</h4>
                 <div className="calculator-item-table-content">
                   <div className="left">
-                    <p>
-                      Our goal is to put more money in your pocket while
-                      protecting your rentals.
-                    </p>
+                    <p>{sec6Desc}</p>
                     <NoAllowedTable data={ROINoPetsResults} />
                   </div>
                 </div>
               </li>
+              <li>
+                <FixedRibbon className='show-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+              </li>
             </ul>
           </div>
 
-          <FixedRibbon saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+          <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
         </div>
       </div>
+      <RotatedView />
     </Layout>
   )
 }

@@ -1,0 +1,81 @@
+@media screen and (max-width: 1600px) {
+  .container {
+    &:not(.fluid) {
+      max-width: 1140px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    padding-top: 65px;
+  }
+  .h1 {
+    font-size: 48px;
+  }
+  .h2 {
+    font-size: 32px;
+  }
+  .h3 {
+    font-size: 24px;
+  }
+  .h4 {
+    font-size: 20px;
+  }
+
+  .btn {
+    &.btn-sm {
+      padding: 0 12px;
+      font-size: 14px;
+    }
+
+    &.btn-md {
+      padding: 0 20px;
+      font-size: 14px;
+    }
+
+    &.btn-lg {
+      padding: 0 24px;
+      font-size: 20px;
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .show-mobile {
+    display: inherit !important;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+  .go-top-btn {
+    height: 40px;
+    width: 84px;
+    right: 20px;
+
+    .icon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 36px;
+  }
+  .h2 {
+    font-size: 24px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .h4 {
+    font-size: 16px;
+  }
+}

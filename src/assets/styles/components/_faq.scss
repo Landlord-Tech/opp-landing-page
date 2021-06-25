@@ -1,0 +1,64 @@
+.faq-section {
+  h2 {
+    padding-bottom: 60px;
+  }
+}
+
+.Collapsible {
+  border: 1px solid $color-range;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.Collapsible__trigger {
+  display: block;
+  border-radius: 16px 16px 0 0;
+
+  .minus {
+    display: none !important;
+  }
+
+  &.is-open {
+    background-color: $color-range;
+    .plus {
+      display: none !important;
+    }
+    .minus {
+      display: block !important;
+    }
+
+    &+.Collapsible__contentOuter .Collapsible__contentInner {
+      background-color: $color-range;
+    }
+  }
+}
+
+.Collapsible__contentOuter {
+  border-radius: 0 0 16px 16px;
+}
+.Collapsible__contentInner {
+  padding: 0 40px 40px;
+  font-size: 18px;
+  border-radius: 0 0 16px 16px;
+}
+
+.trigger-inner {
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 40px 80px 40px 40px;
+  cursor: pointer;
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+
+    path{
+      &:last-child {
+        fill: #fff !important;
+      }
+    }
+  }
+}

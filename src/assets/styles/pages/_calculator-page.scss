@@ -37,7 +37,7 @@
   }
 
   h4 {
-    padding-bottom: 32px;
+    padding: 16px 0;
   }
 
   h5 {
@@ -49,7 +49,7 @@
 
 .calculator-item-content {
   display: flex;
-  column-gap: 36px;
+  //column-gap: 36px;
 
   > .left,
   > .right {
@@ -65,7 +65,18 @@
       }
     }
   }
+
+  >.left {
+    margin-right: 36px;
+  }
 }
 .calculator-item-table-content {
   width: 80%;
+}
+
+.negative-sign {
+  color: #FF8282;
+}
+.positive-sign {
+  color: #68D656;
 }

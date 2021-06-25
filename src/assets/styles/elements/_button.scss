@@ -3,6 +3,11 @@
   border-radius: 48px;
   font-weight: 700;
   cursor: pointer;
+  white-space: nowrap;
+
+  &.min-130 {
+    min-width: 130px;
+  }
 
   &.btn-sm {
     height: 35px;
@@ -17,10 +22,66 @@
     font-size: 16px;
     padding: 0 40px;
   }
-  &.primary {
-    background-color: $color-primary;
+
+  &.btn-lg {
+    height: 61px;
+    line-height: 61px;
+    font-size: 24px;
+    padding: 0 40px;
   }
-  &.primary-gradient {
+  &.primary {
     background-image: $color-gradient;
+    background-position: 100%;
+    transition: .3s;
+    background-size: 250px;
+
+    &:hover {
+      background-position: -100%;
+    }
+  }
+  &.secondary {
+    background-image: $color-light-gradient;
+
+    &:hover {
+      background-image: $color-light-gradient-hover;
+    }
+  }
+  &.secondary-dark {
+    background-image: $color-dark-gradient;
+    color: $color-white;
+
+    &:hover {
+      background-image: $color-dark-gradient-hover;
+    }
+  }
+  .with-border {
+    border: 1px solid $color-primary;
+  }
+}
+.no-style {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.go-top-btn {
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 56px;
+  background-color: $color-primary;
+  border-radius: 64px;
+  border: 1px solid $color-white;
+  width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.1));
+
+  &.fade-in {
+    opacity: 1;
+    visibility: visible;
   }
 }

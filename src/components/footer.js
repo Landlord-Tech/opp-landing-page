@@ -1,51 +1,44 @@
 import React from "react"
 import { Link } from "gatsby"
-import Logo from "../images/logo-footer.svg"
+import Icon from "./Icon"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <Link className="logo" to={'/'}>
-          <img src={Logo} alt="OurPetPolicy" />
+          <StaticImage
+            src="../images/logo-white.svg"
+            alt="OurPetPolicy"
+            formats={["AUTO", "WEBP", "AVIF"]}
+            placeholder="transparent"
+          />
         </Link>
-        <div className='footer-top'>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Landlord portal</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Tenant portal</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Pricing</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>FAQ</Link></h4>
-            <ul>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-              <li><Link to={'/'}>Lorem ipsum</Link></li>
-            </ul>
-          </div>
-          <div className='footer-top-col'>
-            <h4 className='h4'><Link activeClassName='active-link' to={'/'}>Contact us</Link></h4>
-          </div>
-        </div>
+        <ul className='footer-top'>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link  to={'/landlords/'}>Landlords</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link  to={'/tenants/'}>Tenants</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link  to={'/pricing/'}>Pricing</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link  to={'/pricing/#faq'}>FAQ</Link></h4>
+          </li>
+          <li className='footer-top-col'>
+            <h4 className='h4'><Link  to={'/contact-us/'}>Contact us</Link></h4>
+            <Link to={'/'}>
+              <Icon
+                color='#fff'
+                size={40}
+                icon='fb'
+              />
+            </Link>
+          </li>
+        </ul>
         <div className="footer-bottom">
           <ul>
             <li>

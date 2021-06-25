@@ -31,16 +31,15 @@
         }
       }
     }
+    td {
+      font-weight: 700;
+      font-size: 18px;
+      padding: 10px;
+      vertical-align: middle;
+      font-family: $font-secondary;
+    }
 
     tbody {
-      td {
-        font-weight: 700;
-        font-size: 18px;
-        padding: 10px;
-        vertical-align: middle;
-        font-family: $font-secondary;
-      }
-
       tr {
         &:first-child,
         &:last-child {
@@ -54,6 +53,7 @@
 .calculator-table-total {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 0;
 }

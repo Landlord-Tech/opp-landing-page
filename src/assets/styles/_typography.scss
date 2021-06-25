@@ -5,16 +5,26 @@
   &.bold {
     font-weight: 700;
   }
+
+  &.primary {
+    font-family: $font-primary;
+  }
 }
 .h1 {
   font-size: 72px;
+  line-height: 1.2;
 }
 .h2 {
   font-size: 56px;
+  line-height: 1.2;
 }
 .h3 {
   font-size: 32px;
 }
 .h4 {
   font-size: 24px;
+
+  &.secondary {
+    font-family: $font-secondary;
+  }
 }

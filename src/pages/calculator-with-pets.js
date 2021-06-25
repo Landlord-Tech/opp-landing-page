@@ -320,7 +320,6 @@ const Calculator = () => {
             active={"allowed"}
             prodSidebar
           />
-
           <div className="calculator-main">
             <h2 className="h3 calculator-main-title">{heroHeading}</h2>
 

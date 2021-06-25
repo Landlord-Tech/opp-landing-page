@@ -80,7 +80,6 @@
       top: 100%;
       left: 0;
       background-color: $color-white;
-
       color: $color-text;
       padding: 16px 24px;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.11);
@@ -88,6 +87,7 @@
       visibility: hidden;
       opacity: 0;
       transition: .3s;
+
 
       li {
         font-size: 16px;
@@ -99,8 +99,14 @@
       }
     }
 
+    .dropdown-btn {
+      display: none;
+      position: absolute;
+      top: 12px;
+      right: 0;
+    }
     &:hover {
-      .dropdown-content {
+      .desktop {
         opacity: 1;
         visibility: visible;
       }

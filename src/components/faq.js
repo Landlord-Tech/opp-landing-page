@@ -3,7 +3,7 @@ import Collapsible from "react-collapsible"
 import Icon from "./Icon"
 import { func } from "prop-types"
 
-const FAQ = ({ data }) => {
+const Faq = ({ data }) => {
 
   return (
     <>
@@ -38,4 +38,4 @@ const FAQ = ({ data }) => {
         )
       }
 
-        export default FAQ
+        export default Faq

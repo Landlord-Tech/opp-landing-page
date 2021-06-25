@@ -59,24 +59,45 @@
 
   .header-nav-list {
     flex-direction: column;
+    padding: 0 20px;
 
     >li {
       width: 100%;
-      text-align: center;
       font-size: 18px;
 
       &:not(:last-child) {
         padding-right: 0;
-        margin-bottom: 40px;
+        margin-bottom: 28px;
       }
       &.with-dropdown {
 
+        &:hover {
+          .dropdown-content {
+            opacity: inherit;
+            visibility: inherit;
+          }
+        }
+
         .dropdown-content {
-          opacity: 1;
-          visibility: visible;
           position: static;
           background-color: transparent;
           color: $color-white;
+          padding: 0;
+          height: 0;
+          display: none;
+
+
+          &.opened {
+            display: block;
+            height: 100%;
+            visibility: visible;
+            opacity: 1;
+          }
+
+        }
+
+        .dropdown-btn {
+          display: block;
         }
       }
     }

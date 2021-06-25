@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import FAQ from "../components/faq"
+import Faq from "../components/faq"
 
 const Pricing = () => {
 
@@ -77,7 +77,7 @@ const Pricing = () => {
       <section className="section faq-section" id="faq">
         <div className="container">
           <h2 className="h2 text-center">{faqHeading}</h2>
-          <FAQ data={faqList} />
+          <Faq data={faqList} />
         </div>
       </section>
     </Layout>

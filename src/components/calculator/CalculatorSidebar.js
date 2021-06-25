@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react"
 import { Link } from "gatsby"
 import { noPatsList, patsList } from "./config"
 import { useLocation } from "@reach/router"
 import { hashToId } from "../utils"
 
-const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSidebar }) => {
+const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active }) => {
   const { hash } = useLocation()
 
   // const tabContentList = search === "?pets-allowed" ? patsList : noPatsList
@@ -22,7 +21,7 @@ const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSi
               className={search === "?no-pets-allowed" || search === "" ? "active" : ""}
             />*/}
             <Link
-              to={`${prodSidebar ? '/calculator/' : '/calculator-no-pets-allowed/'}`}
+              to={'/calculator-no-pets-allowed/'}
               className={!active ? "active" : ""}
             >
               No Pets Allowed
@@ -36,7 +35,7 @@ const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSi
               className={search === "?pets-allowed" ? "active" : ""}
             />*/}
             <Link
-              to={`${prodSidebar ? '/calculator-with-pets/' : '/calculator-pets-allowed/'}`}
+              to={'/calculator-pets-allowed/'}
               className={active ? "active" : ""}
             >
               Pets Allowed

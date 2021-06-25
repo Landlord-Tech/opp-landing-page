@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
@@ -58,9 +58,7 @@ const Tenants = () => {
 
   return (
     <Layout className="homepage">
-      {/*<Seo title="Home" />*/}
 
-      {/*banner*/}
       <section className="hero">
         <GatsbyImage
           style={{
@@ -86,7 +84,7 @@ const Tenants = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <Link to={heroBtnUrl} target="_blank" className="btn btn-lg primary">{heroBtn}</Link>
+                <a href={heroBtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg primary">{heroBtn}</a>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
@@ -146,7 +144,7 @@ const Tenants = () => {
                   })
                 }
               </ul>
-              <Link to={sec2BtnUrl} target="_blank" className="btn btn-lg secondary">{sec2Btn}</Link>
+              <a href={sec2BtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg secondary">{sec2Btn}</a>
             </div>
             <div className="img">
               <StaticImage

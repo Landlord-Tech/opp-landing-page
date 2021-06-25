@@ -1,9 +1,7 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -88,7 +86,6 @@ const Landlords = () => {
 
   return (
     <Layout className="homepage">
-      {/*<Seo title="Home" />*/}
 
       {/*banner*/}
       <section className="hero">
@@ -116,7 +113,7 @@ const Landlords = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <Link to={heroBtnUrl} target="_blank" className="btn btn-lg primary">{heroBtn}</Link>
+                <a href={heroBtnUrl} target="_blank"  rel="noreferrer" className="btn btn-lg primary">{heroBtn}</a>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
@@ -207,7 +204,7 @@ const Landlords = () => {
         <div className="container">
           <div className="thin-section-content">
             <p>{sec3Text}</p>
-            <Link to={sec3ButtonUrl} target="_blank" className="btn primary btn-lg">{sec3Button}</Link>
+            <a href={sec3ButtonUrl} target="_blank"  rel="noreferrer" className="btn primary btn-lg">{sec3Button}</a>
           </div>
         </div>
       </section>
@@ -251,7 +248,7 @@ const Landlords = () => {
                   })
                 }
               </ul>
-              <Link to={sec5BtnUrl} target="_blank" className="btn btn-lg secondary">{sec5Btn}</Link>
+              <a href={sec5BtnUrl} target="_blank"  rel="noreferrer" className="btn btn-lg secondary">{sec5Btn}</a>
             </div>
             <div className="img">
               <StaticImage

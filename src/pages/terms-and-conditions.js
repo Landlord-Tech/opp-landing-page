@@ -19,7 +19,6 @@ const Terms = () => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const {
-    title,
     heroHeading,
   } = frontmatter
   return (

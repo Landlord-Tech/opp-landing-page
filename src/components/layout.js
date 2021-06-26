@@ -6,7 +6,7 @@ import { useLocation } from "@reach/router"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Icon from "./Icon"
 
-const Layout = ({ children, className }) => {
+const Layout = ({ children, className, prodHeader }) => {
 
   const { pathname } = useLocation()
   const [sticky, setSticky] = useState(false)
@@ -24,7 +24,7 @@ const Layout = ({ children, className }) => {
 
   return (
     <>
-      <Header pathname={pathname} sticky={sticky}/>
+      <Header pathname={pathname} sticky={sticky} prodHeader={prodHeader}/>
       <main className={className} id='top'>{children}</main>
       {
         !pathname.includes("/calculator") && <Footer />

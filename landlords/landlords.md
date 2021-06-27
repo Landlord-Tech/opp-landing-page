@@ -8,6 +8,7 @@ heroText: Ready to take the pet frustrations out of your rental portfolio? If
 heroBtn: Get started
 heroBtnUrl: https://app.ourpetpolicy.com/?auth=signup
 heroImg: /assets/welcome.png
+image: /assets/homepage.jpg
 calculatorHeading: How much could you save?
 calculatorText: "Whether you allow pets or not, we can help you maximize profits
   by minimizing damage, exposing fraudulent ESA's, maximizing deposits and fees,

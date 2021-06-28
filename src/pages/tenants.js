@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Layout from "../components/layout"
@@ -11,17 +11,16 @@ const Tenants = () => {
 
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "homepage2.jpg"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       markdownRemark(frontmatter: {title: {eq: "tenants"}}) {
         frontmatter {
           title
           heroHeading
           heroText
-          heroImg
+          heroImg {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           heroBtn
           heroBtnUrl
           sec1Heading
@@ -37,10 +36,8 @@ const Tenants = () => {
     }
   `)
 
-  const { markdownRemark, file } = data;
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-  const { childImageSharp} = file;
-  const { gatsbyImageData } = childImageSharp;
 
   const {
     heroHeading,
@@ -65,7 +62,7 @@ const Tenants = () => {
             gridArea: "1 / 1"
           }}
           alt={heroHeading}
-          image={gatsbyImageData}
+          image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"

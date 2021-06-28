@@ -56,9 +56,5 @@ sec5List:
   - item: Application Processes For All Animal Requests
   - item: Irrefutable Unauthorized Animal Policy
 sec5Title: Pawsibilities Unleashed . . .
-images:
-  - image_one: /assets/homepage.jpg
-    image_two: /assets/macbook.png
-image: /assets/homepage.jpg
 sec5Heading: Pawsibilities Unleashed . . .
 ---

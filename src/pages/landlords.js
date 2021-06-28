@@ -1,5 +1,5 @@
 import * as React from "react"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import CalculatorSection from "../components/calculator/CalculatorSection"
@@ -10,17 +10,16 @@ const Landlords = () => {
 
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "homepage.jpg"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       markdownRemark(frontmatter: {title: {eq: "landlords"}}) {
         frontmatter {
           title
           heroHeading
           heroText
-          heroImg
+          heroImg {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           heroBtn
           heroBtnUrl
           calculatorText
@@ -38,7 +37,11 @@ const Landlords = () => {
           sec3ButtonUrl
           sec4Heading
           sec3Text
-          sec4Img
+          sec4Img {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           sec4Text
           sec5List {
             item
@@ -50,10 +53,8 @@ const Landlords = () => {
       }
     }
   `)
-  const { markdownRemark, file } = data;
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-  const { childImageSharp} = file;
-  const { gatsbyImageData } = childImageSharp;
 
   const {
     heroHeading,
@@ -94,7 +95,7 @@ const Landlords = () => {
             gridArea: "1 / 1"
           }}
           alt={heroHeading}
-          image={gatsbyImageData}
+          image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
@@ -213,10 +214,11 @@ const Landlords = () => {
         <div className="container">
           <div className="img-text-content">
             <div className="img">
-              <StaticImage
+              <GatsbyImage
                 src={'../images/dog-guilty.png'}
                 placeholder="transparent"
                 alt={sec4Heading}
+                image={getImage(sec4Img)}
               />
             </div>
             <div className="text">

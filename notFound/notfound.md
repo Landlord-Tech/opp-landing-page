@@ -6,5 +6,4 @@ heroText: "Sorry, the page you’re looking for doesn’t exist! If you think yo
 primaryBtn: Return home
 secondaryBtn: Report a problem
 heroImg: /assets/not-found.jpg
-image: /assets/not-found.jpg
 ---

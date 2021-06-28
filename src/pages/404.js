@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 
@@ -10,17 +10,16 @@ const NotFoundPage = () => {
 
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "not-found.jpg"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       markdownRemark(frontmatter: {title: {eq: "notFound"}}) {
         frontmatter {
           title
           heroHeading
           heroText
-          heroImg
+          heroImg {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
+            }
+          }
           primaryBtn
           secondaryBtn
         }
@@ -28,10 +27,8 @@ const NotFoundPage = () => {
     }
   `)
 
-  const { markdownRemark, file } = data;
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-  const { childImageSharp} = file;
-  const { gatsbyImageData } = childImageSharp;
 
   const {
     heroHeading,
@@ -49,10 +46,8 @@ const NotFoundPage = () => {
           style={{
             gridArea: "1 / 1"
           }}
-          // aspectRatio={2}
           alt={heroHeading}
-          src={heroImg}
-          image={gatsbyImageData}
+          image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectFit="cover"
           placeholder="blurred"
@@ -74,7 +69,6 @@ const NotFoundPage = () => {
                   <Link to='/' className="btn btn-lg primary">{primaryBtn}</Link>
                   <Link to='/contact-us' className="btn btn-lg secondary">{secondaryBtn}</Link>
                 </div>
-
               </div>
             </div>
           </div>

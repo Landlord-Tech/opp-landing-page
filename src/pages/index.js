@@ -4,30 +4,27 @@ import background from "../images/banner.jpg"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "banner.jpg"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       markdownRemark(frontmatter: {title: {eq: "homepage"}}) {
         frontmatter {
           heading
           primaryBtn
           secondaryBtn
-          hero
+          hero {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }
   `)
-  const { markdownRemark, file } = data;
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-  const { childImageSharp} = file;
-  const { gatsbyImageData } = childImageSharp;
 
   const {
     heading,
@@ -35,8 +32,6 @@ const IndexPage = () => {
     secondaryBtn,
     hero,
   } = frontmatter
-
-
 
   return (
     <Layout className="homepage">
@@ -49,10 +44,9 @@ const IndexPage = () => {
             gridArea: "1 / 1"
           }}
           alt={heading}
-          formats={["auto", "webp", "avif"]}
           objectFit="cover"
           placeholder="blurred"
-          image={gatsbyImageData}
+          image={getImage(hero)}
         />
         <div
           style={{

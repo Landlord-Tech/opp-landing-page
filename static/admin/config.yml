@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
 
+publish_mode: editorial_workflow
+
+
 media_folder: static/assets
 public_folder: /assets
 
@@ -28,9 +31,8 @@ collections:
   - name: notFound
     label: notFound
     folder: notFound
-    create: true
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: primaryBtn, label: Primary Button }

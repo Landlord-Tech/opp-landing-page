@@ -1,7 +1,10 @@
 backend:
   name: git-gateway
+#  name: gitlab
+#  repo: ourpetpolicy/our-pet-policy-landing-page
 
 publish_mode: editorial_workflow
+site_url: https://stage.landing.ourpetpolicy.com/
 
 
 media_folder: static/assets
@@ -12,6 +15,8 @@ collections:
     label: Blog
     folder: blog
     create: true
+    editor:
+      preview: false
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
@@ -21,6 +26,9 @@ collections:
   - name: homepage
     label: homepage
     folder: homepage
+    preview_path: homepage
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heading, label: heading }
@@ -31,6 +39,9 @@ collections:
   - name: notFound
     label: notFound
     folder: notFound
+    preview_path: "404"
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
@@ -42,6 +53,9 @@ collections:
   - name: landlords
     label: landlords
     folder: landlords
+    preview_path: landlords
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
@@ -78,6 +92,9 @@ collections:
   - name: tenants
     label: tenants
     folder: tenants
+    preview_path: tenants
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
@@ -99,6 +116,9 @@ collections:
   - name: pricing
     label: pricing
     folder: pricing
+    preview_path: pricing
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
@@ -123,6 +143,9 @@ collections:
   - name: contact
     label: contact
     folder: contact
+    preview_path: contact-us
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
@@ -141,6 +164,9 @@ collections:
   - name: withPetCalculator
     label: pet allowed calculator
     folder: withPetCalculator
+    preview_path: calculator-pets-allowed
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Page title }
@@ -182,6 +208,9 @@ collections:
   - name: withNoPetCalculator
     label: no pet allowed calculator
     folder: withNoPetCalculator
+    preview_path: calculator-no-pets-allowed
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Page title }
@@ -229,6 +258,9 @@ collections:
   - name: termsAndConditions
     label: terms and conditions
     folder: termsAndConditions
+    preview_path: terms-and-conditions
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero title }
@@ -237,6 +269,9 @@ collections:
   - name: privacyPolicy
     label: privacy policy
     folder: privacyPolicy
+    preview_path: privacy-policy
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero title }
@@ -245,6 +280,8 @@ collections:
   - name: header
     label: header
     folder: header
+    editor:
+      preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: primaryBtn, label: Primary button }

@@ -8,6 +8,12 @@ const ContactForm = () => {
     message: ""
   })
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
   const handleChange = (e) => {
     setFormState({
       ...formState,
@@ -15,7 +21,7 @@ const ContactForm = () => {
     })
   }
 
-  const handleSubmit = (event) => {
+/*  const handleSubmit = (event) => {
     console.log({ formState })
     fetch('https://ejb052f7f6.execute-api.us-west-2.amazonaws.com/Prod/email', {
       method: 'POST',
@@ -26,13 +32,33 @@ const ContactForm = () => {
     }).catch(error => console.log(error));
 
     event.preventDefault();
+  }*/
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+
+    e.preventDefault();
   }
 
   return (
-    <div className='contact-form' onSubmit={handleSubmit}>
+    <div
+      className='contact-form'>
       <h2 className="h2">Contact us</h2>
       <p>Use this form to contact us and we’ll get back to you ASAP!</p>
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form
+        onSubmit={handleSubmit}
+        name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <div className='input-field'>
           <input

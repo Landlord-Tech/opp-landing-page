@@ -54,12 +54,12 @@ const ContactForm = () => {
       <p>Use this form to contact us and we’ll get back to you ASAP!</p>
       <form
         onSubmit={handleSubmit}
-        name="contact"
+        name="contact-us"
         method="post"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="contact-us" />
         <div className='input-field'>
           <input
             type="text"
@@ -68,6 +68,7 @@ const ContactForm = () => {
             onChange={handleChange}
             value={formState.name}
             placeholder="Full name"
+            required={true}
           />
         </div>
 
@@ -79,6 +80,7 @@ const ContactForm = () => {
             onChange={handleChange}
             value={formState.email}
             placeholder="Email"
+            required={true}
           />
         </div>
 
@@ -90,6 +92,7 @@ const ContactForm = () => {
             onChange={handleChange}
             value={formState.phone}
             placeholder="Phone"
+            required={true}
           />
         </div>
         <div className='input-field'>
@@ -99,6 +102,7 @@ const ContactForm = () => {
             onChange={handleChange}
             value={formState.message}
             placeholder="Message"
+            required={true}
           />
         </div>
 

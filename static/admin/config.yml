@@ -1,6 +1,5 @@
 backend:
-  name: gitlab
-  repo: ourpetpolicy/our-pet-policy-landing-page
+  name: git-gateway
 
 media_folder: static/assets
 public_folder: /assets

@@ -19,7 +19,6 @@ const PrivacyPolicy = () => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const {
-    title,
     heroHeading,
   } = frontmatter
   console.log(data)

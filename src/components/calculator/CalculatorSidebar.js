@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react"
 import { Link } from "gatsby"
 import { noPatsList, patsList } from "./config"
 import { useLocation } from "@reach/router"

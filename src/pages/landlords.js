@@ -1,9 +1,7 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Seo from "../components/seo"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -12,17 +10,16 @@ const Landlords = () => {
 
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "homepage.jpg"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       markdownRemark(frontmatter: {title: {eq: "landlords"}}) {
         frontmatter {
           title
           heroHeading
           heroText
-          heroImg
+          heroImg {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           heroBtn
           heroBtnUrl
           calculatorText
@@ -40,7 +37,11 @@ const Landlords = () => {
           sec3ButtonUrl
           sec4Heading
           sec3Text
-          sec4Img
+          sec4Img {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           sec4Text
           sec5List {
             item
@@ -52,10 +53,8 @@ const Landlords = () => {
       }
     }
   `)
-  const { markdownRemark, file } = data;
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-  const { childImageSharp} = file;
-  const { gatsbyImageData } = childImageSharp;
 
   const {
     heroHeading,
@@ -88,7 +87,6 @@ const Landlords = () => {
 
   return (
     <Layout className="homepage">
-      {/*<Seo title="Home" />*/}
 
       {/*banner*/}
       <section className="hero">
@@ -97,7 +95,7 @@ const Landlords = () => {
             gridArea: "1 / 1"
           }}
           alt={heroHeading}
-          image={gatsbyImageData}
+          image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
@@ -116,7 +114,7 @@ const Landlords = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <Link to={heroBtnUrl} target="_blank" className="btn btn-lg primary">{heroBtn}</Link>
+                <a href={heroBtnUrl} target="_blank"  rel="noreferrer" className="btn btn-lg primary">{heroBtn}</a>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
@@ -207,7 +205,7 @@ const Landlords = () => {
         <div className="container">
           <div className="thin-section-content">
             <p>{sec3Text}</p>
-            <Link to={sec3ButtonUrl} target="_blank" className="btn primary btn-lg">{sec3Button}</Link>
+            <a href={sec3ButtonUrl} target="_blank"  rel="noreferrer" className="btn primary btn-lg">{sec3Button}</a>
           </div>
         </div>
       </section>
@@ -216,10 +214,11 @@ const Landlords = () => {
         <div className="container">
           <div className="img-text-content">
             <div className="img">
-              <StaticImage
+              <GatsbyImage
                 src={'../images/dog-guilty.png'}
                 placeholder="transparent"
                 alt={sec4Heading}
+                image={getImage(sec4Img)}
               />
             </div>
             <div className="text">
@@ -251,7 +250,7 @@ const Landlords = () => {
                   })
                 }
               </ul>
-              <Link to={sec5BtnUrl} target="_blank" className="btn btn-lg secondary">{sec5Btn}</Link>
+              <a href={sec5BtnUrl} target="_blank"  rel="noreferrer" className="btn btn-lg secondary">{sec5Btn}</a>
             </div>
             <div className="img">
               <StaticImage

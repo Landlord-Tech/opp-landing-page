@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Faq from "../components/faq"
 
 const Pricing = () => {
@@ -65,7 +65,7 @@ const Pricing = () => {
                       <h4 className="h4 fw-medium"><strong className="h2 primary bold color-primary">${price}/</strong>contract</h4>
                       <p>per month</p>
                     </div>
-                    <Link to={pricingBtnUrl} target="_blank" className="btn btn-lg primary">{pricingBtn}</Link>
+                    <a href={pricingBtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg primary">{pricingBtn}</a>
                   </li>
                 )
               })

@@ -96,6 +96,7 @@
         &:not(:last-child) {
           margin-bottom: 16px;
         }
+
       }
     }
 
@@ -103,7 +104,8 @@
       display: none;
       position: absolute;
       top: 12px;
-      right: 0;
+      right: 20px;
+      cursor: pointer;
     }
     &:hover {
       .desktop {

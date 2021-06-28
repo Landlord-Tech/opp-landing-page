@@ -1,6 +1,6 @@
 import * as React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { graphql, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Layout from "../components/layout"
@@ -11,17 +11,16 @@ const Tenants = () => {
 
   const data = useStaticQuery(graphql`
     {
-      file(relativePath: {eq: "homepage2.jpg"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
       markdownRemark(frontmatter: {title: {eq: "tenants"}}) {
         frontmatter {
           title
           heroHeading
           heroText
-          heroImg
+          heroImg {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           heroBtn
           heroBtnUrl
           sec1Heading
@@ -37,10 +36,8 @@ const Tenants = () => {
     }
   `)
 
-  const { markdownRemark, file } = data;
+  const { markdownRemark } = data;
   const { frontmatter } = markdownRemark;
-  const { childImageSharp} = file;
-  const { gatsbyImageData } = childImageSharp;
 
   const {
     heroHeading,
@@ -58,16 +55,14 @@ const Tenants = () => {
 
   return (
     <Layout className="homepage">
-      {/*<Seo title="Home" />*/}
 
-      {/*banner*/}
       <section className="hero">
         <GatsbyImage
           style={{
             gridArea: "1 / 1"
           }}
           alt={heroHeading}
-          image={gatsbyImageData}
+          image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
@@ -86,7 +81,7 @@ const Tenants = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <Link to={heroBtnUrl} target="_blank" className="btn btn-lg primary">{heroBtn}</Link>
+                <a href={heroBtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg primary">{heroBtn}</a>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
@@ -146,7 +141,7 @@ const Tenants = () => {
                   })
                 }
               </ul>
-              <Link to={sec2BtnUrl} target="_blank" className="btn btn-lg secondary">{sec2Btn}</Link>
+              <a href={sec2BtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg secondary">{sec2Btn}</a>
             </div>
             <div className="img">
               <StaticImage

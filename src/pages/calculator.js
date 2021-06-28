@@ -9,7 +9,6 @@ import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
 import RotatedView from "../components/rotatedView"
 import { graphql, useStaticQuery } from "gatsby"
-import HTMLContent from "../components/HTMLContent"
 
 const initialState = {
   unitCount: 350,
@@ -121,7 +120,7 @@ const reducer = (state, action) => {
 }
 
 const Calculator = () => {
-  const { search, hash } = useLocation()
+  const { search } = useLocation()
   const [activeItem, setActiveItem] = useState(null)
   const [scrollTo, setScrollTo] = useState(null)
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -408,20 +407,22 @@ const Calculator = () => {
                   <div className="right">
                     <p>
                       {sec2Desc}
-                      <div className="section-links">
+                      <span className="section-links">
                         <a
                           href="https://www.american-apartment-owners-association.org/property-management/latest-news/what-90-of-renters-want/"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           AAOA
                         </a>
                         <a
                           href="https://www.humanesociety.org/resources/increasing-housing-options-renters-pets#:~:text=Did%20you%20know%20that%2072,cats%20wind%20up%20in%20shelters%3F"
                           target="_blank"
+                          rel="noreferrer"
                         >
                           HSUS
                         </a>
-                      </div>
+                      </span>
                     </p>
                   </div>
                 </div>

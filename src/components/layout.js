@@ -24,7 +24,7 @@ const Layout = ({ children, className, prodHeader }) => {
 
   return (
     <>
-      <Header pathname={pathname} sticky={sticky} prodHeader/>
+      <Header pathname={pathname} sticky={sticky} prodHeader={prodHeader}/>
       <main className={className} id='top'>{children}</main>
       {
         !pathname.includes("/calculator") && <Footer />

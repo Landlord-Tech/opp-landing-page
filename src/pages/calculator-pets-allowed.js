@@ -5,7 +5,6 @@ import CalculatorSidebar from "../components/calculator/CalculatorSidebar"
 import RangeInput from "../components/calculator/RangeInput"
 import RangeInputLog from "../components/calculator/RangeInputLog"
 import FixedRibbon from "../components/calculator/FixedRibbon"
-import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithPets } from "../calculator"
 import AllowedTable from "../components/calculator/AllowedTable"
 import RotatedView from "../components/rotatedView"
@@ -143,7 +142,7 @@ const reducer = (state, action) => {
 }
 
 const Calculator = () => {
-  const { search, hash } = useLocation()
+  const { search } = useLocation()
   const [activeItem, setActiveItem] = useState(null)
   const [scrollTo, setScrollTo] = useState(null)
   const [state, dispatch] = useReducer(reducer, initialState)

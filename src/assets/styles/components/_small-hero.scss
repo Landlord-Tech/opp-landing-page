@@ -9,10 +9,21 @@
       padding-bottom: 0;
     }
   }
+
+  &.md {
+    .small-hero-content {
+      min-height: 420px;
+      align-items: flex-start;
+
+      h1 {
+        padding-top: 80px;
+      }
+    }
+  }
 }
 
 .small-hero-content {
-  min-height: 650px;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,13 +35,7 @@
   text-align: center;
 
   h1 {
-    padding-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .small-hero-content {
-    min-height: calc(100vh - 65px);
+    padding-bottom: 20px;
   }
 }
 

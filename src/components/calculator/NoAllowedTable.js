@@ -4,13 +4,12 @@ import { formatPrice } from "../utils"
 const NoAllowedTable = ({ data }) => {
   const { withoutOPP, withOPP, totalSavings } = data
 
-  console.log(withoutOPP?.yearlyDamage)
   return (
     <div className="calculator-table-wrapper">
       <table className="calculator-table">
         <thead>
           <tr>
-            <th />
+            <th/>
             <th>
               <strong>WITHOUT</strong> OurPetPolicy
             </th>

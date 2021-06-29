@@ -41,7 +41,7 @@ const Pricing = () => {
   } = frontmatter
   return (
     <Layout>
-      <section className="small-hero">
+      <section className="small-hero md">
         <div className="container">
           <div className="small-hero-content">
             <div className="small-hero-text">

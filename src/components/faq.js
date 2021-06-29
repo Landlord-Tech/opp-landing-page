@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import Collapsible from "react-collapsible"
 import Icon from "./Icon"
-import { func } from "prop-types"
 
 const Faq = ({ data }) => {
 

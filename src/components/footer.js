@@ -30,13 +30,13 @@ const Footer = () => {
           </li>
           <li className='footer-top-col'>
             <h4 className='h4'><Link  to={'/contact-us/'}>Contact us</Link></h4>
-            <Link to={'/'}>
+            <a href='https://www.facebook.com/OurPetPolicy/' className='inline-block'>
               <Icon
                 color='#fff'
                 size={40}
                 icon='fb'
               />
-            </Link>
+            </a>
           </li>
         </ul>
         <div className="footer-bottom">

@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useState, useRef } from "react"
+import React, { useEffect, useReducer, useState } from "react"
 import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import CalculatorSidebar from "../components/calculator/CalculatorSidebar"
@@ -237,7 +237,6 @@ const CalculatorNoPetsAllowed = () => {
     sec6Desc
   } = frontmatter
 
-  console.log({ html })
   React.useEffect(() => {
     if (scrollTo) {
       refMapping[scrollTo].current?.scrollIntoView({

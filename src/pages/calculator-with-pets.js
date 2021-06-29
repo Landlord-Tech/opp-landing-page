@@ -305,8 +305,6 @@ const Calculator = () => {
     }
   }
 
-  console.log({ activeItem })
-
   return (
     <Layout className="calculator-page" prodHeader>
       <div className="container fluid">

@@ -1,5 +1,5 @@
 import React from "react"
-import Slider, { Handle, SliderTooltip } from "rc-slider"
+import Slider, { Handle } from "rc-slider"
 
 const RangeInput = ({ inputValue, changeValue, min, max, step }) => {
   const handle = ({ value, dragging, index, ...restProps }) => (

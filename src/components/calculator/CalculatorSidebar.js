@@ -48,7 +48,6 @@ const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSi
               <li
                 key={to}
                 onClick={() => handleLinkClick(title)}
-                to={`${search}`}
                 title={title}
                 className={
                   activeItem === hashToId(to)

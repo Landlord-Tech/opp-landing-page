@@ -4,7 +4,7 @@ backend:
 #  repo: ourpetpolicy/our-pet-policy-landing-page
 
 publish_mode: editorial_workflow
-site_url: https://stage.landing.ourpetpolicy.com/
+site_url: https://calculator.ourpetpolicy.com/
 
 
 media_folder: static/assets

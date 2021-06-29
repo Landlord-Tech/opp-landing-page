@@ -24,6 +24,8 @@ const reducer = (state, action) => {
         unitPetRate: action.payload
       }
     }
+    default:
+      return state
   }
 }
 const CalculatorSection = () => {
@@ -51,9 +53,6 @@ const CalculatorSection = () => {
     setNoPetsAllowed(checked)
   }
 
-
-
-  console.log(noPetsAllowed)
   return (
     <div className="calculator-section">
       <div className="range-data">

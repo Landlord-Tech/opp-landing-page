@@ -21,7 +21,6 @@ const PrivacyPolicy = () => {
   const {
     heroHeading,
   } = frontmatter
-  console.log(data)
   return (
     <Layout>
       <section className="small-hero xs">

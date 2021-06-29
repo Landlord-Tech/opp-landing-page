@@ -18,6 +18,14 @@
   display: none !important;
 }
 
+/*displays*/
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
 /*colors*/
 .color-primary {
   color: $color-primary;

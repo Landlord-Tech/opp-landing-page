@@ -3,7 +3,7 @@ const calculateROIWithNoPets = ({
                                   avgRent,
                                   avgTenantLife,
                                   unitPerPetRate,
-                                  petDamagePerTenant: petDamagePerTenant,
+                                  petDamagePerTenant,
                                   unAuthPetFee,
                                   petDeposit,
                                   petRentPerMonth,

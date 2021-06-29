@@ -4,6 +4,9 @@
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
+  transition: .3s;
+  background-position: 100%;
+  background-size: 250px;
 
   &.min-130 {
     min-width: 130px;
@@ -31,9 +34,6 @@
   }
   &.primary {
     background-image: $color-gradient;
-    background-position: 100%;
-    transition: .3s;
-    background-size: 250px;
 
     &:hover {
       background-position: -100%;
@@ -43,7 +43,7 @@
     background-image: $color-light-gradient;
 
     &:hover {
-      background-image: $color-light-gradient-hover;
+      background-position: -100%;
     }
   }
   &.secondary-dark {

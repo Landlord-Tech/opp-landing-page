@@ -1,6 +1,5 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Rotate from "../images/rotate.svg"
 
 const RotatedView = () => {
   return (

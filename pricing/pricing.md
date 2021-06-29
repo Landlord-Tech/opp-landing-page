@@ -9,7 +9,7 @@ pricingList:
     pricingBtn: Get started
     pricingBtnUrl: https://app.ourpetpolicy.com/?auth=signup
   - plan: Standard
-    contracts: 101-1000 contracts
+    contracts: 101-1,000 contracts
     price: "6"
     pricingBtn: Get started
     pricingBtnUrl: https://app.ourpetpolicy.com/?auth=signup

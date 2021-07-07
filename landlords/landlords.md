@@ -1,8 +1,8 @@
 ---
 title: landlords
 metaTitle: Pet Policies Done Right | OurPetPolicy
-metaDescription: Increase revenue, transparency, and tenant satisfaction with
-  the most advanced pet policy platform on the market.
+metaDescription: "Increase revenue, transparency, and tenant satisfaction with
+  the most advanced pet policy platform on the market. "
 heroHeading: Stop Pet Damage In Its Tracks!
 heroText: Ready to take the pet frustrations out of your rental portfolio? If
   you are looking to crack down on unauthorized pets, fraudulent ESA letters,

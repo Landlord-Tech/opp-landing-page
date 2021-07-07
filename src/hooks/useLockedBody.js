@@ -1,6 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from 'react'
-
-
+import { useEffect, useLayoutEffect, useState } from "react"
 
 function useLockedBody(initialLocked = false) {
   const [locked, setLocked] = useState(initialLocked)
@@ -16,10 +14,10 @@ function useLockedBody(initialLocked = false) {
     const originalPaddingRight = document.body.style.paddingRight
 
     // Lock body scroll
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = "hidden"
 
     // Get the scrollBar width
-    const root = document.getElementById('___gatsby') // or root
+    const root = document.getElementById("___gatsby") // or root
     const scrollBarWidth = root ? root.offsetWidth - root.scrollWidth : 0
 
     // Avoid width reflow

@@ -7,10 +7,9 @@ import Icon from "../components/Icon"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Landlords = () => {
-
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "landlords"}}) {
+      markdownRemark(frontmatter: { title: { eq: "landlords" } }) {
         frontmatter {
           title
           heroHeading
@@ -53,8 +52,8 @@ const Landlords = () => {
       }
     }
   `)
-  const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
 
   const {
     heroHeading,
@@ -82,17 +81,16 @@ const Landlords = () => {
     sec5List,
     sec5Btn,
     sec5BtnUrl,
-    sec5Heading
+    sec5Heading,
   } = frontmatter
 
   return (
     <Layout className="homepage">
-
       {/*banner*/}
       <section className="hero">
         <GatsbyImage
           style={{
-            gridArea: "1 / 1"
+            gridArea: "1 / 1",
           }}
           alt={heroHeading}
           image={getImage(heroImg)}
@@ -106,7 +104,7 @@ const Landlords = () => {
             gridArea: "1/1",
             position: "relative",
             placeItems: "center",
-            display: "grid"
+            display: "grid",
           }}
         >
           <div className="container">
@@ -114,24 +112,25 @@ const Landlords = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <a href={heroBtnUrl} target="_blank"  rel="noreferrer" className="btn btn-lg primary">{heroBtn}</a>
+                <a
+                  href={heroBtnUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-lg primary"
+                >
+                  {heroBtn}
+                </a>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
                 className="animated-mouse"
               >
-                <Icon
-                  color="#fff"
-                  size={60}
-                  icon="scroll"
-                />
+                <Icon color="#fff" size={60} icon="scroll" />
                 <p id="scroll-here">Scroll</p>
-
               </button>
             </div>
           </div>
         </div>
-
       </section>
 
       {/*calculator*/}
@@ -205,7 +204,14 @@ const Landlords = () => {
         <div className="container">
           <div className="thin-section-content">
             <p>{sec3Text}</p>
-            <a href={sec3ButtonUrl} target="_blank"  rel="noreferrer" className="btn primary btn-lg">{sec3Button}</a>
+            <a
+              href={sec3ButtonUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn primary btn-lg"
+            >
+              {sec3Button}
+            </a>
           </div>
         </div>
       </section>
@@ -215,7 +221,7 @@ const Landlords = () => {
           <div className="img-text-content">
             <div className="img">
               <GatsbyImage
-                src={'../images/dog-guilty.png'}
+                src={"../images/dog-guilty.png"}
                 placeholder="transparent"
                 alt={sec4Heading}
                 image={getImage(sec4Img)}
@@ -235,22 +241,23 @@ const Landlords = () => {
             <div className="list">
               <h2 className="h2">{sec5Heading}</h2>
               <ul>
-                {
-                  sec5List.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <Icon
-                          color="#fff"
-                          size={24}
-                          icon="check"
-                        />
-                        {item.item}
-                      </li>
-                    )
-                  })
-                }
+                {sec5List.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <Icon color="#fff" size={24} icon="check" />
+                      {item.item}
+                    </li>
+                  )
+                })}
               </ul>
-              <a href={sec5BtnUrl} target="_blank"  rel="noreferrer" className="btn btn-lg secondary">{sec5Btn}</a>
+              <a
+                href={sec5BtnUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-lg secondary"
+              >
+                {sec5Btn}
+              </a>
             </div>
             <div className="img">
               <StaticImage

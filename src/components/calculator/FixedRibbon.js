@@ -1,7 +1,7 @@
 import React from "react"
 import { formatPrice } from "../utils"
 
-const FixedRibbon = ({ className, saving , OPP, ROI }) => {
+const FixedRibbon = ({ className, saving, OPP, ROI }) => {
   return (
     <div className={`${className} fixed-ribbon`}>
       <div>

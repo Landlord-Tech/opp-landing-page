@@ -9,7 +9,7 @@ const AllowedTable = ({ data }) => {
       <table className="calculator-table">
         <thead>
           <tr>
-            <th/>
+            <th />
             <th>
               <strong>WITHOUT</strong> OurPetPolicy
             </th>
@@ -47,7 +47,9 @@ const AllowedTable = ({ data }) => {
             <td>{formatPrice(withoutOPP?.propManageTime)}</td>
             <td>{formatPrice(withOPP?.propManageTime)}</td>
             <td>
-              {formatPrice(withOPP?.propManageTime - withoutOPP?.propManageTime)}
+              {formatPrice(
+                withOPP?.propManageTime - withoutOPP?.propManageTime
+              )}
             </td>
           </tr>
           <tr>

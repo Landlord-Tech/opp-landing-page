@@ -163,10 +163,10 @@ const Calculator = () => {
 
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "withPetCalculator"}}) {
+      markdownRemark(frontmatter: { title: { eq: "withPetCalculator" } }) {
         frontmatter {
           title
-          heroHeading,
+          heroHeading
           sec1Heading
           sec1SubHeading1
           sec1Text1
@@ -243,7 +243,7 @@ const Calculator = () => {
     sec5Text2,
     sec5Desc,
     sec6Heading,
-    sec6Desc
+    sec6Desc,
   } = frontmatter
 
   React.useEffect(() => {
@@ -552,12 +552,22 @@ const Calculator = () => {
                 </div>
               </li>
               <li>
-                <FixedRibbon className='show-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+                <FixedRibbon
+                  className="show-mobile"
+                  saving={totalSavings}
+                  ROI={roi}
+                  OPP={totalCostForOPP}
+                />
               </li>
             </ul>
           </div>
 
-          <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+          <FixedRibbon
+            className="hide-mobile"
+            saving={totalSavings}
+            ROI={roi}
+            OPP={totalCostForOPP}
+          />
         </div>
       </div>
       <RotatedView />

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <Link className="logo" to={'/'}>
+        <Link className="logo" to={"/"}>
           <StaticImage
             src="../images/logo-white.svg"
             alt="OurPetPolicy"
@@ -15,37 +15,46 @@ const Footer = () => {
             placeholder="transparent"
           />
         </Link>
-        <ul className='footer-top'>
-          <li className='footer-top-col'>
-            <h4 className='h4'><Link  to={'/landlords/'}>Landlords</Link></h4>
+        <ul className="footer-top">
+          <li className="footer-top-col">
+            <h4 className="h4">
+              <Link to={"/landlords/"}>Landlords</Link>
+            </h4>
           </li>
-          <li className='footer-top-col'>
-            <h4 className='h4'><Link  to={'/tenants/'}>Tenants</Link></h4>
+          <li className="footer-top-col">
+            <h4 className="h4">
+              <Link to={"/tenants/"}>Tenants</Link>
+            </h4>
           </li>
-          <li className='footer-top-col'>
-            <h4 className='h4'><Link  to={'/pricing/'}>Pricing</Link></h4>
+          <li className="footer-top-col">
+            <h4 className="h4">
+              <Link to={"/pricing/"}>Pricing</Link>
+            </h4>
           </li>
-          <li className='footer-top-col'>
-            <h4 className='h4'><Link  to={'/pricing/#faq'}>FAQ</Link></h4>
+          <li className="footer-top-col">
+            <h4 className="h4">
+              <Link to={"/pricing/#faq"}>FAQ</Link>
+            </h4>
           </li>
-          <li className='footer-top-col'>
-            <h4 className='h4'><Link  to={'/contact-us/'}>Contact us</Link></h4>
-            <a href='https://www.facebook.com/OurPetPolicy/' className='inline-block'>
-              <Icon
-                color='#fff'
-                size={40}
-                icon='fb'
-              />
+          <li className="footer-top-col">
+            <h4 className="h4">
+              <Link to={"/contact-us/"}>Contact us</Link>
+            </h4>
+            <a
+              href="https://www.facebook.com/OurPetPolicy/"
+              className="inline-block"
+            >
+              <Icon color="#fff" size={40} icon="fb" />
             </a>
           </li>
         </ul>
         <div className="footer-bottom">
           <ul>
             <li>
-              <Link to='/terms-and-conditions'>Terms and conditions</Link>
+              <Link to="/terms-and-conditions">Terms and conditions</Link>
             </li>
             <li>
-              <Link to='/privacy-policy'>Privacy Policy</Link>
+              <Link to="/privacy-policy">Privacy Policy</Link>
             </li>
           </ul>
         </div>

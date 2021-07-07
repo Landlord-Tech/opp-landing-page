@@ -5,10 +5,9 @@ import Icon from "../components/Icon"
 import { graphql, useStaticQuery } from "gatsby"
 
 const ContactUs = () => {
-
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "contact"}}) {
+      markdownRemark(frontmatter: { title: { eq: "contact" } }) {
         frontmatter {
           title
           heroHeading
@@ -25,14 +24,7 @@ const ContactUs = () => {
 
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-  const {
-    title,
-    heroHeading,
-    heroText,
-    sec1Heading,
-    contactList,
-  } = frontmatter
-
+  const { title, heroHeading, heroText, sec1Heading, contactList } = frontmatter
 
   return (
     <Layout>
@@ -47,33 +39,26 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <section className='section contact-section'>
+      <section className="section contact-section">
         <div className="container">
           <div className="contact-content">
-            <div className='contact-list-wrapper'>
-              <h2 className='h2'>{sec1Heading}</h2>
-              <ul className='contact-list'>
-                {
-                  contactList.map(({contactField, icon}, index) => {
-                    return (
-                      <li key={index}>
-                        <Icon
-                          icon={icon}
-                          size={24}
-                        />
-                        {contactField}
-                      </li>
-                    )
-                  })
-                }
+            <div className="contact-list-wrapper">
+              <h2 className="h2">{sec1Heading}</h2>
+              <ul className="contact-list">
+                {contactList.map(({ contactField, icon }, index) => {
+                  return (
+                    <li key={index}>
+                      <Icon icon={icon} size={24} />
+                      {contactField}
+                    </li>
+                  )
+                })}
               </ul>
             </div>
             <ContactForm />
           </div>
         </div>
       </section>
-
-
     </Layout>
   )
 }

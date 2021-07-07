@@ -21,7 +21,8 @@ pricingList:
 faqHeading: Frequently Asked Questions
 faqList:
   - question: How long does it take to get set up?
-    answer: If you have your property address information, tenant name and email,
+    answer:
+      If you have your property address information, tenant name and email,
       and a payment method, you can have your first contract sent to your tenant
       in 5 minutes or less.
   - question: Do you have an ESA letter verification process?
@@ -30,7 +31,8 @@ faqList:
       for fraudulent documentation in the contracts that the tenants read and
       sign.
   - question: Do I need this service if I have a “No Pets Policy”?
-    answer: You would especially want this service if you have a “No Pets Policy”.
+    answer:
+      You would especially want this service if you have a “No Pets Policy”.
       With dozens of companies popping up online offering ESA Letters for as low
       as $29, the number of fraudulent ESA letters have skyrocketed this past
       year. More people are sneaking in pets as they are working from home and
@@ -41,7 +43,8 @@ faqList:
   - question: Do you have pet policies for every state?
     answer: Our goal is to have policies for every state before the end of 2021.
       Currently supported states are Idaho, Utah, Montana, Nevada.
-  - question: If my tenants have already signed a pet policy, can I implement this
+  - question:
+      If my tenants have already signed a pet policy, can I implement this
       pet policy?
     answer: You can always let your tenants know you have decided to use our
       platform to help facilitate the pet policy and ask them to sign up. They

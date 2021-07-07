@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/assets`,
-        name: 'uploads',
+        name: "uploads",
       },
     },
     {
@@ -100,26 +100,26 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/images`,
-        name: 'images',
+        name: "images",
       },
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
+            resolve: "gatsby-remark-relative-images",
             options: {
-              name: 'uploads',
+              name: "uploads",
             },
           },
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -128,9 +128,9 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-copy-linked-files',
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
-              destinationDir: 'static',
+              destinationDir: "static",
             },
           },
         ],
@@ -153,18 +153,18 @@ module.exports = {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -66,
-        duration: 400
-      }
+        duration: 400,
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-netlify-cms',
+      resolve: "gatsby-plugin-netlify-cms",
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
-    'gatsby-plugin-netlify',
+    "gatsby-plugin-netlify",
   ],
 }

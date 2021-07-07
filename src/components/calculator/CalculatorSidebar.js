@@ -4,7 +4,13 @@ import { noPatsList, patsList } from "./config"
 import { useLocation } from "@reach/router"
 import { hashToId } from "../utils"
 
-const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSidebar }) => {
+const CalculatorSidebar = ({
+  search,
+  activeItem,
+  handleLinkClick,
+  active,
+  prodSidebar,
+}) => {
   const { hash } = useLocation()
 
   // const tabContentList = search === "?pets-allowed" ? patsList : noPatsList
@@ -21,7 +27,9 @@ const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSi
               className={search === "?no-pets-allowed" || search === "" ? "active" : ""}
             />*/}
             <Link
-              to={`${prodSidebar ? '/calculator/' : '/calculator-no-pets-allowed/'}`}
+              to={`${
+                prodSidebar ? "/calculator/" : "/calculator-no-pets-allowed/"
+              }`}
               className={!active ? "active" : ""}
             >
               No Pets Allowed
@@ -35,7 +43,11 @@ const CalculatorSidebar = ({ search, activeItem, handleLinkClick, active, prodSi
               className={search === "?pets-allowed" ? "active" : ""}
             />*/}
             <Link
-              to={`${prodSidebar ? '/calculator-with-pets/' : '/calculator-pets-allowed/'}`}
+              to={`${
+                prodSidebar
+                  ? "/calculator-with-pets/"
+                  : "/calculator-pets-allowed/"
+              }`}
               className={active ? "active" : ""}
             >
               Pets Allowed

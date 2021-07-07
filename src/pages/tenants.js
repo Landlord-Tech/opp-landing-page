@@ -6,12 +6,10 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import Layout from "../components/layout"
 import Icon from "../components/Icon"
 
-
 const Tenants = () => {
-
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "tenants"}}) {
+      markdownRemark(frontmatter: { title: { eq: "tenants" } }) {
         frontmatter {
           title
           heroHeading
@@ -36,8 +34,8 @@ const Tenants = () => {
     }
   `)
 
-  const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
 
   const {
     heroHeading,
@@ -50,16 +48,15 @@ const Tenants = () => {
     sec2Heading,
     sec2Btn,
     sec2BtnUrl,
-    sec2List
+    sec2List,
   } = frontmatter
 
   return (
     <Layout className="homepage">
-
       <section className="hero">
         <GatsbyImage
           style={{
-            gridArea: "1 / 1"
+            gridArea: "1 / 1",
           }}
           alt={heroHeading}
           image={getImage(heroImg)}
@@ -73,7 +70,7 @@ const Tenants = () => {
             gridArea: "1/1",
             position: "relative",
             placeItems: "center",
-            display: "grid"
+            display: "grid",
           }}
         >
           <div className="container">
@@ -81,17 +78,20 @@ const Tenants = () => {
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">{heroText}</p>
-                <a href={heroBtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg primary">{heroBtn}</a>
+                <a
+                  href={heroBtnUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn btn-lg primary"
+                >
+                  {heroBtn}
+                </a>
               </div>
               <button
                 onClick={() => scrollTo("#scroll-here")}
                 className="animated-mouse"
               >
-                <Icon
-                  color="#fff"
-                  size={60}
-                  icon="scroll"
-                />
+                <Icon color="#fff" size={60} icon="scroll" />
                 <p id="scroll-here">Scroll</p>
               </button>
             </div>
@@ -126,22 +126,23 @@ const Tenants = () => {
             <div className="list">
               <h2 className="h2">{sec2Heading}</h2>
               <ul>
-                {
-                  sec2List.map((item, index) => {
-                    return (
-                      <li key={index}>
-                        <Icon
-                          color="#fff"
-                          size={24}
-                          icon="check"
-                        />
-                        {item.item}
-                      </li>
-                    )
-                  })
-                }
+                {sec2List.map((item, index) => {
+                  return (
+                    <li key={index}>
+                      <Icon color="#fff" size={24} icon="check" />
+                      {item.item}
+                    </li>
+                  )
+                })}
               </ul>
-              <a href={sec2BtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg secondary">{sec2Btn}</a>
+              <a
+                href={sec2BtnUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-lg secondary"
+              >
+                {sec2Btn}
+              </a>
             </div>
             <div className="img">
               <StaticImage

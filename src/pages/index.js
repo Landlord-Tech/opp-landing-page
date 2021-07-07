@@ -8,7 +8,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "homepage"}}) {
+      markdownRemark(frontmatter: { title: { eq: "homepage" } }) {
         frontmatter {
           heading
           primaryBtn
@@ -22,15 +22,10 @@ const IndexPage = () => {
       }
     }
   `)
-  const { markdownRemark } = data;
-  const { frontmatter } = markdownRemark;
+  const { markdownRemark } = data
+  const { frontmatter } = markdownRemark
 
-  const {
-    heading,
-    primaryBtn,
-    secondaryBtn,
-    hero,
-  } = frontmatter
+  const { heading, primaryBtn, secondaryBtn, hero } = frontmatter
 
   return (
     <Layout className="homepage">
@@ -40,7 +35,7 @@ const IndexPage = () => {
       <section className="hero hero-page">
         <GatsbyImage
           style={{
-            gridArea: "1 / 1"
+            gridArea: "1 / 1",
           }}
           alt={heading}
           objectFit="cover"
@@ -52,7 +47,7 @@ const IndexPage = () => {
             gridArea: "1/1",
             position: "relative",
             placeItems: "center",
-            display: "grid"
+            display: "grid",
           }}
         >
           <div className="container">
@@ -60,8 +55,12 @@ const IndexPage = () => {
               <div className="hero-left">
                 <h1 className="h1">{heading}</h1>
                 <div>
-                  <Link to="/landlords/" className="btn btn-lg primary">{primaryBtn}</Link>
-                  <Link to="/tenants/" className="btn btn-lg secondary">{secondaryBtn}</Link>
+                  <Link to="/landlords/" className="btn btn-lg primary">
+                    {primaryBtn}
+                  </Link>
+                  <Link to="/tenants/" className="btn btn-lg secondary">
+                    {secondaryBtn}
+                  </Link>
                 </div>
               </div>
             </div>

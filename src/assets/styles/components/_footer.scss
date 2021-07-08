@@ -48,6 +48,11 @@
 .footer-contact {
   li {
     display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
     .icon {
       margin-right: 12px;
       min-width: 20px;

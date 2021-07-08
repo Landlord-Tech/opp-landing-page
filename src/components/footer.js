@@ -13,7 +13,7 @@ const Footer = () => {
           heroText
           sec1Heading
           contactList {
-            contactField
+            ContactItem
             icon
           }
         }
@@ -26,6 +26,8 @@ const Footer = () => {
   const { contactList } = frontmatter
 
   console.log({ contactList });
+  const location = contactList[0].ContactItem
+
 
   return (
     <footer className="footer">
@@ -41,7 +43,9 @@ const Footer = () => {
         <ul className="footer-top">
           <li className="footer-top-col with-icon">
             <Icon icon={contactList[0].icon} size={24} />
-            <h4>{contactList[0].contactField}</h4>
+            <h4>
+              {location.map((line, index) => <p key={index}>{line}</p>)}
+            </h4>
           </li>
           <li className="footer-top-col">
             <h4 className="h4">
@@ -70,11 +74,12 @@ const Footer = () => {
               <Link to={"/contact-us/"}>Contact us</Link>
             </h4>
             <ul className="footer-contact">
-              {contactList.slice(1, 3).map(({ contactField, icon }, index) => {
+              {contactList.slice(1, 3).map(({ ContactItem, icon }, index) => {
+                console.log({ ContactItem });
                 return (
                   <li key={index}>
                     <Icon icon={icon} size={24} />
-                    {contactField}
+                    {ContactItem.map((line, index) => <p key={index}>{line}</p>)}
                   </li>
                 )
               })}
@@ -91,9 +96,9 @@ const Footer = () => {
         </ul>
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} OurPetPolicy.{" "}
-            <Link to="/terms-and-conditions">Terms.</Link>{" "}
-            <Link to="/privacy-policy">Privacy.</Link>
+            © {new Date().getFullYear()} OurPetPolicy. All rights reserved.{" "}
+            <Link to="/terms-and-conditions" className='underline'>Terms.</Link>{" "}
+            <Link to="/privacy-policy" className='underline'>Privacy.</Link>
           </p>
         </div>
       </div>

@@ -13,7 +13,7 @@ const ContactUs = () => {
           heroText
           sec1Heading
           contactList {
-            contactField
+            ContactItem
             icon
           }
         }
@@ -44,11 +44,11 @@ const ContactUs = () => {
             <div className="contact-list-wrapper">
               <h2 className="h2">{sec1Heading}</h2>
               <ul className="contact-list">
-                {contactList.map(({ contactField, icon }, index) => {
+                {contactList.map(({ ContactItem, icon }, index) => {
                   return (
                     <li key={index}>
                       <Icon icon={icon} size={24} />
-                      {contactField}
+                      {ContactItem.join(" ")}
                     </li>
                   )
                 })}

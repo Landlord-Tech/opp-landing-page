@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-#  name: gitlab
-#  repo: ourpetpolicy/our-pet-policy-landing-page
+#  name: git-gateway
+  name: gitlab
+  repo: ourpetpolicy/our-pet-policy-landing-page
 
 
 #publish_mode: editorial_workflow
@@ -167,7 +167,10 @@ collections:
          name: contactList
          widget: list
          fields:
-           - { label: Contact field, name: contactField, widget: text }
+           - name: ContactItem
+             label: Contact Field
+             widget: list
+             field: { name: line, label: Line, widget: string }
            - label: Contact icon
              name: icon
              widget: select

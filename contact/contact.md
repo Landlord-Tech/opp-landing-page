@@ -12,4 +12,6 @@ contactList:
       Boise, ID 83702
   - contactField: support@ourpetpolicy.com
     icon: email
+  - contactField: (208) 906-8886
+    icon: phone
 ---

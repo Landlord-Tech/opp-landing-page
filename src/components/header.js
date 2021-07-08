@@ -26,7 +26,6 @@ const Header = ({ pathname, sticky, prodHeader }) => {
     {
       markdownRemark(frontmatter: { title: { eq: "header" } }) {
         frontmatter {
-          title
           primaryBtn
           primaryBtnUrl
           secondaryBtn
@@ -39,7 +38,6 @@ const Header = ({ pathname, sticky, prodHeader }) => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const {
-    title,
     primaryBtn,
     primaryBtnUrl,
     secondaryBtn,

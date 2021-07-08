@@ -49,7 +49,6 @@ const NotFoundPage = () => {
           image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectFit="cover"
-          placeholder="blurred"
         />
         <div
           style={{

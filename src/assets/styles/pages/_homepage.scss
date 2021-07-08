@@ -131,6 +131,9 @@
   }
   .text {
     width: 50%;
+    h2 {
+      padding-bottom: 24px;
+    }
   }
 }
 
@@ -201,6 +204,10 @@
 
     .list, .img {
       width: 50%;
+    }
+
+    .img {
+      text-align: center;
     }
   }
 }

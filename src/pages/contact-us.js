@@ -9,7 +9,6 @@ const ContactUs = () => {
     {
       markdownRemark(frontmatter: { title: { eq: "contact" } }) {
         frontmatter {
-          title
           heroHeading
           heroText
           sec1Heading
@@ -24,7 +23,7 @@ const ContactUs = () => {
 
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-  const { title, heroHeading, heroText, sec1Heading, contactList } = frontmatter
+  const { heroHeading, heroText, sec1Heading, contactList } = frontmatter
 
   return (
     <Layout>

@@ -9,6 +9,7 @@ import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
 import RotatedView from "../components/rotatedView"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from "../components/seo"
 
 const initialState = {
   unitCount: 350,
@@ -144,7 +145,8 @@ const CalculatorNoPetsAllowed = () => {
       markdownRemark(frontmatter: { title: { eq: "withNoPetCalculator" } }) {
         html
         frontmatter {
-          title
+          metaTitle
+          metaDescription
           heroHeading
           sec1Heading
           sec1SubHeading1
@@ -191,9 +193,10 @@ const CalculatorNoPetsAllowed = () => {
     }
   `)
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
   const {
-    title,
+    metaTitle,
+    metaDescription,
     heroHeading,
     sec1Heading,
     sec1SubHeading1,
@@ -241,8 +244,6 @@ const CalculatorNoPetsAllowed = () => {
     if (scrollTo) {
       refMapping[scrollTo].current?.scrollIntoView({
         behavior: "smooth",
-        // block: "nearest",
-        // inline: "start",
       })
       setScrollTo(false)
     }
@@ -301,6 +302,7 @@ const CalculatorNoPetsAllowed = () => {
 
   return (
     <Layout className="calculator-page">
+      <Seo title={metaTitle} description={metaDescription} />
       <div className="container fluid">
         <h1 className="h3">Advanced ROI Calculator</h1>
         <div className="calculator-content">

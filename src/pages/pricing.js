@@ -2,13 +2,15 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Faq from "../components/faq"
+import Seo from "../components/seo"
 
 const Pricing = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: { title: { eq: "pricing" } }) {
         frontmatter {
-          title
+          metaTitle
+          metaDescription
           heroHeading
           heroText
           pricingList {
@@ -31,7 +33,8 @@ const Pricing = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const {
-    title,
+    metaTitle,
+    metaDescription,
     heroHeading,
     heroText,
     pricingList,
@@ -40,6 +43,7 @@ const Pricing = () => {
   } = frontmatter
   return (
     <Layout>
+      <Seo title={metaTitle} description={metaDescription} />
       <section className="small-hero md">
         <div className="container">
           <div className="small-hero-content">

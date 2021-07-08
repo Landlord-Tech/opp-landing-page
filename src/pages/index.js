@@ -10,6 +10,8 @@ const IndexPage = () => {
     {
       markdownRemark(frontmatter: { title: { eq: "homepage" } }) {
         frontmatter {
+          metaTitle
+          metaDescription
           heading
           primaryBtn
           secondaryBtn
@@ -25,11 +27,18 @@ const IndexPage = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
-  const { heading, primaryBtn, secondaryBtn, hero } = frontmatter
+  const {
+    metaTitle,
+    metaDescription,
+    heading,
+    primaryBtn,
+    secondaryBtn,
+    hero,
+  } = frontmatter
 
   return (
     <Layout className="homepage">
-      <Seo title="Home" />
+      <Seo title={metaTitle} description={metaDescription} />
 
       {/*banner*/}
       <section className="hero hero-page">
@@ -39,7 +48,6 @@ const IndexPage = () => {
           }}
           alt={heading}
           objectFit="cover"
-          placeholder="blurred"
           image={getImage(hero)}
         />
         <div

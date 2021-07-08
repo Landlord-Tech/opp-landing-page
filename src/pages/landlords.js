@@ -5,13 +5,15 @@ import Layout from "../components/layout"
 import CalculatorSection from "../components/calculator/CalculatorSection"
 import Icon from "../components/Icon"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import Seo from "../components/seo"
 
 const Landlords = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: { title: { eq: "landlords" } }) {
         frontmatter {
-          title
+          metaTitle
+          metaDescription
           heroHeading
           heroText
           heroImg {
@@ -25,6 +27,11 @@ const Landlords = () => {
           calculatorHeading
           sec1Heading
           sec1Text
+          sec1Img {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           sec2Card1Heading
           sec2Card1Text
           sec2Card2Heading
@@ -56,6 +63,8 @@ const Landlords = () => {
   const { frontmatter } = markdownRemark
 
   const {
+    metaTitle,
+    metaDescription,
     heroHeading,
     heroText,
     heroImg,
@@ -65,6 +74,7 @@ const Landlords = () => {
     calculatorHeading,
     sec1Heading,
     sec1Text,
+    sec1Img,
     sec2Heading,
     sec2Card1Heading,
     sec2Card1Text,
@@ -86,7 +96,7 @@ const Landlords = () => {
 
   return (
     <Layout className="homepage">
-      {/*banner*/}
+      <Seo title={metaTitle} description={metaDescription} />
       <section className="hero">
         <GatsbyImage
           style={{
@@ -97,7 +107,6 @@ const Landlords = () => {
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
-          placeholder="blurred"
         />
         <div
           style={{
@@ -148,11 +157,10 @@ const Landlords = () => {
         <div className="container">
           <div className="img-text-content">
             <div className="img">
-              <StaticImage
-                src="../images/macbook.png"
+              <GatsbyImage
+                alt={sec1Heading}
+                image={getImage(sec1Img)}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Why Choose OurPetPolicy?"
-                placeholder="transparent"
               />
             </div>
             <div className="text">
@@ -191,7 +199,7 @@ const Landlords = () => {
               <StaticImage
                 src={"../images/house.svg"}
                 alt="rotate"
-                placeholder="blurred"
+                placeholder="transparent"
               />
               <h4 className="h4">{sec2Card3Heading}</h4>
               <p>{sec2Card3Text}</p>
@@ -221,10 +229,9 @@ const Landlords = () => {
           <div className="img-text-content">
             <div className="img">
               <GatsbyImage
-                src={"../images/dog-guilty.png"}
-                placeholder="transparent"
                 alt={sec4Heading}
                 image={getImage(sec4Img)}
+                formats={["AUTO", "WEBP", "AVIF"]}
               />
             </div>
             <div className="text">
@@ -266,7 +273,7 @@ const Landlords = () => {
                 // quality={95}
                 formats={["AUTO", "WEBP", "AVIF"]}
                 alt="Why Choose OurPetPolicy?"
-                placeholder="blurred"
+                placeholder="transparent"
               />
             </div>
           </div>

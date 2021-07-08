@@ -106,7 +106,16 @@ module.exports = {
         name: "images",
       },
     },
-    `gatsby-plugin-sharp`,
+    // `gatsby-plugin-sharp`,
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `none`,
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-transformer-remark",

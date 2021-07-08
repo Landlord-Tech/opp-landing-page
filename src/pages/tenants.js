@@ -1,17 +1,19 @@
 import * as React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import Layout from "../components/layout"
 import Icon from "../components/Icon"
+import Seo from "../components/seo"
 
 const Tenants = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: { title: { eq: "tenants" } }) {
         frontmatter {
-          title
+          metaTitle
+          metaDescription
           heroHeading
           heroText
           heroImg {
@@ -23,7 +25,17 @@ const Tenants = () => {
           heroBtnUrl
           sec1Heading
           sec1Text
+          sec1Img {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           sec2Heading
+          sec2Img {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
           sec2Btn
           sec2BtnUrl
           sec2List {
@@ -38,6 +50,8 @@ const Tenants = () => {
   const { frontmatter } = markdownRemark
 
   const {
+    metaTitle,
+    metaDescription,
     heroHeading,
     heroText,
     heroImg,
@@ -45,7 +59,9 @@ const Tenants = () => {
     heroBtnUrl,
     sec1Heading,
     sec1Text,
+    sec1Img,
     sec2Heading,
+    sec2Img,
     sec2Btn,
     sec2BtnUrl,
     sec2List,
@@ -53,6 +69,7 @@ const Tenants = () => {
 
   return (
     <Layout className="homepage">
+      <Seo title={metaTitle} description={metaDescription} />
       <section className="hero">
         <GatsbyImage
           style={{
@@ -63,7 +80,6 @@ const Tenants = () => {
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
-          placeholder="blurred"
         />
         <div
           style={{
@@ -103,13 +119,10 @@ const Tenants = () => {
         <div className="container">
           <div className="img-text-content">
             <div className="img">
-              <StaticImage
-                src="../images/macbook.png"
-                // width={300}
-                // quality={95}
+              <GatsbyImage
+                alt={sec1Heading}
+                image={getImage(sec1Img)}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Why Choose OurPetPolicy?"
-                placeholder="transparent"
               />
             </div>
             <div className="text">
@@ -145,13 +158,10 @@ const Tenants = () => {
               </a>
             </div>
             <div className="img">
-              <StaticImage
-                src="../images/phones.png"
-                // width={300}
-                // quality={95}
+              <GatsbyImage
+                alt={sec2Heading}
+                image={getImage(sec2Img)}
                 formats={["AUTO", "WEBP", "AVIF"]}
-                alt="Why Choose OurPetPolicy?"
-                placeholder="transparent"
               />
             </div>
           </div>

@@ -191,9 +191,8 @@ const Calculator = () => {
     }
   `)
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
   const {
-    title,
     heroHeading,
     sec1Heading,
     sec1SubHeading1,

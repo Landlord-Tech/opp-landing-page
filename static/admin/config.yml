@@ -3,7 +3,7 @@ backend:
 #  name: gitlab
 #  repo: ourpetpolicy/our-pet-policy-landing-page
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 site_url: https://calculator.ourpetpolicy.com/
 
 
@@ -26,11 +26,13 @@ collections:
   - name: homepage
     label: homepage
     folder: homepage
-    preview_path: homepage
+    preview_path: /
     editor:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heading, label: heading }
       - { name: primaryBtn, label: Primary Button }
       - { name: secondaryBtn, label: Secondary Button }
@@ -58,6 +60,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text, widget: text }
       - { name: heroBtn, label: Hero button }
@@ -67,6 +71,7 @@ collections:
       - { name: calculatorText, label: Calculator text, widget: text }
       - { name: sec1Heading, label: Section 1 heading }
       - { name: sec1Text, label: Section 1 text, widget: text }
+      - { name: sec1Img, label: Section 1 image, widget: image }
       - { name: sec2Heading, label: Section 2 heading }
       - { name: sec2Card1Heading, label: Section 2 - card 1 heading }
       - { name: sec2Card1Text, label: Section 2 - card 1 text, widget: text }
@@ -97,6 +102,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text, widget: text }
       - { name: heroBtn, label: Hero button }
@@ -104,7 +111,9 @@ collections:
       - { name: heroImg, label: Hero image, widget: image }
       - { name: sec1Heading, label: Section 1 heading }
       - { name: sec1Text, label: Section 1 text, widget: text }
+      - { name: sec1Img, label: Section 1 image, widget: image }
       - { name: sec2Heading, label: Section 2 heading }
+      - { name: sec2Img, label: Section 2 image, widget: image }
       - { name: sec2Btn, label: Section 2 Button }
       - { name: sec2BtnUrl, label: Section 2 Button url }
       - label: Section 2 List
@@ -121,6 +130,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text, widget: text }
       -  label: Pricing List
@@ -155,7 +166,7 @@ collections:
          name: contactList
          widget: list
          fields:
-           - { label: Contact field, name: contactField }
+           - { label: Contact field, name: contactField, widget: text }
            - label: Contact icon
              name: icon
              widget: select
@@ -169,6 +180,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Page title }
       - { name: sec1Heading, label: Calculator intro heading }
       - { name: sec1SubHeading1, label: Calculator intro subheading 1 }
@@ -213,6 +226,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Page title }
       - { name: sec1Heading, label: Calculator intro heading }
       - { name: sec1SubHeading1, label: Calculator intro subheading 1 }

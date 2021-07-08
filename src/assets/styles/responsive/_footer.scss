@@ -13,12 +13,16 @@
   }
   .footer-top-col {
 
-    &:not(:last-child) {
-      padding-bottom: 0;
+    &.with-icon {
+
+      h4 {
+        width: 100%;
+      }
     }
 
-    h4 {
-      padding-bottom: 16px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+      padding-right: 0;
     }
   }
   .footer-bottom {

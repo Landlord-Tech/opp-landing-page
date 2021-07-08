@@ -165,7 +165,6 @@ const Calculator = () => {
     {
       markdownRemark(frontmatter: { title: { eq: "withPetCalculator" } }) {
         frontmatter {
-          title
           heroHeading
           sec1Heading
           sec1SubHeading1
@@ -208,7 +207,6 @@ const Calculator = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const {
-    title,
     heroHeading,
     sec1Heading,
     sec1SubHeading1,

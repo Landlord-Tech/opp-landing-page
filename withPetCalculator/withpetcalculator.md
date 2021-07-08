@@ -1,5 +1,8 @@
 ---
 title: withPetCalculator
+metaTitle: Upgrading Your Pet Policy Can Save You a Fortune
+metaDescription: Check the Return on Investment (ROI) you could see by upgrading
+  your pet policy with OurPetPolicy.
 heroHeading: Return on Investment with OurPetPolicy
 sec1Heading: Tell us about your Properties
 sec1SubHeading1: How many Units

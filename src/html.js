@@ -13,9 +13,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-59CXZ74');
-        `
-        }}/>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PNEMPYHZKZ"/>
+        `,
+          }}
+        />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PNEMPYHZKZ"
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -37,13 +41,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
-        <noscript dangerouslySetInnerHTML={{
-          __html: `
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59CXZ74"
                   height="0" width="0" style="display:none;visibility:hidden">
           </iframe>
-          `
-        }}/>
+          `,
+          }}
+        />
         {props.preBodyComponents}
         <div
           key={`body`}

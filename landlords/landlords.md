@@ -1,5 +1,8 @@
 ---
 title: landlords
+metaTitle: Pet Policies Done Right | OurPetPolicy
+metaDescription: "Increase revenue, transparency, and tenant satisfaction with
+  the most advanced pet policy platform on the market. "
 heroHeading: Stop Pet Damage In Its Tracks!
 heroText: Ready to take the pet frustrations out of your rental portfolio? If
   you are looking to crack down on unauthorized pets, fraudulent ESA letters,
@@ -11,7 +14,7 @@ heroImg: /assets/homepage.jpg
 calculatorHeading: How much could you save?
 calculatorText: "Whether you allow pets or not, we can help you maximize profits
   by minimizing damage, exposing fraudulent ESA's, maximizing deposits and fees,
-  and minimizing the time you spend dealing with pets. Check our our ROI
+  and minimizing the time you spend dealing with pets. Check out our ROI
   calculator to see what you could be saving this year. "
 sec1Heading: Why Choose OurPetPolicy?
 sec1Text: To build the best pet policy platform we created a team of lawyers,
@@ -20,6 +23,7 @@ sec1Text: To build the best pet policy platform we created a team of lawyers,
   and makes the rules crystal clear to the tenants. In just a few minutes, you
   can add your rental properties, customize a lawyer-vetted policy for your
   state, and send a contract to your tenant for an electronic signature.
+sec1Img: /assets/macbook.png
 sec2Heading: No more hassle and potential legal disputes
 sec2Card1Heading: Damage Reduction
 sec2Card1Text: Our process reduces unauthorized pets, fraudulent ESAs, and
@@ -43,8 +47,8 @@ sec4Text: The Federal Housing Administration allows a person with a disability
   verification process that will expose these fake letters and keep unauthorized
   animals out of your rental!
 sec4Img: /assets/dog-guilty.png
+sec5Heading: Pawsibilities Unleashed . . .
 sec5Btn: Give it a try
-sec5BtnUrl: https://app.ourpetpolicy.com/?auth=signup
 sec5List:
   - item: Customizable Contracts & Master Policies
   - item: ESA Verification Process
@@ -56,5 +60,5 @@ sec5List:
   - item: Application Processes For All Animal Requests
   - item: Irrefutable Unauthorized Animal Policy
 sec5Title: Pawsibilities Unleashed . . .
-sec5Heading: Pawsibilities Unleashed . . .
+sec5BtnUrl: https://app.ourpetpolicy.com/?auth=signup
 ---

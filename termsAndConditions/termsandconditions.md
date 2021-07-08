@@ -2,6 +2,7 @@
 title: termsAndConditions
 heroHeading: Terms and Conditions
 ---
+
 Following are the terms and conditions or “Terms” that govern your use of any website that links to these Terms (the “Site”). By using or visiting the Site, you expressly agree to be bound by these Terms and all applicable laws and regulations governing the Site. Ultra Labs LLC, and its subsidiaries and/or affiliates (collectively, “we,” “us,” or “our”) reserve the right to change these Terms at any time, effective immediately upon posting or linking on the Site. If you violate these Terms, we may terminate your use of the Site, bar you from future use of the Site, and/or take appropriate legal action against you.
 
 We may make available via the Site content, including information, articles, videos, comments, reviews and other texts, photos, pictures and other images, software, or applications (together referred to as “Content”). You agree that we and/or licensors own all Content made available through the Site. Such Content is subject to U.S and international copyright, trademark or other intellectual property rights and laws.
@@ -30,9 +31,9 @@ Illegal and/or unauthorized uses of the Site, including, but not limited to unau
 
 You agree that you will only use the Site only for lawful purposes. You will not transmit, post, store, distribute, display or present any information, software, data, file or material in violation of any applicable law or regulation. You will not use the Site to facilitate, or otherwise assist others in, the violation of any law or regulation. You are solely responsible for ensuring that materials transmitted, posted, stored, distributed, displayed or presented using the Site comply with this Agreement and all applicable laws and regulations.
 
-* You may not use the Site or the services to violate any law, statute, ordinance or regulation including export, intellectual property and privacy laws.
-* United States export control laws govern your use of this Site and services. These laws apply to you and your use of this Site and services regardless of whether you actually reside in the United States. Additional information about United States export laws is available from the United States government’s portal to exporting and trade services at http://www.export.gov/.
-* We do not represent that Content on the Site is applicable, appropriate, or available for use in locations outside the United States. Persons who choose to access the Site from locations outside of the United States do so on their own initiative, and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
+- You may not use the Site or the services to violate any law, statute, ordinance or regulation including export, intellectual property and privacy laws.
+- United States export control laws govern your use of this Site and services. These laws apply to you and your use of this Site and services regardless of whether you actually reside in the United States. Additional information about United States export laws is available from the United States government’s portal to exporting and trade services at http://www.export.gov/.
+- We do not represent that Content on the Site is applicable, appropriate, or available for use in locations outside the United States. Persons who choose to access the Site from locations outside of the United States do so on their own initiative, and are solely responsible for compliance with local laws, if and to the extent local laws are applicable.
 
 **User Content**
 
@@ -46,9 +47,9 @@ You understand and agree that in our sole discretion, and without prior notice, 
 
 Unless otherwise specified, the copyrights in all copyrightable subject matter on the Site are either owned by us or used lawfully by us. To the extent that we have the right to do so without compensation to third parties, and except for materials or information specifically provided under other terms, we grant you permission to copy or otherwise download from the Site, information and materials (including related graphics), provided:
 
-* The materials are for your internal use only, and
-* Any copies of materials or portions thereof must include the copyright notice specified on the Site.
-* You may not copy or display for redistribution to third parties any portion of the Site without our prior written permission. Documents we post on the Site may contain other proprietary notices or describe products, services, processes or technologies owned by us or third parties. Nothing contained herein shall be construed by implication, estoppel or otherwise as granting to the user a license under any copyright, trademark, patent or other intellectual property right of us or any third party.
+- The materials are for your internal use only, and
+- Any copies of materials or portions thereof must include the copyright notice specified on the Site.
+- You may not copy or display for redistribution to third parties any portion of the Site without our prior written permission. Documents we post on the Site may contain other proprietary notices or describe products, services, processes or technologies owned by us or third parties. Nothing contained herein shall be construed by implication, estoppel or otherwise as granting to the user a license under any copyright, trademark, patent or other intellectual property right of us or any third party.
 
 **Trademark**
 
@@ -64,7 +65,7 @@ WE DO NOT PROMISE THAT THE SITE OR ANY SERVICES PROVIDED HEREUNDER WILL BE ERROR
 
 **Disputes**
 
-If there is any dispute about or involving the Site, by using the Site, you agree that the dispute will be governed by the laws of the State of Idaho without regard to its conflict of law provisions. You agree to personal jurisdiction by and venue in the state and federal courts of the State of Boise, Ada County. 
+If there is any dispute about or involving the Site, by using the Site, you agree that the dispute will be governed by the laws of the State of Idaho without regard to its conflict of law provisions. You agree to personal jurisdiction by and venue in the state and federal courts of the State of Boise, Ada County.
 
 **Indemnity**
 

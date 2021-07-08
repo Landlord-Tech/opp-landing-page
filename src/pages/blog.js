@@ -1,13 +1,9 @@
-import React from 'react';
-import Layout from '../components/layout';
+import React from "react"
+import Layout from "../components/layout"
 
-import BlogPostList from '../components/blog/BlogPostList';
+import BlogPostList from "../components/blog/BlogPostList"
 
-
-
-
-function News()
-{
+function News() {
   return (
     <Layout>
       <BlogPostList />
@@ -15,4 +11,4 @@ function News()
   )
 }
 
-export default News;
+export default News

@@ -47,7 +47,9 @@ const AllowedTable = ({ data }) => {
             <td>{formatPrice(withoutOPP?.propManageTime)}</td>
             <td>{formatPrice(withOPP?.propManageTime)}</td>
             <td>
-              {formatPrice(withOPP?.propManageTime - withoutOPP?.propManageTime)}
+              {formatPrice(
+                withOPP?.propManageTime - withoutOPP?.propManageTime
+              )}
             </td>
           </tr>
           <tr>

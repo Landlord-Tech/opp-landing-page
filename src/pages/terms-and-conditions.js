@@ -6,7 +6,7 @@ import HTMLContent from "../components/HTMLContent"
 const Terms = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "termsAndConditions"}}) {
+      markdownRemark(frontmatter: { title: { eq: "termsAndConditions" } }) {
         html
         frontmatter {
           title
@@ -18,9 +18,7 @@ const Terms = () => {
 
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const {
-    heroHeading,
-  } = frontmatter
+  const { heroHeading } = frontmatter
   return (
     <Layout>
       <section className="small-hero xs">
@@ -34,7 +32,7 @@ const Terms = () => {
       </section>
       <section>
         <div className="container">
-          <HTMLContent content={html} className='dynamic-content'/>
+          <HTMLContent content={html} className="dynamic-content" />
         </div>
       </section>
     </Layout>

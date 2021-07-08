@@ -9,6 +9,7 @@ import NoAllowedTable from "../components/calculator/NoAllowedTable"
 import { calculateROIWithNoPets } from "../calculator"
 import RotatedView from "../components/rotatedView"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from "../components/seo"
 
 const initialState = {
   unitCount: 350,
@@ -141,11 +142,12 @@ const CalculatorNoPetsAllowed = () => {
 
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "withNoPetCalculator"}}) {
+      markdownRemark(frontmatter: { title: { eq: "withNoPetCalculator" } }) {
         html
         frontmatter {
-          title
-          heroHeading,
+          metaTitle
+          metaDescription
+          heroHeading
           sec1Heading
           sec1SubHeading1
           sec1Text1
@@ -191,9 +193,10 @@ const CalculatorNoPetsAllowed = () => {
     }
   `)
   const { markdownRemark } = data
-  const { frontmatter, html } = markdownRemark
+  const { frontmatter } = markdownRemark
   const {
-    title,
+    metaTitle,
+    metaDescription,
     heroHeading,
     sec1Heading,
     sec1SubHeading1,
@@ -234,15 +237,13 @@ const CalculatorNoPetsAllowed = () => {
     sec5Text3,
     sec5Desc,
     sec6Heading,
-    sec6Desc
+    sec6Desc,
   } = frontmatter
 
   React.useEffect(() => {
     if (scrollTo) {
       refMapping[scrollTo].current?.scrollIntoView({
         behavior: "smooth",
-        // block: "nearest",
-        // inline: "start",
       })
       setScrollTo(false)
     }
@@ -301,6 +302,7 @@ const CalculatorNoPetsAllowed = () => {
 
   return (
     <Layout className="calculator-page">
+      <Seo title={metaTitle} description={metaDescription} />
       <div className="container fluid">
         <h1 className="h3">Advanced ROI Calculator</h1>
         <div className="calculator-content">
@@ -595,12 +597,22 @@ const CalculatorNoPetsAllowed = () => {
                 </div>
               </li>
               <li>
-                <FixedRibbon className='show-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+                <FixedRibbon
+                  className="show-mobile"
+                  saving={totalSavings}
+                  ROI={roi}
+                  OPP={totalCostForOPP}
+                />
               </li>
             </ul>
           </div>
 
-          <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+          <FixedRibbon
+            className="hide-mobile"
+            saving={totalSavings}
+            ROI={roi}
+            OPP={totalCostForOPP}
+          />
         </div>
       </div>
       <RotatedView />

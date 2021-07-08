@@ -1,8 +1,8 @@
-import React from 'react'
-import Index from '../../pages/index'
+import React from "react"
+import Index from "../../pages/index"
 
 const IndexPreview = ({ entry, getAsset }) => {
-  const data = entry.getIn(['data']).toJS()
+  const data = entry.getIn(["data"]).toJS()
 
   if (data) {
     return (

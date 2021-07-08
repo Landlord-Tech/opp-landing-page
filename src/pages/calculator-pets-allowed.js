@@ -9,6 +9,7 @@ import { calculateROIWithPets } from "../calculator"
 import AllowedTable from "../components/calculator/AllowedTable"
 import RotatedView from "../components/rotatedView"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from "../components/seo"
 
 const initialState = {
   unitCount: 1000,
@@ -163,10 +164,11 @@ const Calculator = () => {
 
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "withPetCalculator"}}) {
+      markdownRemark(frontmatter: { title: { eq: "withPetCalculator" } }) {
         frontmatter {
-          title
-          heroHeading,
+          metaTitle
+          metaDescription
+          heroHeading
           sec1Heading
           sec1SubHeading1
           sec1Text1
@@ -208,7 +210,8 @@ const Calculator = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const {
-    title,
+    metaTitle,
+    metaDescription,
     heroHeading,
     sec1Heading,
     sec1SubHeading1,
@@ -243,7 +246,7 @@ const Calculator = () => {
     sec5Text2,
     sec5Desc,
     sec6Heading,
-    sec6Desc
+    sec6Desc,
   } = frontmatter
 
   React.useEffect(() => {
@@ -307,6 +310,7 @@ const Calculator = () => {
 
   return (
     <Layout className="calculator-page">
+      <Seo title={metaTitle} description={metaDescription} />
       <div className="container fluid">
         <h1 className="h3">Advanced ROI Calculator</h1>
         <div className="calculator-content">
@@ -551,12 +555,22 @@ const Calculator = () => {
                 </div>
               </li>
               <li>
-                <FixedRibbon className='show-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+                <FixedRibbon
+                  className="show-mobile"
+                  saving={totalSavings}
+                  ROI={roi}
+                  OPP={totalCostForOPP}
+                />
               </li>
             </ul>
           </div>
 
-          <FixedRibbon className='hide-mobile' saving={totalSavings} ROI={roi} OPP={totalCostForOPP} />
+          <FixedRibbon
+            className="hide-mobile"
+            saving={totalSavings}
+            ROI={roi}
+            OPP={totalCostForOPP}
+          />
         </div>
       </div>
       <RotatedView />

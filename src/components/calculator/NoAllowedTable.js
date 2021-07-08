@@ -26,26 +26,36 @@ const NoAllowedTable = ({ data }) => {
             <td>Pet Damage</td>
             <td>{formatPrice(withoutOPP?.yearlyDamage)}</td>
             <td>{formatPrice(withOPP?.yearlyDamage)}</td>
-            <td>{formatPrice(withOPP?.yearlyDamage - withoutOPP?.yearlyDamage)}</td>
+            <td>
+              {formatPrice(withOPP?.yearlyDamage - withoutOPP?.yearlyDamage)}
+            </td>
           </tr>
           <tr>
             <td>Loss of Rent</td>
             <td>{formatPrice(withoutOPP?.yearlyLostRent)}</td>
             <td>{formatPrice(withOPP?.yearlyLostRent)}</td>
-            <td>{formatPrice(withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent)}</td>
+            <td>
+              {formatPrice(
+                withOPP?.yearlyLostRent - withoutOPP?.yearlyLostRent
+              )}
+            </td>
           </tr>
           <tr>
             <td>Fines and Fees</td>
             <td>{formatPrice(withoutOPP?.unAuthPetFee)}</td>
             <td>{formatPrice(withOPP?.unAuthPetFee)}</td>
-            <td>{formatPrice(withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee)}</td>
+            <td>
+              {formatPrice(withOPP?.unAuthPetFee - withoutOPP?.unAuthPetFee)}
+            </td>
           </tr>
           <tr>
             <td>Time</td>
             <td>{formatPrice(withoutOPP?.propManageTime)}</td>
             <td>{formatPrice(withOPP?.propManageTime)}</td>
             <td>
-              {formatPrice(withOPP?.propManageTime - withoutOPP?.propManageTime)}
+              {formatPrice(
+                withOPP?.propManageTime - withoutOPP?.propManageTime
+              )}
             </td>
           </tr>
           <tr>

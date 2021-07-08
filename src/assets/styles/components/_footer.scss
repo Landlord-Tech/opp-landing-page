@@ -15,25 +15,46 @@
 }
 .footer-top-col {
   &:not(:last-child) {
-    padding-right: 20px;
+    padding-right: 16px;
   }
   h4 {
-    padding-bottom: 40px;
     font-size: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &.with-icon {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      min-width: 20px;
+      margin-right: 12px;
+    }
+
+    h4 {
+      line-height: 40px;
+    }
   }
 }
 .footer-bottom {
-  ul {
+  a {
+    margin-left: 8px;
+  }
+}
+.footer-contact {
+  li {
     display: flex;
-    justify-content: center;
-    align-items: center;
 
-    li {
-      padding: 0 24px;
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
 
-      &:not(:last-child) {
-        border-right: 1px solid $color-white;
-      }
+    .icon {
+      margin-right: 12px;
+      min-width: 20px;
     }
   }
 }

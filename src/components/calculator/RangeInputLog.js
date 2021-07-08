@@ -2,8 +2,6 @@ import React from "react"
 import Slider, { Handle } from "rc-slider"
 import Log from "./log"
 
-
-
 const RangeInput = ({ inputValue, changeValue, max, min }) => {
   const handle = ({ value, dragging, index, ...restProps }) => (
     <Handle value={inputValue} {...restProps} />
@@ -63,7 +61,6 @@ const RangeInput = ({ inputValue, changeValue, max, min }) => {
         handle={handle}
         onChange={e => handleSliderChange(e)}
       />
-      
     </div>
   )
 }

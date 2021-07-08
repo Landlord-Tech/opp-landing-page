@@ -12,7 +12,7 @@ const BlogPostList = () => {
             frontmatter {
               title
               path
-              date 
+              date
             }
           }
         }
@@ -21,9 +21,13 @@ const BlogPostList = () => {
   `)
   let newData = data.allMarkdownRemark.edges.map(item => item.node.frontmatter)
 
-  return <div className="container mb-5 mt-5">
-    {newData.map((page) => <PostCard data={page}/>)}
-  </div>
+  return (
+    <div className="container mb-5 mt-5">
+      {newData.map(page => (
+        <PostCard data={page} />
+      ))}
+    </div>
+  )
 }
 
 export default BlogPostList

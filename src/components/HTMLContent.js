@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />

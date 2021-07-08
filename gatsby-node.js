@@ -43,8 +43,8 @@ exports.createPages = async ({ actions, graphql, reporter }) =>
     })*!/
   })
 }*/
-const { fmImagesToRelative } = require('gatsby-remark-relative-images');
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.onCreateNode = ({ node }) => {
-  fmImagesToRelative(node);
-};
+  fmImagesToRelative(node)
+}

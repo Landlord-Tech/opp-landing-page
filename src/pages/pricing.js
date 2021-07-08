@@ -2,14 +2,15 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import Faq from "../components/faq"
+import Seo from "../components/seo"
 
 const Pricing = () => {
-
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: {title: {eq: "pricing"}}) {
+      markdownRemark(frontmatter: { title: { eq: "pricing" } }) {
         frontmatter {
-          title
+          metaTitle
+          metaDescription
           heroHeading
           heroText
           pricingList {
@@ -32,7 +33,8 @@ const Pricing = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const {
-    title,
+    metaTitle,
+    metaDescription,
     heroHeading,
     heroText,
     pricingList,
@@ -41,6 +43,7 @@ const Pricing = () => {
   } = frontmatter
   return (
     <Layout>
+      <Seo title={metaTitle} description={metaDescription} />
       <section className="small-hero md">
         <div className="container">
           <div className="small-hero-content">
@@ -55,21 +58,38 @@ const Pricing = () => {
       <section className="pricing-list-section">
         <div className="container">
           <ul className="pricing-list-content">
-            {
-              pricingList.map(({plan, contracts, price, pricingBtn, pricingBtnUrl}, index) => {
+            {pricingList.map(
+              (
+                { plan, contracts, price, pricingBtn, pricingBtnUrl },
+                index
+              ) => {
                 return (
                   <li key={index}>
                     <div>
                       <h3 className="h3 primary title bold">{plan}</h3>
-                      <h4 className="h4 sub-title secondary fw-medium">{contracts}</h4>
-                      <h4 className="h4 fw-medium"><strong className="h2 primary bold color-primary">${price}/</strong>contract</h4>
+                      <h4 className="h4 sub-title secondary fw-medium">
+                        {contracts}
+                      </h4>
+                      <h4 className="h4 fw-medium">
+                        <strong className="h2 primary bold color-primary">
+                          ${price}/
+                        </strong>
+                        contract
+                      </h4>
                       <p>per month</p>
                     </div>
-                    <a href={pricingBtnUrl} target="_blank" rel="noreferrer" className="btn btn-lg primary">{pricingBtn}</a>
+                    <a
+                      href={pricingBtnUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn btn-lg primary"
+                    >
+                      {pricingBtn}
+                    </a>
                   </li>
                 )
-              })
-            }
+              }
+            )}
           </ul>
         </div>
       </section>

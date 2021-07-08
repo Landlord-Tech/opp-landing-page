@@ -2,12 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
-
-export default function Template({ data, path })
-{
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
-  const { title, date } = frontmatter;
+export default function Template({ data, path }) {
+  const { markdownRemark } = data
+  const { frontmatter, html } = markdownRemark
+  const { title, date } = frontmatter
 
   return (
     <Layout>
@@ -33,7 +31,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         path
-    }
+      }
     }
   }
 `

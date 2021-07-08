@@ -1,6 +1,6 @@
-import CMS from 'netlify-cms-app'
-import uploadcare from 'netlify-cms-media-library-uploadcare'
-import cloudinary from 'netlify-cms-media-library-cloudinary'
+import CMS from "netlify-cms-app"
+import uploadcare from "netlify-cms-media-library-uploadcare"
+import cloudinary from "netlify-cms-media-library-cloudinary"
 
 // import IndexPreview from "./preview-templates/IndexPreview"
 

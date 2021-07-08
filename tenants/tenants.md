@@ -15,9 +15,9 @@ sec1Text: "Life is always better when everyone is on the same page. Through our
   portal all rules, expectations, and procedures are specifically outlined and
   follow all state and federal laws. This protects both you and your
   landlord.  "
-sec1Img: /assets/macbook-tenant.png
+sec1Img: /assets/clay-macbook-pro-15-with-touch-bar-front-view-mockup-recovered.png
 sec2Heading: "Pawsibilities Unleashed . . . "
-sec2Img: /assets/phone.png
+sec2Img: /assets/2-recovered.png
 sec2Btn: Give it a try
 sec2BtnUrl: https://app.ourpetpolicy.com/?auth=signup
 sec2List:

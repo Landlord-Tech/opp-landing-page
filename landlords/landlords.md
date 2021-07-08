@@ -14,7 +14,7 @@ heroImg: /assets/homepage.jpg
 calculatorHeading: How much could you save?
 calculatorText: "Whether you allow pets or not, we can help you maximize profits
   by minimizing damage, exposing fraudulent ESA's, maximizing deposits and fees,
-  and minimizing the time you spend dealing with pets. Check our our ROI
+  and minimizing the time you spend dealing with pets. Check out our ROI
   calculator to see what you could be saving this year. "
 sec1Heading: Why Choose OurPetPolicy?
 sec1Text: To build the best pet policy platform we created a team of lawyers,

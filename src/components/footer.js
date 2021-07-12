@@ -66,7 +66,7 @@ const Footer = () => {
               <Link to={"/pricing/#faq"}>FAQ</Link>
             </h4>
             <h4 className="h4">
-              <a href={"https://www.ourpetpolicy.com/resources/"}>Resources</a>
+              <a href={"https://resources.ourpetpolicy.com/resources/"} rel="noreferrer">Resources</a>
             </h4>
           </li>
           <li className="footer-top-col">

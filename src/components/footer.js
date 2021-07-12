@@ -25,9 +25,8 @@ const Footer = () => {
   const { frontmatter } = markdownRemark
   const { contactList } = frontmatter
 
-  console.log({ contactList });
+  console.log({ contactList })
   const location = contactList[0].ContactItem
-
 
   return (
     <footer className="footer">
@@ -44,7 +43,9 @@ const Footer = () => {
           <li className="footer-top-col with-icon">
             <Icon icon={contactList[0].icon} size={24} />
             <h4>
-              {location.map((line, index) => <p key={index}>{line}</p>)}
+              {location.map((line, index) => (
+                <p key={index}>{line}</p>
+              ))}
             </h4>
           </li>
           <li className="footer-top-col">
@@ -66,7 +67,12 @@ const Footer = () => {
               <Link to={"/pricing/#faq"}>FAQ</Link>
             </h4>
             <h4 className="h4">
-              <a href={"https://resources.ourpetpolicy.com/resources/"} rel="noreferrer">Resources</a>
+              <a
+                href={"https://resources.ourpetpolicy.com/resources/"}
+                rel="noreferrer"
+              >
+                Resources
+              </a>
             </h4>
           </li>
           <li className="footer-top-col">
@@ -75,11 +81,13 @@ const Footer = () => {
             </h4>
             <ul className="footer-contact">
               {contactList.slice(1, 3).map(({ ContactItem, icon }, index) => {
-                console.log({ ContactItem });
+                console.log({ ContactItem })
                 return (
                   <li key={index}>
                     <Icon icon={icon} size={24} />
-                    {ContactItem.map((line, index) => <p key={index}>{line}</p>)}
+                    {ContactItem.map((line, index) => (
+                      <p key={index}>{line}</p>
+                    ))}
                   </li>
                 )
               })}
@@ -97,8 +105,12 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>
             © {new Date().getFullYear()} OurPetPolicy. All rights reserved.{" "}
-            <Link to="/terms-and-conditions" className='underline'>Terms.</Link>{" "}
-            <Link to="/privacy-policy" className='underline'>Privacy.</Link>
+            <Link to="/terms-and-conditions" className="underline">
+              Terms.
+            </Link>{" "}
+            <Link to="/privacy-policy" className="underline">
+              Privacy.
+            </Link>
           </p>
         </div>
       </div>

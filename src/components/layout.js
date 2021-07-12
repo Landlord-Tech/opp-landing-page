@@ -11,14 +11,6 @@ const Layout = ({ children, className, prodHeader }) => {
   const [sticky, setSticky] = useState(false)
   const [scrollTop, setScrollTop] = useState(false)
 
-  console.log(pathname)
-  const redirectedPath1 =
-    pathname === "/what-landlords-need-to-know-about-esas-in-2021/"
-  const redirectedPath2 =
-    pathname === "/the-landlords-guide-to-tenants-with-pets/"
-  const redirectedPath3 =
-    pathname === "/resources/"
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
@@ -26,21 +18,9 @@ const Layout = ({ children, className, prodHeader }) => {
         setScrollTop(window.pageYOffset > 600)
       })
     }
-    if (redirectedPath1) {
-      window.location =
-        "https://resources.ourpetpolicy.com/what-landlords-need-to-know-about-esas-in-2021/"
-    }
-    if (redirectedPath2) {
-      window.location =
-        "https://resources.ourpetpolicy.com/the-landlords-guide-to-tenants-with-pets/"
-    }
-    if (redirectedPath3) {
-      window.location =
-        "https://resources.ourpetpolicy.com/resources/"
-    }
   }, [])
 
-  return (!redirectedPath1 && !redirectedPath2 && !redirectedPath3) ? (
+  return (
     <>
       <Header pathname={pathname} sticky={sticky} prodHeader={prodHeader} />
       <main className={className} id="top">
@@ -55,7 +35,7 @@ const Layout = ({ children, className, prodHeader }) => {
         <Icon color="#0D0D0D" size={36} icon="arrow-top" />
       </button>
     </>
-  ) : null
+  )
 }
 
 export default Layout

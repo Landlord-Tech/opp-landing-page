@@ -16,6 +16,8 @@ const Layout = ({ children, className, prodHeader }) => {
     pathname === "/what-landlords-need-to-know-about-esas-in-2021/"
   const redirectedPath2 =
     pathname === "/the-landlords-guide-to-tenants-with-pets/"
+  const redirectedPath3 =
+    pathname === "/resources/"
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -32,9 +34,13 @@ const Layout = ({ children, className, prodHeader }) => {
       window.location =
         "https://resources.ourpetpolicy.com/the-landlords-guide-to-tenants-with-pets/"
     }
+    if (redirectedPath3) {
+      window.location =
+        "https://resources.ourpetpolicy.com/resources/"
+    }
   }, [])
 
-  return !redirectedPath1 && !redirectedPath2 ? (
+  return (!redirectedPath1 && !redirectedPath2 && !redirectedPath3) ? (
     <>
       <Header pathname={pathname} sticky={sticky} prodHeader={prodHeader} />
       <main className={className} id="top">

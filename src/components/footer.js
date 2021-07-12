@@ -24,8 +24,6 @@ const Footer = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
   const { contactList } = frontmatter
-
-  console.log({ contactList });
   const location = contactList[0].ContactItem
 
 
@@ -75,7 +73,6 @@ const Footer = () => {
             </h4>
             <ul className="footer-contact">
               {contactList.slice(1, 3).map(({ ContactItem, icon }, index) => {
-                console.log({ ContactItem });
                 return (
                   <li key={index}>
                     <Icon icon={icon} size={24} />

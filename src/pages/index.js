@@ -37,7 +37,7 @@ const IndexPage = () => {
   } = frontmatter
 
   return (
-    <Layout className="homepage">
+    <Layout className="landing">
       <Seo title={metaTitle} description={metaDescription} />
 
       {/*banner*/}

@@ -95,7 +95,7 @@ const Landlords = () => {
   } = frontmatter
 
   return (
-    <Layout className="homepage">
+    <Layout className="landing">
       <Seo title={metaTitle} description={metaDescription} />
       <section className="hero">
         <GatsbyImage

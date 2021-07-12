@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-#  name: gitlab
-#  repo: ourpetpolicy/our-pet-policy-landing-page
+  #  name: git-gateway
+  name: gitlab
+  repo: ourpetpolicy/our-pet-policy-landing-page
 
 
 #publish_mode: editorial_workflow
@@ -16,13 +16,29 @@ collections:
     label: Blog
     folder: blog
     create: true
-    editor:
-      preview: false
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
+      - { name: category, label: Category }
       - { name: title, label: Title }
+      - { name: heroImg, label: Hero image, widget: image }
       - { name: body, label: Body, widget: markdown }
+      - { name: social, label: Social section, widget: boolean }
+      - { name: promoTitle, label: Promo section title }
+      - { name: promoText, label: Promo section text, widget: text }
+      - { name: promoBtn, label: Promo section button }
+      - { name: promoBtnUrl, label: Promo section button }
+      - { name: promo, label: Promo section, widget: boolean }
+
+  - name: blogList
+    label: blogList
+    folder: blogList
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: heroHeading, label: Hero heading }
+      - { name: heroText, label: Hero text }
+      - { name: heroImg, label: Hero image, widget: image }
 
   - name: homepage
     label: homepage
@@ -135,15 +151,15 @@ collections:
       - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text, widget: text }
-      -  label: Pricing List
-         name: pricingList
-         widget: list
-         fields:
-           - { label: Pricing plan, name: plan }
-           - { label: Contracts, name: contracts }
-           - { label: Price per month, name: price }
-           - { label: Price button, name: pricingBtn }
-           - { label: Price button url, name: pricingBtnUrl }
+      - label: Pricing List
+        name: pricingList
+        widget: list
+        fields:
+          - { label: Pricing plan, name: plan }
+          - { label: Contracts, name: contracts }
+          - { label: Price per month, name: price }
+          - { label: Price button, name: pricingBtn }
+          - { label: Price button url, name: pricingBtnUrl }
       - { name: faqHeading, label: FAQ heading }
       - label: FAQ List
         name: faqList
@@ -163,18 +179,18 @@ collections:
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text, widget: text }
       - { name: sec1Heading, label: Contact heading }
-      -  label: Contact List
-         name: contactList
-         widget: list
-         fields:
-           - name: ContactItem
-             label: Contact Field
-             widget: list
-             field: { name: line, label: Line, widget: string }
-           - label: Contact icon
-             name: icon
-             widget: select
-             options: [ phone, cellphone, email, fax, skype, location ]
+      - label: Contact List
+        name: contactList
+        widget: list
+        fields:
+          - name: ContactItem
+            label: Contact Field
+            widget: list
+            field: { name: line, label: Line, widget: string }
+          - label: Contact icon
+            name: icon
+            widget: select
+            options: [ phone, cellphone, email, fax, skype, location ]
 
   - name: withPetCalculator
     label: pet allowed calculator

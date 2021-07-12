@@ -34,11 +34,13 @@ const NotFoundPage = (props) => {
     pathname === "/the-landlords-guide-to-tenants-with-pets/"
   const redirectedPath3 =
     pathname === "/resources/"
-  console.log(redirectedPath1);
-  console.log(redirectedPath2);
-  console.log(redirectedPath3);
+
+  const [loading, setLoading] = React.useState(true)
 
   React.useEffect(() => {
+    if (!redirectedPath1 && !redirectedPath2 && !redirectedPath3) {
+      setLoading(false)
+    }
     if (redirectedPath1) {
       console.log(redirectedPath1);
       window.location =
@@ -67,8 +69,7 @@ const NotFoundPage = (props) => {
     secondaryBtn,
   } = frontmatter
 
-  console.log(props);
-  return (!redirectedPath1 && !redirectedPath2 && !redirectedPath3) ?(
+  return (!loading) ? (
     <Layout className="homepage">
       <Seo title="404: Not found" />
       <section className="hero error-page">

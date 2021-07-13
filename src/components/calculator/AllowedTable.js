@@ -9,7 +9,7 @@ const AllowedTable = ({ data }) => {
       <table className="calculator-table">
         <thead>
           <tr>
-            <th/>
+            <th />
             <th>
               <strong>WITHOUT</strong> OurPetPolicy
             </th>

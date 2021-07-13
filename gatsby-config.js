@@ -106,7 +106,6 @@ module.exports = {
         name: "images",
       },
     },
-    // `gatsby-plugin-sharp`,
     {
       resolve: "gatsby-plugin-sharp",
       options: {

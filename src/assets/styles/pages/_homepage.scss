@@ -1,4 +1,4 @@
-.homepage {
+.landing {
   .title {
     padding-bottom: 80px;
 
@@ -91,6 +91,46 @@
   }
   .btn {
     margin: 0 12px;
+  }
+}
+
+.blog-page {
+  &.hero {
+    height: 650px;
+
+    &:after {
+      background: $color-bg-from-top;
+    }
+
+    .hero-left {
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 70px;
+
+      .h1 {
+        padding-bottom: 40px;
+        color: $color-white;
+      }
+    }
+
+    .hero-text {
+      padding-bottom: 0;
+    }
+  }
+
+  .go-back {
+    color: $color-white;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 16px;
+    }
   }
 }
 

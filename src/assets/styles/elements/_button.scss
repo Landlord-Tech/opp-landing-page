@@ -12,25 +12,43 @@
     min-width: 130px;
   }
 
-  &.btn-sm {
+  &-sm {
     height: 35px;
     line-height: 35px;
     font-size: 16px;
     padding: 0 24px;
   }
 
-  &.btn-md {
+  &-md {
     height: 42px;
     line-height: 42px;
     font-size: 16px;
     padding: 0 40px;
   }
 
-  &.btn-lg {
+  &-lg {
     height: 61px;
     line-height: 61px;
     font-size: 24px;
     padding: 0 40px;
+  }
+  &-in, &-fb, &-twitter {
+    color: $color-white;
+    font-weight: 500;
+    font-size: 20px;
+
+    .social-text {
+      margin-left: 8px;
+    }
+  }
+  &-in {
+    background-color: #0E76A8;
+  }
+  &-fb {
+    background-color: #3B5998;
+  }
+  &-twitter {
+    background-color: #00ACEE;
   }
   &.primary {
     background-image: $color-gradient;
@@ -85,3 +103,4 @@
     visibility: visible;
   }
 }
+

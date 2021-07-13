@@ -9,7 +9,7 @@ excerpt: If your property normally does not allow pets, it may be tempting to
 heroHeading: What Landlords Need To Know About ESAs In 2021
 heroImg: /assets/i-will-rent.jpg
 social: true
-promoTitle: We Manage Pets Better​
+promoTitle: "We Manage Pets Better​ "
 promoText: |-
   No more hassle and potential legal disputes.
   Professional pet policy contracts in minutes.

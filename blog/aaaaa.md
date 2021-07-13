@@ -1,4 +1,5 @@
 ---
+title: what landlords need to know about esas in 2021
 path: /blog/what-landlords-need-to-know-about-esas-in-2021
 date: 2021-07-13T08:13:12.385Z
 category: Ebook
@@ -15,7 +16,6 @@ promoText: |-
 promoBtn: Get Started
 promoBtnUrl: https://app.ourpetpolicy.com/?auth=signup
 promo: true
-title: AAAAA
 ---
 If your property normally does not allow pets, it may be tempting to deny an ESA outright, but there are multiple reasons why this may not be the best course of action. You want to avoid any legal problems that relate to the denial of these pets, so staying informed is essential.
 

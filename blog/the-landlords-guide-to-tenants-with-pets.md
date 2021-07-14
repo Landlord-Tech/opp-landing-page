@@ -81,6 +81,6 @@ The decision to accept pets in your rental properties should not be taken lightl
 
 [OurPetPolicy](https://www.ourpetpolicy.com/) can make the process easier. We’ll help you develop a pet policy that keeps you in compliance with the law, eliminates fraudulent emotional support animals, reduces the likelihood of damages, and offers easy management of your contracts with your tenants. [Contact us](https://www.ourpetpolicy.com/contact/) today, and we’ll be delighted to assist you.
 
-[![Ebook](/assets/landlords_esas_2021.png "Ebook")](https://resources.ourpetpolicy.com/wp-content/uploads/2020/04/Changing-World-of-Rental-Property-Pet-Damage.pdf)
+[![Ebook](/assets/changing-world-of-rental-property-pet-damage.jpg "Ebook")](https://resources.ourpetpolicy.com/wp-content/uploads/2020/04/Changing-World-of-Rental-Property-Pet-Damage.pdf)
 
 ###### **[Download PDF](static/assets/landlords_esas_2021.pdf)**

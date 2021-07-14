@@ -12,6 +12,7 @@ const Template = ({ data, location }) => {
     title,
     date,
     path,
+    category,
     heroImg,
     heroHeading,
     social,
@@ -62,7 +63,9 @@ const Template = ({ data, location }) => {
               </button>
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>
-                <p className="hero-text">Posted on {date} | in category 1 </p>
+                <p className="hero-text">
+                  Posted on {date} | in {category}{" "}
+                </p>
               </div>
             </div>
           </div>
@@ -141,6 +144,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         path
+        category
         heroHeading
         heroImg {
           childImageSharp {

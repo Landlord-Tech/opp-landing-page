@@ -13,6 +13,10 @@
   }
   .blog-list-item {
     width: calc(100% / 2 - 32px);
+
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
   }
   .blog-post-content {
     padding: 40px 0;

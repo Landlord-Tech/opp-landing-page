@@ -39,4 +39,4 @@ There are countless other rules and regulations surrounding ESA approval and sta
 
 [![Ebook](/assets/landlords_esas_2021.png "Ebook")](https://www.ourpetpolicy.com/assets/Landlords_ESAs_2021.pdf)
 
-###### **[Download Ebook](/assets/landlords_esas_2021.pdf)**
+###### **[Download Ebook](https://www.ourpetpolicy.com/assets/landlords_esas_2021.pdf)**

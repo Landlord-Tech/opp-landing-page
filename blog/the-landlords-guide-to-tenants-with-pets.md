@@ -59,7 +59,7 @@ The Fair Housing Act requires landlords to accommodate tenants with service anim
 
 ![](/assets/renting-to-pets.jpg)
 
-## Cons
+### Cons
 
 **Possibility of Pet Damage**
 
@@ -73,7 +73,7 @@ Pets can be quite frustrating to your tenants that don’t have any of their own
 
 If there are common areas on your property for socializing or grilling, you may have to deal with lazy pet owners that don’t pick up after their animals. Unless you catch them in the act, you will either need to hire someone to clean up the mess or do it yourself. These messes will frustrate your other tenants and can turn into a headache for you as well.
 
-## Include a Thorough Pet Policy In Your Lease Agreement
+### Include a Thorough Pet Policy In Your Lease Agreement
 
 Whether you choose to accept pets or not, it’s important to include a pet addendum in your lease that clearly states your pet policy and your expectations of the owner. All tenants should be required to sign the addendum, and they will need to disclose any new animals that they add to their household while in their lease. Make it clear that violating the terms in your policy is considered a breach of the contract. 
 

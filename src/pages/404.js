@@ -68,7 +68,7 @@ const NotFoundPage = props => {
   } = frontmatter
 
   return !loading ? (
-    <Layout className="homepage">
+    <Layout className="landing">
       <Seo title="404: Not found" />
       <section className="hero error-page">
         <GatsbyImage

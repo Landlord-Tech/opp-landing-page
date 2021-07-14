@@ -25,6 +25,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `blogList`,
+        path: `${__dirname}/blogList`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `header`,
         path: `${__dirname}/header`,
       },
@@ -141,6 +148,7 @@ module.exports = {
               destinationDir: "static",
             },
           },
+          `gatsby-remark-external-links`,
         ],
       },
     },

@@ -96,7 +96,7 @@
 
 .blog-page {
   &.hero {
-    height: 650px;
+    height: 410px;
 
     &:after {
       background: $color-bg-from-top;
@@ -127,6 +127,7 @@
     font-weight: 700;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     .icon {
       margin-right: 16px;

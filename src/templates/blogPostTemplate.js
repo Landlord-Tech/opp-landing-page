@@ -3,12 +3,20 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Icon from "../components/Icon"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 const Template = ({ data, location }) => {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  const { title, date, path } = frontmatter
+  const {
+    title,
+    date,
+    path,
+    heroImg,
+    heroHeading,
+    social,
+    promoSection,
+  } = frontmatter
   const baseURL = "https://www.ourpetpolicy.com/"
   const fbShare =
     "https://www.facebook.com/sharer/sharer.php?u=" + baseURL + path
@@ -22,8 +30,7 @@ const Template = ({ data, location }) => {
     "twitterHandle"
   const inShare = "https://linkedin.com/shareArticle?url=" + baseURL + path
 
-  console.log({ data })
-
+  console.log(promoSection)
   return (
     <Layout className="landing">
       <section className="hero blog-page">
@@ -31,8 +38,8 @@ const Template = ({ data, location }) => {
           style={{
             gridArea: "1 / 1",
           }}
-          // alt={heroHeading}
-          // image={getImage(heroImg)}
+          alt={heroHeading}
+          image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectFit="cover"
         />
@@ -46,12 +53,15 @@ const Template = ({ data, location }) => {
         >
           <div className="container">
             <div className="hero-content">
-              <Link to="/blog/" className="go-back">
+              <button
+                onClick={() => navigate(location.state ? -1 : "/blog/")}
+                className="go-back"
+              >
                 <Icon icon="arrow-left" size={24} color="#fff" />
                 Return to blog post list
-              </Link>
+              </button>
               <div className="hero-left">
-                <h1 className="h1">{title}</h1>
+                <h1 className="h1">{heroHeading}</h1>
                 <p className="hero-text">Posted on {date} | in category 1 </p>
               </div>
             </div>
@@ -64,54 +74,59 @@ const Template = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-      <div className="blog-social">
-        <div className="container">
-          <h2 className="h4 secondary fw-medium">Spread the word</h2>
-          <div className="blog-social-group">
-            <a
-              href={inShare}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-md btn-in"
-            >
-              <Icon icon="linkedin-in" size={20} color="#fff" />
-              <span className="social-text">Linkedin</span>
-            </a>
-            <a
-              href={fbShare}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-md btn-fb"
-            >
-              <Icon icon="facebook-f" size={20} color="#fff" />
-              <span className="social-text">Facebook</span>
-            </a>
-            <a
-              href={twitterShare}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-md btn-twitter"
-            >
-              <Icon icon="twitter" size={20} color="#fff" />
-              <span className="social-text">Twitter</span>
-            </a>
+      {social && (
+        <div className="blog-social">
+          <div className="container">
+            <h2 className="h4 secondary fw-medium">Spread the word</h2>
+            <div className="blog-social-group">
+              <a
+                href={inShare}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-md btn-in"
+              >
+                <Icon icon="linkedin-in" size={20} color="#fff" />
+                <span className="social-text">Linkedin</span>
+              </a>
+              <a
+                href={fbShare}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-md btn-fb"
+              >
+                <Icon icon="facebook-f" size={20} color="#fff" />
+                <span className="social-text">Facebook</span>
+              </a>
+              <a
+                href={twitterShare}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-md btn-twitter"
+              >
+                <Icon icon="twitter" size={20} color="#fff" />
+                <span className="social-text">Twitter</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <section className="blog-promo">
-        <div className="container">
-          <h2 className="h2 color-primary">
-            Strengthen your Pet Policy Portfolio
-          </h2>
-          <p>
-            Take control of your pet management and unleash the benefits of
-            OurPetPolicy
-          </p>
-          <a href="#" className="btn btn-lg primary">
-            Get Started Now
-          </a>
-        </div>
-      </section>
+      )}
+
+      {promoSection?.promo && (
+        <section className="blog-promo">
+          <div className="container">
+            <h2 className="h2 color-primary">{promoSection?.promoTitle}</h2>
+            <p>{promoSection?.promoText}</p>
+            <a
+              href={promoSection?.promoBtnUrl}
+              target="_blank"
+              rel="noopener"
+              className="btn btn-lg primary"
+            >
+              {promoSection?.promoBtn}
+            </a>
+          </div>
+        </section>
+      )}
     </Layout>
   )
 }
@@ -126,6 +141,20 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         path
+        heroHeading
+        heroImg {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+        social
+        promoSection {
+          promo
+          promoBtn
+          promoBtnUrl
+          promoText
+          promoTitle
+        }
       }
     }
   }

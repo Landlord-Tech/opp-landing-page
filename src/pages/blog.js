@@ -8,9 +8,8 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 const News = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: { title: { eq: "notFound" } }) {
+      markdownRemark(frontmatter: { title: { eq: "blogList" } }) {
         frontmatter {
-          title
           heroHeading
           heroText
           heroImg {
@@ -18,8 +17,6 @@ const News = () => {
               gatsbyImageData(layout: FULL_WIDTH)
             }
           }
-          primaryBtn
-          secondaryBtn
         }
       }
     }
@@ -28,13 +25,7 @@ const News = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
-  const {
-    heroHeading,
-    heroText,
-    heroImg,
-    primaryBtn,
-    secondaryBtn,
-  } = frontmatter
+  const { heroHeading, heroText, heroImg } = frontmatter
   return (
     <Layout className="landing">
       <section className="hero blog-page">
@@ -58,13 +49,8 @@ const News = () => {
           <div className="container">
             <div className="hero-content">
               <div className="hero-left">
-                <h1 className="h1">
-                  Catchy title for contact us page goes here
-                </h1>
-                <p className="hero-text">
-                  When it comes to pets, let us do the heavy lifting for as
-                  little as $5/month{" "}
-                </p>
+                <h1 className="h1">{heroHeading}</h1>
+                <p className="hero-text">{heroText}</p>
               </div>
             </div>
           </div>

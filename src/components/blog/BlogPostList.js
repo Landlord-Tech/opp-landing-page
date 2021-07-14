@@ -1,7 +1,7 @@
-import React from "react"
+import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BlogCard from "./BlogCard"
-import Layout from "../layout"
+import { navigate, useLocation } from "@reach/router"
 
 const BlogPostList = () => {
   const data = useStaticQuery(graphql`
@@ -14,33 +14,59 @@ const BlogPostList = () => {
             frontmatter {
               path
               date(formatString: "MMMM DD, YYYY")
-              title
+              heroHeading
+              heroImg {
+                childImageSharp {
+                  gatsbyImageData(width: 480, height: 270)
+                }
+              }
+              category
+              excerpt
             }
           }
         }
       }
     }
   `)
-  let newData = data.allMarkdownRemark.edges.map(item => item.node.frontmatter)
+  const location = useLocation()
+  const newData = data.allMarkdownRemark.edges.map(
+    item => item.node.frontmatter
+  )
+  const categories = newData.map(card => card.category)
+  const uniqueCategories = [...new Set(categories)]
+  const filteredData = location.search
+    ? newData.filter(item => item.category === location.search.substring(1))
+    : newData
 
-  console.log(newData)
+  function handleCategoryFilter(category) {
+    navigate(category ? `?${category}` : "/blog", { replace: false })
+  }
 
   return (
     <section className="blog-wrapper">
       <div className="container mb-5 mt-5">
         <ul className="blog-categories">
           <li>
-            <button>All</button>
+            <button
+              className={!location.search ? "active" : ""}
+              onClick={() => handleCategoryFilter("")}
+            >
+              All
+            </button>
           </li>
-          <li>
-            <button>Category 1</button>
-          </li>
-          <li>
-            <button>Category 2</button>
-          </li>
+          {uniqueCategories.map((category, index) => (
+            <li key={index}>
+              <button
+                className={location.search === `?${category}` ? "active" : ""}
+                onClick={() => handleCategoryFilter(category)}
+              >
+                {category}
+              </button>
+            </li>
+          ))}
         </ul>
         <ul className="blog-list">
-          {newData.map(page => (
+          {filteredData.map(page => (
             <li key={page.path} className="blog-list-item">
               <BlogCard data={page} />
             </li>

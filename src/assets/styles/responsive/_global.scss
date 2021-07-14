@@ -10,16 +10,16 @@
   main {
     padding-top: 65px;
   }
-  .h1 {
+  .h1, .blog-post-content h1 {
     font-size: 48px;
   }
-  .h2 {
+  .h2, .blog-post-content h2 {
     font-size: 32px;
   }
-  .h3 {
+  .h3, .blog-post-content h3 {
     font-size: 24px;
   }
-  .h4 {
+  .h4, .blog-post-content h4 {
     font-size: 20px;
   }
 
@@ -66,16 +66,16 @@
 }
 
 @media (max-width: 480px) {
-  .h1 {
+  .h1, .blog-post-content h1 {
     font-size: 36px;
   }
-  .h2 {
+  .h2, .blog-post-content h2 {
     font-size: 24px;
   }
-  .h3 {
+  .h3, .blog-post-content h3 {
     font-size: 20px;
   }
-  .h4 {
+  .h4, .blog-post-content h4 {
     font-size: 16px;
   }
   .btn {

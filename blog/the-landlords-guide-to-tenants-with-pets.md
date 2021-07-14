@@ -18,7 +18,6 @@ promoSection:
   promoBtnUrl: https://app.ourpetpolicy.com/?auth=signup
   promo: true
 ---
-
 As a landlord, you have to determine whether or not your rental properties are going to be pet-friendly. This can be a challenging decision due to the number of pros and cons. On one hand, allowing pets can dramatically increase the number of people interested in your rental. On the other hand, pets can inflict some severe damage to your property. Ultimately, the choice is yours, and we hope that the following guide will help you make your decision.
 
 ### Pros
@@ -39,10 +38,10 @@ Pet owners put their pets first. Relocation can cause a lot of stress to a pet, 
 
 There are many ways to increase your average rent for pet owners.
 
-- Charge monthly pet fees per pet
-- Charge a refundable deposit per pet. In your pet policy, indicate that any repairs or replacements resulting from pet damage will be deducted from their refund upon move out.
-- Or, you can charge a smaller non-refundable per pet fee that is more appealing to renters. The amount may be lower, but you’re guaranteed to keep the deposit whether or not there is any damage done to the property.
-- Charge a premium for offering a pet-friendly rental. Take a look at the pet-free rentals in your area and price your monthly rent slightly higher.
+* Charge monthly pet fees per pet
+* Charge a refundable deposit per pet. In your pet policy, indicate that any repairs or replacements resulting from pet damage will be deducted from their refund upon move out.
+* Or, you can charge a smaller non-refundable per pet fee that is more appealing to renters. The amount may be lower, but you’re guaranteed to keep the deposit whether or not there is any damage done to the property.
+* Charge a premium for offering a pet-friendly rental. Take a look at the pet-free rentals in your area and price your monthly rent slightly higher.
 
 80% of pet owners currently pay pet deposits, so you won’t need to worry about being less competitive.
 
@@ -62,7 +61,7 @@ The Fair Housing Act requires landlords to accommodate tenants with service anim
 
 ![](/assets/renting-to-pets.jpg)
 
-## Cons
+### Cons
 
 **Possibility of Pet Damage**
 
@@ -76,7 +75,7 @@ Pets can be quite frustrating to your tenants that don’t have any of their own
 
 If there are common areas on your property for socializing or grilling, you may have to deal with lazy pet owners that don’t pick up after their animals. Unless you catch them in the act, you will either need to hire someone to clean up the mess or do it yourself. These messes will frustrate your other tenants and can turn into a headache for you as well.
 
-## Include a Thorough Pet Policy In Your Lease Agreement
+### Include a Thorough Pet Policy In Your Lease Agreement
 
 Whether you choose to accept pets or not, it’s important to include a pet addendum in your lease that clearly states your pet policy and your expectations of the owner. All tenants should be required to sign the addendum, and they will need to disclose any new animals that they add to their household while in their lease. Make it clear that violating the terms in your policy is considered a breach of the contract.
 
@@ -86,4 +85,4 @@ The decision to accept pets in your rental properties should not be taken lightl
 
 [![Ebook](/assets/changing-world-of-rental-property-pet-damage.jpg "Ebook")](https://www.ourpetpolicy.com/assets/Changing-World-of-Rental-Property-Pet-Damage.pdf)
 
-###### **[Download PDF](/assets/landlords_esas_2021.pdf)**
+###### **[Download PDF](https://www.ourpetpolicy.com/assets/landlords_esas_2021.pdf)**

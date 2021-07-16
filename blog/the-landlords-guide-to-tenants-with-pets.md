@@ -86,4 +86,4 @@ The decision to accept pets in your rental properties should not be taken lightl
 
 [![Ebook](/assets/changing-world-of-rental-property-pet-damage.jpg "Ebook")](https://www.ourpetpolicy.com/assets/Changing-World-of-Rental-Property-Pet-Damage.pdf)
 
-###### **[Download PDF](https://www.ourpetpolicy.com/assets/landlords_esas_2021.pdf)**
+###### **[Download PDF](https://www.ourpetpolicy.com/assets/Changing-World-of-Rental-Property-Pet-Damage.pdf)**

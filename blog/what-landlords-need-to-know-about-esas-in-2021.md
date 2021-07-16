@@ -35,7 +35,7 @@ If you do have the right to deny an ESA, you can try to accommodate them in anot
 
 When all is said and done, denying an ESA may not be your best course of action. In cases as such, it’s important to fully verify the status of an ESA. Mental health professionals will most commonly provide a letter that verifies their client’s need for an ESA. When confirming these letters, landlords can look up the mental health professional’s licensing and confirm their legal ability to practice in their state. These letters are easy to forge, though, so it’s encouraged to partner with a solution provider with experience verifying these letters through their all-in-one software platform, like [Our Pet Policy](https://www.ourpetpolicy.com/).
 
-There are countless other rules and regulations surrounding ESA approval and status confirmation, including traditional animals that serve in the role of an ESA and tiered fines for improperly denying an ESA. To learn more about the process of verifying, denying, or allowing ESAs on your property, download our latest e-book, *[What Landlords Need To Know About ESAs In 2021](https://www.ourpetpolicy.com/wp-content/uploads/2021/07/Landlords_ESAs_2021.pdf)*.
+There are countless other rules and regulations surrounding ESA approval and status confirmation, including traditional animals that serve in the role of an ESA and tiered fines for improperly denying an ESA. To learn more about the process of verifying, denying, or allowing ESAs on your property, download our latest e-book, *[What Landlords Need To Know About ESAs In 2021](https://www.ourpetpolicy.com/assets/Landlords_ESAs_2021.pdf)*.
 
 [![Ebook](/assets/landlords_esas_2021.png "Ebook")](https://www.ourpetpolicy.com/assets/Landlords_ESAs_2021.pdf)
 

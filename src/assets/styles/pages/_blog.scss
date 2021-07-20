@@ -63,6 +63,7 @@
 
 .blog-categories {
   display: flex;
+  overflow: auto;
 
   li {
     &:not(:last-child) {

@@ -63,8 +63,8 @@
 
 
 
-@media screen and (min-width: 769px) {
-  /*scrollbar*/
+/*@media screen and (min-width: 769px) {
+  !*scrollbar*!
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -75,11 +75,11 @@
     border-radius: 8px;
   }
 
-  /* Handle */
+  !* Handle *!
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 8px;
     border-radius: 8px;
     background: $color-grey;
   }
-}
+}*/
 

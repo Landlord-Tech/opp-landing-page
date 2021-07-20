@@ -59,7 +59,7 @@ const Template = ({ data, location }) => {
                 className="go-back"
               >
                 <Icon icon="arrow-left" size={24} color="#fff" />
-                Return to blog post list
+                Return to the resources homepage
               </button>
               <div className="hero-left">
                 <h1 className="h1">{heroHeading}</h1>

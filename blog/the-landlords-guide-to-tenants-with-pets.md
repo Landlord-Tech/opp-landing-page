@@ -15,7 +15,7 @@ promoSection:
     No more hassle and potential legal disputes.
     Professional pet policy contracts in minutes.
   promoBtn: Get Started
-  promoBtnUrl: https://app.ourpetpolicy.com/?auth=signup
+  promoBtnUrl: https://app.ourpetpolicy.com/landlords/
   promo: true
 ---
 

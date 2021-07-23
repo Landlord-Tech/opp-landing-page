@@ -72,22 +72,13 @@ const NotFoundPage = props => {
       <Seo title="404: Not found" />
       <section className="hero error-page">
         <GatsbyImage
-          style={{
-            gridArea: "1 / 1",
-          }}
+          className="grid-1"
           alt={heroHeading}
           image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectFit="cover"
         />
-        <div
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div className="banner-grid">
           <div className="container">
             <div className="hero-content">
               <div className="hero-left">

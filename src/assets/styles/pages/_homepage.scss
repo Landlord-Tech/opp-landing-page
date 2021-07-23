@@ -96,7 +96,7 @@
 
 .blog-page {
   &.hero {
-    height: 410px;
+    height: 320px;
 
     &:after {
       background: $color-bg-from-top;
@@ -105,9 +105,9 @@
     .hero-left {
       margin: 0 auto;
       text-align: center;
-      padding-bottom: 70px;
+      padding-bottom: 20px;
 
-      .h1 {
+      h1 {
         padding-bottom: 40px;
         color: $color-white;
       }

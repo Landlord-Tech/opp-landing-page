@@ -24,6 +24,7 @@ const ContactForm = () => {
     })
   }
 
+  /*for rest call*/
   /*  const handleSubmit = (event) => {
       console.log({ formState })
       fetch('https://ejb052f7f6.execute-api.us-west-2.amazonaws.com/Prod/email', {

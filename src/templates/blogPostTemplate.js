@@ -30,28 +30,17 @@ const Template = ({ data, location }) => {
     "&via" +
     "twitterHandle"
   const inShare = "https://linkedin.com/shareArticle?url=" + baseURL + path
-
-  console.log(promoSection)
   return (
     <Layout className="landing">
       <section className="hero blog-page">
         <GatsbyImage
-          style={{
-            gridArea: "1 / 1",
-          }}
+          className="grid-1"
           alt={heroHeading}
           image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectFit="cover"
         />
-        <div
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div className="banner-grid">
           <div className="container">
             <div className="hero-content">
               <button
@@ -62,9 +51,9 @@ const Template = ({ data, location }) => {
                 Return to the resources homepage
               </button>
               <div className="hero-left">
-                <h1 className="h1">{heroHeading}</h1>
+                <h1 className="h2">{heroHeading}</h1>
                 <p className="hero-text">
-                  Posted on {date} | in {category}{" "}
+                  Posted on {date} | In {category}{" "}
                 </p>
               </div>
             </div>

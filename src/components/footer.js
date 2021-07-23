@@ -93,6 +93,8 @@ const Footer = () => {
           </li>
           <li className="footer-top-col">
             <a
+              target="_blank"
+              rel="noopener"
               href="https://www.facebook.com/OurPetPolicy/"
               className="inline-block"
             >

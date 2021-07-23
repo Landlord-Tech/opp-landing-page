@@ -49,10 +49,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                       .sa('data-id', vqTrackId());
                     d.getElementsByTagName(e)[0].parentNode.appendChild(el);
                 })(document, 'script');             
-            `
+            `,
           }}
-        >
-        </script>
+        ></script>
 
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />

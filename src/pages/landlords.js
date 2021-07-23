@@ -99,23 +99,14 @@ const Landlords = () => {
       <Seo title={metaTitle} description={metaDescription} />
       <section className="hero">
         <GatsbyImage
-          style={{
-            gridArea: "1 / 1",
-          }}
+          className="grid-1"
           alt={heroHeading}
           image={getImage(heroImg)}
           formats={["auto", "webp", "avif"]}
           objectPosition={"70%"}
           objectFit="cover"
         />
-        <div
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div className="banner-grid">
           <div className="container">
             <div className="hero-content">
               <div className="hero-left">

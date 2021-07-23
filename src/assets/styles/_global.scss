@@ -61,6 +61,16 @@
   text-decoration: underline;
 }
 
+.grid-1 {
+  grid-area: 1 / 1
+}
+
+.banner-grid {
+  grid-area: 1 / 1 / auto / auto;
+  position: relative;
+  place-items: center;
+  display: grid;
+}
 
 
 /*@media screen and (min-width: 769px) {

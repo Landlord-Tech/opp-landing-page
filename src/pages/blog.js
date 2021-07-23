@@ -25,33 +25,15 @@ const News = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
-  const { heroHeading, heroText, heroImg } = frontmatter
+  const { heroHeading, heroText } = frontmatter
   return (
-    <Layout className="landing">
-      <section className="hero blog-page">
-        <GatsbyImage
-          style={{
-            gridArea: "1 / 1",
-          }}
-          alt={heroHeading}
-          image={getImage(heroImg)}
-          formats={["auto", "webp", "avif"]}
-          objectFit="cover"
-        />
-        <div
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
-          <div className="container">
-            <div className="hero-content">
-              <div className="hero-left">
-                <h1 className="h1">{heroHeading}</h1>
-                <p className="hero-text">{heroText}</p>
-              </div>
+    <Layout>
+      <section className="small-hero xs">
+        <div className="container">
+          <div className="small-hero-content">
+            <div className="small-hero-text">
+              <h1 className="h1">{heroHeading}</h1>
+              <p className="hero-text">{heroText}</p>
             </div>
           </div>
         </div>

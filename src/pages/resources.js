@@ -2,8 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 
 import BlogPostList from "../components/blog/BlogPostList"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 
 const News = () => {
   const data = useStaticQuery(graphql`

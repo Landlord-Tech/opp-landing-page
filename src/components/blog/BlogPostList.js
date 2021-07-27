@@ -7,7 +7,7 @@ const BlogPostList = () => {
   const data = useStaticQuery(graphql`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { path: { regex: "/blog/" } } }
+        filter: { frontmatter: { path: { regex: "/resources/" } } }
       ) {
         edges {
           node {
@@ -39,7 +39,7 @@ const BlogPostList = () => {
     : newData
 
   function handleCategoryFilter(category) {
-    navigate(category ? `?${category}` : "/blog", { replace: false })
+    navigate(category ? `?${category}` : "/resources", { replace: false })
   }
 
   return (

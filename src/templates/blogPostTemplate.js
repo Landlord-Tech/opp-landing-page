@@ -44,7 +44,7 @@ const Template = ({ data, location }) => {
           <div className="container">
             <div className="hero-content">
               <button
-                onClick={() => navigate(location.state ? -1 : "/blog/")}
+                onClick={() => navigate(location.state ? -1 : "/resources/")}
                 className="go-back"
               >
                 <Icon icon="arrow-left" size={24} color="#fff" />
@@ -111,7 +111,7 @@ const Template = ({ data, location }) => {
             <a
               href={promoSection?.promoBtnUrl}
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
               className="btn btn-lg primary"
             >
               {promoSection?.promoBtn}

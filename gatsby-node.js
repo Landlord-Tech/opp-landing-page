@@ -5,7 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark(
-        filter: { frontmatter: { path: { regex: "/blog/" } } }
+        filter: { frontmatter: { path: { regex: "/resources/" } } }
       ) {
         edges {
           node {

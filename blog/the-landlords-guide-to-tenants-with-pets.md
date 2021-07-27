@@ -18,6 +18,7 @@ promoSection:
   promoBtnUrl: https://ourpetpolicy.com/landlords/
   promo: true
 ---
+
 As a landlord, you have to determine whether or not your rental properties are going to be pet-friendly. This can be a challenging decision due to the number of pros and cons. On one hand, allowing pets can dramatically increase the number of people interested in your rental. On the other hand, pets can inflict some severe damage to your property. Ultimately, the choice is yours, and we hope that the following guide will help you make your decision.
 
 ### Pros
@@ -38,10 +39,10 @@ Pet owners put their pets first. Relocation can cause a lot of stress to a pet, 
 
 There are many ways to increase your average rent for pet owners.
 
-* Charge monthly pet fees per pet
-* Charge a refundable deposit per pet. In your pet policy, indicate that any repairs or replacements resulting from pet damage will be deducted from their refund upon move out.
-* Or, you can charge a smaller non-refundable per pet fee that is more appealing to renters. The amount may be lower, but you’re guaranteed to keep the deposit whether or not there is any damage done to the property.
-* Charge a premium for offering a pet-friendly rental. Take a look at the pet-free rentals in your area and price your monthly rent slightly higher.
+- Charge monthly pet fees per pet
+- Charge a refundable deposit per pet. In your pet policy, indicate that any repairs or replacements resulting from pet damage will be deducted from their refund upon move out.
+- Or, you can charge a smaller non-refundable per pet fee that is more appealing to renters. The amount may be lower, but you’re guaranteed to keep the deposit whether or not there is any damage done to the property.
+- Charge a premium for offering a pet-friendly rental. Take a look at the pet-free rentals in your area and price your monthly rent slightly higher.
 
 80% of pet owners currently pay pet deposits, so you won’t need to worry about being less competitive.
 

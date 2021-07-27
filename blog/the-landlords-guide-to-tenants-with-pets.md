@@ -1,7 +1,7 @@
 ---
 title: the landlords guide to tenants with pets
 path: /blog/the-landlords-guide-to-tenants-with-pets/
-date: 2021-04-18T00:31:31.348Z
+date: 2021-06-01T00:39:37.566Z
 category: Infographic
 excerpt: As a landlord, you have to determine whether or not your rental
   properties are going to be pet-friendly. This can be a challenging decision

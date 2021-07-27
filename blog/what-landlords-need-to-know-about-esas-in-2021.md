@@ -1,6 +1,6 @@
 ---
 title: what landlords need to know about esas in 2021
-path: /blog/what-landlords-need-to-know-about-esas-in-2021
+path: /resources/what-landlords-need-to-know-about-esas-in-2021
 date: 2021-07-01T12:43:40.558Z
 category: Ebook
 excerpt: If your property normally does not allow pets, it may be tempting to

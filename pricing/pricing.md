@@ -6,6 +6,7 @@ metaDescription: The cost of adding the best pet policy to protect your
 heroHeading: Professional pet policy contracts in minutes
 heroText: |-
   When it comes to pets, let us do the heavy lifting for as little as $5/month.
+
   We only charge for contract for units with animals.
 pricingList:
   - plan: Starter

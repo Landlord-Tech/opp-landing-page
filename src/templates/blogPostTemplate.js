@@ -45,7 +45,9 @@ const Template = ({ data, location }) => {
           <div className="container">
             <div className="hero-content">
               <button
-                onClick={() => navigate(location.state?.prev ? -1 : "/resources/")}
+                onClick={() =>
+                  navigate(location.state?.prev ? -1 : "/resources/")
+                }
                 className="go-back"
               >
                 <Icon icon="arrow-left" size={24} color="#fff" />

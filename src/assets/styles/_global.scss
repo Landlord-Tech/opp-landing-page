@@ -72,24 +72,8 @@
   display: grid;
 }
 
-
-/*@media screen and (min-width: 769px) {
-  !*scrollbar*!
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px #eff3f5;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-  }
-
-  !* Handle *!
-  ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    background: $color-grey;
-  }
-}*/
+.pre-text {
+  white-space: pre-wrap;
+  line-height: 14px;
+}
 

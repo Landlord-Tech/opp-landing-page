@@ -41,6 +41,7 @@ const Pricing = () => {
     faqHeading,
     faqList,
   } = frontmatter
+
   return (
     <Layout>
       <Seo title={metaTitle} description={metaDescription} />
@@ -49,7 +50,7 @@ const Pricing = () => {
           <div className="small-hero-content">
             <div className="small-hero-text">
               <h1 className="h1">{heroHeading}</h1>
-              <p>{heroText}</p>
+              <p className="pre-text">{heroText}</p>
             </div>
           </div>
         </div>
@@ -69,6 +70,7 @@ const Pricing = () => {
                       <h3 className="h3 primary title bold">{plan}</h3>
                       <h4 className="h4 sub-title secondary fw-medium">
                         {contracts}
+                        <p>contracts</p>
                       </h4>
                       <h4 className="h4 fw-medium">
                         <strong className="h2 primary bold color-primary">

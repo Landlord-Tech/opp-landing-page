@@ -1,7 +1,7 @@
 backend:
-    name: git-gateway
-#  name: gitlab
-#  repo: ourpetpolicy/our-pet-policy-landing-page
+#    name: git-gateway
+  name: gitlab
+  repo: ourpetpolicy/our-pet-policy-landing-page
 
 
 #publish_mode: editorial_workflow
@@ -156,7 +156,7 @@ collections:
       - { name: metaTitle, label: Meta Title }
       - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
-      - { name: heroText, label: Hero text, widget: text }
+      - { name: heroText, label: Hero text, widget: markdown }
       - label: Pricing List
         name: pricingList
         widget: list

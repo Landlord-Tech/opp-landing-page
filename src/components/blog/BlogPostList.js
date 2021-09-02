@@ -8,6 +8,7 @@ const BlogPostList = () => {
     {
       allMarkdownRemark(
         filter: { frontmatter: { path: { regex: "/resources/" } } }
+        sort: { order: DESC, fields: frontmatter___date }
       ) {
         edges {
           node {

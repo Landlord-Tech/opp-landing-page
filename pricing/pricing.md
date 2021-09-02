@@ -10,17 +10,17 @@ heroText: |-
   We only charge for contract for units with animals.
 pricingList:
   - plan: Starter
-    contracts: 1-100 contracts
+    contracts: 1-100
     price: "7"
     pricingBtn: Get started
     pricingBtnUrl: https://app.ourpetpolicy.com/?auth=signup
   - plan: Standard
-    contracts: 101-1,000 contracts
+    contracts: 101-1,000
     price: "6"
     pricingBtn: Get started
     pricingBtnUrl: https://app.ourpetpolicy.com/?auth=signup
   - plan: Enterprise
-    contracts: ">1,000 contracts"
+    contracts: ">1,000"
     price: "5"
     pricingBtn: Get started
     pricingBtnUrl: https://app.ourpetpolicy.com/?auth=signup

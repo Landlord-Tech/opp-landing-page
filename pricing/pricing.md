@@ -7,7 +7,7 @@ heroHeading: Professional pet policy contracts in minutes
 heroText: |-
   When it comes to pets, let us do the heavy lifting for as little as $5/month.
 
-  We only charge for contract for units with animals.
+  We only charge for contract for units with animals. 
 pricingList:
   - plan: Starter
     contracts: 1-100

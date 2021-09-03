@@ -124,6 +124,11 @@ const Header = ({ pathname, sticky, prodHeader }) => {
                     </Link>
                   </li>
                   <li>
+                    <Link activeClassName={"active-link"} to="/resources/">
+                      Resources
+                    </Link>
+                  </li>
+                  <li>
                     <Link activeClassName={"active-link"} to="/contact-us/">
                       Contact us
                     </Link>

@@ -1,14 +1,22 @@
 @media screen and (max-width: 768px) {
   .blog-page {
     &.hero {
-      height: 350px;
+      height: 320px;
+
+      .hero-left {
+        padding-bottom: 0;
+      }
+    }
+    .go-back {
+      top: 16px;
     }
   }
-  .blog-wrapper {
-    padding: 40px 0;
-  }
   .blog-list-item {
-    width: calc(100% / 2 - 40px);
+    width: calc(100% / 2 - 32px);
+
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
   }
   .blog-post-content {
     padding: 40px 0;

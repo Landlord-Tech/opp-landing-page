@@ -3,11 +3,21 @@ module.exports = {
     title: `Pet Policies Done Right | OurPetPolicy`,
     description: `Increase revenue, transparency, and tenant satisfaction with the most advanced pet policy platform on the market.`,
     author: `UltraLabs`,
+    siteUrl: `https://www.ourpetpolicy.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.ourpetpolicy.com",
+        sitemap: "https://www.ourpetpolicy.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,6 +36,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogList`,
+        path: `${__dirname}/blogList`,
       },
     },
     {
@@ -147,9 +164,11 @@ module.exports = {
               destinationDir: "static",
             },
           },
+          `gatsby-remark-external-links`,
         ],
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

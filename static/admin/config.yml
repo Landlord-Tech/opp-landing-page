@@ -1,7 +1,7 @@
 backend:
-  #  name: git-gateway
-  name: gitlab
-  repo: ourpetpolicy/our-pet-policy-landing-page
+    name: git-gateway
+#  name: gitlab
+#  repo: ourpetpolicy/our-pet-policy-landing-page
 
 
 #publish_mode: editorial_workflow
@@ -17,25 +17,31 @@ collections:
     folder: blog
     create: true
     fields:
+      - { name: title, label: Title }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: category, label: Category }
-      - { name: title, label: Title }
+      - { name: excerpt, label: Excerpt, widget: text, pattern: ['^.{150,500}$', "The Excerpt should contain from 150
+      to 500 characters."] }
+      - { name: heroHeading, label: Hero heading }
       - { name: heroImg, label: Hero image, widget: image }
       - { name: body, label: Body, widget: markdown }
-      - { name: social, label: Social section, widget: boolean }
-      - { name: promoTitle, label: Promo section title }
-      - { name: promoText, label: Promo section text, widget: text }
-      - { name: promoBtn, label: Promo section button }
-      - { name: promoBtnUrl, label: Promo section button }
-      - { name: promo, label: Promo section, widget: boolean }
+      - { name: social, label: Social section, widget: boolean, required: false }
+      - label: Promo section
+        name: promoSection
+        widget: object
+        fields:
+          - { name: promoTitle, label: Promo section title, required: false }
+          - { name: promoText, label: Promo section text, widget: text, required: false }
+          - { name: promoBtn, label: Promo section button, required: false }
+          - { name: promoBtnUrl, label: Promo section button url, required: false }
+          - { name: promo, label: Promo section, widget: boolean, required: false }
 
   - name: blogList
     label: blogList
     folder: blogList
-    create: true
     fields:
-      - { name: title, label: Title }
+      - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: heroImg, label: Hero image, widget: image }
@@ -150,7 +156,7 @@ collections:
       - { name: metaTitle, label: Meta Title }
       - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
-      - { name: heroText, label: Hero text, widget: text }
+      - { name: heroText, label: Hero text, widget: markdown }
       - label: Pricing List
         name: pricingList
         widget: list

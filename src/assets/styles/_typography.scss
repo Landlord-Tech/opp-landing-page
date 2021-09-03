@@ -10,18 +10,18 @@
     font-family: $font-primary;
   }
 }
-.h1 {
+.h1, .blog-post-content h1 {
   font-size: 72px;
   line-height: 1.2;
 }
-.h2 {
+.h2, .blog-post-content h2 {
   font-size: 56px;
   line-height: 1.2;
 }
-.h3 {
+.h3, .blog-post-content h3 {
   font-size: 32px;
 }
-.h4 {
+.h4, .blog-post-content h4 {
   font-size: 24px;
 
   &.secondary {

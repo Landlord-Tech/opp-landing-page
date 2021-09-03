@@ -102,7 +102,7 @@ By using this Site, you signify your acceptance of this policy. If you do not ag
 
 **Contacting us**
 
-If you have any questions about this Privacy Policy, the practices of this Site, or your dealings with this Site, please contact our Data Protection Officer by filling out the [contact form](https://www.ourpetpolicy.com/contact/) or at the following address:
+If you have any questions about this Privacy Policy, the practices of this Site, or your dealings with this Site, please contact our Data Protection Officer by filling out the [contact form](https://www.ourpetpolicy.com/contact-us/) or at the following address:
 
 Ultra Labs, LLC\
 ATTN: Data Protection Officer\

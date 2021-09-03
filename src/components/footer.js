@@ -25,7 +25,6 @@ const Footer = () => {
   const { frontmatter } = markdownRemark
   const { contactList } = frontmatter
 
-  console.log({ contactList })
   const location = contactList[0].ContactItem
 
   return (
@@ -67,12 +66,7 @@ const Footer = () => {
               <Link to={"/pricing/#faq"}>FAQ</Link>
             </h4>
             <h4 className="h4">
-              <a
-                href={"https://resources.ourpetpolicy.com/resources/"}
-                rel="noreferrer"
-              >
-                Resources
-              </a>
+              <Link to={"/resources/"}>Resources</Link>
             </h4>
           </li>
           <li className="footer-top-col">
@@ -81,7 +75,6 @@ const Footer = () => {
             </h4>
             <ul className="footer-contact">
               {contactList.slice(1, 3).map(({ ContactItem, icon }, index) => {
-                console.log({ ContactItem })
                 return (
                   <li key={index}>
                     <Icon icon={icon} size={24} />
@@ -95,6 +88,8 @@ const Footer = () => {
           </li>
           <li className="footer-top-col">
             <a
+              target="_blank"
+              rel="noopener"
               href="https://www.facebook.com/OurPetPolicy/"
               className="inline-block"
             >

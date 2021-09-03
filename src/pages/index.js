@@ -43,21 +43,12 @@ const IndexPage = () => {
       {/*banner*/}
       <section className="hero hero-page">
         <GatsbyImage
-          style={{
-            gridArea: "1 / 1",
-          }}
+          className="grid-1"
           alt={heading}
           objectFit="cover"
           image={getImage(hero)}
         />
-        <div
-          style={{
-            gridArea: "1/1",
-            position: "relative",
-            placeItems: "center",
-            display: "grid",
-          }}
-        >
+        <div className="banner-grid">
           <div className="container">
             <div className="hero-content">
               <div className="hero-left">

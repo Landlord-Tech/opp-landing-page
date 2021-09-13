@@ -19,7 +19,7 @@ calculatorText: "Whether you allow pets or not, we can help you maximize profits
 sec1Heading: Why Choose OurPetPolicy?
 sec1Text: To build the best pet policy platform we brought together a team of
   lawyers, landlords, and property managers, from many different states and
-  backgrounds. OurPetPolicy is made to eliminate potential loopholes, set
+  backgrounds. OurPetPolicy was made to eliminate potential loopholes, set
   transparent rules and expectations for tenants, and is easy to manage. In just
   a few minutes, you can add your rental properties, customize your
   lawyer-vetted policy for your state, and send a contract to your tenant for

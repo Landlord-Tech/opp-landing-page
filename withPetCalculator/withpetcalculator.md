@@ -6,7 +6,7 @@ metaDescription: Check the Return on Investment (ROI) you could see by upgrading
 heroHeading: Return on Investment with OurPetPolicy
 sec1Heading: Tell us about your Properties
 sec1SubHeading1: How many Units
-sec1Text1: (How many residential rental units do you have?)
+sec1Text1: (How many residential rental units do you have with animals?)
 sec1Desc: With this calculator you can input your specific data and see how much
   value OurPetPolicy could add to your residential rental portfolio.
 sec2Heading: Pet Rent

@@ -2,8 +2,7 @@
 title: privacyPolicy
 heroHeading: Privacy Policy
 ---
-
-This Privacy Policy governs the manner in which Ultra Labs collects, uses, maintains and discloses information collected from users (each, a “User”) of any website that links to these Terms (the “Site”).
+This Privacy Policy governs the manner in which Landlord Tech Inc collects, uses, maintains and discloses information collected from users (each, a “User”) of any website that links to these Terms (the “Site”).
 
 **Personal identification information**
 
@@ -21,36 +20,36 @@ Our Site may use “cookies” to enhance User experience. User’s web browser 
 
 How we use collected information
 
-Ultra Labs may collect and use Users personal information for the following purposes:
+Landlord Tech Inc may collect and use Users personal information for the following purposes:
 
-- To run and operate our Site: We may need your information to display content on the Site correctly.
-- To improve customer service: Information you provide helps us respond to your customer service requests and support needs more efficiently.
-- To personalize user experience: We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
-- To improve our Site: We may use feedback you provide to improve our products and services.
-- To run a promotion, contest, survey or other Site feature: To send Users information they agreed to receive about topics we think will be of interest to them.
-- To send periodic emails: We may use the email address to respond to their inquiries, questions, and/or other requests.
+* To run and operate our Site: We may need your information to display content on the Site correctly.
+* To improve customer service: Information you provide helps us respond to your customer service requests and support needs more efficiently.
+* To personalize user experience: We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.
+* To improve our Site: We may use feedback you provide to improve our products and services.
+* To run a promotion, contest, survey or other Site feature: To send Users information they agreed to receive about topics we think will be of interest to them.
+* To send periodic emails: We may use the email address to respond to their inquiries, questions, and/or other requests.
 
 **Your Data Rights**
 
 Under the GDPR (General Data Protection Regulation) policies with which we comply, EU Users have eight data rights as follows:
 
-- The right to be informed: We will be transparent about how we use your data.
-- The right of access: Users will know exactly how we process their data, as well as what data about them is currently being stored.
-- The right of rectification: Users can have data rectified if it is incorrect or incomplete.
-- The right to erasure: Users may have their data deleted if they so choose. This is also known as the “right to be forgotten.”
-- The right to restrict processing: Users may restrict or completely block the processing of their personal data.
-- The right to data portability: Users may reuse their personal data for individual use.
-- The right to object: In some instances, Users may object to the use of their personal data.
-- The rights of automated decision making and profiling: Users may object to their use of their data as it relates to automatic processing without human intervention and consequences that have legal bearing on the User.
+* The right to be informed: We will be transparent about how we use your data.
+* The right of access: Users will know exactly how we process their data, as well as what data about them is currently being stored.
+* The right of rectification: Users can have data rectified if it is incorrect or incomplete.
+* The right to erasure: Users may have their data deleted if they so choose. This is also known as the “right to be forgotten.”
+* The right to restrict processing: Users may restrict or completely block the processing of their personal data.
+* The right to data portability: Users may reuse their personal data for individual use.
+* The right to object: In some instances, Users may object to the use of their personal data.
+* The rights of automated decision making and profiling: Users may object to their use of their data as it relates to automatic processing without human intervention and consequences that have legal bearing on the User.
 
 **Additional Rights for California Residents:**
 
 The California Consumer Privacy Act (“CCPA”) provides California resident consumers with specific rights regarding their Personal Information. “Personal information” means information that identifies, relates to, describes, is reasonably capable of being associated directly or indirectly, with a particular consumer or household, this may include, but is not limited to full name, postal address, unique personal identifier, email, and phone number. “Personal information” does not include publicly available information. California consumers have the right to make the following requests regarding their Personal Information.
 
-- Right to Know. You have the right to request the categories of personal information that we collected, and the information about how we collect, use and disclose your personal information.
-- Right to Delete. You have the right to request the deletion of the personal information we have collected from you.
-- Right to Opt-Out. You have the right to opt-out of having your personal information sold.
-- You have the right to request a copy of the specific personal information we collected about you during the twelve months prior to your request. You have the right not to be discriminated against for exercising your right to know, delete or opt-out.
+* Right to Know. You have the right to request the categories of personal information that we collected, and the information about how we collect, use and disclose your personal information.
+* Right to Delete. You have the right to request the deletion of the personal information we have collected from you.
+* Right to Opt-Out. You have the right to opt-out of having your personal information sold.
+* You have the right to request a copy of the specific personal information we collected about you during the twelve months prior to your request. You have the right not to be discriminated against for exercising your right to know, delete or opt-out.
 
 If you would like to exercise your rights, please [contact us](https://www.ourpetpolicy.com/contact/).
 
@@ -94,7 +93,7 @@ Any data transferred from the EEA to the United States through our Site is compl
 
 **Changes to this privacy policy**
 
-Ultra Labs has the discretion to update this privacy policy at any time. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
+Landlord Tech Inc has the discretion to update this privacy policy at any time. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
 
 **Your acceptance of these terms**
 
@@ -104,7 +103,7 @@ By using this Site, you signify your acceptance of this policy. If you do not ag
 
 If you have any questions about this Privacy Policy, the practices of this Site, or your dealings with this Site, please contact our Data Protection Officer by filling out the [contact form](https://www.ourpetpolicy.com/contact-us/) or at the following address:
 
-Ultra Labs, LLC\
+Landlord Tech Inc\
 ATTN: Data Protection Officer\
 950 W. Bannock St\
 Suite 860\

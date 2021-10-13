@@ -5,8 +5,7 @@ date: 2021-10-13T07:35:07.372Z
 category: Ebook
 excerpt: Pet fees are a sensitive subject among both tenants and landlords. Many
   renters feel that these fees are an unfair tax that they’re forced to pay for
-  having furry family members. As a landlord, this may cause you to hesitate to
-  include pet rent and fees in your pet policy.
+  having furry family members.
 heroHeading: Why Pet Fees are an Essential Landlord Strategy
 heroImg: /assets/pet-fees.jpg
 ---

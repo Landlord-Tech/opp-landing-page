@@ -91,6 +91,6 @@ Why Pet Fees are a Necessary Landlord Strategy
 
 • And more!
 
-**Get the complete guide [here](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf).[](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)**[](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)
+**Get the complete guide [here](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf).**[](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)[](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)
 
-[[![](https://lh3.googleusercontent.com/omDEn0z-SGYDHSK7X3kVgZ2pxi81BSkO5LQ55WPJFgs-AgP4ax2efZGMl86fLdou-eXPUTwBR_eb4qVfzKkxrN0bBRSg3ZCJ-jlCJMVyI_lpAHdsJfl9wvJTiaYN3-G9tG_G1Q_J=s0)](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)
+![](/assets/why-pet-fees.png)

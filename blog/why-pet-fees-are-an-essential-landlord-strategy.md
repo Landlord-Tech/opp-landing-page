@@ -8,6 +8,14 @@ excerpt: Pet fees are a sensitive subject among both tenants and landlords. Many
   having furry family members.
 heroHeading: Why Pet Fees are an Essential Landlord Strategy
 heroImg: /assets/pet-fees.jpg
+promoSection:
+  promoTitle: We Manage Pets Better​
+  promoText: |-
+    No more hassle and potential legal disputes.
+    Professional pet policy contracts in minutes.
+  promo: true
+  promoBtn: Learn More
+  promoBtnUrl: https://ourpetpolicy.com/landlords/
 ---
 Pet fees are a sensitive subject among both tenants and landlords. Many renters feel that these fees are an unfair tax that they’re forced to pay for having furry family members. As a landlord, this may cause you to hesitate to include pet rent and fees in your pet policy. 
 
@@ -19,7 +27,7 @@ In today’s article, we’ll be covering the different pet-related issues that 
 
 By encouraging pet owners to apply for your rentals, you expand your tenant pool to the [75% of renters that own pets](https://www.ourpetpolicy.com/resources/the-landlords-guide-to-tenants-with-pets/). While this can definitely help you reduce your vacancies and increase your tenant rent, it does create some new challenges.
 
-![](/assets/renters-own-pets.png)
+![Renters with pets](/assets/renters-own-pets.png "Renters with pets")
 
 #### Pet-Related Complaints
 
@@ -57,7 +65,7 @@ Common damage includes:
 
 Carpets are among the most costly repairs for landlords. The average cost to replace just [500sq. ft. of carpet is $2400](https://homeguide.com/costs/carpet-installation-cost), which can be seen as a $50 monthly loss on the unit if the landlord must replace it every five years instead of 10.
 
-![](/assets/challenges-of-pet-friendly-rentals.png)
+![Challenges of Managing Pet-Friendly Rentals](/assets/challenges-of-pet-friendly-rentals.png "Challenges of Managing Pet-Friendly Rentals")
 
 #### Loss of Rental Income During Repairs 
 
@@ -83,10 +91,6 @@ Why Pet Fees are a Necessary Landlord Strategy
 
   And more!
 
+**Get the complete guide [here](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)**.
 
-
-**Get the complete guide [here](static/assets/ourpetpolicy_landlord_strategy_e-book.pdf)**.
-
-
-
-![](/assets/why-pet-fees.png)
+![Why Pet Fees are an Essential Landlord Strategy](/assets/why-pet-fees.png "Why Pet Fees are an Essential Landlord Strategy")

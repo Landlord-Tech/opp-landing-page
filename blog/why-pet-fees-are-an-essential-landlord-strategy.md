@@ -36,12 +36,9 @@ Allowing pets into your rentals can increase the number of complaints that you r
 Depending on the types of pets you allow, you can expect to get one or several of the following complaints:
 
 * Excessive meowing, barking, crying or howling,
-
-  Loud nails running around on the floor above,
-
-  Messes in hallways, common areas, or grounds,
-
-  Allergies
+* Loud nails running around on the floor above,
+* Messes in hallways, common areas, or grounds,
+* Allergies
 
 #### Vacant Rentals
 
@@ -54,14 +51,10 @@ It’s much easier to recoup the cost of any damages that your tenant's pets may
 Common damage includes:
 
 * Torn up blinds
-
-  Scratched carpets and floors
-
-  Stained walls and carpets
-
-  Dug up carpets or landscaping
-
-  Chewed moldings and walls
+* Scratched carpets and floors
+* Stained walls and carpets
+* Dug up carpets or landscaping
+* Chewed moldings and walls
 
 Carpets are among the most costly repairs for landlords. The average cost to replace just [500sq. ft. of carpet is $2400](https://homeguide.com/costs/carpet-installation-cost), which can be seen as a $50 monthly loss on the unit if the landlord must replace it every five years instead of 10.
 
@@ -82,15 +75,11 @@ Why Pet Fees are a Necessary Landlord Strategy
 **Features:**
 
 * Pet waste management issues and strategies.
-
-  The benefits of Pet DNA testing.
-
-  How to accommodate tenants with allergies.
-
-  The costly threat of Emotional Support animals.
-
-  And more!
+* The benefits of Pet DNA testing.
+* How to accommodate tenants with allergies.
+* The costly threat of Emotional Support animals.
+* And more!
 
 **Get the complete guide [here](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf)**.
 
-![Why Pet Fees are an Essential Landlord Strategy](/assets/why-pet-fees.png "Why Pet Fees are an Essential Landlord Strategy")
+![Why Pet Fees are an Essential Landlord Strategy](https://www.ourpetpolicy.com/assets/ourpetpolicy_landlord_strategy_e-book.pdf "Why Pet Fees are an Essential Landlord Strategy")

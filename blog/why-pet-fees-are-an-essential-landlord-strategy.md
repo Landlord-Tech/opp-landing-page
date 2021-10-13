@@ -8,6 +8,7 @@ excerpt: Pet fees are a sensitive subject among both tenants and landlords. Many
   having furry family members.
 heroHeading: Why Pet Fees are an Essential Landlord Strategy
 heroImg: /assets/pet-fees.jpg
+social: true
 promoSection:
   promoTitle: We Manage Pets Better​
   promoText: |-

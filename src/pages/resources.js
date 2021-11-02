@@ -3,12 +3,15 @@ import Layout from "../components/layout"
 
 import BlogPostList from "../components/blog/BlogPostList"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from '../components/seo';
 
 const News = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: { title: { eq: "blogList" } }) {
         frontmatter {
+          metaTitle
+          metaDescription
           heroHeading
           heroText
           heroImg {
@@ -24,9 +27,10 @@ const News = () => {
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
-  const { heroHeading, heroText } = frontmatter
+  const { heroHeading, heroText, metaTitle, metaDescription } = frontmatter
   return (
     <Layout>
+      <Seo title={metaTitle} description={metaDescription} />
       <section className="small-hero xs">
         <div className="container">
           <div className="small-hero-content">

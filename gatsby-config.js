@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pet Policies Done Right | OurPetPolicy`,
+    title: ``,
     description: `Increase revenue, transparency, and tenant satisfaction with the most advanced pet policy platform on the market.`,
     author: `UltraLabs`,
     siteUrl: `https://www.ourpetpolicy.com`,

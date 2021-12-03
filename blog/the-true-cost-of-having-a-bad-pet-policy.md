@@ -16,7 +16,7 @@ promoSection:
     No more hassle and potential legal disputes. 
     Professional pet policy contracts in minutes. 
   promoBtn: Learn More
-  promoBtnUrl: https://www.ourpetpolicy.com/landlords/
+  promoBtnUrl: https://ourpetpolicy.com/landlords/
 ---
 Having a pet policy for your renters is an essential part of protecting your property and your rental income. However, it's important to note that not all policies are created equal. A bad pet policy, lacking detailed rules and guidelines, may leave you exposed and unprotected in pet-related scenarios. 
 

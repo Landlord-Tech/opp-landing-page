@@ -21,13 +21,9 @@ promoSection:
 ---
 As a property manager, pet fees and deposits are the best way to protect your property from pet-related damages and unexpected costs. Unfortunately, pet owners have found a convenient loophole using Emotional Support Animal (ESA) letters to help them get out of paying any pet fees.
 
-
-
 ![](/assets/1-opportunity-cost.jpg)
 
 Emotional Support Animals provide a sense of safety and companionship to individuals suffering from various emotional and psychological conditions. While [ESAs are not service animals](https://adata.org/guide/service-animals-and-emotional-support-animals), according to the ADA, they do receive some of the same rights. As they are not considered pets, owners of ESAs are not required to pay pet fees, pet deposits, or pet rent.
-
-
 
 While you can require that your tenants provide documentation for their ESAs, many tenants have found ways to secure [fraudulent documentation that can easily be mistaken for the real thing](https://www.biggerpockets.com/blog/process-esa-letters).
 
@@ -40,13 +36,9 @@ While you can require that your tenants provide documentation for their ESAs, ma
 * Tenants who pay the fees outlined in your pet policy can become disgruntled by the amount of untrained and poorly behaved imposter ESAs on your property.
 * Without getting a deposit upfront, it can be much more challenging for you to recoup any repair costs from a tenant that has already vacated your rental.
 
-
-
 ## The Cost of Verifying ESA Letters Yourself
 
 Verifying each ESA letter for authenticity is necessary to prevent fraud, but the process itself can be very challenging and time-consuming. You'll either need to do it yourself or spend the time training a member of your team on the many steps required to confirm that the letters are legitimate.
-
-
 
 * Confirm that the letter is certified and is on the professional letterhead of a mental health professional.
 * Check that the letter includes the health professional's contact information, email address, phone number, and license number.
@@ -86,11 +78,7 @@ Neighboring tenants that are surrounded by poorly behaved emotional support anim
 
 ![](/assets/3-opportunity-cost.jpg)
 
-
-
 [OurPetPolicy](https://www.ourpetpolicy.com/landlords/) offers a thorough ESA verification process that is designed to protect property managers from fraudulent ESAs.
-
-
 
 * As an experienced and knowledgeable 3rd party service, we can reduce the risk of legal complications from accidental HIPAA or FHA violations.
 * We assume all liability regarding the verification of ESA letters, including the denial of fake letters and the approval or legitimate ones.
@@ -102,7 +90,5 @@ Neighboring tenants that are surrounded by poorly behaved emotional support anim
 
 
 [Contact OurPetPolicy](https://www.ourpetpolicy.com/contact-us/) today to see how we can help you eliminate the risk of unauthorized Emotional Support Animals, reduce pet-related property damage, and prevent accidental HIPAA or FHA violations.
-
-
 
 OurPetPolicy is powered by [Landlord Tech](https://www.linkedin.com/company/landlord-tech/about/), a software company that leverages technology and automation to solve and prevent the problems that property managers and owners face.

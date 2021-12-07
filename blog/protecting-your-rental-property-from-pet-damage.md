@@ -20,7 +20,6 @@ promoSection:
   promoBtnUrl: https://ourpetpolicy.com/landlords/
   promo: true
 ---
-
 A vast number of potential renters own pets and consider them part of the family. As a landlord, allowing pets in your properties widens the applicant pool and gives you a better chance of securing long-term, reliable tenants. However, it is also important that you safeguard your rental properties from pet damage. Doing so will save on repairs, extend the life of your property, and create a better renting experience for all of your pet-owning and pet-free tenants alike. Here are some tips on how to better protect your rentals that allow furry friends.
 
 ![](/assets/1.jpg)
@@ -55,7 +54,7 @@ It’s important to note that despite precautions, [85% of property owners have]
 
 ![](/assets/3.jpg)
 
-**Establish and Enforce Your Pet Policy**
+#### **Establish and Enforce Your Pet Policy**
 
 Investing in a pet management solution that offers customizable pet policies, provides pet vaccination record management, verifies ESA letters, and helps reduce unauthorized pets on your property is the best way to protect your rental portfolio. Nine out of ten tenants with pets say pet policies play a role in deciding where to live, so ensuring you have a solid pet policy that protects both you and your tenants is a must.
 

@@ -38,6 +38,8 @@ While you can require that your tenants provide documentation for their ESAs, ma
 
 
 
+
+
 #### The Cost of Verifying ESA Letters Yourself
 
 Verifying each ESA letter for authenticity is necessary to prevent fraud, but the process itself can be very challenging and time-consuming. You'll either need to do it yourself or spend the time training a member of your team on the many steps required to confirm that the letters are legitimate.

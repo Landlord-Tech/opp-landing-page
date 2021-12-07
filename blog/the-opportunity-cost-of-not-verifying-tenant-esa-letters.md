@@ -27,7 +27,7 @@ Emotional Support Animals provide a sense of safety and companionship to individ
 
 While you can require that your tenants provide documentation for their ESAs, many tenants have found ways to secure [fraudulent documentation that can easily be mistaken for the real thing](https://www.biggerpockets.com/blog/process-esa-letters).
 
-## What happens when you accept fraudulent ESA letters?
+#### What happens when you accept fraudulent ESA letters?
 
 \- Tenants avoid paying any pet fees, leaving you to cover the cost of damage, maintenance, and other pet-related expenses associated with your property.
 
@@ -37,7 +37,7 @@ While you can require that your tenants provide documentation for their ESAs, ma
 
 \- Without getting a deposit upfront, it can be much more challenging for you to recoup any repair costs from a tenant that has already vacated your rental.
 
-## The Cost of Verifying ESA Letters Yourself
+#### The Cost of Verifying ESA Letters Yourself
 
 Verifying each ESA letter for authenticity is necessary to prevent fraud, but the process itself can be very challenging and time-consuming. You'll either need to do it yourself or spend the time training a member of your team on the many steps required to confirm that the letters are legitimate.
 
@@ -51,33 +51,31 @@ Verifying each ESA letter for authenticity is necessary to prevent fraud, but th
 
 \- Check the date of the letter.
 
-
-
-## What Are The Consequences if Your ESA Verification Process is Not Done Correctly?
+#### What Are The Consequences if Your ESA Verification Process is Not Done Correctly?
 
 ![](/assets/2-opportunity-cost.jpg)
 
-### HIPAA or Fair Housing Act Violations
+##### HIPAA or Fair Housing Act Violations
 
 While it is your right as a landlord to verify an ESA letter, it is a delicate subject. You need to be very cautious in how you handle the situation as certain questions, actions, or requests can be in direct violation of the Fair Housing Act or HIPAA privacy laws.
 
-### Loss of Pet Fees
+##### Loss of Pet Fees
 
 As the verification process can be stressful, risky, and time-consuming, you may be inclined to approve all ESAs. Unfortunately, this means losing out on pet fees and deposits that you're entitled to.
 
-### Legal Complications
+##### Legal Complications
 
 If you deny a valid ESA letter under the suspicion of fraud, you can face costly legal action.
 
-### Poorly Behaved Animals on Your Property
+##### Poorly Behaved Animals on Your Property
 
 Approving fake letters runs the risk of inviting [poorly behaved ESAs](https://scholarlycommons.pacific.edu/cgi/viewcontent.cgi?article=1363&context=uoplawreview) and untrained animals onto your property. As you won't have the pet fees or deposits to cover any damage, accidents, or incidents caused by the animal, these issues can be costly.
 
-### Unhappy Tenants
+##### Unhappy Tenants
 
 Neighboring tenants that are surrounded by poorly behaved emotional support animals can become disgruntled by the level of noise and messes in the common areas. This leads to more complaints and pet waste management issues for you and your staff to deal with.
 
-## Advantages of Using a 3rd Party ESA Verification Process for Liability
+#### Advantages of Using a 3rd Party ESA Verification Process for Liability
 
 ![](/assets/3-opportunity-cost.jpg)
 
@@ -94,8 +92,6 @@ Neighboring tenants that are surrounded by poorly behaved emotional support anim
 \- We help ensure that you're renting to tenants who pay their pet fees, increasing the funds you have to cover pet-related maintenance and repairs to your property.
 
 \- Increase the amount of time you have to handle other property management activities.
-
-
 
 [Contact OurPetPolicy](https://www.ourpetpolicy.com/contact-us/) today to see how we can help you eliminate the risk of unauthorized Emotional Support Animals, reduce pet-related property damage, and prevent accidental HIPAA or FHA violations.
 

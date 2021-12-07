@@ -18,9 +18,10 @@ promoSection:
   promoBtn: Learn More
   promoBtnUrl: https://ourpetpolicy.com/landlords/
 ---
-Pet fees are a sensitive subject among both tenants and landlords. Many renters feel that these fees are an unfair tax that they’re forced to pay for having furry family members. As a landlord, this may cause you to hesitate to include pet rent and fees in your pet policy. 
 
-Despite the frustrations and hesitations, there’s no ignoring the importance of charging pet fees. The truth is, the cost of allowing pets in your rentals goes far beyond the occasional carpet replacement. 
+Pet fees are a sensitive subject among both tenants and landlords. Many renters feel that these fees are an unfair tax that they’re forced to pay for having furry family members. As a landlord, this may cause you to hesitate to include pet rent and fees in your pet policy.
+
+Despite the frustrations and hesitations, there’s no ignoring the importance of charging pet fees. The truth is, the cost of allowing pets in your rentals goes far beyond the occasional carpet replacement.
 
 In today’s article, we’ll be covering the different pet-related issues that these fees can cover.
 
@@ -32,7 +33,7 @@ By encouraging pet owners to apply for your rentals, you expand your tenant pool
 
 #### Pet-Related Complaints
 
-Allowing pets into your rentals can increase the number of complaints that you receive from your tenants. 
+Allowing pets into your rentals can increase the number of complaints that you receive from your tenants.
 
 Depending on the types of pets you allow, you can expect to get one or several of the following complaints:
 
@@ -50,7 +51,7 @@ Tenants do have the right to [break their lease without penalty](https://www.nol
 
 #### Pet-Related Property Damages 
 
-It’s much easier to recoup the cost of any damages that your tenant's pets may cause by receiving pet deposits upfront. 
+It’s much easier to recoup the cost of any damages that your tenant's pets may cause by receiving pet deposits upfront.
 
 Common damage includes:
 
@@ -70,13 +71,13 @@ Carpets are among the most costly repairs for landlords. The average cost to rep
 
 #### Loss of Rental Income During Repairs 
 
-Closing a unit for repairs is one of the most costly situations a landlord must endure. Since repairs can take upwards of two weeks or more, new tenants are unable to move in, resulting in the loss of rent in addition to the cost of the repairs. 
+Closing a unit for repairs is one of the most costly situations a landlord must endure. Since repairs can take upwards of two weeks or more, new tenants are unable to move in, resulting in the loss of rent in addition to the cost of the repairs.
 
 On a $1,200 monthly rent, those two weeks result in a $600 loss, and that doesn't include the time it may take to assess the damages and get contractors on site.
 
 ### Get the Complete Guide
 
-If you’d like to know more about how pet fees can help you protect your profit and property, download our complete guide: 
+If you’d like to know more about how pet fees can help you protect your profit and property, download our complete guide:
 
 Why Pet Fees are a Necessary Landlord Strategy
 

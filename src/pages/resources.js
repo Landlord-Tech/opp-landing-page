@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 import BlogPostList from "../components/blog/BlogPostList"
 import { graphql, useStaticQuery } from "gatsby"
-import Seo from '../components/seo';
+import Seo from "../components/seo"
 
 const News = () => {
   const data = useStaticQuery(graphql`

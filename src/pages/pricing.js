@@ -70,13 +70,13 @@ const Pricing = () => {
                       <h3 className="h3 primary title bold">{plan}</h3>
                       <h4 className="h4 sub-title secondary fw-medium">
                         {contracts}
-                        <p>contracts</p>
+                        <p>units</p>
                       </h4>
                       <h4 className="h4 fw-medium">
                         <strong className="h2 primary bold color-primary">
                           ${price}/
                         </strong>
-                        contract
+                        units
                       </h4>
                       <p>per month</p>
                     </div>

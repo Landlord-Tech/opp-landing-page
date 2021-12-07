@@ -27,15 +27,12 @@ Emotional Support Animals provide a sense of safety and companionship to individ
 
 While you can require that your tenants provide documentation for their ESAs, many tenants have found ways to secure [fraudulent documentation that can easily be mistaken for the real thing](https://www.biggerpockets.com/blog/process-esa-letters).
 
-## \
 What happens when you accept fraudulent ESA letters?
 
 * Tenants avoid paying any pet fees, leaving you to cover the cost of damage, maintenance, and other pet-related expenses associated with your property.
 * Pet-owning tenants tend to rent much longer, costing you the opportunity to obtain pet rent and fees from future rule-abiding tenants for an extended period of time.
 * Tenants who pay the fees outlined in your pet policy can become disgruntled by the amount of untrained and poorly behaved imposter ESAs on your property.
 * Without getting a deposit upfront, it can be much more challenging for you to recoup any repair costs from a tenant that has already vacated your rental.
-
-
 
 ## The Cost of Verifying ESA Letters Yourself
 
@@ -46,8 +43,6 @@ Verifying each ESA letter for authenticity is necessary to prevent fraud, but th
 * Verify the validity of the license number and that the licensed mental health professional that issued the letter is licensed in the state you're renting in. This can be confirmed on your state's [license verification portal](https://www.certapet.com/wp-content/uploads/2020/09/ESA-License-Verification.pdf).
 * Verify that the ESA letter was awarded after a mental health screening.
 * Check the date of the letter.
-
-
 
 ## What Are The Consequences if Your ESA Verification Process is Not Done Correctly?
 
@@ -72,8 +67,6 @@ Approving fake letters runs the risk of inviting [poorly behaved ESAs](https://s
 #### Unhappy Tenants
 
 Neighboring tenants that are surrounded by poorly behaved emotional support animals can become disgruntled by the level of noise and messes in the common areas. This leads to more complaints and pet waste management issues for you and your staff to deal with.
-
-
 
 ## Advantages of Using a 3rd Party ESA Verification Process for Liability
 

@@ -48,7 +48,11 @@ const ContactUs = () => {
                   return (
                     <li key={index}>
                       <Icon icon={icon} size={24} />
-                      {ContactItem.join(" ")}
+                      {icon === "email" ? (
+                        <a href={`mailto: ${ContactItem.join(" ")}`}>
+                          {ContactItem.join(" ")}
+                        </a>
+                      ) : ContactItem.join(" ")}
                     </li>
                   )
                 })}

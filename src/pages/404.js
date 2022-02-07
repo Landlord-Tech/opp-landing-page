@@ -36,7 +36,7 @@ const NotFoundPage = () => {
         "/resources/the-landlords-guide-to-tenants-with-pets/",
       ].includes(pathname)
     ) {
-      window.location = `https://www.ourpetpolicy.com/resources/`
+      window.location = `https://www.ourpetpolicy.com${pathname}`
       return
     }
     setLoading(false)

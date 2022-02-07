@@ -1,0 +1,49 @@
+.sidebar-tab-header {
+  display: flex;
+  font-family: $font-secondary;
+
+  li {
+    position: relative;
+    font-size: 20px;
+
+    a {
+      display: inline-block;
+      padding: 0 16px;
+
+      &.active {
+        &:after {
+          content: '';
+          height: 8px;
+          width: 100%;
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          border-radius: 16px 16px 0 0;
+          background-color: $color-primary;
+        }
+      }
+    }
+
+  }
+}
+.sidebar-tab-content {
+  padding: 60px 0;
+
+  li {
+    margin-bottom: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration-color: $color-primary;
+    &.active {
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: $color-primary;
+    }
+    &:hover {
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-color: $color-primary;
+    }
+  }
+}

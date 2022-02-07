@@ -1,0 +1,48 @@
+
+@import '~rc-slider/assets/index.css';
+.rangeInput-wrapper {
+  padding-bottom: 30px;
+}
+.rangeInput-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  color: $color-text-light;
+
+
+  input {
+    height: 35px;
+    line-height: 35px;
+    border-radius: 8px;
+    border: 1px solid $color-primary;
+    padding: 0 12px;
+    font-size: 16px;
+    width: 90px;
+    color: $color-text-light;
+  }
+}
+.range-input, .rc-slider-track, .rc-slider-rail {
+  background-color: $color-range;
+}
+.rc-slider-handle {
+  border: none;
+  background-color: $color-primary;
+  height: 24px;
+  width: 24px;
+  margin: 0;
+  top: -4px;
+
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.rc-slider-dot-active {
+  border: none;
+}
+.rc-slider-dot {
+  border: none;
+  background-color: $color-text-light;
+}
+

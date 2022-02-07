@@ -1,0 +1,54 @@
+/* Switch styles */
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+
+  .switch {
+    padding: 0 8px;
+  }
+}
+
+.switch {
+  display: inline-block;
+
+  .slider {
+    display: block;
+    width: 36px;
+    height: 14px;
+    background-color: $color-grey;
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    transition: .3s;
+
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      background-color: $color-white;
+      border: 6px solid $color-primary;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 0.3s;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked {
+
+      & ~ .slider {
+        &::before {
+          left: 17px;
+        }
+      }
+    }
+  }
+}

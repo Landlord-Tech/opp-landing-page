@@ -1,0 +1,42 @@
+.contact-form {
+  padding: 70px 90px 70px 70px;
+  background-color: $color-range;
+  box-shadow: 0 0 11px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  max-width: 720px;
+  width: 100%;
+  position: relative;
+
+  h2 {
+    padding-bottom: 12px;
+  }
+  p {
+    padding-bottom: 24px;
+  }
+
+  .form-hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.thanks-view {
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  padding: 70px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &.thanks-show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .icon {
+    margin-top: 100px;
+  }
+}

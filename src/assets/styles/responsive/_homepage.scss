@@ -1,0 +1,160 @@
+@media screen and (max-width: 1280px) {
+  .homepage {
+    .hero {
+      min-height: calc(100vh - 66px);
+
+      .animated-mouse {
+        bottom: 38px;
+      }
+    }
+  }
+  .hero-page {
+    &.hero:after {
+      background: $color-bg-from-bottom;
+    }
+
+    .hero-left {
+
+      .h1 {
+        padding-bottom: 40px;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+  .hero-page {
+    .hero-left {
+      padding-bottom: 60px;
+    }
+
+    .btn {
+      margin: 0 5px;
+    }
+  }
+
+  .landing {
+    .hero-left {
+      text-align: center;
+      padding-bottom: 120px;
+    }
+
+    .hero {
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .animated-mouse {
+
+        .icon {
+          height: 40px;
+          width: 40px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .hero-content {
+      justify-content: center;
+    }
+
+    .title {
+      padding-bottom: 40px;
+    }
+  }
+
+  .calculator-section {
+    flex-direction: column;
+
+    .range-data {
+      margin-right: 0;
+      width: 100%;
+    }
+
+    .ribbon {
+      width: 100%;
+    }
+  }
+
+  .no-more-content {
+    flex-direction: column;
+
+    .no-more-item {
+      padding: 24px;
+      width: 100%;
+      margin-right: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 36px;
+      }
+    }
+  }
+
+  .thin-section-content {
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      padding-right: 0;
+      padding-bottom: 24px;
+      font-size: 16px;
+    }
+  }
+
+  .img-text-content {
+    flex-direction: column-reverse;
+
+    .img, .text {
+      width: 100%;
+    }
+
+    .text {
+      padding-bottom: 32px;
+
+      p {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .list-section {
+    .list-content {
+      flex-direction: column;
+
+      .list, .img {
+        width: 100%;
+      }
+
+      .img {
+        padding-top: 20px;
+      }
+    }
+
+    ul {
+      padding-bottom: 40px;
+      padding-top: 16px;
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .error-page {
+    .button-group {
+
+      .btn {
+        display: block;
+        margin: 12px 0;
+      }
+    }
+  }
+}
+

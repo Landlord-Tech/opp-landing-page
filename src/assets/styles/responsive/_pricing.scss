@@ -1,0 +1,50 @@
+@media screen and (max-width: 1280px) {
+  .pricing-list-content {
+    li {
+      padding: 36px;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      .title {
+        padding-bottom: 24px;
+      }
+
+      .sub-title {
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-list-section {
+    padding-bottom: 40px;
+    margin-top: -60px;
+  }
+  .pricing-list-content {
+    flex-direction: column;
+    max-width: 360px;
+    justify-content: center;
+    margin: 0 auto;
+
+    li {
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .Collapsible__contentInner {
+    padding: 0 20px 20px;
+    font-size: 16px;
+    border-radius: 0 0 16px 16px;
+  }
+
+  .trigger-inner {
+    padding: 20px 80px 20px 20px;
+  }
+}

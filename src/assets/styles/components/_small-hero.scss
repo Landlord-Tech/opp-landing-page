@@ -1,0 +1,41 @@
+.small-hero {
+  background-color: $color-primary;
+
+  &.xs {
+    .small-hero-content {
+      min-height: 204px;
+    }
+    h1 {
+      padding-bottom: 0;
+    }
+  }
+
+  &.md {
+    .small-hero-content {
+      min-height: 420px;
+      align-items: flex-start;
+
+      h1 {
+        padding-top: 60px;
+      }
+    }
+  }
+}
+
+.small-hero-content {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-hero-text {
+  max-width: 1060px;
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    padding-bottom: 20px;
+  }
+}
+

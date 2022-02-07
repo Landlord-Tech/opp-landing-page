@@ -1,0 +1,106 @@
+.btn {
+  display: inline-block;
+  border-radius: 48px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: .3s;
+  background-position: 100%;
+  background-size: 250px;
+
+  &.min-130 {
+    min-width: 130px;
+  }
+
+  &-sm {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    padding: 0 24px;
+  }
+
+  &-md {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    padding: 0 40px;
+  }
+
+  &-lg {
+    height: 61px;
+    line-height: 61px;
+    font-size: 24px;
+    padding: 0 40px;
+  }
+  &-in, &-fb, &-twitter {
+    color: $color-white;
+    font-weight: 500;
+    font-size: 20px;
+
+    .social-text {
+      margin-left: 8px;
+    }
+  }
+  &-in {
+    background-color: #0E76A8;
+  }
+  &-fb {
+    background-color: #3B5998;
+  }
+  &-twitter {
+    background-color: #00ACEE;
+  }
+  &.primary {
+    background-image: $color-gradient;
+
+    &:hover {
+      background-position: -100%;
+    }
+  }
+  &.secondary {
+    background-image: $color-light-gradient;
+
+    &:hover {
+      background-position: -100%;
+    }
+  }
+  &.secondary-dark {
+    background-image: $color-dark-gradient;
+    color: $color-white;
+
+    &:hover {
+      background-image: $color-dark-gradient-hover;
+    }
+  }
+  .with-border {
+    border: 1px solid $color-primary;
+  }
+}
+.no-style {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.go-top-btn {
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  height: 56px;
+  background-color: $color-primary;
+  border-radius: 64px;
+  border: 1px solid $color-white;
+  width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  filter: drop-shadow(0px 0px 12px rgba(0, 0, 0, 0.1));
+
+  &.fade-in {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+

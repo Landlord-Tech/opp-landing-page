@@ -1,0 +1,131 @@
+
+@media screen and (max-width: 1280px) {
+  .header-content {
+    padding: 12px 0;
+  }
+  .logo {
+    max-width: 148px;
+    width: 100%;
+  }
+  .header-nav-list {
+    > li {
+      font-size: 16px;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      &:not(:last-child) {
+        padding-right: 12px;
+      }
+    }
+    .get-started-btn {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    &.opened {
+      .header-nav {
+        visibility: visible;
+        opacity: 1;
+        height: calc(100vh - 65px);
+        overflow: auto;
+      }
+    }
+  }
+  .dark-header {
+    .header-nav {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .login-btn {
+      background: $color-light-gradient;
+      border: 1px solid $color-primary;
+    }
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 24px 0;
+    box-shadow: inset 0 7px 12px -7px rgb(0 0 0 / 0.1)
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+
+    >li {
+      width: 100%;
+      font-size: 18px;
+
+      &:not(:last-child) {
+        padding-right: 0;
+        margin-bottom: 28px;
+      }
+      &.with-dropdown {
+
+        &:hover {
+          .dropdown-content {
+            opacity: inherit;
+            visibility: inherit;
+          }
+        }
+
+        .dropdown-content {
+          position: static;
+          background-color: transparent;
+          color: $color-white;
+          padding: 0;
+          height: 0;
+          display: none;
+
+
+          &.opened {
+            display: block;
+            height: 100%;
+            visibility: visible;
+            opacity: 1;
+          }
+
+          li {
+            &:first-child {
+              margin-top: 12px;
+            }
+          }
+
+        }
+
+        .dropdown-btn {
+          display: block;
+        }
+      }
+    }
+
+
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-button-group {
+    border-top: 1px solid $color-primary;
+    padding: 0 20px;
+
+    .btn {
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+}

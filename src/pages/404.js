@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,8 +7,32 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import { useLocation } from "@reach/router"
 
-const NotFoundPage = props => {
+const NotFoundPage = () => {
   const { pathname } = useLocation()
+
+  useEffect(() => {
+    if (
+      pathname.includes([
+        "tenants",
+        "landlords",
+        "calculator-no-pets-allowed",
+        "calculator-pets-allowed",
+        "pricing",
+        "resources/emotional-support-animals-service-animals-and-pets-whats-the-difference",
+        "resources/considerations-tenants-make-when-choosing-a-rental",
+        "resources/the-opportunity-cost-of-not-verifying-tenant-esa-etters",
+        "resources/protecting-your-rental-property-from-pet-damage",
+        "resources/the-true-cost-of-having-a-bad-pet-policy",
+        "resources/why-pet-fees-are-an-essential-landlord-strategy",
+        "resources/five-ways-to-keep-your-landscape-looking-great-when-you-have-pet-owning-tenants",
+        "resources/what-landlords-need-to-know-about-esas-in-2021",
+        "resources/the-landlords-guide-to-tenants-with-pets/",
+      ])
+    ) {
+      window.location = `https://test.com/${pathname}`
+    }
+  }, [pathname])
+
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: { title: { eq: "notFound" } }) {
@@ -28,29 +52,6 @@ const NotFoundPage = props => {
     }
   `)
 
-  const redirectedPath1 = pathname.includes(
-    "what-landlords-need-to-know-about-esas-in-2021"
-  )
-  const redirectedPath2 = pathname.includes(
-    "the-landlords-guide-to-tenants-with-pets"
-  )
-
-  const [loading, setLoading] = React.useState(true)
-
-  React.useEffect(() => {
-    if (!redirectedPath1 && !redirectedPath2) {
-      setLoading(false)
-    }
-    if (redirectedPath1) {
-      window.location =
-        "https://ourpetpolicy.com/resources/what-landlords-need-to-know-about-esas-in-2021/"
-    }
-    if (redirectedPath2) {
-      window.location =
-        "https://ourpetpolicy.com/resources/the-landlords-guide-to-tenants-with-pets/"
-    }
-  }, [])
-
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
 
@@ -62,7 +63,7 @@ const NotFoundPage = props => {
     secondaryBtn,
   } = frontmatter
 
-  return !loading ? (
+  return (
     <Layout className="landing">
       <Seo title="404: Not found" />
       <section className="hero error-page">
@@ -93,7 +94,7 @@ const NotFoundPage = props => {
         </div>
       </section>
     </Layout>
-  ) : null
+  )
 }
 
 export default NotFoundPage

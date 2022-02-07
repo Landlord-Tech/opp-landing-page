@@ -88,20 +88,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `withPetCalculator`,
-        path: `${__dirname}/withPetCalculator`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `withNoPetCalculator`,
-        path: `${__dirname}/withNoPetCalculator`,
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: `${__dirname}/src/images`,

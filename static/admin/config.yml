@@ -56,6 +56,26 @@ collections:
               required: false,
             }
 
+  - name: faq
+    label: faq
+    folder: faq
+    preview_path: /
+    editor:
+      preview: false
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
+      - { name: heroHeading, label: Hero Heading }
+      - { name: heroSubhead, label: Hero Subhead }
+      - { name: faqHeading, label: FAQ Heading }
+      - name: faqList
+        label: Pricing List
+        widget: list
+        fields:
+          - { name: faqQuestion, label: FAQ question }
+          - { name: faqAnswer, label: FAQ answer }
+
   - name: blogList
     label: blogList
     folder: blogList

@@ -49,7 +49,7 @@ const Footer = () => {
           </li>
           <li className="footer-top-col">
             <h4 className="h4">
-              <Link to={"/pricing/#faq"}>FAQ</Link>
+              <Link to={"/faq"}>FAQ</Link>
             </h4>
             <h4 className="h4">
               <Link to={"/resources/"}>Resources</Link>

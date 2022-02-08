@@ -1,12 +1,9 @@
 backend:
-    name: git-gateway
+  name: git-gateway
 #  name: gitlab
 #  repo: ourpetpolicy/our-pet-policy-landing-page
 
-
 #publish_mode: editorial_workflow
-site_url: https://calculator.ourpetpolicy.com/
-
 
 media_folder: static/assets
 public_folder: /assets
@@ -21,21 +18,43 @@ collections:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: category, label: Category }
-      - { name: excerpt, label: Excerpt, widget: text, pattern: ['^.{150,500}$', "The Excerpt should contain from 150
-      to 500 characters."] }
+      - { name: excerpt, label: Excerpt, widget: text, pattern: [
+              "^.{150,500}$",
+              "The Excerpt should contain from 150
+              to 500 characters.",
+            ] }
       - { name: heroHeading, label: Hero heading }
       - { name: heroImg, label: Hero image, widget: image }
       - { name: body, label: Body, widget: markdown }
-      - { name: social, label: Social section, widget: boolean, required: false }
+      - {
+          name: social,
+          label: Social section,
+          widget: boolean,
+          required: false,
+        }
       - label: Promo section
         name: promoSection
         widget: object
         fields:
           - { name: promoTitle, label: Promo section title, required: false }
-          - { name: promoText, label: Promo section text, widget: text, required: false }
+          - {
+              name: promoText,
+              label: Promo section text,
+              widget: text,
+              required: false,
+            }
           - { name: promoBtn, label: Promo section button, required: false }
-          - { name: promoBtnUrl, label: Promo section button url, required: false }
-          - { name: promo, label: Promo section, widget: boolean, required: false }
+          - {
+              name: promoBtnUrl,
+              label: Promo section button url,
+              required: false,
+            }
+          - {
+              name: promo,
+              label: Promo section,
+              widget: boolean,
+              required: false,
+            }
 
   - name: blogList
     label: blogList
@@ -50,77 +69,6 @@ collections:
     label: homepage
     folder: homepage
     preview_path: /
-    editor:
-      preview: false
-    fields:
-      - { name: title, label: Title, widget: hidden }
-      - { name: metaTitle, label: Meta Title }
-      - { name: metaDescription, label: Meta Description, widget: text }
-      - { name: heading, label: heading }
-      - { name: primaryBtn, label: Primary Button }
-      - { name: secondaryBtn, label: Secondary Button }
-      - { name: hero, label: Hero image, widget: image }
-
-  - name: notFound
-    label: notFound
-    folder: notFound
-    preview_path: "404"
-    editor:
-      preview: false
-    fields:
-      - { name: title, label: Title, widget: hidden }
-      - { name: heroHeading, label: Hero heading }
-      - { name: heroText, label: Hero text, widget: text }
-      - { name: primaryBtn, label: Primary Button }
-      - { name: secondaryBtn, label: Secondary Button }
-      - { name: heroImg, label: Hero image, widget: image }
-
-  - name: landlords
-    label: landlords
-    folder: landlords
-    preview_path: landlords
-    editor:
-      preview: false
-    fields:
-      - { name: title, label: Title, widget: hidden }
-      - { name: metaTitle, label: Meta Title }
-      - { name: metaDescription, label: Meta Description, widget: text }
-      - { name: heroHeading, label: Hero heading }
-      - { name: heroText, label: Hero text, widget: text }
-      - { name: heroBtn, label: Hero button }
-      - { name: heroBtnUrl, label: Hero button url }
-      - { name: heroImg, label: Hero image, widget: image }
-      - { name: calculatorHeading, label: Calculator heading }
-      - { name: calculatorText, label: Calculator text, widget: text }
-      - { name: sec1Heading, label: Section 1 heading }
-      - { name: sec1Text, label: Section 1 text, widget: text }
-      - { name: sec1Img, label: Section 1 image, widget: image }
-      - { name: sec2Heading, label: Section 2 heading }
-      - { name: sec2Card1Heading, label: Section 2 - card 1 heading }
-      - { name: sec2Card1Text, label: Section 2 - card 1 text, widget: text }
-      - { name: sec2Card2Heading, label: Section 2 - card 2 heading }
-      - { name: sec2Card2Text, label: Section 2 - card 2 text, widget: text }
-      - { name: sec2Card3Heading, label: Section 2 - card 3 heading }
-      - { name: sec2Card3Text, label: Section 2 - card 3 text, widget: text }
-      - { name: sec3Text, label: Section 3 text, widget: text }
-      - { name: sec3Button, label: Section 3 button }
-      - { name: sec3ButtonUrl, label: Section 3 button url }
-      - { name: sec4Heading, label: Section 4 heading }
-      - { name: sec4Text, label: Section 4 text, widget: text }
-      - { name: sec4Img, label: Section 4 image, widget: image }
-      - { name: sec5Heading, label: Section 5 heading }
-      - { name: sec5Btn, label: Section 5 Button }
-      - { name: sec5BtnUrl, label: Section 5 button url }
-      - label: Section 5 List
-        name: sec5List
-        widget: list
-        fields:
-          - { label: List item, name: item }
-
-  - name: tenants
-    label: tenants
-    folder: tenants
-    preview_path: tenants
     editor:
       preview: false
     fields:
@@ -145,34 +93,19 @@ collections:
         fields:
           - { label: List item, name: item }
 
-  - name: pricing
-    label: pricing
-    folder: pricing
-    preview_path: pricing
+  - name: notFound
+    label: notFound
+    folder: notFound
+    preview_path: "404"
     editor:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
-      - { name: metaTitle, label: Meta Title }
-      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
-      - { name: heroText, label: Hero text, widget: markdown }
-      - label: Pricing List
-        name: pricingList
-        widget: list
-        fields:
-          - { label: Pricing plan, name: plan }
-          - { label: Contracts, name: contracts }
-          - { label: Price per month, name: price }
-          - { label: Price button, name: pricingBtn }
-          - { label: Price button url, name: pricingBtnUrl }
-      - { name: faqHeading, label: FAQ heading }
-      - label: FAQ List
-        name: faqList
-        widget: list
-        fields:
-          - { label: Question, name: question }
-          - { label: Answer, name: answer }
+      - { name: heroText, label: Hero text, widget: text }
+      - { name: primaryBtn, label: Primary Button }
+      - { name: secondaryBtn, label: Secondary Button }
+      - { name: heroImg, label: Hero image, widget: image }
 
   - name: contact
     label: contact
@@ -196,105 +129,7 @@ collections:
           - label: Contact icon
             name: icon
             widget: select
-            options: [ phone, cellphone, email, fax, skype, location ]
-
-  - name: withPetCalculator
-    label: pet allowed calculator
-    folder: withPetCalculator
-    preview_path: calculator-pets-allowed
-    editor:
-      preview: false
-    fields:
-      - { name: title, label: Title, widget: hidden }
-      - { name: metaTitle, label: Meta Title }
-      - { name: metaDescription, label: Meta Description, widget: text }
-      - { name: heroHeading, label: Page title }
-      - { name: sec1Heading, label: Calculator intro heading }
-      - { name: sec1SubHeading1, label: Calculator intro subheading 1 }
-      - { name: sec1Text1, label: Calculator intro text 1, widget: text }
-      - { name: sec1Desc, label: Calculator intro description, widget: markdown }
-      - { name: sec2Heading, label: Pet Rent heading }
-      - { name: sec2SubHeading1, label: Pet Rent subheading 1 }
-      - { name: sec2Text1, label: Pet Rent text 1, widget: text }
-      - { name: sec2SubHeading2, label: Pet Rent subheading 2 }
-      - { name: sec2Text2, label: Pet Rent text 2, widget: text }
-      - { name: sec2SubHeading3, label: Pet Rent subheading 3 }
-      - { name: sec2Text3, label: Pet Rent text 3, widget: text }
-      - { name: sec2Desc, label: Pet Rent description, widget: markdown }
-      - { name: sec3Heading, label: Pet Deposits heading }
-      - { name: sec3SubHeading1, label: Pet Deposits subheading 1 }
-      - { name: sec3Text1, label: Pet Deposits text 1, widget: text }
-      - { name: sec3SubHeading2, label: Pet Deposits subheading 2 }
-      - { name: sec3Text2, label: Pet Deposits text 2, widget: text }
-      - { name: sec3Desc, label: Pet Deposits description, widget: markdown }
-      - { name: sec4Heading, label: Fees and Fines heading }
-      - { name: sec4SubHeading1, label: Fees and Fines subheading 1 }
-      - { name: sec4Text1, label: Fees and Fines text 1, widget: text }
-      - { name: sec4SubHeading2, label: Fees and Fines subheading 2 }
-      - { name: sec4Text2, label: Fees and Fines text 2, widget: text }
-      - { name: sec4SubHeading3, label: Fees and Fines subheading 3 }
-      - { name: sec4Text3, label: Fees and Fines text 3, widget: text }
-      - { name: sec4Desc, label: Fees and Fines description, widget: markdown }
-      - { name: sec5Heading, label: Time Saving heading }
-      - { name: sec5SubHeading1, label: Time Saving subheading 1 }
-      - { name: sec5Text1, label: Time Saving text 1, widget: text }
-      - { name: sec5SubHeading2, label: Time Saving subheading 2 }
-      - { name: sec5Text2, label: Time Saving text 2, widget: text }
-      - { name: sec5Desc, label: Time Saving description, widget: markdown }
-      - { name: sec6Heading, label: Summery heading }
-      - { name: sec6Desc, label: Summery description, widget: markdown }
-
-  - name: withNoPetCalculator
-    label: no pet allowed calculator
-    folder: withNoPetCalculator
-    preview_path: calculator-no-pets-allowed
-    editor:
-      preview: false
-    fields:
-      - { name: title, label: Title, widget: hidden }
-      - { name: metaTitle, label: Meta Title }
-      - { name: metaDescription, label: Meta Description, widget: text }
-      - { name: heroHeading, label: Page title }
-      - { name: sec1Heading, label: Calculator intro heading }
-      - { name: sec1SubHeading1, label: Calculator intro subheading 1 }
-      - { name: sec1Text1, label: Calculator intro text 1, widget: text }
-      - { name: sec1SubHeading2, label: Calculator intro subheading 2 }
-      - { name: sec1Text2, label: Calculator intro text 2, widget: text }
-      - { name: sec1Desc, label: Calculator intro description }
-      - { name: sec2Heading, label: Cost of pet damage heading }
-      - { name: sec2SubHeading1, label: Cost of pet damage subheading 1 }
-      - { name: sec2Text1, label: Cost of pet damage text 1, widget: text }
-      - { name: sec2SubHeading2, label: Cost of pet damage subheading 2 }
-      - { name: sec2Text2, label: Cost of pet damage text 2, widget: text }
-      - { name: sec2SubHeading3, label: Cost of pet damage subheading 3 }
-      - { name: sec2Text3, label: Cost of pet damage text 3, widget: text }
-      - { name: sec2Desc, label: Cost of pet damage description, widget: markdown }
-      - { name: sec3Heading, label: Lost Rent heading }
-      - { name: sec3SubHeading1, label: Lost Rent subheading 1 }
-      - { name: sec3Text1, label: Lost Rent text 1, widget: text }
-      - { name: sec3SubHeading2, label: Lost Rent subheading 2 }
-      - { name: sec3Text2, label: Lost Rent text 2, widget: text }
-      - { name: sec3SubHeading3, label: Lost Rent subheading 3 }
-      - { name: sec3Text3, label: Lost Rent text 3, widget: text }
-      - { name: sec3Desc, label: Lost Rent description }
-      - { name: sec4Heading, label: Fees and Fines heading }
-      - { name: sec4SubHeading1, label: Fees and Fines subheading 1 }
-      - { name: sec4Text1, label: Fees and Fines text 1, widget: text }
-      - { name: sec4SubHeading2, label: Fees and Fines subheading 2 }
-      - { name: sec4Text2, label: Fees and Fines text 2, widget: text }
-      - { name: sec4SubHeading3, label: Fees and Fines subheading 3 }
-      - { name: sec4Text3, label: Fees and Fines text 3, widget: text }
-      - { name: sec4Desc, label: Fees and Fines description }
-      - { name: sec5Heading, label: Time Saving heading }
-      - { name: sec5SubHeading1, label: Time Saving subheading 1 }
-      - { name: sec5Text1, label: Time Saving text 1, widget: text }
-      - { name: sec5SubHeading2, label: Time Saving subheading 2 }
-      - { name: sec5Text2, label: Time Saving text 2, widget: text }
-      - { name: sec5SubHeading3, label: Time Saving subheading 3 }
-      - { name: sec5Text3, label: Time Saving text 3, widget: text }
-      - { name: sec5Desc, label: Time Saving description }
-      - { name: sec6Heading, label: Summery heading }
-      - { name: sec6Desc, label: Summery description }
+            options: [phone, cellphone, email, fax, skype, location]
 
   - name: termsAndConditions
     label: terms and conditions

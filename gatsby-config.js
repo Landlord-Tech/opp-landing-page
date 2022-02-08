@@ -69,27 +69,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `landlords`,
-        path: `${__dirname}/landlords`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `tenants`,
-        path: `${__dirname}/tenants`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `pricing`,
-        path: `${__dirname}/pricing`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `contact`,
         path: `${__dirname}/contact`,
       },
@@ -106,20 +85,6 @@ module.exports = {
       options: {
         name: `termsAndConditions`,
         path: `${__dirname}/termsAndConditions`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `withPetCalculator`,
-        path: `${__dirname}/withPetCalculator`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `withNoPetCalculator`,
-        path: `${__dirname}/withNoPetCalculator`,
       },
     },
     {

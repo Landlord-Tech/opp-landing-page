@@ -1,7 +1,7 @@
 backend:
-  name: git-gateway
-#  name: gitlab
-#  repo: ourpetpolicy/our-pet-policy-landing-page
+  # name: git-gateway
+  name: github
+  repo: Landlord-Tech/opp-landing-page
 
 #publish_mode: editorial_workflow
 

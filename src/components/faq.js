@@ -12,13 +12,13 @@ const Faq = ({ data }) => {
             transitionTime={300}
             trigger={
               <div className="trigger-inner">
-                <h4 className="h4">{q.question}</h4>
+                <h4 className="h4">{q.faqQuestion}</h4>
                 <Icon icon="plus" className="plus" size={24} />{" "}
                 <Icon icon="minus" className="minus" size={24} />
               </div>
             }
           >
-            <p>{q.answer}</p>
+            <p>{q.faqAnswer}</p>
           </Collapsible>
         )
       })}

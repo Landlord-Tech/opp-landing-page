@@ -90,10 +90,11 @@ collections:
     label: homepage
     folder: homepage
     preview_path: /
+    create: true
     editor:
       preview: false
     fields:
-      - { name: title, label: Title, widget: hidden }
+      - { name: title, label: Title }
       - { name: metaTitle, label: Meta Title }
       - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }

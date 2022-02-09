@@ -1,5 +1,5 @@
 ---
-title: faq
+title: faqlist
 metaTitle: META TITL
 metaDescription: META DESCRIPTION
 heroHeading: HERO HEADING

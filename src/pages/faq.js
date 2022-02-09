@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Faq from "../components/faq"
 import Seo from "../components/seo"
 
-const Pricing = () => {
+const FAQ = () => {
   const data = useStaticQuery(graphql`
     {
       markdownRemark(frontmatter: { title: { eq: "faq" } }) {
@@ -58,4 +58,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing
+export default FAQ

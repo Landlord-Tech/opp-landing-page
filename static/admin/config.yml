@@ -2,6 +2,7 @@ backend:
   # name: git-gateway
   name: github
   repo: Landlord-Tech/opp-landing-page
+  branch: dev
 
 #publish_mode: editorial_workflow
 

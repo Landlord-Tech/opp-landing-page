@@ -1,5 +1,5 @@
 ---
-title: homepage-1
+title: homepage
 metaTitle: A Pet Policy Dashboard for Tenants that is Easy and Transparent
 metaDescription: Pet policy at your fingertips! 24/7 access to your pet policy,
   applications, dashboard, and more.

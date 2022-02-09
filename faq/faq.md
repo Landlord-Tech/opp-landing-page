@@ -2,7 +2,7 @@
 title: faq
 metaTitle: Pricing title
 metaDescription: Pricing description
-heroHeading: Professional pet policy residents in minutes
+heroHeading: Professional pet policy residents in minute
 heroSubhead: "When it comes to pets, let us do the heavy lifting for as little as $5/month "
 faqHeading: Frequently Asked Questions
 faqList:

@@ -1,7 +1,7 @@
 ---
 title: faq
 metaTitle: META TITLE
-metaDescription: META DESCRIPTION
+metaDescription: META DESCRIPTIONn
 heroHeading: HERO HEADING
 heroSubhead: HERO SUBHEAD
 faqHeading: faq

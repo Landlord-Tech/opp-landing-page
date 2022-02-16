@@ -83,49 +83,14 @@ const Header = ({ pathname, sticky, prodHeader }) => {
               </button>
               <nav className="header-nav">
                 <ul className="header-nav-list">
-                  <li className="with-dropdown">
-                    <Link activeClassName={"active-link"} to="/landlords/">
-                      Landlord
-                    </Link>
-                    <ul
-                      className={`dropdown-content ${
-                        openedDropdown ? "opened" : "desktop"
-                      }`}
-                    >
-                      <li>
-                        <Link
-                          activeClassName={"active-link"}
-                          to="/calculator-no-pets-allowed/"
-                        >
-                          ROI calculator
-                        </Link>
-                      </li>
-                      <li>
-                        <Link activeClassName={"active-link"} to="/pricing/">
-                          Pricing
-                        </Link>
-                      </li>
-                    </ul>
-                    <button
-                      className="no-style dropdown-btn"
-                      onClick={handleDropdownToggle}
-                    >
-                      <Icon
-                        icon={`${
-                          openedDropdown ? "arrow-top" : "arrow-bottom"
-                        }`}
-                        size={24}
-                      />
-                    </button>
-                  </li>
-                  <li>
-                    <Link activeClassName={"active-link"} to="/tenants/">
-                      Tenant
-                    </Link>
-                  </li>
                   <li>
                     <Link activeClassName={"active-link"} to="/resources/">
                       Resources
+                    </Link>
+                  </li>
+                  <li>
+                    <Link activeClassName={"active-link"} to="/faq/">
+                      FAQ
                     </Link>
                   </li>
                   <li>

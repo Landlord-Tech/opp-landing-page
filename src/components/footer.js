@@ -85,7 +85,7 @@ const Footer = () => {
         </ul>
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} OurPetPolicy. All rights reserved.{" "}
+            © {new Date().getFullYear()} Landlord Tech Inc. All rights reserved.{" "}
             <Link to="/terms-and-conditions" className="underline">
               Terms.
             </Link>{" "}

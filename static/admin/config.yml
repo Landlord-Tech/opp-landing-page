@@ -71,7 +71,7 @@ collections:
       - { name: heroSubhead, label: Hero Subhead }
       - { name: faqHeading, label: FAQ Heading }
       - name: faqList
-        label: Pricing List
+        label: FAQ List
         widget: list
         fields:
           - { name: faqQuestion, label: FAQ question }
@@ -82,6 +82,8 @@ collections:
     folder: blogList
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text }
       - { name: heroImg, label: Hero image, widget: image }

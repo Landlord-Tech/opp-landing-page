@@ -3,7 +3,7 @@ title: privacyPolicy
 heroHeading: Privacy Policy
 ---
 
-This Privacy Policy governs the manner in which Ultra Labs collects, uses, maintains and discloses information collected from users (each, a “User”) of any website that links to these Terms (the “Site”).
+This Privacy Policy governs the manner in which Landlord Tech Inc collects, uses, maintains and discloses information collected from users (each, a “User”) of any website that links to these Terms (the “Site”).
 
 **Personal identification information**
 
@@ -21,7 +21,7 @@ Our Site may use “cookies” to enhance User experience. User’s web browser 
 
 How we use collected information
 
-Ultra Labs may collect and use Users personal information for the following purposes:
+Landlord Tech Inc may collect and use Users personal information for the following purposes:
 
 - To run and operate our Site: We may need your information to display content on the Site correctly.
 - To improve customer service: Information you provide helps us respond to your customer service requests and support needs more efficiently.
@@ -94,7 +94,7 @@ Any data transferred from the EEA to the United States through our Site is compl
 
 **Changes to this privacy policy**
 
-Ultra Labs has the discretion to update this privacy policy at any time. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
+Landlord Tech Inc has the discretion to update this privacy policy at any time. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
 
 **Your acceptance of these terms**
 
@@ -104,7 +104,7 @@ By using this Site, you signify your acceptance of this policy. If you do not ag
 
 If you have any questions about this Privacy Policy, the practices of this Site, or your dealings with this Site, please contact our Data Protection Officer by filling out the [contact form](https://www.ourpetpolicy.com/contact-us/) or at the following address:
 
-Ultra Labs, LLC\
+Landlord Tech Inc\
 ATTN: Data Protection Officer\
 950 W. Bannock St\
 Suite 860\

@@ -71,7 +71,7 @@ collections:
       - { name: heroSubhead, label: Hero Subhead }
       - { name: faqHeading, label: FAQ Heading }
       - name: faqList
-        label: Pricing List
+        label: FAQ List
         widget: list
         fields:
           - { name: faqQuestion, label: FAQ question }

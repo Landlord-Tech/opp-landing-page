@@ -22,4 +22,7 @@ contactList:
     icon: phone
     ContactItem:
       - (208) 906-8886
+quickLinksList:
+  - quickLinkItemText: Pet Mapping Tool
+    quickLinkItemLURL: "#"
 ---

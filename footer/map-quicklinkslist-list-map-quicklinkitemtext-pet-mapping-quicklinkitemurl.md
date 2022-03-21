@@ -22,7 +22,7 @@ col2List:
     icon: phone
     listItem: (208) 906-8886
     listItemUrl: "#"
-col3TitleURL: "#"
+col3TitleURL: ""
 col3List:
   - col3ItemText: Pet Mapping Tool
     col3ItemURL: "#"

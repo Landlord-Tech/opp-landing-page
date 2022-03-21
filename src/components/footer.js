@@ -106,7 +106,6 @@ const Footer = () => {
           </li>
           <li className="footer-top-col">
             <h4 className="h4">
-              {col4Title}
               {col4TitleURL ? (
                 <Link to={col4TitleURL}>{col4Title}</Link>
               ) : (

@@ -6,15 +6,30 @@ import { StaticImage } from "gatsby-plugin-image"
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
-      markdownRemark(frontmatter: { title: { eq: "contact" } }) {
+      markdownRemark(frontmatter: { title: { eq: "footer" } }) {
         frontmatter {
-          title
-          heroHeading
-          heroText
-          sec1Heading
-          contactList {
-            ContactItem
+          col1List {
+            addressList
             icon
+          }
+          col2Title
+          col2TitleURL
+          col2List {
+            listItem
+            listItemUrl
+          }
+          col3Title
+          col3TitleURL
+          col3List {
+            listItem
+            icon
+            listItemUrl
+          }
+          col4Title
+          col4TitleURL
+          col4List {
+            listItem
+            listItemUrl
           }
         }
       }
@@ -23,9 +38,20 @@ const Footer = () => {
 
   const { markdownRemark } = data
   const { frontmatter } = markdownRemark
-  const { contactList } = frontmatter
+  const {
+    col1List,
+    col2Title,
+    col2TitleURL,
+    col2List,
+    col3Title,
+    col3TitleURL,
+    col3List,
+    col4Title,
+    col4TitleURL,
+    col4List,
+  } = frontmatter
 
-  const location = contactList[0].ContactItem
+  const location = col1List[0].addressList
 
   return (
     <footer className="footer">
@@ -40,7 +66,7 @@ const Footer = () => {
         </Link>
         <ul className="footer-top">
           <li className="footer-top-col with-icon">
-            <Icon icon={contactList[0].icon} size={24} />
+            <Icon icon={col1List[0].icon} size={24} />
             <h4>
               {location.map((line, index) => (
                 <p key={index}>{line}</p>
@@ -49,28 +75,51 @@ const Footer = () => {
           </li>
           <li className="footer-top-col">
             <h4 className="h4">
-              <Link to={"/faq"}>FAQ</Link>
+              <Link to={col2TitleURL}>{col2Title}</Link>
             </h4>
-            <h4 className="h4">
-              <Link to={"/resources/"}>Resources</Link>
-            </h4>
+            {col2List.map(({ listItem, listItemUrl }, i) => {
+              return (
+                <h4 className="h4">
+                  <Link to={listItemUrl}>{listItem}</Link>
+                </h4>
+              )
+            })}
           </li>
           <li className="footer-top-col">
             <h4 className="h4">
-              <Link to={"/contact-us/"}>Contact us</Link>
+              <Link to={col3TitleURL}>{col3Title}</Link>
             </h4>
             <ul className="footer-contact">
-              {contactList.slice(1, 3).map(({ ContactItem, icon }, index) => {
+              {col3List.map(({ listItem, listItemUrl, icon }, index) => {
                 return (
                   <li key={index}>
                     <Icon icon={icon} size={24} />
-                    {ContactItem.map((line, index) => (
-                      <p key={index}>{line}</p>
-                    ))}
+                    {listItemUrl ? (
+                      <Link to={listItemUrl}>{listItem}</Link>
+                    ) : (
+                      <p key={index}>{listItem}</p>
+                    )}
                   </li>
                 )
               })}
             </ul>
+          </li>
+          <li className="footer-top-col">
+            <h4 className="h4">
+              {col4Title}
+              {col4TitleURL ? (
+                <Link to={col4TitleURL}>{col4Title}</Link>
+              ) : (
+                <>{col4Title}</>
+              )}
+            </h4>
+            {col4List.map(({ listItem, listItemUrl }) => {
+              return (
+                <h4 className="h4">
+                  <Link to={listItemUrl}>{listItem}</Link>
+                </h4>
+              )
+            })}
           </li>
           <li className="footer-top-col">
             <a

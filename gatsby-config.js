@@ -90,6 +90,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `footer`,
+        path: `${__dirname}/footer`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `termsAndConditions`,
         path: `${__dirname}/termsAndConditions`,
       },

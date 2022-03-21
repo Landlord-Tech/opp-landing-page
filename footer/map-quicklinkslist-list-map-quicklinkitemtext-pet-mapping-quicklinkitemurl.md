@@ -1,4 +1,5 @@
 ---
+title: footer
 col1Title: FAQ
 col1TitleURL: /faq
 col1List:

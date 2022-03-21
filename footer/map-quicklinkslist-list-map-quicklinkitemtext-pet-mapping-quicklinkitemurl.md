@@ -1,31 +1,39 @@
 ---
 title: footer
-col1Title: FAQ
-col1TitleURL: /faq
 col1List:
   - col1ItemText: Resources
     col1ItemURL: /resources/
     listItem: Resources
     listItemUrl: /resources
-col2Title: Contact us
-col2TitleURL: /contact-us/
-col3Title: Quick Links
-quickLinksList:
-  - quickLinkItemText: Pet Mapping
-    quickLinkItemURL: "#"
+    addressList:
+      - 950 W Bannock Street,
+      - Suite 860
+      - Boise, ID 83702
+    icon: location
+col2Title: FAQ
+col2TitleURL: /faq/
 col2List:
   - col2ItemText: support@ourpetpolicy.com
     icon: email
-    listItem: support@ourpetpolicy.com
-    listItemUrl: "#"
-  - col2ItemText: (208) 906-8886
-    icon: phone
-    listItem: (208) 906-8886
-    listItemUrl: "#"
-col3TitleURL: ""
+    listItem: Resources
+    listItemUrl: /resources/
+col3Title: Contact us
+col3TitleURL: /contact-us/
+col4Title: Quick Links
+col1Title: FAQ
+col1TitleURL: /faq
+quickLinksList:
+  - quickLinkItemText: Pet Mapping
+    quickLinkItemURL: "#"
 col3List:
   - col3ItemText: Pet Mapping Tool
     col3ItemURL: "#"
-    listItem: Pet Mapping Tool
+    listItem: support@ourpetpolicy.com
+    listItemUrl: ""
+    icon: email
+  - listItem: (208) 906-8886
+    icon: phone
+col4List:
+  - listItem: Pet Mapping Tool
     listItemUrl: "#"
 ---

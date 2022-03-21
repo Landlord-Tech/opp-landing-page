@@ -25,4 +25,5 @@ contactList:
 quickLinksList:
   - quickLinkItemText: Pet Mapping Tool
     quickLinkItemLURL: "#"
+    quickLinkItemURL: "#"
 ---

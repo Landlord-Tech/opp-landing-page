@@ -155,6 +155,56 @@ collections:
             widget: select
             options: [phone, cellphone, email, fax, skype, location]
 
+  - name: footer
+    label: Footer
+    folder: footer
+    preview_path: footer
+    editor:
+      preview: false
+    fields:
+      - { name: title, label: Title, widget: hidden }
+      - label: Column 1 List
+        name: col1List
+        widget: list
+        fields:
+          - name: addressList
+            label: Address list
+            widget: list
+            field: { name: line, label: Line, widget: string }
+          - label: Icon
+            name: icon
+            widget: select
+            options: [phone, cellphone, email, fax, skype, location]
+
+      - { name: col2Title, label: Column 2 Title }
+      - { name: col2TitleURL, label: Column 2 Title URL, required: false }
+      - name: col2List
+        label: Column 2 List
+        widget: list
+        fields:
+          - { name: listItem, label: Column 2 Text }
+          - { name: listItemUrl, label: Column 2 URL }
+      - { name: col3Title, label: Column 3 Title }
+      - { name: col3TitleURL, label: Column 3 Title URL, required: false }
+      - name: col3List
+        label: Column 3 List
+        widget: list
+        fields:
+          - { name: listItem, label: QColumn 3 Text }
+          - { name: listItemUrl, required: false, label: Column 3 URL }
+          - label: Icon
+            name: icon
+            widget: select
+            options: [phone, cellphone, email, fax, skype, location]
+      - { name: col4Title, label: Column 4 Title }
+      - { name: col4TitleURL, label: Column 4 Title URL, required: false }
+      - name: col4List
+        label: Column 4 List
+        widget: list
+        fields:
+          - { name: listItem, label: QColumn 4 Text }
+          - { name: listItemUrl, label: Column 4 URL }
+
   - name: termsAndConditions
     label: terms and conditions
     folder: termsAndConditions

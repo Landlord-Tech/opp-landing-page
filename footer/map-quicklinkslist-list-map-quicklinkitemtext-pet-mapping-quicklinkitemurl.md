@@ -9,17 +9,20 @@ col1List:
     listItemUrl: /resources
 col2Title: Contact us
 col2TitleURL: /contact-us/
-col2List:
-  - col2ItemText: support@ourpetpolicy.com
-    icon: email
-    listItem: support@ourpetpolicy.com
-  - col2ItemText: (208) 906-8886
-    icon: phone
-    listItem: (208) 906-8886
 col3Title: Quick Links
 quickLinksList:
   - quickLinkItemText: Pet Mapping
     quickLinkItemURL: "#"
+col2List:
+  - col2ItemText: support@ourpetpolicy.com
+    icon: email
+    listItem: support@ourpetpolicy.com
+    listItemUrl: "#"
+  - col2ItemText: (208) 906-8886
+    icon: phone
+    listItem: (208) 906-8886
+    listItemUrl: "#"
+col3TitleURL: "#"
 col3List:
   - col3ItemText: Pet Mapping Tool
     col3ItemURL: "#"

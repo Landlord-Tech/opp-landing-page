@@ -1,10 +1,10 @@
 ---
 title: blogList
-metaTitle: Resources to Help any Landlord with their Pet Policy
+metaTitle: Resources to help you successfully rent with animals
 metaDescription: >
-  Ebooks, infographics, blogs, and more that will help you with your pet
-  policy.
+  Ebooks, infographics, blogs, and more to help with all of your pet and
+  assistance animal requests, accommodations, and needs when renting.
 heroHeading: Resources
-heroText: Empowering landlords and property owners with knowledge and tools
+heroText: Empowering residents with knowledge and tools for renting with pets
 heroImg: /assets/hawaii-cat.jpg
 ---

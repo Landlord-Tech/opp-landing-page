@@ -1,5 +1,6 @@
 import React from "react"
 import Collapsible from "react-collapsible"
+import ReactMarkdown from "react-markdown"
 import Icon from "./Icon"
 
 const Faq = ({ data }) => {
@@ -18,7 +19,7 @@ const Faq = ({ data }) => {
               </div>
             }
           >
-            <p>{q.faqAnswer}</p>
+            <ReactMarkdown>{q.faqAnswer}</ReactMarkdown>
           </Collapsible>
         )
       })}

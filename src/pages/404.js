@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import { useLocation } from "@reach/router"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const NotFoundPage = () => {
   const { pathname } = useLocation()
@@ -15,8 +15,6 @@ const NotFoundPage = () => {
     setLoading(true)
     if (
       [
-        "/tenants/",
-        "/tenants",
         "/calculator-no-pets-allowed/",
         "/calculator-no-pets-allowed",
         "/calculator-pets-allowed/",
@@ -44,6 +42,9 @@ const NotFoundPage = () => {
       )
     ) {
       window.location = `https://landlordtech.com/resources/what-landlords-need-to-know-about-esas-in-2022`
+      return
+    } else if (["/tenants/", "/tenants"].includes(pathname)) {
+      window.location = `https://ourpetpolicy.com`
       return
     } else {
       setLoading(false)

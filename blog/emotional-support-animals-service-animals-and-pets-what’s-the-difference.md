@@ -7,7 +7,7 @@ excerpt: Understanding the differences between an emotional support animal, a
   service animal, and a pet is essential to understanding how to properly
   accommodate, manage, and appreciate these animals and those who rely on them.
 heroHeading: Emotional Support Animals, Service Animals, and Pets. What’s the Difference?
-heroImg: /assets/dog-guilty.png
+heroImg: /assets/bigstock-banner-motocross-background-a-441037121.jpg
 social: true
 promoSection:
   promoTitle: We Manage Pets Better

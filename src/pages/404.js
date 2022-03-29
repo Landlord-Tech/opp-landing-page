@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import { Link } from "gatsby"
 import { useLocation } from "@reach/router"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const NotFoundPage = () => {
   const { pathname } = useLocation()
@@ -15,10 +15,6 @@ const NotFoundPage = () => {
     setLoading(true)
     if (
       [
-        "/tenants/",
-        "/tenants",
-        "/landlords/",
-        "/landlords",
         "/calculator-no-pets-allowed/",
         "/calculator-no-pets-allowed",
         "/calculator-pets-allowed/",
@@ -32,14 +28,27 @@ const NotFoundPage = () => {
         "/resources/the-true-cost-of-having-a-bad-pet-policy",
         "/resources/why-pet-fees-are-an-essential-landlord-strategy",
         "/resources/five-ways-to-keep-your-landscape-looking-great-when-you-have-pet-owning-tenants",
-        "/resources/what-landlords-need-to-know-about-esas-in-2021",
         "/resources/the-landlords-guide-to-tenants-with-pets/",
       ].includes(pathname)
     ) {
       window.location = `https://landlordtech.com${pathname}`
       return
+    } else if (["/landlords/", "/landlords"].includes(pathname)) {
+      window.location = `https://landlordtech.com`
+      return
+    } else if (
+      ["/resources/what-landlords-need-to-know-about-esas-in-2021"].includes(
+        pathname
+      )
+    ) {
+      window.location = `https://landlordtech.com/resources/what-landlords-need-to-know-about-esas-in-2022`
+      return
+    } else if (["/tenants/", "/tenants"].includes(pathname)) {
+      window.location = `https://ourpetpolicy.com`
+      return
+    } else {
+      setLoading(false)
     }
-    setLoading(false)
   }, [])
 
   const data = useStaticQuery(graphql`

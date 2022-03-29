@@ -98,6 +98,16 @@ const Header = ({ pathname, sticky, prodHeader }) => {
                       Contact us
                     </Link>
                   </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://landlordtech.com/"
+                      className=""
+                    >
+                      Landlords
+                    </a>
+                  </li>
                   <li className="nav-button-group">
                     <a
                       href={primaryBtnUrl}

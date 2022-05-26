@@ -81,7 +81,7 @@ Nobody wants there to be an emergency where medical records are needed. Circumst
 
 When they happen, though, the best thing you can do is to be able to access those vet records at a moment’s notice. This will help your vet quickly diagnose your animal and provide them with the emergency care they need.  And in an emergency, every second counts. 
 
-![](/assets/opp-blog-3.png)
+[![Demo](/assets/opp-blog-3.png "Demo")](https://landlordtech.com/request-demo/)
 
 **Vet Record Solutions: OurPetPolicy**
 

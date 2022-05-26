@@ -24,7 +24,7 @@ Anyone that has a pet knows how significant their role in our lives can be. It�
 
 With a steady rise in mental health awareness and a focus on providing the proper resources to those in need, emotional support animals (ESAs) have become an alternative solution in people’s lives replacing, or supporting, prescription medications and other forms of help. Also referred to as comfort animals or therapy animals, ESAs do not require any specific training and they can be any type of animal, according to the U.S. Department of Housing and Urban Development. It has been noted that people living with mental disabilities and mental illnesses find much-needed comfort and companionship from ESAs. ESAs have been said to alleviate certain symptoms, lessen loneliness, help with depression, anxiety, and even some phobias. 
 
-![](https://lh3.googleusercontent.com/krxrw1fHoM5L9ms3P0UGYGjtdc4znmbKS7GEaVfb3kh7GDAkp_HYjct-v9sWh6KxdgdkqbifeNls8u3tPtqgXBHqY-4f1d6o-XuYkKmxlHK_ABauSyGUEmsBMAJVN-mekT7kQx9d)
+![](/assets/1.png)
 
 Emotional support animals receive different accommodations than a pet in some housing instances, as they are not considered pets. When it comes to renting, under the Fair Housing Act, individuals with an Emotional Support Animal may request reasonable accommodations and waive a “no pet policy”. This means that if the housing has a No Pet Policy on their premise, the ESA is permitted to reside on the property regardless of the policy so long as the animal does not pose a direct threat to the health or safety of others. Since emotional support animals are not considered pets, they are considered assistive aids. People with ESAs are protected from being asked about the existence, nature, and extent of their disability so long as a letter indicating the need for an ESA is presented. An ESA letter, provided by a doctor or mental health professional, not only waives a no pet policy but also exempts the individual from paying any pet fees.
 
@@ -32,7 +32,7 @@ Emotional support animals receive different accommodations than a pet in some ho
 
 Service animals are those animals that have undergone specialized training to perform certain tasks or work in aid of people with disabilities, which might include physical, sensory, psychiatric, intellectual, or others as defined under [Title II and Title III of the ADA](https://adata.org/factsheet/service-animals).
 
-![](https://lh5.googleusercontent.com/Ce_-PuFX1Oo3ArfCXVWbl6fPEEk1bpsLSxS5d-ufH-2vnobd9p0MXhxwVeuN6AuwTncDp3Yv7KMHkZ7gKDnENRANqpV14AF0PDAQSmNWB7086znoDzYRADp6LPdpWYw-J2uNynVJ)
+![](/assets/2.png)
 
 Service animals are allowed in public facilities and private businesses where emotional support animals are not. A business or building with a “no pet policy” does not apply to service animals, and they are always allowed entry where the public, program participants, clients, customers, or invitees are allowed. Furthermore, any establishment is not allowed to question the individual about the nature of their disability.
 
@@ -47,7 +47,7 @@ Similar to an ESA, service animals are permitted to reside on a rental property 
 
 Pets, on the other hand, are considered animals that people keep just for the joy of their companionship and entertainment. However, unlike the above-mentioned service animals and emotional support animals, they do not receive any special considerations when it comes to the pet policies at rentals. If a landlord has a “No Pet Policy,” then a resident is not allowed to have a pet regardless of whether ESAs or Service Animals are accommodated. If pets are allowed at a rental, then pet-owning tenants must agree to the rental’s specific pet policies, which can include pet fees, pet deposits, and/or pet rent. 
 
-![](https://lh6.googleusercontent.com/5vfgLVkh9tSUoe8tR1wWv7ZaqJa4RvalOi5cVnSIRgorlvnzB_JRcqtsrmmO0YINhveesAOONMABr-OjrL3u7mRvlkkXOGOKe8iiKR3_y1ahR2USZnJX5E2MY1KrmMEPsOmJojBF)
+![](/assets/3.png)
 
 Service animals, emotional support animals, and pets are all extremely important as they provide support, comfort, and as noted, some can aid in critical tasks and functions during times of need. Unfortunately, the help that ESAs provide is being taken advantage of by many people looking to find loopholes in the system simply to avoid paying pet fees, deposits, and rent or to evade no-pets-allowed policies so they can reside at any rental property. This has become a huge problem for landlords, and for those that truly need the help of these animals. In a [2019](https://www.theguardian.com/lifeandstyle/2019/aug/12/fake-emotional-support-animals-service-dogs) report, the development of “ESA mills,” or for-profit organizations, that issue fake letters has caused the number of falsely registered animals to exponentially increase. People with genuine needs are now facing unjust scrutiny by those that have been adversely affected by fraudulent and false letters. Landlords aren’t able to collect the fees needed to effectively protect their properties from pet damage, repair costs, and pet liability. Unchecked, establishments and service providers have begun to resent legitimate assistance animals. This is an ever-growing issue that is being faced by so many in the community today.
 

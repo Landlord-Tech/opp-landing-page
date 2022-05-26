@@ -1,8 +1,8 @@
 ---
 title: homepage
-metaTitle: A Pet Policy Dashboard for Tenants that is Easy and Transparent
-metaDescription: Pet policy at your fingertips! 24/7 access to your pet policy,
-  applications, dashboard, and more.
+metaTitle: Pet Policies that Work | OurPetPolicy
+metaDescription: Everything you need to have a successful pet policy in rentals
+  nationwide. A pet policy platform that works.
 heroHeading: "Easy Step-by-Step platform for all of your animal's needs "
 heroText: "OurPetPolicy takes the guesswork out of your contract. You can review
   it, see all application steps, fees, instructions, and status all in one

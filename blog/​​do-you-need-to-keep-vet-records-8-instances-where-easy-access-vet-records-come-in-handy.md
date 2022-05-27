@@ -10,7 +10,7 @@ excerpt: We’ve all been in that situation where we’re checking out at the ve
   you. Unfortunately, you have no idea what to do with them.
 heroHeading: ​​Do You Need to Keep Vet Records? 8 Instances Where Easy-Access
   Vet Records Come in Handy
-heroImg: /assets/opp-blog-1.png
+heroImg: /assets/vet-records.png
 social: true
 promoSection:
   promoTitle: We Manage Pets Better
@@ -24,6 +24,8 @@ promoSection:
 We’ve all been in that situation where we’re checking out at the vet after a long, exhausting visit. You’ve finished paying and your veterinarian is handing you a paper record or says something about records being emailed to you. Unfortunately, you have no idea what to do with them.
 
 That’s likely why you’re reading this blog—to find out if keeping your vet records is a necessity or if you’re okay to simply throw them out. 
+
+![](/assets/opp-blog-1.png)
 
 We’re here to explain not only that keeping your vet records is a MUST, but also to give you some information on situations where vet records are needed. Here are 8 instances where easy-access vet records come in handy: 
 
@@ -40,8 +42,6 @@ Consider what happens when you take a trip to the doctor’s office: 
 If it’s your first time there, they ask you a bunch of questions about your medical history and have you fill out forms regarding those records. This helps them determine what illness you may have by narrowing down the possibilities. For example, if you’ve never been out of the country, it’s extremely unlikely you have something like Malaria. 
 
 Medical care works the same way with pets. Depending on what animals they’ve encountered and what vaccinations they have, their course of treatment can change. Having easy-access vet records can get them the proper care as quickly as possible.
-
-
 
 **\#3: If Your Pet Bites Somebody**
 
@@ -72,8 +72,6 @@ By keeping up with your vet records, you can easily track when that next booster
 Just like most other establishments, airlines are incredibly strict about taking animals onto their planes. To be able to do so, you are responsible for providing all relevant vet records in a timely manner. Fail to do so, and you could be denied permission to fly! Additionally, many places that you stay will require those records as well. This goes for places such as hotels, Air BnBs, etc. 
 
 For a smooth trip, we definitely recommend keeping your vet records within reach. 
-
-
 
 **\#8: In Case of Emergency**
 

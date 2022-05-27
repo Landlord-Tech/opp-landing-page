@@ -7,7 +7,7 @@ excerpt: Understanding the differences between an emotional support animal, a
   service animal, and a pet is essential to understanding how to properly
   accommodate, manage, and appreciate these animals and those who rely on them.
 heroHeading: Emotional Support Animals, Service Animals, and Pets. What’s the Difference?
-heroImg: /assets/4.jpeg
+heroImg: /assets/esa-pets-service-animal.png
 social: true
 promoSection:
   promoTitle: We Manage Pets Better
@@ -19,6 +19,8 @@ promoSection:
   promo: true
 ---
 Anyone that has a pet knows how significant their role in our lives can be. It’s no wonder that the two most common pets, dogs and cats, [numbered over 130 million in 2020](https://www.avma.org/resources-tools/reports-statistics/us-pet-ownership-statistics) in the US. Over the years, these furry friends have transformed into more than just household pets, they have become an integral part of many people’s physical and mental health. Understanding the differences between an emotional support animal, a service animal, and a pet is essential to understanding how to properly accommodate, manage, and appreciate these animals and those who rely on them.
+
+![](/assets/4.jpeg)
 
 #### Emotional Support Animals (ESAs)
 
@@ -47,9 +49,9 @@ Similar to an ESA, service animals are permitted to reside on a rental property 
 
 Pets, on the other hand, are considered animals that people keep just for the joy of their companionship and entertainment. However, unlike the above-mentioned service animals and emotional support animals, they do not receive any special considerations when it comes to the pet policies at rentals. If a landlord has a “No Pet Policy,” then a resident is not allowed to have a pet regardless of whether ESAs or Service Animals are accommodated. If pets are allowed at a rental, then pet-owning tenants must agree to the rental’s specific pet policies, which can include pet fees, pet deposits, and/or pet rent. 
 
-![](/assets/3.png)
-
 Service animals, emotional support animals, and pets are all extremely important as they provide support, comfort, and as noted, some can aid in critical tasks and functions during times of need. Unfortunately, the help that ESAs provide is being taken advantage of by many people looking to find loopholes in the system simply to avoid paying pet fees, deposits, and rent or to evade no-pets-allowed policies so they can reside at any rental property. This has become a huge problem for landlords, and for those that truly need the help of these animals. In a [2019](https://www.theguardian.com/lifeandstyle/2019/aug/12/fake-emotional-support-animals-service-dogs) report, the development of “ESA mills,” or for-profit organizations, that issue fake letters has caused the number of falsely registered animals to exponentially increase. People with genuine needs are now facing unjust scrutiny by those that have been adversely affected by fraudulent and false letters. Landlords aren’t able to collect the fees needed to effectively protect their properties from pet damage, repair costs, and pet liability. Unchecked, establishments and service providers have begun to resent legitimate assistance animals. This is an ever-growing issue that is being faced by so many in the community today.
+
+![](/assets/opp-blog.png)
 
 A University of the Pacific [article](https://scholarlycommons.pacific.edu/cgi/viewcontent.cgi?article=1363&context=uoplawreview) suggests that it may be necessary to put laws in place to address these loopholes in the FHA. However, it might take years for federal laws to be enacted while in the meantime, thousands are abusing the system. As a result, accommodating phony letters when there are legitimate people with disabilities and valid ESA letters out there deprive people who really need them while stigmatizing mental health. And as mentioned, property managers and landlords are unable to collect needed fees, while incurring pet damage and repair costs from poorly trained animals residing for free. Unfortunately, the [true cost](https://www.ourpetpolicy.com/resources/the-opportunity-cost-of-not-verifying-tenant-esa-etters) of these damages might be greater than most property managers and owners realize.  
 

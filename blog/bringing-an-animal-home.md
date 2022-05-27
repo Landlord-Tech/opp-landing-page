@@ -7,7 +7,7 @@ excerpt: "If you’re looking to adopt a new pet, you’re not alone. According 
   an article by Today’s Veterinary Business, more than 11 million households
   have brought home new pets during the pandemic. "
 heroHeading: Bringing An Animal Home
-heroImg: /assets/blog_bringing_an_animal_home.jpg
+heroImg: /assets/bringing-an-animal-home.png
 social: true
 promoSection:
   promoTitle: Your Resource for Renting with Animals

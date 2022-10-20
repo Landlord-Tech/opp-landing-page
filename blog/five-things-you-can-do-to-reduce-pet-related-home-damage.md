@@ -42,6 +42,8 @@ Once you bring your cat home for the first time, ensure there’s a scratching p
 
 ![](/assets/best_ways_to_reduce_pet_related_property_damage.png)
 
+**3. Spay/Neuter as Soon as Possible**
+
 Spaying and neutering your dogs and cats has many positive overall health effects. It can help reduce the risk of cancer in animals, prevent infections, and control overpopulation. It also has many positive behavioral effects as well. Without the natural hormonal urges, your pets will no longer feel the need to roam around, mount objects and people, or mark their territory with urine.
 
 For some animals, they may consider your house their territory, which can lead to unwanted elimination and pungent urine smells on walls, floors, and carpeting. Especially with cats, this smell can be very strong and require deep cleaning or full replacement of rugs or carpet. 

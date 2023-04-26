@@ -24,7 +24,7 @@ With nearly 70% of U.S. households owning a pet, living with an animal is a comm
 
 Whether you rent or own your home, destruction caused by dogs or cats can be costly and time consuming to fix. For those under lease agreements, there could also be additional expenses should the landlord or management company need to make repairs as a result of damage caused by your pet. No one wants their animal to be the one wreaking havoc. While professionally training your pet is an important step, there are also easy solutions to prevent damage from occurring in the first place.
 
-![](/assets/pet_related_home_damage_can_be_a_cause_for_concern.png)
+![Tenants renting with pets](/assets/pet_related_home_damage_can_be_a_cause_for_concern.png)
 
 Here are five of the best ways to reduce pet-related property damage and ensure you and your four-legged companion are living safely and happily at home.
 
@@ -40,7 +40,7 @@ Cats are genetically engineered to scratch. It helps them to sharpen their claws
 
 Once you bring your cat home for the first time, ensure there’s a scratching post and/or pad nearby. Some cats will prefer the standing post, while others will be more drawn toward a cardboard pad on the floor. If you find your cat is still marking up furnishings, try applying non-toxic, double-sided tape. Cats don’t like the sticky feeling of the tape and will avoid it in the future. Silicone nail coverings are also available to physically cover nails as a last resort. 
 
-![](/assets/best_ways_to_reduce_pet_related_property_damage.png)
+![Pet management in a rental property](/assets/best_ways_to_reduce_pet_related_property_damage.png)
 
 **3. Spay/Neuter as Soon as Possible**
 
@@ -56,7 +56,7 @@ Like humans, pets will look for something to occupy themselves when they’re bo
 
 There’s truth behind the phrase “let sleeping dogs lie.” The best way to ensure your pet isn’t tempted to cause a commotion and potentially damage something, is to tire them out. Regularly walking your dog or providing exercise opportunities for cats helps to ensure they have an appropriate way to release stimulation. A tired or napping dog cannot do any damage!
 
-![](/assets/ways_to_reduce_pet_related_property_damage.png)
+![Managing pets in a rental property](/assets/ways_to_reduce_pet_related_property_damage.png)
 
 **Bottom Line**
 

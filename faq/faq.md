@@ -1,7 +1,8 @@
 ---
 title: faq
-metaTitle: Pricing title
-metaDescription: Pricing description
+metaTitle: "Questions Tenants Have | OurPetPolicy "
+metaDescription: "Wondering about how pet policies protect you as a tenant?
+  Check out these commonly asked questions. "
 heroHeading: Professional pet policy residents in minute
 heroSubhead: "When it comes to pets, let us do the heavy lifting for as little as $5/month "
 faqHeading: Frequently Asked Questions

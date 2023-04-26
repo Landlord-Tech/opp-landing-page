@@ -1,6 +1,6 @@
 ---
 title: termsAndConditions
-heroHeading: Terms and Conditions
+heroHeading: Pet Management for Tenants | OurPetPolicy’s Terms
 ---
 
 Following are the terms and conditions or “Terms” that govern your use of any website that links to these Terms (the “Site”). By using or visiting the Site, you expressly agree to be bound by these Terms and all applicable laws and regulations governing the Site. Landlord Tech Inc, and its subsidiaries and/or affiliates (collectively, “we,” “us,” or “our”) reserve the right to change these Terms at any time, effective immediately upon posting or linking on the Site. If you violate these Terms, we may terminate your use of the Site, bar you from future use of the Site, and/or take appropriate legal action against you.

@@ -1,8 +1,8 @@
 ---
 title: homepage
-metaTitle: Pet Policies that Work | OurPetPolicy
-metaDescription: Everything you need to have a successful pet policy in rentals
-  nationwide. A pet policy platform that works.
+metaTitle: Pet Policies for Tenants | OurPetPolicy
+metaDescription: "Explore how you and your pet are protected by pet policies in
+  rentals with OurPetPolicy. "
 heroHeading: "Easy Step-by-Step platform for all of your animal's needs "
 heroText: "OurPetPolicy takes the guesswork out of your contract. You can review
   it, see all application steps, fees, instructions, and status all in one

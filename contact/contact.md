@@ -1,8 +1,8 @@
 ---
 title: contact
-heroHeading: Get in touch!
-heroText: We’d love to hear from you! Please contact us with questions,
-  suggestions, and feedback!
+heroHeading: Contact OurPetPolicy | Support for Tenants
+heroText: "Receive answers to your pet related questions by directly contacting
+  our tenant support team. "
 sec1Heading: Contact Information
 contactList:
   - icon: location

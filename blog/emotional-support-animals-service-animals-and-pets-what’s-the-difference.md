@@ -20,21 +20,17 @@ promoSection:
 ---
 Anyone that has a pet knows how significant their role in our lives can be. It’s no wonder that the two most common pets, dogs and cats, [numbered over 130 million in 2020](https://www.avma.org/resources-tools/reports-statistics/us-pet-ownership-statistics) in the US. Over the years, these furry friends have transformed into more than just household pets, they have become an integral part of many people’s physical and mental health. Understanding the differences between an emotional support animal, a service animal, and a pet is essential to understanding how to properly accommodate, manage, and appreciate these animals and those who rely on them.
 
-![](/assets/4.jpeg)
+![Pet management software for tenants and landlords](/assets/4.jpeg)
 
 #### Emotional Support Animals (ESAs)
 
 With a steady rise in mental health awareness and a focus on providing the proper resources to those in need, emotional support animals (ESAs) have become an alternative solution in people’s lives replacing, or supporting, prescription medications and other forms of help. Also referred to as comfort animals or therapy animals, ESAs do not require any specific training and they can be any type of animal, according to the U.S. Department of Housing and Urban Development. It has been noted that people living with mental disabilities and mental illnesses find much-needed comfort and companionship from ESAs. ESAs have been said to alleviate certain symptoms, lessen loneliness, help with depression, anxiety, and even some phobias. 
-
-![](/assets/1.png)
 
 Emotional support animals receive different accommodations than a pet in some housing instances, as they are not considered pets. When it comes to renting, under the Fair Housing Act, individuals with an Emotional Support Animal may request reasonable accommodations and waive a “no pet policy”. This means that if the housing has a No Pet Policy on their premise, the ESA is permitted to reside on the property regardless of the policy so long as the animal does not pose a direct threat to the health or safety of others. Since emotional support animals are not considered pets, they are considered assistive aids. People with ESAs are protected from being asked about the existence, nature, and extent of their disability so long as a letter indicating the need for an ESA is presented. An ESA letter, provided by a doctor or mental health professional, not only waives a no pet policy but also exempts the individual from paying any pet fees.
 
 #### Service Animals
 
 Service animals are those animals that have undergone specialized training to perform certain tasks or work in aid of people with disabilities, which might include physical, sensory, psychiatric, intellectual, or others as defined under [Title II and Title III of the ADA](https://adata.org/factsheet/service-animals).
-
-![](/assets/2.png)
 
 Service animals are allowed in public facilities and private businesses where emotional support animals are not. A business or building with a “no pet policy” does not apply to service animals, and they are always allowed entry where the public, program participants, clients, customers, or invitees are allowed. Furthermore, any establishment is not allowed to question the individual about the nature of their disability.
 

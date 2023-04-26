@@ -25,7 +25,7 @@ We’ve all been in that situation where we’re checking out at the vet after a
 
 That’s likely why you’re reading this blog—to find out if keeping your vet records is a necessity or if you’re okay to simply throw them out. 
 
-![](/assets/opp-blog-1.png)
+![Things to prepare when renting with pets](/assets/opp-blog-1.png)
 
 We’re here to explain not only that keeping your vet records is a MUST, but also to give you some information on situations where vet records are needed. Here are 8 instances where easy-access vet records come in handy: 
 
@@ -49,7 +49,7 @@ Having your pet bite someone is an absolute nightmare, and just because it happe
 
 Regardless of why it happened, though, you’re going to want to have those records at your disposal when/if it does. Without having records that state that your dog has vaccinations for things like rabies, you can find yourself fighting in civil court against a lawsuit or even in criminal court against negligence charges! 
 
-![](/assets/opp-blog-2.png)
+![Pet screening for rental properties](/assets/opp-blog-2.png)
 
 **\#4: Providing Vaccinations Records to Property Management** 
 

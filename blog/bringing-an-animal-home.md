@@ -40,7 +40,7 @@ Services, like [OurPetPolicy](https://ourpetpolicy.com/), are available to help 
 
 Now that you have had your pet application approved by your landlord using OurPetPolicy, it is time to bring your new friend home! Here are some tips to make the transition easier for your new family member as well as to ensure good behavior:
 
-![](/assets/bringing_an_animal_home1.jpg)
+![Pet application to rental property](/assets/bringing_an_animal_home1.jpg)
 
 **Socialize**
 

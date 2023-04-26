@@ -28,6 +28,8 @@ With a steady rise in mental health awareness and a focus on providing the prope
 
 Emotional support animals receive different accommodations than a pet in some housing instances, as they are not considered pets. When it comes to renting, under the Fair Housing Act, individuals with an Emotional Support Animal may request reasonable accommodations and waive a “no pet policy”. This means that if the housing has a No Pet Policy on their premise, the ESA is permitted to reside on the property regardless of the policy so long as the animal does not pose a direct threat to the health or safety of others. Since emotional support animals are not considered pets, they are considered assistive aids. People with ESAs are protected from being asked about the existence, nature, and extent of their disability so long as a letter indicating the need for an ESA is presented. An ESA letter, provided by a doctor or mental health professional, not only waives a no pet policy but also exempts the individual from paying any pet fees.
 
+![Emotional support animal addendum](/assets/pet-management-for-every-animal.jpeg)
+
 #### Service Animals
 
 Service animals are those animals that have undergone specialized training to perform certain tasks or work in aid of people with disabilities, which might include physical, sensory, psychiatric, intellectual, or others as defined under [Title II and Title III of the ADA](https://adata.org/factsheet/service-animals).
@@ -40,6 +42,8 @@ A business is only entitled to ask: 
 * What work or task has this animal been trained to perform?
 
 Similar to an ESA, service animals are permitted to reside on a rental property regardless of a no-pet rule so long as the animal does not pose a direct threat to the health or safety of others. 
+
+![Service animal addendum](/assets/platform-for-esas-service-animals-and-pets.jpeg)
 
 #### Pets
 

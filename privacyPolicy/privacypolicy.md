@@ -1,6 +1,6 @@
 ---
 title: privacyPolicy
-heroHeading: Privacy Policy
+heroHeading: OurPetPolicy Pet Management for Tenants | Privacy Policy
 ---
 
 This Privacy Policy governs the manner in which Landlord Tech Inc collects, uses, maintains and discloses information collected from users (each, a “User”) of any website that links to these Terms (the “Site”).

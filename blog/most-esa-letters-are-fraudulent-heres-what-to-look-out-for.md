@@ -27,7 +27,7 @@ According to some estimates, a staggering 70% of emotional support animal letter
 ![ESA letters verification ](/assets/fraud1.png)
 
 \
-Here are a few key things to look out for when finding a healthcare provider to certify your pet as an emotional support animal.
+Here are a few key things to look out for when finding a healthcare provider to certify your pet as an [emotional support animal](https://ourpetpolicy.com/resources/emotional-support-animals-service-animals-and-pets-whats-the-difference/).
 
 **Unlicensed Practitioners**
 

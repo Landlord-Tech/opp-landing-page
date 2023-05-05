@@ -25,7 +25,7 @@ If you’re looking to adopt a new pet, you’re not alone. According to an [art
 
 ![know the rules of pet ownership in rentals](/assets/rules_of_pet_ownership.jpg "know the rules of pet ownership in rentals")
 
-If you live in an apartment complex or any other kind of rental property, understanding what the pet policies are on-site is imperative. Although more and more rental properties are catering to the needs of residents by becoming pet-friendly, there are still several rules and restrictions to owning a pet in a rental that you need to be aware of such as:
+If you live in an apartment complex or any other kind of rental property, understanding what the pet policies are on-site is imperative. Although more and more rental properties are catering to the needs of residents by becoming pet-friendly, there are still several rules and [restrictions to owning a pet in a rental](https://ourpetpolicy.com/resources/common-breed-restrictions-for-renters-and-what-to-do-if-your-dog-is-turned-away/) that you need to be aware of such as:
 
 * Breed and weight restrictions
 * Pet damage policies
@@ -34,7 +34,7 @@ If you live in an apartment complex or any other kind of rental property, unders
 * Noise, aggression, and complaint policies
 * Pet rents, deposits, and/or fees
 
-Services, like [OurPetPolicy](https://ourpetpolicy.com/), are available to help make it easier for both you and your landlord to work together and establish a mutual resident-landlord relationship. OurPetPolicy allows residents to complete their animal application form, file veterinary records, and upload pictures of their animal for a landlord’s review and acceptance. Having a unified platform for residents and landlords is the first and most important step to creating a successful living environment. 
+Services, like [OurPetPolicy](https://ourpetpolicy.com/), are available to help make it easier for both you and your landlord to work together and establish a mutual resident-landlord relationship. OurPetPolicy allows residents to complete their animal application form, file [veterinary records](https://ourpetpolicy.com/resources/do-you-need-to-keep-vet-records-8-instances-where-easy-access-vet-records-come-in-handy/), and upload pictures of their animal for a landlord’s review and acceptance. Having a unified platform for residents and landlords is the first and most important step to creating a successful living environment. 
 
 **When You Bring Your New Friend Home**
 

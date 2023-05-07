@@ -38,7 +38,7 @@ Dogs that are crated early on also associate the crate with a safe space where t
 
 Cats are genetically engineered to scratch. It helps them to sharpen their claws and provides a form of exercise if they’re stuck inside all day. The key is to ensure that your cats are scratching the right things in the home (hint: not your bedframe or coffee table). 
 
-Once you bring your cat home for the first time, ensure there’s a scratching post and/or pad nearby. Some cats will prefer the standing post, while others will be more drawn toward a cardboard pad on the floor. If you find your cat is still marking up furnishings, try applying non-toxic, double-sided tape. Cats don’t like the sticky feeling of the tape and will avoid it in the future. Silicone nail coverings are also available to physically cover nails as a last resort. 
+Once you [bring your cat home](https://ourpetpolicy.com/resources/bringing-an-animal-home/) for the first time, ensure there’s a scratching post and/or pad nearby. Some cats will prefer the standing post, while others will be more drawn toward a cardboard pad on the floor. If you find your cat is still marking up furnishings, try applying non-toxic, double-sided tape. Cats don’t like the sticky feeling of the tape and will avoid it in the future. Silicone nail coverings are also available to physically cover nails as a last resort. 
 
 ![Pet management in a rental property](/assets/best_ways_to_reduce_pet_related_property_damage.png)
 

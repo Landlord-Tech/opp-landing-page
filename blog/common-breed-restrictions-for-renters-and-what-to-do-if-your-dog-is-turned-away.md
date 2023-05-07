@@ -26,7 +26,7 @@ As a renter or prospective renter, you’re already aware that there are a numbe
 
 For many landlords and property managers, pets can be a complicated subject. Some properties will not permit pets of any sort, while others will allow pets but impose deposits, fees, or specific restrictions to ensure a safe and hospitable environment for all tenants and staff.
 
-If you’re planning on housing a dog, it’s especially important to be mindful of any limitations that the owner or management company has in place. For example, dogs may be limited to certain sizes and weights, and vaccination or other veterinary records may be required before a pet application is approved.
+If you’re planning on housing a dog, it’s especially important to be mindful of any limitations that the owner or management company has in place. For example, dogs may be limited to certain sizes and weights, and vaccination or other [veterinary records](https://ourpetpolicy.com/resources/do-you-need-to-keep-vet-records-8-instances-where-easy-access-vet-records-come-in-handy/) may be required before a pet application is approved.
 
 Many times, height and weight restrictions can be flexible in that tenants can pay an additional deposit or higher monthly fees for heavier or larger dogs. However, there’s often one limitation that landlords hold firm on: breeds.
 
@@ -34,7 +34,7 @@ Many times, height and weight restrictions can be flexible in that tenants can p
 
 The most common reason why landlords would not permit certain breeds on property is safety. Breeds that show a propensity for aggression are more likely to cause bodily harm to other residents, building employees, community members, and neighboring pets they may run into inside or outside the property.
 
-Some larger dogs may also be more prone to destructive behavior. Breeds that are rowdy or like to scratch, claw, and dig can damage property and create a headache for maintenance and housekeeping staff in common areas.
+Some larger dogs may also be more prone to destructive behavior. Breeds that are rowdy or like to scratch, claw, and dig can [damage property](https://ourpetpolicy.com/resources/five-things-you-can-do-to-reduce-pet-related-home-damage/) and create a headache for maintenance and housekeeping staff in common areas.
 
 ![Pet rentals in properties](/assets/3.png)
 
@@ -80,4 +80,4 @@ While your Pit Bull may be the most loving dog in the neighborhood, that doesn�
 
   Before you find a new place to live, it’s important to be aware of any dog breed restrictions in place. If you are already living somewhere and planning on adopting or purchasing a dog, you should also take these breed restrictions seriously because any penalties specified in your lease may be costly.
 
-  You’ll find that most landlords will restrict breeds that they find to be aggressive or pose a risk to safety or property. While it’s best to avoid these breeds when looking for a new furry friend, there are some strategies you can try to convince your landlord to allow you to bring your pet home if they’re flexible.
+  You’ll find that most landlords will restrict breeds that they find to be aggressive or pose a risk to safety or property. While it’s best to avoid these breeds when looking for a new furry friend, there are some strategies you can try to convince your landlord to allow you to [bring your pet home](https://ourpetpolicy.com/resources/bringing-an-animal-home/) if they’re flexible.

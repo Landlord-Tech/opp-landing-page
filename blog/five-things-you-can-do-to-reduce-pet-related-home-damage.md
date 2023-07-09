@@ -58,7 +58,7 @@ There’s truth behind the phrase “let sleeping dogs lie.” The best way to e
 
 ![Managing pets in a rental property](/assets/ways_to_reduce_pet_related_property_damage.png)
 
-## **Bottom Line**
+### Bottom Line
 
 Household damage is virtually inevitable with dogs and cats around. It’s the price we pay as loving pet owners. However, that doesn’t mean we have to accept ongoing, costly damages in our home or apartment. With these strategies, you can help to mitigate that risk and ensure your pet remains happy in their environment. 
 

@@ -81,7 +81,7 @@ When they happen, though, the best thing you can do is to be able to access thos
 
 [![Demo](/assets/opp-blog-3.png "Demo")](https://landlordtech.com/request-demo/)
 
-## **Vet Record Solutions: OurPetPolicy**
+### Vet Record Solutions: OurPetPolicy
 
 We know that keeping track of both paper and electronic records can be difficult. Despite your best efforts, files can be deleted and papers can be thrown away by accident. With OurPetPolicy, however, you can take vet record management off your mind. 
 

@@ -30,7 +30,7 @@ If you’re planning on housing a dog, it’s especially important to be mindful
 
 Many times, height and weight restrictions can be flexible in that tenants can pay an additional deposit or higher monthly fees for heavier or larger dogs. However, there’s often one limitation that landlords hold firm on: breeds.
 
-**Reasons for Rental Breed Restrictions**
+### Reasons for Rental Breed Restrictions
 
 The most common reason why landlords would not permit certain breeds on property is safety. Breeds that show a propensity for aggression are more likely to cause bodily harm to other residents, building employees, community members, and neighboring pets they may run into inside or outside the property.
 
@@ -43,7 +43,7 @@ Another reason why an apartment may restrict breeds is due to insurance coverage
 
 Finally, local legislation may dictate what breeds may or may not be permitted. Many counties throughout the United States have banned the ownership of pit bulls, for example. In these instances, property owners must abide by local laws and refuse to house any illegal breeds.
 
-**Breeds Commonly Restricted at Rental Properties**
+### Breeds Commonly Restricted at Rental Properties
 
 It’s important to note that landlords can restrict any breed they want. While studies have shown that aggression cannot always be accurately predicted based solely on a dog’s breed, some landlords feel safer by issuing blanket policies that fully restrict all dogs of a certain breed without consideration for the individual animal’s behavior.
 
@@ -65,7 +65,7 @@ Wolfdogs or wolf-hybrid dogs are also commonly restricted from residential prope
 
 ![](/assets/4.png)
 
-**What to Do if You Own a Restricted Breed**
+### What to Do if You Own a Restricted Breed
 
 While your Pit Bull may be the most loving dog in the neighborhood, that doesn’t mean that you can house it if your complex or landlord has the breed on its restrictions list. However, if you have a flexible landlord, there are some actions you can take to help put them at ease that your pet is actually a friend, not a foe.
 
@@ -76,7 +76,7 @@ While your Pit Bull may be the most loving dog in the neighborhood, that doesn�
 
   ![Managing pets in rental properties](/assets/5.png)
 
-  **Bottom Line**
+  ### Bottom Line
 
   Before you find a new place to live, it’s important to be aware of any dog breed restrictions in place. If you are already living somewhere and planning on adopting or purchasing a dog, you should also take these breed restrictions seriously because any penalties specified in your lease may be costly.
 

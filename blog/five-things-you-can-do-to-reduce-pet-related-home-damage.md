@@ -28,13 +28,13 @@ Whether you rent or own your home, destruction caused by dogs or cats can be cos
 
 Here are five of the best ways to reduce pet-related property damage and ensure you and your four-legged companion are living safely and happily at home.
 
-**1. A Crated Pet Is a Safe Pet**
+### 1. A Crated Pet Is a Safe Pet
 
 There’s a misconception that crates are not humane ways to house dogs at home. As long as the dog can comfortably stand and move about in the crate, they are perfectly harmless. They can also be a great potty-training tool for puppies by helping them understand the difference between inside/outside and where and when it is appropriate to eliminate.
 
 Dogs that are crated early on also associate the crate with a safe space where they can retreat while you are away or if the house is too rowdy. And, of course, a locked crate ensures that your dog won’t fulfill a desire to cause any destruction inside the home while they are left unattended. 
 
-**2. Make Your Home Scratch-Resistant**
+### 2. Make Your Home Scratch-Resistant
 
 Cats are genetically engineered to scratch. It helps them to sharpen their claws and provides a form of exercise if they’re stuck inside all day. The key is to ensure that your cats are scratching the right things in the home (hint: not your bedframe or coffee table). 
 
@@ -42,26 +42,26 @@ Once you [bring your cat home](https://ourpetpolicy.com/resources/bringing-an-an
 
 ![Pet management in a rental property](/assets/best_ways_to_reduce_pet_related_property_damage.png)
 
-**3. Spay/Neuter as Soon as Possible**
+### 3. Spay/Neuter as Soon as Possible
 
 Spaying and neutering your dogs and cats has many positive overall health effects. It can help reduce the risk of cancer in animals, prevent infections, and control overpopulation. It also has many positive behavioral effects as well. Without the natural hormonal urges, your pets will no longer feel the need to roam around, mount objects and people, or mark their territory with urine.
 
 For some animals, they may consider your house their territory, which can lead to unwanted elimination and pungent urine smells on walls, floors, and carpeting. Especially with cats, this smell can be very strong and require deep cleaning or full replacement of rugs or carpet. 
 
-**4. Cure Boredom While You’re Away**
+### 4. Cure Boredom While You’re Away
 
 Like humans, pets will look for something to occupy themselves when they’re bored and left alone. Always be sure that you provide them with something to cure their boredom such as a puzzle or chew toy before you leave for a while. Otherwise, they will look to chew on household objects instead. Also, be sure to allow them to use the restroom right before you leave or allocate a designated pad or space in the home if the animal is still being potty trained.
 
-**5. Make Exercise a Priority**
+### 5. Make Exercise a Priority
 
 There’s truth behind the phrase “let sleeping dogs lie.” The best way to ensure your pet isn’t tempted to cause a commotion and potentially damage something, is to tire them out. Regularly walking your dog or providing exercise opportunities for cats helps to ensure they have an appropriate way to release stimulation. A tired or napping dog cannot do any damage!
 
 ![Managing pets in a rental property](/assets/ways_to_reduce_pet_related_property_damage.png)
 
-**Bottom Line**
+## **Bottom Line**
 
 Household damage is virtually inevitable with dogs and cats around. It’s the price we pay as loving pet owners. However, that doesn’t mean we have to accept ongoing, costly damages in our home or apartment. With these strategies, you can help to mitigate that risk and ensure your pet remains happy in their environment. 
 
-[![Sign Up](/assets/free_pet_ownership_training.png "Sign Up")](https://app.ourpetpolicy.com/)
-
 Ready for the next step? Training your pet to perform the right behaviors is also a great way to prevent them from causing damage in the home. [OurPetPolicy](https://ourpetpolicy.com/) offers a free responsible pet ownership training for those signed up on the platform.
+
+[![Sign Up](/assets/free_pet_ownership_training.png "Sign Up")](https://app.ourpetpolicy.com/)

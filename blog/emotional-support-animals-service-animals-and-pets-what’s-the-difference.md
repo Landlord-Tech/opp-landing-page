@@ -22,7 +22,7 @@ Anyone that has a pet knows how significant their role in our lives can be. It�
 
 ![Pet management software for tenants and landlords](/assets/4.jpeg)
 
-#### Emotional Support Animals (ESAs)
+### Emotional Support Animals (ESAs)
 
 With a steady rise in mental health awareness and a focus on providing the proper resources to those in need, emotional support animals (ESAs) have become an alternative solution in people’s lives replacing, or supporting, prescription medications and other forms of help. Also referred to as comfort animals or therapy animals, ESAs do not require any specific training and they can be any type of animal, according to the U.S. Department of Housing and Urban Development. It has been noted that people living with mental disabilities and mental illnesses find much-needed comfort and companionship from ESAs. ESAs have been said to alleviate certain symptoms, lessen loneliness, help with depression, anxiety, and even some phobias. 
 
@@ -30,7 +30,7 @@ Emotional support animals receive different accommodations than a pet in some ho
 
 ![Emotional support animal addendum](/assets/pet-management-for-every-animal.jpeg)
 
-#### Service Animals
+### Service Animals
 
 Service animals are those animals that have undergone specialized training to perform certain tasks or work in aid of people with disabilities, which might include physical, sensory, psychiatric, intellectual, or others as defined under [Title II and Title III of the ADA](https://adata.org/factsheet/service-animals).
 
@@ -45,7 +45,7 @@ Similar to an ESA, service animals are permitted to reside on a rental property 
 
 ![Service animal addendum](/assets/platform-for-esas-service-animals-and-pets.jpeg)
 
-#### Pets
+### Pets
 
 Pets, on the other hand, are considered animals that people keep just for the joy of their companionship and entertainment. However, unlike the above-mentioned service animals and emotional support animals, they do not receive any special considerations when it comes to the pet policies at rentals. If a landlord has a “No Pet Policy,” then a resident is not allowed to have a pet regardless of whether ESAs or Service Animals are accommodated. If pets are allowed at a rental, then pet-owning tenants must agree to the rental’s specific pet policies, which can include pet fees, pet deposits, and/or pet rent. 
 

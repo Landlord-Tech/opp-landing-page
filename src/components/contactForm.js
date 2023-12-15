@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import Icon from "./Icon"
+import React, { useState } from "react";
+import Icon from "./Icon";
 
 const ContactForm = () => {
   const [formState, setFormState] = useState({
@@ -7,48 +7,34 @@ const ContactForm = () => {
     email: "",
     phone: "",
     message: "",
-  })
+  });
 
-  const [success, setSuccess] = useState(false)
+  const [success, setSuccess] = useState(false);
 
-  const encode = data => {
+  const encode = (data) => {
     return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setFormState({
       ...formState,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
-  /*for rest call*/
-  /*  const handleSubmit = (event) => {
-      console.log({ formState })
-      fetch('https://ejb052f7f6.execute-api.us-west-2.amazonaws.com/Prod/email', {
-        method: 'POST',
-        body: JSON.stringify(formState)
-      }).then(response => {
-        console.log(response)
-        return response.json();
-      }).catch(error => console.log(error));
-
-      event.preventDefault();
-    }*/
-
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-us", ...formState }),
     })
       .then(() => setSuccess(true))
-      .catch(error => alert(error))
+      .catch((error) => alert(error));
 
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   return (
     <div className="contact-form">
@@ -69,6 +55,7 @@ const ContactForm = () => {
         >
           <input type="hidden" name="form-name" value="contact-us" />
           <div className="input-field">
+            <label htmlFor="name">Full Name</label>
             <input
               type="text"
               id="name"
@@ -79,8 +66,8 @@ const ContactForm = () => {
               required={true}
             />
           </div>
-
           <div className="input-field">
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -91,8 +78,8 @@ const ContactForm = () => {
               required={true}
             />
           </div>
-
           <div className="input-field">
+            <label htmlFor="phone">Phone</label>
             <input
               type="phone"
               id="phone"
@@ -104,6 +91,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="input-field">
+            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
@@ -113,14 +101,13 @@ const ContactForm = () => {
               required={true}
             />
           </div>
-
           <button className="btn btn-md primary min-130" type="submit">
             Submit
           </button>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;

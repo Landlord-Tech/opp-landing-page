@@ -1,6 +1,6 @@
 ---
 title: blogList
-metaTitle: Resources to help you successfully rent with animals
+metaTitle: Resources to help you successfully rent with animals | OurPetPolicy
 metaDescription: >
   Ebooks, infographics, blogs, and more to help with all of your pet and
   assistance animal requests, accommodations, and needs when renting.

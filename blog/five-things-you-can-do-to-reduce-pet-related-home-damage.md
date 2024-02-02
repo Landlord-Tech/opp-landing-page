@@ -64,4 +64,4 @@ Household damage is virtually inevitable with dogs and cats around. It’s the p
 
 Ready for the next step? Training your pet to perform the right behaviors is also a great way to prevent them from causing damage in the home. [OurPetPolicy](https://ourpetpolicy.com/) offers a free responsible pet ownership training for those signed up on the platform.
 
-[![Sign Up](/assets/free_pet_ownership_training.png "Sign Up")](https://app.ourpetpolicy.com/)
+[![Sign Up](/assets/free_pet_ownership_training.png "Sign Up")](https://resident.ourpetpolicy.com/signup)

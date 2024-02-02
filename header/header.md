@@ -1,7 +1,7 @@
 ---
 title: header
 primaryBtn: Get started
-primaryBtnUrl: https://app.ourpetpolicy.com/sign-up
+primaryBtnUrl: https://resident.ourpetpolicy.com/signup
 secondaryBtn: Login
-secondaryBtnUrl: https://app.ourpetpolicy.com/
+secondaryBtnUrl: https://resident.ourpetpolicy.com/login
 ---

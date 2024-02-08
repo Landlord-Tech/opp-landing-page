@@ -85,4 +85,4 @@ When they happen, though, the best thing you can do is to be able to access thos
 
 We know that keeping track of both paper and electronic records can be difficult. Despite your best efforts, files can be deleted and papers can be thrown away by accident. With OurPetPolicy, however, you can take vet record management off your mind. 
 
-OurPetPolicy is a platform that provides a one-stop spot for all of your landlord-tenant contract details and gives you a reliable place to store those vet records you’re always fretting over. To learn more, visit our [FAQ page](https://ourpetpolicy.com/faq/) or [Get Started](https://resident.ourpetpolicy.com/signup) today!
+OurPetPolicy is a platform that provides a one-stop spot for all of your landlord-tenant contract details and gives you a reliable place to store those vet records you’re always fretting over. To learn more, visit our [FAQ page](https://ourpetpolicy.com/faq/) or [Get Started](https://app.ourpetpolicy.com/?signup) today!

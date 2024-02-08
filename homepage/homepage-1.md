@@ -19,7 +19,7 @@ sec1Img: /assets/clay-macbook-pro-15-with-touch-bar-front-view-mockup-recovered.
 sec2Heading: "Pawsibilities Unleashed . . . "
 sec2Img: /assets/2-recovered.png
 sec2Btn: Give it a try
-sec2BtnUrl: https://resident.ourpetpolicy.com/signup
+sec2BtnUrl: https://app.ourpetpolicy.com/?signup
 sec2List:
   - item: Customizable Contracts & Master Policies
   - item: ESA Verification Process

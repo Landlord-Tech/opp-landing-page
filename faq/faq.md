@@ -3,9 +3,10 @@ title: faq
 metaTitle: "Questions Tenants Have | OurPetPolicy "
 metaDescription: "Wondering about how pet policies protect you as a tenant?
   Check out these commonly asked questions. "
-heroHeading: Professional pet policy residents in minute
-heroSubhead: "When it comes to pets, let us do the heavy lifting for as little as $5/month "
-faqHeading: Frequently Asked Questions
+heroHeading: Frequently Asked Questions
+heroSubhead: "Wondering about how pet policies protect you as a tenant? Check
+  out these commonly asked questions. "
+faqHeading: Questions Tenants Have
 faqList:
   - faqQuestion: What if I have a question about how to use this platform?
     faqAnswer: If you have questions about how to use this platform click here to

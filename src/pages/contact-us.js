@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import ContactForm from "../components/contactForm"
 import Icon from "../components/Icon"
 import { graphql, useStaticQuery } from "gatsby"
+import Seo from "../components/seo"
 
 const ContactUs = () => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,9 @@ const ContactUs = () => {
   const { heroHeading, heroText, sec1Heading, contactList } = frontmatter
 
   return (
+
     <Layout>
+      <Seo title="Contact Us | OurPetPolicy" description="We’d love to hear from you! Please contact us with questions, suggestions, and feedback!" />
       <section className="small-hero">
         <div className="container">
           <div className="small-hero-content">

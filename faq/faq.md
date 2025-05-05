@@ -1,7 +1,7 @@
 ---
 title: faq
-metaTitle: Pricing title
-metaDescription: Pricing description
+metaTitle: FAQ | OurPetPolicy
+metaDescription: When it comes to pets, let us do the heavy lifting for as little as $5/month
 heroHeading: Professional pet policy residents in minute
 heroSubhead: "When it comes to pets, let us do the heavy lifting for as little as $5/month "
 faqHeading: Frequently Asked Questions

@@ -17,6 +17,8 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: date, label: Date, widget: datetime }
       - { name: category, label: Category }
       - { name: excerpt, label: Excerpt, widget: text, pattern: [
@@ -126,6 +128,8 @@ collections:
     fields:
       - { name: title, label: Title, widget: hidden }
       - { name: heroHeading, label: Hero heading }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroText, label: Hero text, widget: text }
       - { name: primaryBtn, label: Primary Button }
       - { name: secondaryBtn, label: Secondary Button }
@@ -139,6 +143,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero heading }
       - { name: heroText, label: Hero text, widget: text }
       - { name: sec1Heading, label: Contact heading }
@@ -213,6 +219,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero title }
       - { name: body, label: Content, widget: markdown }
 
@@ -224,6 +232,8 @@ collections:
       preview: false
     fields:
       - { name: title, label: Title, widget: hidden }
+      - { name: metaTitle, label: Meta Title }
+      - { name: metaDescription, label: Meta Description, widget: text }
       - { name: heroHeading, label: Hero title }
       - { name: body, label: Content, widget: markdown }
 

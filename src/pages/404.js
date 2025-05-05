@@ -83,7 +83,7 @@ const NotFoundPage = () => {
 
   return !loading ? (
     <Layout className="landing">
-      <Seo title="404: Not found" />
+      <Seo title="404: Not found | OurPetPolicy" description="404: Not Found" />
       <section className="hero error-page">
         <GatsbyImage
           className="grid-1"
